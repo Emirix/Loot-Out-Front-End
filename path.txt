@@ -1,0 +1,8 @@
+path('brands/',BrandsView.as_view()), #bütün brand isimlerini verir
+path('models/<int:pk>/',ModelsView.as_view()), #0 yazarsan bütün modelleri sayı yazarsan brand_id si o sayı olan modelleri verir
+path('shoes/<int:pk>/',ShoesView.as_view()), #0 yazarsan bütün ayakkabıları sayı yazarsan shoe_id si o sayı olan ayakkabıyı verir
+path('brandshoes/<int:pk>/',Brandshoes.as_view()), #brand id sini yazdığın bütün ayakkabıları verir
+path('modelshoes/<int:pk>/',Modelshoes.as_view()), #model id sini yazdığın bütün ayakkabıları verir
+path('mostsearched/',Mostsearched.as_view()), #anasayfaki mostsearched kısmında gözükecek ayakkabıların infolarını verir
+path('sneekernews/',NewsView.as_view()), #anasayfadaki gösterilcek haberleri verir
+path('search/',SearchView.as_view()) #?search=* o kelime ile ayakkabılar arasında arama yapıp o isimin geçtiği ayakkabının bütün özelliklerini verir

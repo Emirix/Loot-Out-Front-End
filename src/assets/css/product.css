@@ -1,0 +1,378 @@
+.Product {
+  width: 95%;
+  margin: auto;
+}
+.Product .selection-area {
+  margin-top: 4rem;
+}
+.selection-area .location {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #b6b6b6;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 1rem;
+}
+.selection-area .product-name,
+.price-changes-main-heading {
+  display: flex;
+  align-items: center;
+}
+.selection-area .product-name h1,
+.price-changes-main-heading h1 {
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
+}
+.price-changes-main-heading h1 {
+  font-size: 30px;
+}
+.selection-area .product-name p,
+.price-changes-main-heading p {
+  font-size: 48px;
+  color: #fff;
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+.price-changes-main-heading p {
+  font-size: 36px;
+}
+.selection-area .product-name span {
+  font-weight: 400;
+}
+.product-information-wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+.product-information-wrapper .pure-product > img {
+  width: 100%;
+}
+.product-information-wrapper .pure-product .product-reel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.product-information-wrapper .pure-product .product-reel img {
+  min-width: 140px;
+  height: 126px;
+  cursor: pointer;
+}
+.product-information-wrapper .product-available {
+  display: flex;
+  flex-direction: column;
+}
+.product-information-wrapper .product-available > h2 {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 400;
+  color: #fff;
+}
+.product-available > .size-buttons {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 1rem;
+  justify-self: flex-start;
+  grid-row-gap: 0.5rem;
+  margin-top: 2rem;
+  flex: 1;
+}
+.product-available > .size-buttons .size input {
+  display: none;
+}
+.product-available > .size-buttons .size label {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  display: block;
+  background: #adadad33;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffffcc;
+  color: #fff;
+  cursor: pointer;
+}
+.product-available > .size-buttons .size input:disabled + label {
+  color: #555555;
+  pointer-events: none;
+}
+.product-available > .size-buttons .size input:checked + label {
+  background: #51d7bf;
+  border-color: #51d7bf;
+}
+
+.product-available > .buy-now-button-wrapper {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.product-available > .buy-now-button-wrapper p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+
+  font-size: 36px;
+  margin-right: 2rem;
+  font-weight: 400;
+}
+.product-available > .buy-now-button-wrapper button {
+  background: #7af0d1;
+  height: 50px;
+  width: 180px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.price-changes-container {
+  margin-top: 6rem;
+}
+.price-changes-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+  margin-top: 1.3rem;
+}
+.price-info-content,
+.price-info-container {
+  position: relative !important;
+}
+.price-info-container {
+  /* background: chartreuse; */
+}
+.price-info-content img {
+  width: 100%;
+}
+
+.info-button-wrapper {
+  position: absolute;
+  top: -3%;
+  left: 0;
+  /* background: red !important; */
+  padding: 0rem 0.5rem;
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-button-wrapper button {
+  border: 1px solid #51d7bf;
+  color: #51d7bf;
+  height: 30px;
+  width: 144px;
+  background: transparent;
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  letter-spacing: 0em;
+}
+.price-info-container > .info-button-wrapper > p {
+  font-size: 30px;
+  color: #51d7bf;
+  font-weight: 400;
+}
+.price-info-content .price-info-border-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.price-info-presentation {
+  position: absolute;
+
+  min-height: 50%;
+  top: 60%;
+  transform: translateY(-60%);
+  padding: 0rem 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 1.6rem;
+  color: #fff;
+  z-index: 2;
+}
+.chart-area {
+  color: #fff;
+}
+.custom-select {
+  width: 150px;
+  margin-left: auto;
+  position: relative;
+}
+.select-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #51d7bf;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.custom-select .options {
+  position: absolute;
+  border: 1px solid #51d7bf;
+  background: #002437;
+  width: 100%;
+  display: none;
+}
+.custom-select .options.active {
+  display: block;
+}
+.custom-select .options .option input {
+  display: none;
+}
+.custom-select .options .option input:checked + label {
+  background: #51d7bf;
+  color: #000;
+}
+.custom-select .options .option label {
+  width: 100%;
+  padding: 0.5rem;
+  display: block;
+  cursor: pointer;
+}
+.custom-select .options .option:hover {
+  background: #143446;
+}
+.line-chart-wrapper {
+  margin: 1rem 0rem;
+}
+.time-selection-wrapper {
+  display: flex;
+  align-items: center;
+}
+.time-selection-wrapper .time-selection input {
+  display: none;
+}
+.time-selection-wrapper .time-selection input:checked + label {
+  background: #51d7bf;
+  color: #000;
+}
+.time-selection-wrapper .time-selection label {
+  padding: 0.4rem 0rem;
+  width: 82px;
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #adadad4d;
+  cursor: pointer;
+}
+/* .select-head  > * */
+.price-info-presentation > p:first-child {
+  margin-bottom: 2rem;
+}
+
+.price-info-presentation > p span {
+  font-weight: 700;
+  margin-right: 0.5rem;
+  color: #51d7bf;
+}
+@media screen and (max-width: 1200px) {
+.price-changes-content {
+  
+    grid-template-columns: 1fr;
+ grid-row-gap:4rem;
+}
+}
+@media screen and (max-width: 1100px) {
+  .product-information-wrapper {
+
+    grid-template-columns: 1fr;
+ grid-row-gap:3rem;
+}
+}
+
+@media screen and (max-width:780px){
+  .selection-area .product-name h1, .price-changes-main-heading h1 ,.popular-presentation h1, .most-recent-item-presentation h1, .brand-presentation h1 {
+    font-size: 25px;
+   
+}
+}
+@media screen and (max-width:650px){
+  .product-available > .size-buttons {
+  
+    grid-template-columns: repeat(2,1fr);
+
+}
+.product-information-wrapper .pure-product .product-reel img {
+  width:120px;
+      min-width: 120px;
+      object-fit:cover;
+}  .selection-area .product-name h1, .price-changes-main-heading h1 ,.popular-presentation h1, .most-recent-item-presentation h1, .brand-presentation h1 {
+    font-size: 20px;
+   line-height:40px;
+}
+.price-info-content img {
+  height:400px;
+}
+.footer-top img {
+    margin: 0rem 2rem;
+}
+}
+
+@media screen and (max-width:500px){
+.product-information-wrapper .pure-product .product-reel img {
+  width:80px;
+      min-width: 80px;
+      height:80px;
+    
+} 
+.product-available > .buy-now-button-wrapper p {
+    margin-right: 0rem;
+    margin-bottom:1rem;
+}
+
+   .product-available > .size-buttons {
+  
+    grid-template-columns: repeat(1,1fr);
+
+}.product-available > .buy-now-button-wrapper {
+    margin-top:1rem;
+    flex-direction:column;
+    justify-content: center;
+}
+
+
+.price-info-content img {
+    height: 500px;
+}
+.most-recent-item-presentation p, .brand-presentation p ,.price-changes-main-heading p,.selection-area .product-name p, .price-changes-main-heading p ,.price-info-container > .info-button-wrapper > p {
+   display:none;
+}
+.info-button-wrapper {
+  top:0;
+}
+.line-chart-wrapper {
+    margin: 3rem 0rem;
+}
+}
+
+@media screen and (max-width:350px){
+  .price-info-content img {
+    height: 600px;
+}
+}
