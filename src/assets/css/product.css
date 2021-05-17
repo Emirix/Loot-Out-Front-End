@@ -205,11 +205,10 @@
 
   min-height: 50%;
   top: 60%;
-  transform: translateY(-60%);
-  padding: 0rem 2rem;
+ 
   font-family: "Roboto", sans-serif;
   font-size: 17px;
-  line-height: 1.6rem;
+
   color: #fff;
   z-index: 2;
 }
@@ -336,7 +335,7 @@
 
 @media screen and (max-width:500px){
 .product-information-wrapper .pure-product .product-reel img {
-  width:80px;
+     width:80px;
       min-width: 80px;
       height:80px;
     
@@ -352,8 +351,7 @@
 
 }.product-available > .buy-now-button-wrapper {
     margin-top:1rem;
-    flex-direction:column;
-    justify-content: center;
+    align-items: center;
 }
 
 
@@ -364,7 +362,7 @@
    display:none;
 }
 .info-button-wrapper {
-  top:0;
+  top:-2px;
 }
 .line-chart-wrapper {
     margin: 3rem 0rem;

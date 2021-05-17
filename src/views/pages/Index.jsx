@@ -25,6 +25,8 @@ import Recent4 from "../../assets/img/recent-4.png";
 import Services from "../components/home/Services";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import $ from "jquery";
+
 import { HandleSigninPopUp } from "../../assets/js/Events/PopUp";
 export default class Index extends Component {
   constructor() {
@@ -34,7 +36,7 @@ export default class Index extends Component {
       mostSearchedItems: null
      
     };
-    //this.slide = this.slide.bind(this);
+    this.slide = this.slide.bind(this);
     this.handleArama = this.handleArama.bind(this);
   }
 
@@ -48,6 +50,17 @@ export default class Index extends Component {
       this.setState({mostSearchedItems:res.data})
      
     })
+  }
+
+  slide(w, to) {
+    if (to == "right") {
+      var now = $(w).scrollLeft()
+      $(w).scrollLeft((now + window.innerWidth) - 50)
+    } else {
+    
+      var now = $(w).scrollLeft() - window.innerWidth;
+      $(w).scrollLeft(now);
+    }
   }
 
   handleArama() {}
@@ -343,18 +356,18 @@ export default class Index extends Component {
 </defs>
 </svg>
 <div className="slider-arrow">
-            <div className="slide-mobile sola-ok d-md-none d-lg-block"></div>
+            <div onClick={()=>this.slide(".qwe","left")} className="slide-mobile sola-ok d-md-none d-lg-block"></div>
 
-            <div className="slide-mobile saga-ok d-md-none d-lg-block"></div>
+            <div onClick={()=>this.slide(".qwe","right")} className="slide-mobile saga-ok d-md-none d-lg-block"></div>
 
-            <div className="d-none d-md-block slide-tablet tablet-sola-ok d-lg-none"></div>
-            <div className="d-none d-md-block slide-tablet tablet-saga-ok d-lg-none"></div>
-          </div>
+            <div onClick={()=>this.slide(".qwe","left")} className="d-none d-md-block slide-tablet tablet-sola-ok d-lg-none"></div>
+            <div onClick={()=>this.slide(".qwe","right")} className="d-none d-md-block slide-tablet tablet-saga-ok d-lg-none"></div>
+          </div> 
           </div>
 
          
 
-          <div className="urunler">
+          <div className="urunler qwe">
 
             {this.state.mostSearchedItems === null ? <></> : 
             this.state.mostSearchedItems.map(val=>{
@@ -696,17 +709,17 @@ export default class Index extends Component {
 </defs>
 </svg>
 <div className="slider-arrow">
-          <div className="slide-mobile sola-ok d-md-none d-lg-block"></div>
+          <div   onClick={()=>this.slide(".qwe2","left")} className="slide-mobile sola-ok d-md-none d-lg-block"></div>
 
-<div className="slide-mobile saga-ok d-md-none d-lg-block"></div>
+<div  onClick={()=>this.slide(".qwe2","right")} className="slide-mobile saga-ok d-md-none d-lg-block"></div>
 
-<div className="d-none d-md-block slide-tablet tablet-sola-ok d-lg-none"></div>
-<div className="d-none d-md-block slide-tablet tablet-saga-ok d-lg-none"></div>
+<div  onClick={()=>this.slide(".qwe2","left")} className="d-none d-md-block slide-tablet tablet-sola-ok d-lg-none"></div>
+<div  onClick={()=>this.slide(".qwe2","right")} className="d-none d-md-block slide-tablet tablet-saga-ok d-lg-none"></div>
   </div>
 
             </div>
 
-          <div className="urunler">
+          <div className="urunler qwe2">
 
             <Link to="/product/2">
             <div className="urun">

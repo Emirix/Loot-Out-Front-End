@@ -218,6 +218,14 @@ a.mavi {
 }
 
 @media screen and (max-width: 768px) {
+
+  .price-info-container{
+    margin:0 auto;
+  }
+
+ div.selection-area > div.product-name > h1 > img{
+  width: 100px !important;
+ }
   .thankyou-container {
     img {
       width: 206px !important;
@@ -958,6 +966,18 @@ a.mavi {
 }
 
 @media screen and (min-width: 768px) {
+  .product-other-thumbs img{
+    width:130px !important;
+    height:130px !important;
+  }
+  .sey-slash{
+    width:22vw;
+  }
+  .price-info-container-middle p {
+    font-size: 20px !important;
+  }
+
+
   .title-slash {
     font-size: 1.9rem !important;
     margin-bottom: 2rem !important;
@@ -1873,6 +1893,7 @@ div.sidebar-top > div.left-side > img {
 }
 
 .urunler {
+  scroll-behavior: smooth;
   margin-top: 1rem;
   overflow-x: scroll;
   display: flex;
@@ -2284,8 +2305,120 @@ a {
     letter-spacing: 0em;
   }
 }
+.product-urun{
+  h1{
+    color:white !important;
+    font-family: "Roboto";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+margin-top:0.5rem;
+
+
+  }
+}
 
 @media screen and (max-width: 576px) {
+
+  
+
+  .info-container-aga{
+    background-image: url(../svg/mobile-kes.svg);
+    background-repeat: no-repeat;
+    p{
+      color:white;
+      font-size:12px;
+    }
+  }
+
+  .price-info-presentation{
+    padding:0 0.5rem;
+    top:27px !important;
+  }
+
+  .price-info-presentation p{
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+
+    &:nth-child(1){
+      margin-bottom:0.5rem;
+    }
+  }
+  .bune-amk{
+    top:0;
+    left:0;
+    position: absolute;
+  }
+
+  .custom-select{
+    width:103px;
+  }
+  .time-selection-wrapper {
+    justify-content: center;
+  }
+  .custom-select .options .option label {
+    font-size: 10px !important;
+  }
+
+  .select-head p{
+    font-size: 10px !important;
+  }
+
+  .price-changes-container{
+    margin-top:2rem;
+  }
+
+  .buy-now-button-wrapper{
+    align-items: center !important;
+    p{
+      margin:0 !important;
+
+    }
+    button{
+      width: 111px;
+      height:38px;
+      font-size: 16px;
+      margin-left: 1rem;
+    }
+  }
+  .Product .selection-area{
+    margin-top: 1rem;
+  }
+
+
+  .size-buttons{
+    grid-template-columns: 1fr 1fr 1fr !important;
+
+    .size label{
+      font-size: 12px !important;
+      height:32px !important;
+    }
+  }
+
+
+
+  .product-name h1{
+    line-height:22px !important;
+    font-size: 24px !important;
+  }
+/*
+  .pure-product{
+    margin: 0 auto;
+  }
+  .pure-product .product-reel img{
+    min-width:60px !important;
+    width:60px !important;
+    height:60px !important;
+    margin-right:0 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+  }*/
+
+
+  ///////////***//
 
  div.col-lg-7.d-lg-block > form > div.cpbutton.mt-2{
    margin:0 auto;
@@ -2415,4 +2548,102 @@ margin:0;
 margin-left: auto;
 text-decoration: underline;
   }
+}
+
+.price-info-container{
+  width:95%;
+}
+
+.price-info-container-top{
+  background-image: url(../svg/product/product-info-top.svg);
+  background-repeat: no-repeat;
+    height: 45px;
+    background-size: 100% 70px;
+}
+
+.price-info-container-middle{
+  background-image: url(../svg/product/product-info-middle.svg);
+    background-repeat: repeat-y;
+  
+    background-size: 100%;
+
+    p{
+      color:white;
+      padding:0 0.7rem;
+      margin: 0;
+      font-size: 12px;
+
+      &:nth-child(2){
+        margin-top: 0.5rem;
+      }
+
+      span{
+        color:$primary;
+      }
+    }
+
+}
+
+.price-info-container{
+  position: relative;
+
+  .info-slash{
+    position: absolute;
+    top: -3px;
+    width:57%;
+    left:0;
+  }
+}
+@media screen and (min-width:1100px) {
+  .product-other-thumbs img{
+    width:108px !important;
+    height:89px !important;
+  }
+
+}
+@media screen and(min-width: 1200px) {
+  .rrrr{
+    width: 1067px;
+  }
+.price-changes-svg{
+  width:724px;
+}
+  .product-other-thumbs{
+    img{
+      width:150px !important;
+      height:130px !important;
+    }
+  }
+  .product-available{
+    svg{
+      width:400px !important;
+    }
+  }
+}
+
+.pure-product{
+  img{
+    border-radius: 5px;
+  }
+}
+
+
+.product-other-thumbs{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  img{
+    width:70px;
+    height:70px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.product-available > .buy-now-button-wrapper p{
+  margin-bottom:0 !important;
+}
+
+.xxxx{
+  width:300px;
 }
