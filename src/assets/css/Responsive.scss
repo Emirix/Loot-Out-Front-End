@@ -1,0 +1,336 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  .offer{
+    width: 49%;
+  }
+
+  .profile-title-mobile{
+    display:none !important;
+  }
+    .add-product-button{
+        font-size: 24px;
+        padding:0.8rem 0rem;
+        width:21%;
+        top:19px;
+        right:76px;
+    }
+    
+  }
+   .profile-title-tablet{
+    display: none;
+   }
+  .profile-title-desktop{
+    display: block;
+  }
+
+  .otuzbir{
+    font-size: 24px;
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .offer{
+      width: 49%;
+      &__title{
+        font-size: 19px !important;
+      }
+
+      &__price{
+        font-size: 20px !important;
+      }
+    }
+    .add-product-button{
+        font-size: 20px;
+        padding: 0.3rem 0rem;
+        width: 22%;
+        top: 19px;
+        right: 52px;
+    }  .profile-title-mobile{
+      display:none !important;
+    }
+
+    .otuzbir,.fiyat{
+      font-size: 20px !important; 
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .offers{
+      height: 252px;
+      overflow-y: scroll;
+    }
+
+    .offers-title{
+      width:70% !important;
+    }
+   
+    .offer{
+      width: 100% !important;
+      &__title{
+        font-size: 23px !important;
+      }
+
+      &__price{
+        font-size: 23px !important;
+      }
+    }
+   
+    .otuzbir,.fiyat{
+      font-size: 17px !important; 
+    }  .profile-title-mobile{
+      display:none !important;
+    }
+    .on-sale-item{
+      max-width: 100% !important; 
+    }
+    
+    .profile-title-tablet{
+      display: block !important;
+    }
+
+    .profile-title-desktop{
+      display: none !important;
+    }
+  
+    .add-product-button{
+        font-size: 16px;
+        padding: 0.3rem 0rem;
+        width: 23%;
+        top: 14px;
+        right: 33px;
+    }
+
+    .products-on-sale .products-on-sale-title-desktop{
+      top:15px !important;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .offers{
+      height: 252px;
+      overflow-y: scroll;
+    }
+   
+    .offer{
+      width: 100% !important;
+      &__title{
+        font-size: 23px !important;
+      }
+
+      &__price{
+        font-size: 23px !important;
+      }
+    }
+
+    .profile-title-mobile{
+      display:none !important;
+    }
+    .profile-title-tablet{
+      display:block !important;
+    }
+
+    .profile-title-desktop{
+      display: none !important;
+    }
+  
+
+    .on-sale-item{
+      max-width: 98% !important;
+      margin-right: 0.5rem;
+    }
+    .add-product-button{
+        font-size: 12px;
+        padding: 0.2rem 0rem;
+        width: 23%;
+        top: 14px;
+        right: 27px;
+    }
+
+    .otuzbir,.fiyat{
+      font-size: 12px !important; 
+    }
+    .products-on-sale .products-on-sale-title-desktop{
+        top: 8px !important;
+        width: 62% !important;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .offers-title {
+      width: 70% !important;
+  }
+
+  
+    
+    .offers{
+      height: 252px;
+      overflow-y: scroll;
+
+      .offer{
+        img{
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .buttons{
+        width: 70px !important;
+
+        button{
+          font-size: 9px !important;
+          padding: 0.2rem 0.2rem !important;
+        }
+      }
+    }
+
+    .mobile-offer-info{
+      .offer__title{
+        font-size: 12px !important;
+      }
+
+      .offer__price{
+        font-size: 16px !important;
+      }
+    }
+   
+    .offer{
+      width: 100% !important;
+      &__title{
+        font-size: 23px !important;
+      }
+
+      &__price{
+        font-size: 23px !important;
+      }
+    }
+    
+   
+    .profile-title-mobile{
+      display: block !important;
+    }
+    .profile-title-tablet{
+      display: none !important;
+    }
+
+    .profile-title-desktop{
+      display: none !important;
+    } 
+    
+    .add-product-button{
+        display:none
+    }
+    .add-product-button-mobile{
+      display: block !important;
+    }
+    .on-sale-item{
+      max-width: 98% !important;
+      margin-right: 0.5rem;
+    }
+    .products-on-sale .products-on-sale-title-desktop{
+        display: none;
+    }
+    .on-sale-item .about .urun-adi{
+      font-size: 12px !important;
+      line-height: unset !important;
+    }
+
+ 
+
+    .on-sale-item .about .added-date{
+      font-size: 10px;
+    }
+
+    .products-on-sale-title-mobile{
+        display: block;
+        width: 75%;
+        margin-bottom: 0.8rem;
+    }
+
+    .kam{
+        display: none;
+    }
+
+    .topbarmobile{
+        display: block;
+        transform: scale(1,-1);
+    }
+    
+  }
+
+  /* 31 */ 
+
+  @media (min-width: 481px){
+
+    .products-on-sale-title-mobile{
+        display: none;
+    }
+
+    
+    .kam{
+        display: block;
+    }
+
+    .topbarmobile{
+        display: none;
+    }
+    
+  }
+
+@media screen and (max-width:768px) {
+ .fiyat,.edit,.remove{
+   display: none;
+ } 
+}
+
+@media screen and (min-width:768px) {
+
+  .mobile-fer-fiyat{
+    display: none;
+  }
+
+  .mobile-fer{
+    display: none;
+  }
+  
+}

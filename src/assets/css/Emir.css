@@ -1,3 +1,307 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .offer {
+    width: 49%;
+  }
+
+  .profile-title-mobile {
+    display: none !important;
+  }
+
+  .add-product-button {
+    font-size: 24px;
+    padding: 0.8rem 0rem;
+    width: 21%;
+    top: 19px;
+    right: 76px;
+  }
+}
+.profile-title-tablet {
+  display: none;
+}
+
+.profile-title-desktop {
+  display: block;
+}
+
+.otuzbir {
+  font-size: 24px;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .offer {
+    width: 49%;
+  }
+  .offer__title {
+    font-size: 19px !important;
+  }
+  .offer__price {
+    font-size: 20px !important;
+  }
+
+  .add-product-button {
+    font-size: 20px;
+    padding: 0.3rem 0rem;
+    width: 22%;
+    top: 19px;
+    right: 52px;
+  }
+
+  .profile-title-mobile {
+    display: none !important;
+  }
+
+  .otuzbir, .fiyat {
+    font-size: 20px !important;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .offers {
+    height: 252px;
+    overflow-y: scroll;
+  }
+
+  .offers-title {
+    width: 70% !important;
+  }
+
+  .offer {
+    width: 100% !important;
+  }
+  .offer__title {
+    font-size: 23px !important;
+  }
+  .offer__price {
+    font-size: 23px !important;
+  }
+
+  .otuzbir, .fiyat {
+    font-size: 17px !important;
+  }
+
+  .profile-title-mobile {
+    display: none !important;
+  }
+
+  .on-sale-item {
+    max-width: 100% !important;
+  }
+
+  .profile-title-tablet {
+    display: block !important;
+  }
+
+  .profile-title-desktop {
+    display: none !important;
+  }
+
+  .add-product-button {
+    font-size: 16px;
+    padding: 0.3rem 0rem;
+    width: 23%;
+    top: 14px;
+    right: 33px;
+  }
+
+  .products-on-sale .products-on-sale-title-desktop {
+    top: 15px !important;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .offers {
+    height: 252px;
+    overflow-y: scroll;
+  }
+
+  .offer {
+    width: 100% !important;
+  }
+  .offer__title {
+    font-size: 23px !important;
+  }
+  .offer__price {
+    font-size: 23px !important;
+  }
+
+  .profile-title-mobile {
+    display: none !important;
+  }
+
+  .profile-title-tablet {
+    display: block !important;
+  }
+
+  .profile-title-desktop {
+    display: none !important;
+  }
+
+  .on-sale-item {
+    max-width: 98% !important;
+    margin-right: 0.5rem;
+  }
+
+  .add-product-button {
+    font-size: 12px;
+    padding: 0.2rem 0rem;
+    width: 23%;
+    top: 14px;
+    right: 27px;
+  }
+
+  .otuzbir, .fiyat {
+    font-size: 12px !important;
+  }
+
+  .products-on-sale .products-on-sale-title-desktop {
+    top: 8px !important;
+    width: 62% !important;
+  }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .offers-title {
+    width: 70% !important;
+  }
+
+  .offers {
+    height: 252px;
+    overflow-y: scroll;
+  }
+  .offers .offer img {
+    width: 60px;
+    height: 60px;
+  }
+  .offers .buttons {
+    width: 70px !important;
+  }
+  .offers .buttons button {
+    font-size: 9px !important;
+    padding: 0.2rem 0.2rem !important;
+  }
+
+  .mobile-offer-info .offer__title {
+    font-size: 12px !important;
+  }
+  .mobile-offer-info .offer__price {
+    font-size: 16px !important;
+  }
+
+  .offer {
+    width: 100% !important;
+  }
+  .offer__title {
+    font-size: 23px !important;
+  }
+  .offer__price {
+    font-size: 23px !important;
+  }
+
+  .profile-title-mobile {
+    display: block !important;
+  }
+
+  .profile-title-tablet {
+    display: none !important;
+  }
+
+  .profile-title-desktop {
+    display: none !important;
+  }
+
+  .add-product-button {
+    display: none;
+  }
+
+  .add-product-button-mobile {
+    display: block !important;
+  }
+
+  .on-sale-item {
+    max-width: 98% !important;
+    margin-right: 0.5rem;
+  }
+
+  .products-on-sale .products-on-sale-title-desktop {
+    display: none;
+  }
+
+  .on-sale-item .about .urun-adi {
+    font-size: 12px !important;
+    line-height: unset !important;
+  }
+
+  .on-sale-item .about .added-date {
+    font-size: 10px;
+  }
+
+  .products-on-sale-title-mobile {
+    display: block;
+    width: 75%;
+    margin-bottom: 0.8rem;
+  }
+
+  .kam {
+    display: none;
+  }
+
+  .topbarmobile {
+    display: block;
+    transform: scale(1, -1);
+  }
+}
+/* 31 */
+@media (min-width: 481px) {
+  .products-on-sale-title-mobile {
+    display: none;
+  }
+
+  .kam {
+    display: block;
+  }
+
+  .topbarmobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fiyat, .edit, .remove {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-fer-fiyat {
+    display: none;
+  }
+
+  .mobile-fer {
+    display: none;
+  }
+}
 header .header-list li a {
   text-decoration: none;
   color: white;
@@ -1162,101 +1466,6 @@ div.sidebar-top > div.left-side > img {
 .bg-on-sale .top .slash-bg:nth-child(4) {
   left: -37px;
 }
-.bg-on-sale .on-sale-item-wrapper {
-  background: url(../svg/bgbox-middle.svg);
-  position: relative;
-  left: 2px;
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-color: rgba(237, 237, 237, 0.09);
-  box-sizing: border-box;
-  padding: 13px 20px;
-}
-.bg-on-sale .on-sale-item {
-  height: 110px;
-  background-size: cover;
-  background-repeat: repeat-y;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  width: 72%;
-  padding: 10px;
-  position: relative;
-}
-.bg-on-sale .on-sale-item:after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 97%;
-  background-color: white;
-  height: 1px;
-  bottom: -2px;
-}
-.bg-on-sale .on-sale-item .fiyat {
-  font-family: Microsoft Tai Le;
-  font-size: 1.1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: white;
-}
-.bg-on-sale .on-sale-item .about {
-  flex-grow: 7;
-}
-.bg-on-sale .on-sale-item .fiyat,
-.bg-on-sale .on-sale-item .edit,
-.bg-on-sale .on-sale-item .remove {
-  flex-grow: 5;
-  text-align: center;
-  cursor: pointer;
-}
-.bg-on-sale .on-sale-item .fiyat:hover,
-.bg-on-sale .on-sale-item .edit:hover,
-.bg-on-sale .on-sale-item .remove:hover {
-  color: white;
-  user-select: none;
-}
-.bg-on-sale .on-sale-item .edit {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0.09em;
-  color: #7af0d1;
-}
-.bg-on-sale .on-sale-item .remove {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0.09em;
-  color: #e5351d;
-}
-.bg-on-sale .on-sale-item .urun-adi {
-  color: white;
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0.09em;
-  text-align: left;
-}
-.bg-on-sale .on-sale-item .added-date {
-  font-family: Roboto;
-  font-size: 12px;
-  margin-top: 3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 0.09em;
-  text-align: left;
-  color: #ab9b9b;
-}
 
 /*
 @media screen and (max-width:1367px) {
@@ -1293,62 +1502,6 @@ div.sidebar-top > div.left-side > img {
 }
 
 */
-.profile-container h1 {
-  color: white;
-  font-family: Syne;
-  font-size: 3vw;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-overflow: ellipsis;
-  white-space: pre;
-}
-.profile-container .profile-graph-item {
-  width: 100%;
-  background-color: rgba(173, 173, 173, 0.1);
-  border-radius: 47px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 40px;
-  color: white;
-}
-.profile-container .profile-graph-item h2 {
-  font-family: Syne;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 20px;
-  align-self: flex-start;
-}
-.profile-container .profile-graph-item canvas {
-  width: 70% !important;
-  height: auto !important;
-}
-.profile-container .profile-graph-item .total-earning {
-  align-self: flex-end;
-  text-align: right;
-  margin-top: 10px;
-}
-.profile-container .profile-graph-item .total-earning .te-title {
-  font-size: 1.9rem;
-  color: #7af0d1;
-  font-family: "Roboto";
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.profile-container .profile-graph-item .total-earning .te-price {
-  font-size: 3.3rem;
-  line-height: 20px;
-  font-family: "Roboto";
-}
-
 .select-head p {
   margin-bottom: 0 !important;
 }
@@ -2150,20 +2303,20 @@ a {
   }
 
   /*
-    .pure-product{
-      margin: 0 auto;
+  .pure-product{
+    margin: 0 auto;
+  }
+  .pure-product .product-reel img{
+    min-width:60px !important;
+    width:60px !important;
+    height:60px !important;
+    margin-right:0 10px;
+
+    &:last-child{
+      margin-right: 0;
     }
-    .pure-product .product-reel img{
-      min-width:60px !important;
-      width:60px !important;
-      height:60px !important;
-      margin-right:0 10px;
 
-      &:last-child{
-        margin-right: 0;
-      }
-
-    }*/
+  }*/
   div.col-lg-7.d-lg-block > form > div.cpbutton.mt-2 {
     margin: 0 auto;
   }
@@ -2249,7 +2402,7 @@ a {
   }
 }
 .total-div {
-  background: #002A3F;
+  background: #002a3f;
   color: white;
   border-radius: 9in;
   display: flex;
@@ -2362,6 +2515,273 @@ a {
 
 .xxxx {
   width: 300px;
+}
+
+.products-on-sale {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.products-on-sale .products-on-sale-title-desktop {
+  position: absolute;
+  top: 19px;
+  width: 65%;
+  left: 22px;
+}
+.products-on-sale .add-product-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  color: #002a3f;
+  background: #7af0d1;
+  border-radius: 9in;
+  text-align: center;
+  position: absolute;
+}
+.products-on-sale__top {
+  width: 100%;
+}
+.products-on-sale__top path {
+  width: 100%;
+}
+.products-on-sale__middle {
+  width: 100%;
+  color: white;
+  background-image: url(../svg/product/product-info-middle.svg);
+  background-repeat: repeat-y;
+  padding: 0 0.5rem;
+  background-size: 100%;
+}
+
+.bottom-t {
+  transform: scale(-1, 1);
+}
+
+.on-sale-item {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  max-width: 70%;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.on-sale-item:nth-child(1) {
+  margin-top: 0;
+}
+.on-sale-item img {
+  border-radius: 4px;
+}
+.on-sale-item .about {
+  flex-grow: 4;
+}
+.on-sale-item .about .urun-adi {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.09em;
+}
+.on-sale-item .about .added-date {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ab9b9b;
+}
+.on-sale-item .edit:hover,
+.on-sale-item .remove:hover {
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+.on-sale-item .fiyat {
+  flex-grow: 3;
+  font-family: Microsoft Tai Le;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.on-sale-item .edit {
+  color: #75ccb5;
+}
+.on-sale-item .otuzbir {
+  flex-grow: 3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.09em;
+  text-align: center;
+}
+.on-sale-item .remove {
+  color: #e5351d;
+}
+
+.mobile-fer .otuzbir {
+  font-size: 12px !important;
+  line-height: unset !important;
+}
+.mobile-fer .otuzbir:nth-child(1) {
+  color: #75ccb5;
+}
+.mobile-fer .otuzbir:nth-child(2) {
+  color: #e5351d;
+}
+
+.mobile-fer-fiyat {
+  font-family: "Microsoft Tai Le";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.add-product-button-mobile {
+  width: 75%;
+  border-radius: 9in;
+  text-align: center;
+  margin: 0.6rem auto;
+  background-color: #7af0d1;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0.8rem;
+  display: none;
+  color: #002a3f;
+}
+
+.profile-title-desktop {
+  width: 40%;
+}
+
+.profile-container {
+  border-radius: 47px;
+  background: rgba(173, 173, 173, 0.1);
+  width: 92%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.profile-container canvas {
+  width: 76%;
+  margin: 0 auto;
+  height: unset;
+}
+.profile-container__title {
+  font-family: Syne;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.total-earning {
+  text-align: right;
+  font-family: "Roboto";
+}
+.total-earning__title {
+  color: #7af0d1;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.total-earning__price {
+  color: white;
+  font-size: 2.7rem;
+}
+
+.offers-title {
+  width: 40%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  background: rgba(173, 173, 173, 0.08);
+  border-radius: 10px;
+}
+.offers .offer {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid white;
+  margin: 0.3rem;
+}
+.offers .offer__title {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+.offers .offer__price {
+  font-family: "Microsoft Tai Le";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  flex-grow: 2;
+}
+.offers .offer .buttons {
+  margin-left: auto;
+}
+.offers .offer .buttons button {
+  display: block;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 9in;
+  padding: 0.3rem 1rem;
+  user-select: none;
+}
+.offers .offer .buttons button:nth-child(1) {
+  background: #75ccb5;
+  color: white;
+  margin-bottom: 1rem;
+}
+.offers .offer .buttons button:nth-child(2) {
+  background: #e5351d;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.ney {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.09em;
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=Emir.css.map */
