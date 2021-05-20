@@ -2098,11 +2098,19 @@ div.sidebar-top > div.left-side > img {
   .urunler a {
     min-width: 47%;
   }
+  .urunler a .urun {
+    /*  h2 {
+        font-size: 30px !important;
+      }*/
+  }
   .urunler a .urun h1 {
     font-size: 20px !important;
   }
-  .urunler a .urun h2 {
+  .urunler a .urun .urun-fiyat {
     font-size: 30px !important;
+  }
+  .urunler a .haber h2 {
+    font-size: 16px !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -2113,7 +2121,7 @@ div.sidebar-top > div.left-side > img {
     font-size: 20px !important;
   }
   .urunler a .urun h2 {
-    font-size: 30px !important;
+    font-size: 30px;
   }
 }
 a {
@@ -2951,6 +2959,10 @@ a {
 }
 .sidebar a {
   color: white;
+}
+
+.haber h2 {
+  font-size: 16px !important;
 }
 
 /*# sourceMappingURL=Emir.css.map */

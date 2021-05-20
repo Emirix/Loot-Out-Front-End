@@ -1966,14 +1966,23 @@ div.sidebar-top > div.left-side > img {
       h1 {
         font-size: 20px !important;
       }
-      h2 {
-        font-size: 30px !important;
+
+      .urun-fiyat{
+        font-size:30px !important;
       }
+    /*  h2 {
+        font-size: 30px !important;
+      }*/
+    }
+
+    .haber h2{
+      font-size:16px !important;
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
+
   .urunler a {
     min-width: 26% !important;
     .urun {
@@ -1981,7 +1990,7 @@ div.sidebar-top > div.left-side > img {
         font-size: 20px !important;
       }
       h2 {
-        font-size: 30px !important;
+        font-size: 30px;
       }
     }
   }
@@ -2897,4 +2906,8 @@ margin-bottom: 2rem;
 
 .sidebar a{
   color:white;
+}
+
+.haber h2{
+  font-size:16px !important;
 }

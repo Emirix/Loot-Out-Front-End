@@ -388,7 +388,7 @@ export default class Index extends Component {
                 
                   <img src={val.image.replace("/media/","").replace("https%3A/","https://")} alt={val.name} />
                   <h1 className="urun-adi">{val.name}</h1>
-                  <h2>145 $</h2>
+                  <h2 className="urun-fiyat">145 $</h2>
                  
                
             </div> </Link>
@@ -736,7 +736,7 @@ export default class Index extends Component {
             <div className="urun">
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2>145 €</h2>
+              <h2 className="urun-fiyat">145 €</h2>
             </div>
             </Link>
 
@@ -744,7 +744,7 @@ export default class Index extends Component {
             <div className="urun">
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2>145 €</h2>
+              <h2 className="urun-fiyat">145 €</h2>
             </div>
             </Link>
 
@@ -752,7 +752,7 @@ export default class Index extends Component {
             <div className="urun">
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2>145 €</h2>
+              <h2 className="urun-fiyat">145 €</h2>
             </div>
             </Link>
             
