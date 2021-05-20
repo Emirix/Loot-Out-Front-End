@@ -109,14 +109,18 @@ export default class Index extends Component {
                   onChange={(e) => {
                     this.setState({ search: e.target.value });
                   }}
+                  onClick={e=>{
+                    document.querySelector(".home-search-wrapper").style.display = "flex";
+                    document.querySelector(".AppFrontWrapper").style.height = "100%";
+                  }}
                 />
 
                 <img src={SearchIcon} alt="Search Icon" />
               </div>
               <div className="button-wrapper">
-                <button>Buy</button>
+                <Link to="/store"><button>Buy</button></Link>
                 <p>{"&"}</p>
-                <button>Sell</button>
+                <Link to="/seller"><button>Sell</button></Link>
               </div>
             </form>
           </div>

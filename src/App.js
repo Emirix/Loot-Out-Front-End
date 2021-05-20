@@ -6,7 +6,7 @@ import AddProduct from "./views/pages/AddProduct";
 import Home from "./views/pages/Home";
 import Product from "./views/pages/Product";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Magaza from "./views/pages/Magaza";
+import Magaza from "./views/pages/Store";
 import CheckOut from "./views/pages/CheckOut";
 import MyAccount from "./views/pages/Myaccount";
 import Thankyou from "./views/pages/Thankyou";
