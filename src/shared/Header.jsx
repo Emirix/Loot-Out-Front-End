@@ -15,9 +15,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function Header() {
   const [isLoggedIn, setIsloggedIn] = useState(true);
   const [isDropdown, setIsDropDown] = useState(false);
-
+  {/**style={isLoggedIn && window.innerWidth > 768  ? {paddingRight:90}: {c:"none"}} */}
   return (
-    <div className="header" style={isLoggedIn && window.innerWidth > 768  ? {paddingRight:90}: {c:"none"}}>
+    <div className="header" >
       <Link to="/">
         <img src={Logo} alt="logo" className="header-logo" />
       </Link>

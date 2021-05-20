@@ -557,10 +557,6 @@ a.mavi {
     font-size: 28px !important;
   }
 
-  .profile-dropdown {
-    left: -45px !important;
-  }
-
   .brand-item-container {
     padding: 118px 0 !important;
     max-width: 620px;
@@ -2933,6 +2929,28 @@ a {
 
 .SignIn {
   background-image: url(../img/noise-real.png);
+}
+
+@media screen and (max-width: 576px) {
+  .profile-con {
+    margin-left: 2rem;
+  }
+
+  .profile-dropdown {
+    background: rgba(196, 196, 196, 0.6);
+  }
+}
+.profile-dropdown {
+  left: -45px !important;
+}
+
+@media screen and (min-width: 1100px) {
+  .profile-dropdown {
+    left: -133px !important;
+  }
+}
+.sidebar a {
+  color: white;
 }
 
 /*# sourceMappingURL=Emir.css.map */

@@ -11,20 +11,21 @@ import dSellerGraph from "../assets/svg/dropdown/seller-graph.svg";
 import dMyOffer from "../assets/svg/dropdown/my-offers.svg";
 import dMyOrders from "../assets/svg/dropdown/my-order.svg";
 import dLogOut from "../assets/svg/dropdown/logout.svg";
+import Search from "./Search"
 
 function Sidebar() {
 
-    const [isLoggedIn, setLoggedIn] = useState(false)
+    const [isLoggedIn, setLoggedIn] = useState(true)
     const [isDropdown, setIsDropDown] = useState(false)
 
     return (
-        <div className="Sidebar">
+        <div className="Sidebar">        
             <div className="sidebar-top">
                 <div className="left-side">
                     <img src={SidebarLogo} alt=""/>
                 </div>
                 <div className="right-side">
-                <img src={SideBarSearch} alt=""/>
+                <img src={SideBarSearch} alt="" className="search-header-icon"/>
                 <img src={CloseIcon} alt=""  onClick={e=>{
                     document.querySelector(".Sidebar").classList.remove("active")
                 }}/>

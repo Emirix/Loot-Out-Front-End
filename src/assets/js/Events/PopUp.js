@@ -6,7 +6,7 @@ export const HandleSigninPopUp = () => {
   let LoginOptions = document.querySelectorAll(".login-option");
   let HomeLogInWrapper = document.querySelector(".home-login-wrapper");
   let LoginBackButton = document.querySelector(".login-back-btn");
-  let SearchButton = document.querySelector(".search-header-icon");
+  let SearchButton = document.querySelectorAll(".search-header-icon");
   let HomeSearchWrapper = document.querySelector(".home-search-wrapper");
 
   function ShowAuthForm(e, AuthWrapper) {
@@ -38,7 +38,11 @@ export const HandleSigninPopUp = () => {
     HideAuthForm(e, HomeLogInWrapper)
   );
 
-  SearchButton.addEventListener("click", (e) =>
+  SearchButton[0].addEventListener("click", (e) =>
     ShowAuthForm(e, HomeSearchWrapper)
   );
+
+  SearchButton[1].addEventListener("click", (e) =>
+  ShowAuthForm(e, HomeSearchWrapper)
+);
 };

@@ -66,7 +66,7 @@ export default class Index extends Component {
   slide(w, to) {
     if (to == "right") {
       var now = $(w).scrollLeft()
-      $(w).scrollLeft((now + window.innerWidth) - 50)
+      $(w).scrollLeft((now + window.innerWidth) - 70)
     } else {
     
       var now = $(w).scrollLeft() - window.innerWidth;
@@ -731,6 +731,22 @@ export default class Index extends Component {
             </div>
 
           <div className="urunler qwe2">
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2>145 €</h2>
+            </div>
+            </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2>145 €</h2>
+            </div>
+            </Link>
 
             <Link to="/product/2">
             <div className="urun">
