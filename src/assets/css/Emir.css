@@ -3,6 +3,10 @@
   ##Screen = 1281px to higher resolution desktops
 */
 @media (min-width: 1281px) {
+  .product-available svg {
+    width: 30%;
+  }
+
   .offer {
     width: 49%;
   }
@@ -36,6 +40,10 @@
   ##Screen = B/w 1025px to 1280px
 */
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .product-available svg {
+    width: 30%;
+  }
+
   .offer {
     width: 49%;
   }
@@ -67,6 +75,10 @@
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .product-available svg {
+    width: 30%;
+  }
+
   .offers {
     height: 252px;
     overflow-y: scroll;
@@ -117,6 +129,11 @@
   .products-on-sale .products-on-sale-title-desktop {
     top: 15px !important;
   }
+
+  .product-available > .buy-now-button-wrapper button {
+    height: 60px !important;
+    width: 180px !important;
+  }
 }
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -130,6 +147,10 @@
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+  .product-available svg {
+    width: 30%;
+  }
+
   .offers {
     height: 252px;
     overflow-y: scroll;
@@ -184,6 +205,10 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .product-available svg {
+    width: 60%;
+  }
+
   .offers-title {
     width: 70% !important;
   }
@@ -233,14 +258,6 @@
     display: none !important;
   }
 
-  .add-product-button {
-    display: none;
-  }
-
-  .add-product-button-mobile {
-    display: block !important;
-  }
-
   .on-sale-item {
     max-width: 98% !important;
     margin-right: 0.5rem;
@@ -264,27 +281,10 @@
     width: 75%;
     margin-bottom: 0.8rem;
   }
-
-  .kam {
-    display: none;
-  }
-
-  .topbarmobile {
-    display: block;
-    transform: scale(1, -1);
-  }
 }
 /* 31 */
 @media (min-width: 481px) {
   .products-on-sale-title-mobile {
-    display: none;
-  }
-
-  .kam {
-    display: block;
-  }
-
-  .topbarmobile {
     display: none;
   }
 }
@@ -334,6 +334,38 @@
   }
   .service-body-info-left-side svg {
     width: 70% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .kam {
+    display: block;
+  }
+
+  .topbarmobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .kam {
+    display: none;
+  }
+
+  .add-product-button-mobile {
+    display: block !important;
+  }
+
+  .topbarmobile {
+    display: block;
+    transform: scale(1, -1);
+  }
+
+  .add-product-button {
+    display: none;
+  }
+
+  .products-on-sale .products-on-sale-title-desktop {
+    top: -37px !important;
+    width: 90% !important;
   }
 }
 header .header-list li a {
@@ -607,7 +639,7 @@ a.mavi {
   }
 
   .most-recent-item-container {
-    padding: 118px 0 !important;
+    padding: 0px 0 !important;
     max-width: 620px;
     margin: 7rem auto !important;
   }
@@ -1200,7 +1232,7 @@ a.mavi {
   }
 
   .sey-slash {
-    width: 22vw;
+    width: 12vw;
   }
 
   .price-info-container-middle p {
@@ -2100,8 +2132,8 @@ div.sidebar-top > div.left-side > img {
   }
   .urunler a .urun {
     /*  h2 {
-        font-size: 30px !important;
-      }*/
+      font-size: 30px !important;
+    }*/
   }
   .urunler a .urun h1 {
     font-size: 20px !important;
@@ -2569,10 +2601,6 @@ a {
     width: 100px !important;
     height: 100px !important;
   }
-
-  .product-available svg {
-    width: 400px !important;
-  }
 }
 .pure-product img {
   border-radius: 5px;
@@ -2598,10 +2626,15 @@ a {
   width: 300px;
 }
 
+.lalala {
+  margin-top: 6rem;
+}
+
 .products-on-sale {
   width: 95%;
   margin: 0 auto;
   position: relative;
+  margin-top: 3rem;
 }
 .products-on-sale .products-on-sale-title-desktop {
   position: absolute;
@@ -2726,6 +2759,7 @@ a {
 
 .add-product-button-mobile {
   width: 75%;
+  max-width: 400px;
   border-radius: 9in;
   text-align: center;
   margin: 0.6rem auto;
@@ -2783,7 +2817,7 @@ a {
 .offers-title {
   width: 40%;
   margin-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 1rem;
 }
 
@@ -2862,7 +2896,7 @@ a {
   letter-spacing: 0.09em;
   color: white;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .emir-services {

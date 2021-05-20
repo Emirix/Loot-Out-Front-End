@@ -92,11 +92,12 @@
 }
 .product-available > .size-buttons .size label {
   font-family: "Roboto", sans-serif;
-  width: 100%;
+  width: 88%;
   display: block;
   background: #adadad33;
   height: 45px;
   border-radius: 10px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;

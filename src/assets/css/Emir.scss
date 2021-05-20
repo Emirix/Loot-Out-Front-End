@@ -303,7 +303,7 @@ a.mavi {
     display: none;
   }
   .most-recent-item-container {
-    padding: 118px 0 !important;
+    padding: 0px 0 !important;
     max-width: 620px;
     margin: 7rem auto !important;
 
@@ -973,7 +973,7 @@ a.mavi {
     height: 130px !important;
   }
   .sey-slash {
-    width: 22vw;
+    width: 12vw;
   }
   .price-info-container-middle p {
     font-size: 20px !important;
@@ -1663,7 +1663,8 @@ div.sidebar-top > div.left-side > img {
       }
     }
 
-    .urunler {  overflow-x: hidden;
+    .urunler {
+      overflow-x: hidden;
       .urun {
         min-width: 100%;
 
@@ -1673,7 +1674,7 @@ div.sidebar-top > div.left-side > img {
         }
 
         h2 {
-          font-family: "Roboto","sans-serif";
+          font-family: "Roboto", "sans-serif";
           font-size: 30px;
           font-style: normal;
           font-weight: 20px;
@@ -1681,7 +1682,7 @@ div.sidebar-top > div.left-side > img {
         }
 
         h1 {
-          font-family: "Roboto",sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 20px;
           font-style: normal;
           font-weight: 400;
@@ -1909,28 +1910,26 @@ div.sidebar-top > div.left-side > img {
   }
 }
 
-
 .Services,
-.Footer
- {
+.Footer {
   padding-right: var(--bs-gutter-x, 0.75rem) !important;
   padding-left: var(--bs-gutter-x, 0.75rem) !important;
 }
-.header{
-  padding-right: var(--bs-gutter-x, 0.75rem) ;
-  padding-left: var(--bs-gutter-x, 0.75rem) ;
+.header {
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
 }
-.home-hero{
+.home-hero {
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-top: 2rem;
 }
-.popular-brands{
+.popular-brands {
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-top: 2rem;
-  svg{
-    margin-bottom:3rem;
+  svg {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1942,8 +1941,8 @@ div.sidebar-top > div.left-side > img {
 .urunler img {
   width: 100%;
 }
-.urunler .urun{
-  font-family:"Roboto",sans-serif !important;
+.urunler .urun {
+  font-family: "Roboto", sans-serif !important;
 }
 @media screen and (max-width: 576px) {
   .urunler a {
@@ -1967,22 +1966,21 @@ div.sidebar-top > div.left-side > img {
         font-size: 20px !important;
       }
 
-      .urun-fiyat{
-        font-size:30px !important;
+      .urun-fiyat {
+        font-size: 30px !important;
       }
-    /*  h2 {
+      /*  h2 {
         font-size: 30px !important;
       }*/
     }
 
-    .haber h2{
-      font-size:16px !important;
+    .haber h2 {
+      font-size: 16px !important;
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
-
   .urunler a {
     min-width: 26% !important;
     .urun {
@@ -2434,18 +2432,18 @@ a {
   }
 }
 
-.add-picture-title{
-  display:none;
+.add-picture-title {
+  display: none;
 }
 @media screen and (min-width: 1100px) {
-.add-produt-title{
-  width:70%;
-  height:55px;
-
-}
+  .add-produt-title {
+    width: 70%;
+    height: 55px;
+  }
   .add-picture-title {
-    width:367px;
-    height:29px;  display:block !important;
+    width: 367px;
+    height: 29px;
+    display: block !important;
   }
   .product-other-thumbs img {
     width: 108px !important;
@@ -2467,7 +2465,7 @@ a {
   }
   .product-available {
     svg {
-      width: 400px !important;
+     
     }
   }
 }
@@ -2498,11 +2496,15 @@ a {
   width: 300px;
 }
 
+.lalala {
+  margin-top: 6rem;
+}
+
 .products-on-sale {
   width: 95%;
   margin: 0 auto;
   position: relative;
-
+  margin-top: 3rem;
   .products-on-sale-title-desktop {
     position: absolute;
     top: 19px;
@@ -2647,6 +2649,7 @@ a {
 
 .add-product-button-mobile {
   width: 75%;
+  max-width: 400px;
   border-radius: 9in;
   text-align: center;
   margin: 0.6rem auto;
@@ -2708,7 +2711,7 @@ a {
 .offers-title {
   width: 40%;
   margin-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 1rem;
 }
 
@@ -2717,10 +2720,9 @@ a {
   flex-wrap: wrap;
   width: 95%;
   margin: 0 auto;
-background:rgba(173, 173, 173, 0.08);
-border-radius: 10px;
+  background: rgba(173, 173, 173, 0.08);
+  border-radius: 10px;
   .offer {
-   
     box-sizing: border-box;
     padding: 0.5rem;
     display: flex;
@@ -2728,7 +2730,6 @@ border-radius: 10px;
     color: white;
     border-bottom: 1px solid white;
     margin: 0.3rem;
-
 
     &__title {
       font-family: "Roboto";
@@ -2741,16 +2742,15 @@ border-radius: 10px;
       margin-left: 0.5rem;
     }
 
-    &__price{
+    &__price {
       font-family: "Microsoft Tai Le";
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
 
-letter-spacing: 0em;
-text-align: center;
-flex-grow: 2;
-
+      letter-spacing: 0em;
+      text-align: center;
+      flex-grow: 2;
     }
 
     .buttons {
@@ -2787,41 +2787,37 @@ flex-grow: 2;
   }
 }
 
-.ney{
+.ney {
   text-align: center;
   font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 23px;
-letter-spacing: 0.09em;
-color:white;
-margin-top: 0.5rem;
-margin-bottom: 2rem;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.09em;
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 6rem;
 }
 
-.emir-services{
-  width:95%;
-  margin:0 auto;
-  position:relative;
+.emir-services {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
 
-  &__info{
+  &__info {
     position: absolute;
     top: -6px;
     left: 9px;
     height: 55px;
     width: 58%;
 
-    img{
- 
-      
+    img {
     }
   }
 
-
-
-  &__middle{
-    color:white;
+  &__middle {
+    color: white;
     background-image: url(../svg/servicesmiddle.svg);
     display: flex;
     flex-wrap: wrap;
@@ -2829,80 +2825,80 @@ margin-bottom: 2rem;
     position: relative;
     background-repeat: repeat-y;
     box-sizing: border-box;
-    padding:0 3rem;
-    width:100%;
+    padding: 0 3rem;
+    width: 100%;
     justify-content: space-between;
 
-    .ServiceCard{
-      width:30%;
+    .ServiceCard {
+      width: 30%;
     }
   }
 }
-#yanlar-icin{
-  top:180px;
+#yanlar-icin {
+  top: 180px;
 }
-.Services{
-  display:none;
+.Services {
+  display: none;
 }
-@media screen and (max-width:1100px){
-  .emir-services{
-    display:none;
+@media screen and (max-width: 1100px) {
+  .emir-services {
+    display: none;
   }
 
-  #yanlar-icin{
-    display:none !important;
+  #yanlar-icin {
+    display: none !important;
   }
 
   .Services + .services-top {
     display: none;
   }
 
-  .Services{
-    display:block !important;
+  .Services {
+    display: block !important;
   }
 }
 
-@media screen and (min-width:1100px){
+@media screen and (min-width: 1100px) {
   .left-big-service-circle:nth-child(1) {
     left: -81px !important;
-}
-#yanlar-icin{
-  display:block !important;
-}
+  }
+  #yanlar-icin {
+    display: block !important;
+  }
 
-.lbs-sag{
-  top: -273px !important;
+  .lbs-sag {
+    top: -273px !important;
     right: -77px !important;
-}
+  }
 }
 
-.haber h2{
+.haber h2 {
   text-align: left !important;
   font-weight: 400;
 }
 
-.slider-arrow div:hover{
-  cursor:pointer;
+.slider-arrow div:hover {
+  cursor: pointer;
 }
 
-.popular-brands{
-  margin-top:7rem;
+.popular-brands {
+  margin-top: 7rem;
 }
 
-.urun h1{
-  margin-top:0.5rem
+.urun h1 {
+  margin-top: 0.5rem;
 }
 
-.SignIn{
-  background-image:url(../img/noise-real.png)
+.SignIn {
+  background-image: url(../img/noise-real.png);
 }
 
-@media screen and (max-width:576px) {
-  .profile-con{
+@media screen and (max-width: 576px) {
+  .profile-con {
     margin-left: 2rem;
   }
 
-  .profile-dropdown{
+  .profile-dropdown {
     background: rgba(196, 196, 196, 0.6);
   }
 }
@@ -2911,23 +2907,23 @@ margin-bottom: 2rem;
   left: -45px !important;
 }
 
-@media screen and (min-width:1100px){
-  .profile-dropdown{
+@media screen and (min-width: 1100px) {
+  .profile-dropdown {
     left: -133px !important;
   }
 }
 
-.sidebar a{
-  color:white;
+.sidebar a {
+  color: white;
 }
 
-.haber h2{
-  font-size:16px !important;
+.haber h2 {
+  font-size: 16px !important;
 }
 
-@media screen and (max-width:1100px){
-  .add-product-form-fields .submit-button{
-    width:40%;
-    margin:0 auto;
+@media screen and (max-width: 1100px) {
+  .add-product-form-fields .submit-button {
+    width: 40%;
+    margin: 0 auto;
   }
 }

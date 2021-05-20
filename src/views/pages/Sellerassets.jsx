@@ -26,18 +26,19 @@ export class Sellerassets extends Component {
         ],
       },
       line: {
-        labels: ["January", "February", "March", "April", "May"],
-        datasets: [
-          {
-            label: "Rainfall",
-            fill: false,
-            lineTension: 0.5,
-            backgroundColor: "rgba(75,192,192,1)",
-            borderColor: "rgba(0,0,0,1)",
-            borderWidth: 2,
-            data: [65, 59, 80, 81, 56],
-          },
-        ],
+        labels: ['January', 'February', 'March',
+        'April', 'May'],
+datasets: [
+ {
+  label: 'My First Dataset',
+  data: [65, 59, 80, 81, 56, 55, 40],
+  fill: "start",
+  borderColor: '#7AF0D1',
+  backgroundColor:"#7AF0D1",
+  
+  tension: 0.3
+ }
+]
       },
     };
   }
@@ -218,7 +219,7 @@ export class Sellerassets extends Component {
           + ADD PRODUCT
         </Link>
 
-        <div className="row mt-5 ">
+        <div className="lalala row ">
           <div className="row px-5 ">
             {/** PROFILE TITLE MOBILE */}
             <svg
@@ -447,10 +448,10 @@ export class Sellerassets extends Component {
           </div>
           <div className="col-12 col-lg-6 mt-4">
           <div className="profile-container">
-              <div className="profile-container__title">ASSETS ON SALE</div>
+              <div className="profile-container__title mb-5">ASSETS ON SALE</div>
 
               <Line
-                data={this.state.pie}
+                data={this.state.line}
                 options={{
                   
                   plugins: {
