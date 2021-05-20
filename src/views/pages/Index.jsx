@@ -6,6 +6,17 @@ import Login from "../components/Auth/Login";
 import SignIn from "../components/Auth/SignIn";
 import BigTriangle from "../../assets/img/home-triangle-bg.png";
 import Search from "../../shared/Search";
+import LogoIkon from '../../assets/img/logo/LogoIkon.svg'
+import aga from "../../assets/svg/atomx.svg"
+import LogoYazi from '../../assets/img/logo/LogoYazi.svg'
+import InfoSlash from "../../assets/svg/31.svg"
+import ServiceCard from '../components/home/ServiceCard'
+import AuthService from '../../assets/svg/AuthService.svg'
+import CustomService from '../../assets/svg/CustomService.svg'
+import SellFastService from '../../assets/svg/SellFastService.svg'
+import ServiceGraph from '../../assets/svg/ServiceGraph.svg'
+import ServicePolicy from '../../assets/svg/ServicePolicy.svg'
+import ServiceShipping from '../../assets/svg/ServiceShipping.svg'
 import Sidebar from "../../shared/Sidebar";
 import SearchIcon from "../../assets/svg/search-icon.svg";
 import ShoeWithChart from "../../assets/img/shoe-with-chart.png";
@@ -733,7 +744,69 @@ export default class Index extends Component {
           </div>
         </div>
 
-        <Services />
+
+        {/** SERVICES */}
+
+
+          <Services/>
+           
+
+
+                <div className="Services" id="yanlar-icin">
+                    <img src={aga} alt="" className="left-big-service-circle" />
+            <img src={aga} alt="" className="left-big-service-circle lbs-sag" />
+                </div>
+
+                <div className="services-top">
+                <img src={LogoIkon} alt="" />
+                <img src={LogoYazi} alt="" />
+                </div>
+
+
+        <div className="emir-services">
+          
+        <div className="emir-services__info">
+            <img className="img-fluid" src={InfoSlash}/>
+          </div>
+
+
+
+        <svg  viewBox="0 0 1628 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.21289 146.68C1.21289 107.28 23.3105 74.0977 70.5005 74.0977H941.181L1021.5 1.09766H1536.5C1583.68 1.09766 1627 36.94 1627 76.34V146.68" stroke="white" stroke-miterlimit="10"/>
+<path d="M63.5 73.5H942L1022 1L1539.5 1.5C1603.5 5.5 1624 51 1627 71V146.676H1L2.49995 127.5L8.99995 108L18.5 94L29.5 86L46 77L63.5 73.5Z" fill="white" fill-opacity="0.1"/>
+</svg>
+
+
+        <div className="emir-services__middle">
+        <ServiceCard servicetype="auth" icon={AuthService} heading="Authentication Guaranteed" description="In our authentcation center, we are checking the shoes if it is fake or not with our advenced technology tools and experienced authenticators, we are being sure that sending to our customers %100 authentic shoes. " />
+        <ServiceCard servicetype="CustomerService" icon={CustomService} heading="24/7 Customer Service" description="We are providing to our sellers and buyers 24/7 customer service. Our stakeholders can ask any question on their mind comfortably to our experienced call center staffs about any topic."/>
+                            <ServiceCard servicetype="GraphicService" icon={ServiceGraph} heading="Graphics" description="As First Sneaker Stock Market we are providing to our customers day by day graphics which shows value of the sneakers in their hand. We are providing these prices from the sales which made via our platform." />
+                           
+                            
+                            <div className={`ServiceCard SellSneakers`}>
+                                <img src={SellFastService} alt=""/>
+                                <h3>Sell Your Sneakers Fast</h3>
+                                <p>At <span className="mavi">hypestuffs.com</span> you can sell your sneakers fast and with best prices, our customer audiance is ready to buy the hype sneakers from your hand.</p>
+                            </div>
+                            
+                            
+                            <ServiceCard servicetype="policy" icon={ServicePolicy}heading="Return policy" description="If you had bad experience from our service please contact us. Our customer service will help you about your complaint. But we only accept “Returns” if we did not properly serve our service. "/>
+                             <div className={`ServiceCard FreeShipping`}>
+                                <img src={ServiceShipping} alt=""/>
+                                <h3>Free Shipping</h3>
+                                <p>In <span className="mavi">hypestuffs.com</span> buyers and sellers does not have to pay shipping prices. Sellers when they are sending their items to our “Authentication Center” they do not have to pay the shipping price. Also when we are sending the items to our customers we are not charging for shipping.</p>
+                            </div>       
+        </div>
+
+        <svg viewBox="0 0 1628 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0.597656C1 39.9977 39.26 71.9377 86.44 71.9377H1541.34C1588.53 71.9377 1626.78 39.9977 1626.79 0.597656" stroke="white" stroke-miterlimit="10"/>
+<path d="M0.500122 0.603516H1627C1627 0.603516 1629 62.5 1548 72.0023H79.0001C2.5 63.5 0.500122 0.603516 0.500122 0.603516Z" fill="white" fill-opacity="0.1"/>
+</svg>
+
+
+        </div>
+
+   
 
         <div className="most-searched-container sneaker-news">
 
@@ -834,7 +907,7 @@ export default class Index extends Component {
 
                     <div className="lg-slider">
                    
-                    <svg className="d-lg-block d-none" viewBox="0 0 821 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="d-lg-block d-none sneaker-news-title" viewBox="0 0 821 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M819.611 3.00781L789.543 35.2781" stroke="url(#paint0_linear)" stroke-width="2" stroke-miterlimit="10"/>
 <path d="M805.264 3.00781L775.196 35.2851" stroke="url(#paint1_linear)" stroke-width="2" stroke-miterlimit="10"/>
 <path d="M790.917 3.01465L760.856 35.292" stroke="url(#paint2_linear)" stroke-width="2" stroke-miterlimit="10"/>
@@ -900,46 +973,54 @@ export default class Index extends Component {
 </svg>
 
                    <div className="slider-arrow">
-          <div className="slide-mobile sola-ok d-md-none d-lg-block"></div>
+          <div onClick={()=>this.slide(".lolo","left")} className="slide-mobile sola-ok d-md-none d-lg-block"></div>
 
-            <div className="slide-mobile saga-ok d-md-none d-lg-block"></div>
+            <div onClick={()=>this.slide(".lolo","right")} className="slide-mobile saga-ok d-md-none d-lg-block"></div>
 
-            <div className="d-none d-md-block slide-tablet tablet-sola-ok d-lg-none"></div>
-            <div className="d-none d-md-block slide-tablet tablet-saga-ok d-lg-none"></div>
+            <div  onClick={()=>this.slide(".lolo","left")} className="d-none d-md-block slide-tablet tablet-sola-ok d-lg-none"></div>
+            <div onClick={()=>this.slide(".lolo","right")} className="d-none d-md-block slide-tablet tablet-saga-ok d-lg-none"></div>
            </div>
-                    </div>
+ </div>
   
 
-          <div className="urunler">
+          <div className="urunler lolo">
+            <Link to="/">
             <div className="urun haber">
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2>March 3, 2021</h2>
             </div>
-
-            <div className="urun haber">
-              <img src={Recent2} alt="" />
-              <h1 className="urun-adi">Air Jordan 1</h1>
-              <h2>March 3, 2021</h2>
-            </div>
-
-            <div className="urun haber">
-              <img src={Recent3} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2>March 3, 2021</h2>
-            </div>
-
-            <div className="urun haber">
-              <img src={Recent4} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2>March 3, 2021</h2>
-            </div>
-
+            </Link>
+            <Link to="/">
             <div className="urun haber">
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2>March 3, 2021</h2>
             </div>
+            </Link>
+            <Link to="/">
+            <div className="urun haber">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2>March 3, 2021</h2>
+            </div>
+            </Link>
+
+            <Link to="/">
+            <div className="urun haber">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2>March 3, 2021</h2>
+            </div>
+            </Link>
+
+            <Link to="/">
+            <div className="urun haber">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2>March 3, 2021</h2>
+            </div>
+            </Link>
           </div>
         </div>
 

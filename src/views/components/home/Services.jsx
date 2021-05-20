@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../../assets/css/Emir.css"
 import LogoIkon from '../../../assets/img/logo/LogoIkon.svg'
-import axios from "axios";
+
 import LogoYazi from '../../../assets/img/logo/LogoYazi.svg'
 import BigServiceCircleSol from '../../../assets/img/atom-sag.png'
 import BigServiceCircleSag from '../../../assets/img/atom-sol.png'
@@ -33,7 +33,8 @@ function Services({ServiceDesktopSlash}) {
                 <div className="service-body-info">
                     <div className="service-body-info-left-side">
                         <button>Services</button>
-                       <img src={ServiceDesktopSlash} alt=""/>
+                       
+
                     </div>
                     
 

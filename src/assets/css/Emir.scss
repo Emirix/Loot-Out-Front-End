@@ -42,14 +42,18 @@ header .header-list li {
     }
 
     &::after {
-      content: ">";
+      content: "";
+      background-image: url(../svg/ok.svg);
       color: $primary;
       font-weight: 200;
       font-size: 4rem;
       margin-right: 20px;
       position: relative;
-      bottom: -15px;
+      bottom: -5px;
       left: 17px;
+      display: inline-block;
+      width: 14px;
+      height: 24px;
     }
   }
 }
@@ -57,14 +61,14 @@ header .header-list li {
 .left-big-service-circle {
   width: 80px;
   &:nth-child(1) {
-    left: -51px;
+    left: -54px;
     top: -166px;
     position: absolute;
   }
 }
 
 .lbs-sag {
-  right: -51px !important;
+  right: -54px !important;
   top: 10px !important;
   position: absolute;
 }
@@ -1662,7 +1666,7 @@ div.sidebar-top > div.left-side > img {
       }
     }
 
-    .urunler {
+    .urunler {  overflow-x: hidden;
       .urun {
         min-width: 100%;
 
@@ -1672,7 +1676,7 @@ div.sidebar-top > div.left-side > img {
         }
 
         h2 {
-          font-family: Microsoft Tai Le;
+          font-family: "Roboto","sans-serif";
           font-size: 30px;
           font-style: normal;
           font-weight: 20px;
@@ -1680,7 +1684,7 @@ div.sidebar-top > div.left-side > img {
         }
 
         h1 {
-          font-family: Microsoft Tai Le;
+          font-family: "Roboto",sans-serif;
           font-size: 20px;
           font-style: normal;
           font-weight: 400;
@@ -1717,13 +1721,13 @@ div.sidebar-top > div.left-side > img {
 }
 
 .most-searched-container {
-  margin-top: 4rem;
+  margin-top: 9rem;
 }
 
 .urunler {
   scroll-behavior: smooth;
   margin-top: 1rem;
-  overflow-x: scroll;
+  overflow-x: hidden;
   display: flex;
   .urun {
     max-width: 100%;
@@ -1773,22 +1777,22 @@ div.sidebar-top > div.left-side > img {
   .urunler a {
   }
   .lbs-sag-2 {
-    right: -75px !important;
+    right: -78px !important;
     bottom: -143px !important;
     top: unset !important;
   }
   .lbs-sol {
-    left: -74px !important;
+    left: -78px !important;
     top: 529px !important;
   }
   .lbs-sag {
-    right: -75px !important;
+    right: -78px !important;
   }
   .left-big-service-circle {
     width: 150px;
 
     &:nth-child(1) {
-      left: -74px !important;
+      left: -78px !important;
     }
   }
 
@@ -1899,7 +1903,7 @@ div.sidebar-top > div.left-side > img {
     display: flex !important;
 
     svg {
-      width: 80%;
+      width: 69%;
     }
 
     .slider-arrow {
@@ -1908,13 +1912,25 @@ div.sidebar-top > div.left-side > img {
   }
 }
 
-.home-hero,
-.popular-brands,
+
 .Services,
 .Footer,
 .header {
   padding-right: var(--bs-gutter-x, 0.75rem) !important;
   padding-left: var(--bs-gutter-x, 0.75rem) !important;
+}
+.home-hero{
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-top: 2rem;
+}
+.popular-brands{
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-top: 2rem;
+  svg{
+    margin-bottom:3rem;
+  }
 }
 
 .urunler a {
@@ -1925,7 +1941,9 @@ div.sidebar-top > div.left-side > img {
 .urunler img {
   width: 100%;
 }
-
+.urunler .urun{
+  font-family:"Roboto",sans-serif !important;
+}
 @media screen and (max-width: 576px) {
   .urunler a {
     min-width: 94%;
@@ -2757,4 +2775,101 @@ letter-spacing: 0.09em;
 color:white;
 margin-top: 0.5rem;
 margin-bottom: 2rem;
+}
+
+.emir-services{
+  width:95%;
+  margin:0 auto;
+  position:relative;
+
+  &__info{
+    position: absolute;
+    top: -6px;
+    left: 9px;
+    height: 55px;
+    width: 58%;
+
+    img{
+ 
+      
+    }
+  }
+
+
+
+  &__middle{
+    color:white;
+    background-image: url(../svg/servicesmiddle.svg);
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100%;
+    position: relative;
+    background-repeat: repeat-y;
+    box-sizing: border-box;
+    padding:0 3rem;
+    width:100%;
+    justify-content: space-between;
+
+    .ServiceCard{
+      width:30%;
+    }
+  }
+}
+#yanlar-icin{
+  top:180px;
+}
+.Services{
+  display:none;
+}
+@media screen and (max-width:1100px){
+  .emir-services{
+    display:none;
+  }
+
+  #yanlar-icin{
+    display:none !important;
+  }
+
+  .Services + .services-top {
+    display: none;
+  }
+
+  .Services{
+    display:block !important;
+  }
+}
+
+@media screen and (min-width:1100px){
+  .left-big-service-circle:nth-child(1) {
+    left: -81px !important;
+}
+#yanlar-icin{
+  display:block !important;
+}
+
+.lbs-sag{
+  top: -273px !important;
+    right: -77px !important;
+}
+}
+
+.haber h2{
+  text-align: left !important;
+  font-weight: 400;
+}
+
+.slider-arrow div:hover{
+  cursor:pointer;
+}
+
+.popular-brands{
+  margin-top:7rem;
+}
+
+.urun h1{
+  margin-top:0.5rem
+}
+
+.SignIn{
+  background-image:url(../img/noise-real.png)
 }

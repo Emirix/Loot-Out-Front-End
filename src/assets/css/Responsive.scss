@@ -338,3 +338,53 @@
 @media screen and (min-width:1200px){
   
 }
+
+@media screen and (min-width:1024px) {
+  .sneaker-news-title{
+    width:800px !important;
+  }
+
+  .most-searched-container .urunler .urun h2{
+    text-align: right;
+  }
+}
+
+
+
+@media screen and (min-width:1025px) {
+
+
+
+
+
+  .title-popular{
+    width: 80%;
+  }
+
+  .popular-brands,.home-hero{
+    padding: 0 4rem !important;
+  }
+}
+
+@media screen and (max-width:1353px) {
+  .service-body-info-left-side{
+    top:-1.5% !important;
+    
+    svg{
+      width:70% !important;
+    }
+}
+
+}
+
+
+@media screen and (max-width:1215px) {
+  .service-body-info-left-side{
+    top:-2.5% !important;
+    
+    svg{
+      width:70% !important;
+    }
+}
+
+}
