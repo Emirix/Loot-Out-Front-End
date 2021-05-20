@@ -13,11 +13,11 @@ import "../assets/css/header.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function Header() {
-  const [isLoggedIn, setIsloggedIn] = useState(false);
+  const [isLoggedIn, setIsloggedIn] = useState(true);
   const [isDropdown, setIsDropDown] = useState(false);
 
   return (
-    <div className="header" style={isLoggedIn && window.innerWidth > 768  ? {paddingRight:80}: {c:"none"}}>
+    <div className="header" style={isLoggedIn && window.innerWidth > 768  ? {paddingRight:90}: {c:"none"}}>
       <Link to="/">
         <img src={Logo} alt="logo" className="header-logo" />
       </Link>

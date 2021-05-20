@@ -1914,10 +1914,14 @@ div.sidebar-top > div.left-side > img {
 
 
 .Services,
-.Footer,
-.header {
+.Footer
+ {
   padding-right: var(--bs-gutter-x, 0.75rem) !important;
   padding-left: var(--bs-gutter-x, 0.75rem) !important;
+}
+.header{
+  padding-right: var(--bs-gutter-x, 0.75rem) ;
+  padding-left: var(--bs-gutter-x, 0.75rem) ;
 }
 .home-hero{
   padding-right: var(--bs-gutter-x, 0.75rem);
