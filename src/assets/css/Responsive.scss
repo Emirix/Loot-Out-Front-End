@@ -80,6 +80,35 @@
   */
   
   @media (min-width: 768px) and (max-width: 1024px) {
+
+    .store-urunler{
+      grid-gap: 2rem !important;
+    }
+   #kucu{
+     width:95%;
+     margin:0 auto;
+   }
+
+   .store-urun:nth-child(3n){
+    margin-right: 0rem !important;
+  
+   }
+
+   .store-urun{
+     margin-right: 0rem !important;
+     margin-top: 0rem !important;
+
+     &__isim{
+       font-size: 18px !important;
+     }
+
+     &__fiyat{
+       font-size: 20px !important;
+     }
+
+   }
+
+
     .product-available svg{
       width:30%;
     }
