@@ -3,6 +3,7 @@ import Header from "../../shared/Header";
 import {Link} from "react-router-dom";
 import InputRange from "react-input-range";
 import Recent1 from "../../assets/img/recent-1.png";
+import CheckButton from "../../assets/svg/check-button.svg";
 import Footer from "../../shared/Footer"
 
 export default class Store extends React.Component{
@@ -14,7 +15,8 @@ export default class Store extends React.Component{
             sliderValue: {
                 min:0,
                 max:1000
-            }
+            },
+            isFilterOpen:true
         }
     }
 
@@ -51,6 +53,8 @@ export default class Store extends React.Component{
             <div className="store container-fluid">
                 <Header/>
 
+                
+
                 <div className="store-container p-2 text-dark">
                     <div className="store-container__top">
                         <div className="bread">
@@ -60,8 +64,10 @@ export default class Store extends React.Component{
                         </div>
                     </div>
 
+                     
+
                     <div className="row">
-                        <div className="col-2 ">
+                        <div className={this.state.isFilterOpen ? "col-2" : "d-none"}>
                             <div className="filter-container">
                                 <div className="filter-container__search">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +271,7 @@ export default class Store extends React.Component{
                             </div>
                         </div>
                    
-                       <div className="col-10">
+                       <div className={this.state.isFilterOpen ? "col-10" : "col-12 filter-close"}>
                            <div className="store-products">
                                 <div className="store-products__top">
                                 <div className="filtered">
@@ -285,13 +291,15 @@ export default class Store extends React.Component{
                                         <option value="">Popularity</option>
                                     </select>
 
-                                    <div className="ayar-box"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6.63158C9.08551 6.63158 10.4248 5.63281 10.8551 4.26316L20 4.26316L20 2.36842L10.8551 2.36842C10.4248 0.998768 9.08551 -2.78505e-07 7.5 -2.29903e-07C5.567 -1.7065e-07 4 1.48453 4 3.31579C4 5.14705 5.567 6.63158 7.5 6.63158ZM9 3.31579C9 4.10061 8.32843 4.73684 7.5 4.73684C6.67157 4.73684 6 4.10061 6 3.31579C6 2.53096 6.67157 1.89474 7.5 1.89474C8.32843 1.89474 9 2.53096 9 3.31579Z" fill="#ADADAD"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 12.3158C16.0855 12.3158 17.4248 11.317 17.8551 9.94737L20 9.94737L20 8.05263L17.8551 8.05263C17.4248 6.68298 16.0855 5.68421 14.5 5.68421C12.567 5.68421 11 7.16874 11 9C11 10.8313 12.567 12.3158 14.5 12.3158ZM14.5 10.4211C15.3284 10.4211 16 9.78483 16 9C16 8.21517 15.3284 7.57895 14.5 7.57895C13.6716 7.57895 13 8.21517 13 9C13 9.78483 13.6716 10.4211 14.5 10.4211Z" fill="#ADADAD"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 18C7.433 18 9 16.5155 9 14.6842C9 12.8529 7.433 11.3684 5.5 11.3684C3.91449 11.3684 2.57521 12.3672 2.14494 13.7368L-4.21087e-07 13.7368L-4.79168e-07 15.6316L2.14494 15.6316C2.57521 17.0012 3.91449 18 5.5 18ZM5.5 16.1053C6.32843 16.1053 7 15.469 7 14.6842C7 13.8994 6.32843 13.2632 5.5 13.2632C4.67157 13.2632 4 13.8994 4 14.6842C4 15.469 4.67157 16.1053 5.5 16.1053Z" fill="#ADADAD"/>
-<path d="M10 13.7368L20 13.7368L20 15.6316L10 15.6316L10 13.7368Z" fill="#ADADAD"/>
-<path d="M10 8.05263L-2.46844e-07 8.05263L-3.04925e-07 9.94737L10 9.94737L10 8.05263Z" fill="#ADADAD"/>
-<path d="M3 2.36842L-7.26011e-08 2.36842L-1.30682e-07 4.26316L3 4.26316L3 2.36842Z" fill="#ADADAD"/>
+                                    <div onClick={()=>{
+                                        this.setState({isFilterOpen: !this.state.isFilterOpen})
+                                    }} className="ayar-box"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6.63158C9.08551 6.63158 10.4248 5.63281 10.8551 4.26316L20 4.26316L20 2.36842L10.8551 2.36842C10.4248 0.998768 9.08551 -2.78505e-07 7.5 -2.29903e-07C5.567 -1.7065e-07 4 1.48453 4 3.31579C4 5.14705 5.567 6.63158 7.5 6.63158ZM9 3.31579C9 4.10061 8.32843 4.73684 7.5 4.73684C6.67157 4.73684 6 4.10061 6 3.31579C6 2.53096 6.67157 1.89474 7.5 1.89474C8.32843 1.89474 9 2.53096 9 3.31579Z"  fill={this.state.isFilterOpen ? "#adadad" : "#252B42"}/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 12.3158C16.0855 12.3158 17.4248 11.317 17.8551 9.94737L20 9.94737L20 8.05263L17.8551 8.05263C17.4248 6.68298 16.0855 5.68421 14.5 5.68421C12.567 5.68421 11 7.16874 11 9C11 10.8313 12.567 12.3158 14.5 12.3158ZM14.5 10.4211C15.3284 10.4211 16 9.78483 16 9C16 8.21517 15.3284 7.57895 14.5 7.57895C13.6716 7.57895 13 8.21517 13 9C13 9.78483 13.6716 10.4211 14.5 10.4211Z" fill={this.state.isFilterOpen ? "#adadad" : "#252B42"}/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 18C7.433 18 9 16.5155 9 14.6842C9 12.8529 7.433 11.3684 5.5 11.3684C3.91449 11.3684 2.57521 12.3672 2.14494 13.7368L-4.21087e-07 13.7368L-4.79168e-07 15.6316L2.14494 15.6316C2.57521 17.0012 3.91449 18 5.5 18ZM5.5 16.1053C6.32843 16.1053 7 15.469 7 14.6842C7 13.8994 6.32843 13.2632 5.5 13.2632C4.67157 13.2632 4 13.8994 4 14.6842C4 15.469 4.67157 16.1053 5.5 16.1053Z"  fill={this.state.isFilterOpen ? "#adadad" : "#252B42"}/>
+<path d="M10 13.7368L20 13.7368L20 15.6316L10 15.6316L10 13.7368Z" fill={this.state.isFilterOpen ? "#adadad" : "#252B42"}/>
+<path d="M10 8.05263L-2.46844e-07 8.05263L-3.04925e-07 9.94737L10 9.94737L10 8.05263Z" fill={this.state.isFilterOpen ? "#adadad" : "#252B42"} />
+<path d="M3 2.36842L-7.26011e-08 2.36842L-1.30682e-07 4.26316L3 4.26316L3 2.36842Z" fill={this.state.isFilterOpen ? "#adadad" : "#252B42"}/>
 </svg>
 </div>
                                     <div className="ayar-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,7 +314,14 @@ export default class Store extends React.Component{
                            
                              <div className="row">
                                  <div className="store-urunler">
+
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -315,6 +330,11 @@ export default class Store extends React.Component{
                                      </div>
 
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -322,7 +342,13 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -330,7 +356,13 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+                                     
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -338,7 +370,14 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -346,7 +385,14 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -354,7 +400,14 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -362,7 +415,14 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -370,7 +430,14 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
+
+
                                      <div className="store-urun">
+                                         <div className="hover-wrapper">
+                                             <Link to="/product/2">
+                                                 <img src={CheckButton} alt="" />
+                                             </Link>
+                                         </div>
                                          <Link to="/product/2">
                                          <img src={Recent1} alt="" />
                                          <div className="store-urun__isim">Air Jordan 1 Mid</div>
@@ -378,21 +445,11 @@ export default class Store extends React.Component{
                                          </Link>
                                      </div>
 
-                                     <div className="store-urun">
-                                         <Link to="/product/2">
-                                         <img src={Recent1} alt="" />
-                                         <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                                         <div className="store-urun__fiyat">145 €</div>
-                                         </Link>
-                                     </div>
 
-                                     <div className="store-urun">
-                                         <Link to="/product/2">
-                                         <img src={Recent1} alt="" />
-                                         <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                                         <div className="store-urun__fiyat">145 €</div>
-                                         </Link>
-                                     </div>
+                                   
+                                 
+
+                                   
                           
                                  </div>
                              
