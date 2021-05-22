@@ -3903,4 +3903,12 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
   overflow-x: hidden;
 }
 
+.e-spinner {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=Emir.css.map */

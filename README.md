@@ -1,17 +1,3 @@
-# tamamlananlar
-#### HEADER LAYERS - READY
-#### HOMEPAGE - READY
-#### ADD PRODUCT - READY
-#### CHECKOUT - READY
-#### MY ACCOUNT -READY
-#### SELLER GUIDE - READY
-#### THANK YOU - READY
-
-# tamamlanmayanlar
-#### SATICI OL - YAPILACAK
-#### PRODUCT CARD - DUZENLENECEK
-#### SELLER ASSETS - YAPILMADI
-
 
 # routes
 

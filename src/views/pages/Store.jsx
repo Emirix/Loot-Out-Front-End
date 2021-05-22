@@ -9,6 +9,9 @@ import Login from "../components/Auth/Login";
 import SignIn from "../components/Auth/SignIn";
 import Sidebar from "../../shared/Sidebar";
 import Search from "../../shared/Search";
+import axios from "axios";
+import ESpinner from "../../Spinner/Spinner";
+
 
 export default class Store extends React.Component {
   constructor() {
@@ -23,10 +26,21 @@ export default class Store extends React.Component {
       isFilterOpen: true,
       tabletSorterDropdown: false,
       isTabletFilterOpen: false,
+      urunler:null,
+      searchString:""
     };
   }
 
+
+
   componentDidMount() {
+
+    axios.get("/products/shoes/0/?format=json").then(res=>{
+      console.log(res.data)
+      this.setState({urunler:res.data})
+    })
+
+
     for (
       var i = 0;
       i < document.querySelectorAll(".filter-dropdown__icerik .icerik").length;
@@ -42,7 +56,9 @@ export default class Store extends React.Component {
           }
         });
     }
+ 
   }
+
 
   drop(e, item) {
     if (document.getElementById(item).style.maxHeight == "300px") {
@@ -301,7 +317,6 @@ export default class Store extends React.Component {
 
             <div className="filter-price-container">
               <h5 className="mb-5">Filter by price</h5>
-
               <InputRange
                 maxValue={1000}
                 minValue={0}
@@ -316,6 +331,7 @@ export default class Store extends React.Component {
                   document.querySelectorAll(
                     ".input-range__label-container"
                   )[1].style.opacity = "1";
+
                 }}
                 onChangeComplete={() => {
                   document.querySelectorAll(
@@ -327,6 +343,7 @@ export default class Store extends React.Component {
                 }}
               />
 
+           
               <div className="price-filter-flex">
                 <div className="price-filter-flex__min-max">
                   <input
@@ -417,7 +434,14 @@ export default class Store extends React.Component {
                       fill="#737373"
                     />
                   </svg>
-                  <input type="text" placeholder="Search" />
+                  <input type="text" placeholder="Search" value={this.state.searchString} onChange={e=>{
+                    this.setState({urunler:null})
+                    this.setState({searchString:e.target.value})
+                    axios.get("/products/search/?search="+e.target.value).then(res=>{
+                      console.log(res.data)
+                      this.setState({urunler:res.data})
+                    })
+                  }} />
                 </div>
 
                 <div className="filter-dropdown">
@@ -601,18 +625,18 @@ export default class Store extends React.Component {
                   onChangeStart={() => {
                     document.querySelectorAll(
                       ".input-range__label-container"
-                    )[2].style.opacity = "1";
+                    )[6].style.opacity = "1";
                     document.querySelectorAll(
                       ".input-range__label-container"
-                    )[1].style.opacity = "1";
+                    )[5].style.opacity = "1";
                   }}
                   onChangeComplete={() => {
                     document.querySelectorAll(
                       ".input-range__label-container"
-                    )[2].style.opacity = "0";
+                    )[6].style.opacity = "0";
                     document.querySelectorAll(
                       ".input-range__label-container"
-                    )[1].style.opacity = "0";
+                    )[5].style.opacity = "0";
                   }}
                 />
 
@@ -917,128 +941,36 @@ export default class Store extends React.Component {
                                        <div className="close"></div>
                                        </div>
                                        <div className="filtered-item">38.5  <div className="close"></div></div>
-                                       <div className="filtered-item">300-1500  <div className="close"></div></div>
+                                       <div className="filtered-item">300₺-1500₺  <div className="close"></div></div>
                                    </div>
                                     </div>
                           </div>
 
                   <div className="store-urunler">
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
 
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
+                  {this.state.urunler == null ? <div className="e-spinner">
+                    <ESpinner color="#7af0d1" width={8} size={100} />
 
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
+                    </div> : this.state.urunler.map(val=>{
+                      return(
+                        <div className="store-urun" key={val.id}>
+                        <div className="hover-wrapper">
+                          <Link to={"/product/"+val.id}>
+                            <img src={CheckButton} alt="" />
+                          </Link>
+                        </div>
+                        <Link to={"/product/"+val.id}>
+                          <img src={val.image.replace("http://127.0.0.1:8000","").replace("/media/","").replace("https%3A/","https://")} alt="" />
+                          <div className="store-urun__isim">{val.name}</div>
+                          <div className="store-urun__fiyat">145 €</div>
                         </Link>
                       </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
+                      )
+                    })}
 
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
 
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
-
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
-
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
-
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
-
-                    <div className="store-urun">
-                      <div className="hover-wrapper">
-                        <Link to="/product/2">
-                          <img src={CheckButton} alt="" />
-                        </Link>
-                      </div>
-                      <Link to="/product/2">
-                        <img src={Recent1} alt="" />
-                        <div className="store-urun__isim">Air Jordan 1 Mid</div>
-                        <div className="store-urun__fiyat">145 €</div>
-                      </Link>
-                    </div>
+        
+     
                   </div>
                 </div>
 

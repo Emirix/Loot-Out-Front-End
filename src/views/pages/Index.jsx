@@ -58,7 +58,7 @@ export default class Index extends Component {
     const url = "http://127.0.0.1:8000";
     const j = "/?format=json";
 
-     axios.get(url+"/products/mostsearched"+j).then(res=>{
+     axios.get("/products/mostsearched"+j).then(res=>{
       console.log(res.data)
       this.setState({mostSearchedItems:res.data})
      

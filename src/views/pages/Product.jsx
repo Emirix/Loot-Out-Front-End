@@ -89,9 +89,13 @@ class Product extends React.Component {
     }
   }
 
+ 
+
 
   componentDidMount() {
     HandleSigninPopUp();
+    window.scrollTo(0, 0);
+
     const url = "http://127.0.0.1:8000";
     const j = "/?format=json";
     console.log("yolllaa");
