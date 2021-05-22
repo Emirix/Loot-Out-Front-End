@@ -172,6 +172,37 @@
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+  .filtered-item {
+    font-size: 14px !important;
+    height: 43px !important;
+  }
+
+  .store-urun {
+    margin-right: 0rem !important;
+    margin-top: 0rem !important;
+  }
+  .store-urun__isim {
+    font-size: 12px !important;
+  }
+  .store-urun__fiyat {
+    font-size: 14px !important;
+  }
+
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .store-urunler {
+    grid-gap: 1rem !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #kucu {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .product-available svg {
     width: 30%;
   }
@@ -224,12 +255,68 @@
     top: 8px !important;
     width: 62% !important;
   }
+
+  .see-results-mobile {
+    display: none;
+  }
 }
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .filter-container-tablet {
+    grid-template-columns: 1fr !important;
+    display: block !important;
+  }
+
+  .results-bottom {
+    display: none !important;
+  }
+
+  .tablet-search input {
+    font-size: 14px !important;
+  }
+
+  .ayar-box {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .filtered-item {
+    font-size: 10px !important;
+    height: 40px !important;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+
+  .store-urun {
+    margin-right: 0rem !important;
+    margin-top: 0rem !important;
+  }
+  .store-urun__isim {
+    font-size: 12px !important;
+  }
+  .store-urun__fiyat {
+    font-size: 14px !important;
+  }
+
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .store-urunler {
+    grid-gap: 1rem !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #kucu {
+    width: 98%;
+    margin: 0 auto;
+  }
+
   .product-available svg {
     width: 60%;
   }
@@ -3224,6 +3311,7 @@ a {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
+  color: #252B42;
 }
 
 /***/
@@ -3414,6 +3502,7 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
 
 .filtered {
   display: flex;
+  overflow-x: auto;
 }
 .filtered .filtered-item {
   background: rgba(173, 173, 173, 0.3);
@@ -3421,6 +3510,8 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  text-overflow: ellipsis;
+  white-space: pre;
   margin-right: 1rem;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -3734,6 +3825,7 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
   z-index: 1000000;
   display: grid;
   margin: 0;
+  overflow-y: scroll;
   border-radius: 0 !important;
   border: none;
   grid-template-columns: 1fr 1fr;
@@ -3792,6 +3884,23 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
+}
+
+.tablet-top {
+  display: flex;
+}
+
+.see-results-mobile {
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.kes-lan {
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=Emir.css.map */

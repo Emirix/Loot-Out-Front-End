@@ -4,8 +4,10 @@ import Header from "../../shared/Header";
 import Footer from "../../shared/Footer";
 import Login from "../components/Auth/Login";
 import SignIn from "../components/Auth/SignIn";
-import BigTriangle from "../../assets/img/home-triangle-bg.png";
+import Sidebar from "../../shared/Sidebar";
 import Search from "../../shared/Search";
+
+import BigTriangle from "../../assets/img/home-triangle-bg.png";
 import LogoIkon from '../../assets/img/logo/LogoIkon.svg'
 import aga from "../../assets/svg/atomx.svg"
 import LogoYazi from '../../assets/img/logo/LogoYazi.svg'
@@ -17,7 +19,7 @@ import SellFastService from '../../assets/svg/SellFastService.svg'
 import ServiceGraph from '../../assets/svg/ServiceGraph.svg'
 import ServicePolicy from '../../assets/svg/ServicePolicy.svg'
 import ServiceShipping from '../../assets/svg/ServiceShipping.svg'
-import Sidebar from "../../shared/Sidebar";
+
 import SearchIcon from "../../assets/svg/search-icon.svg";
 import ShoeWithChart from "../../assets/img/shoe-with-chart.png";
 import DownArrow from "../../assets/svg/down-arrow.svg";

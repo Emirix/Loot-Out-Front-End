@@ -184,6 +184,39 @@
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
+    .filtered-item{
+      font-size: 14px !important;
+      height: 43px !important;
+    }
+    .store-urun{
+      margin-right: 0rem !important;
+      margin-top: 0rem !important;
+
+      img{
+       
+      }
+ 
+      &__isim{
+        font-size: 12px !important;
+      }
+ 
+      &__fiyat{
+        font-size: 14px !important;
+      }
+ 
+    }
+    .container-fluid {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+  }
+    .store-urunler{
+      grid-gap: 1rem !important;    grid-template-columns: 1fr 1fr !important;
+    }
+   #kucu{
+     width:95%;
+     margin:0 auto;
+   }
+
     .product-available svg{
       width:30%;
     }
@@ -235,6 +268,9 @@
         width: 62% !important;
     }
 
+    .see-results-mobile{
+      display:none;
+    }
     
   }
   
@@ -244,6 +280,62 @@
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+    .filter-container-tablet{
+      grid-template-columns: 1fr !important;
+      display: block !important;
+      
+    }
+    .results-bottom{
+      display: none !important;
+    }
+    .tablet-search{
+      input{
+        font-size: 14px !important;
+      }
+    }
+    .ayar-box{
+      width:42px !important;
+      height:42px !important;
+    }
+    .filtered-item{
+      font-size: 10px !important;
+     height: 40px !important;
+     margin-bottom: 0.5rem;
+      padding-top: 0.5rem !important;
+      padding-top: 0.5rem !important;
+
+    }
+    .store-urun{
+      margin-right: 0rem !important;
+      margin-top: 0rem !important;
+
+      img{
+       
+      }
+ 
+      &__isim{
+        font-size: 12px !important;
+      }
+ 
+      &__fiyat{
+        font-size: 14px !important;
+      }
+ 
+    }
+    .container-fluid {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+  }
+    .store-urunler{
+      grid-gap: 1rem !important;    grid-template-columns: 1fr 1fr !important;
+    }
+   #kucu{
+     width:98%;
+     margin:0 auto;
+   }
+
+
+
     .product-available svg{
       width:60%;
     }

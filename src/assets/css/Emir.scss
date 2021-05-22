@@ -3119,6 +3119,7 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+    color:#252B42;
   }
 }
 
@@ -3327,13 +3328,16 @@ color:rgba(115, 115, 115, 1);
 
 .filtered{
   display: flex;
+  overflow-x: auto;
+
 
   .filtered-item{
     background: rgba(173, 173, 173, 0.3);
     height: 68px;
     display: flex;
     align-items: center;
-    padding:0 1rem;
+    padding:0 1rem;    text-overflow: ellipsis;
+    white-space: pre;
     margin-right: 1rem;
     font-family: "Roboto",sans-serif;
 font-size: 14px;
@@ -3700,6 +3704,7 @@ color: #737373;
   z-index: 1000000;
   display: grid;
   margin:0;
+  overflow-y:scroll;
   border-radius: 0 !important;
   border:none;
     grid-template-columns: 1fr 1fr;
@@ -3762,4 +3767,20 @@ font-size: 25px;
 font-style: normal;
 font-weight: 700;
 
+}
+.tablet-top{
+  display:flex;
+}
+
+.see-results-mobile{
+  border:1px solid #E8E8E8;
+  border-radius: 5px;
+  margin-top:1rem;
+  padding:1rem 0;
+}
+
+.kes-lan{
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }

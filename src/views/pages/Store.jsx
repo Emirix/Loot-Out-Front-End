@@ -5,12 +5,16 @@ import InputRange from "react-input-range";
 import Recent1 from "../../assets/img/recent-1.png";
 import CheckButton from "../../assets/svg/check-button.svg";
 import Footer from "../../shared/Footer";
+import Login from "../components/Auth/Login";
+import SignIn from "../components/Auth/SignIn";
+import Sidebar from "../../shared/Sidebar";
+import Search from "../../shared/Search";
 
 export default class Store extends React.Component {
   constructor() {
     super();
     this.drop = this.drop.bind(this);
-
+   
     this.state = {
       sliderValue: {
         min: 0,
@@ -85,7 +89,8 @@ export default class Store extends React.Component {
           i
         ].innerText = "+";
       }
-      document.getElementById(item).style.maxHeight = "300px";
+      document.querySelectorAll("#"+item)[0].style.maxHeight = "300px";
+      document.querySelectorAll("#"+item)[1].style.maxHeight = "300px";
       e.currentTarget.innerText = "-";
       e.currentTarget.style.backgroundColor = "rgba(122, 240, 209, 1)";
       e.currentTarget.style.color = "white";
@@ -96,6 +101,17 @@ export default class Store extends React.Component {
     return (
       <div className="store container-fluid">
         <Header />
+        <Sidebar/>
+        <div className="home-sign-in-wrapper">
+            <SignIn/>
+          </div>
+          <div className="home-login-wrapper">
+            <Login />
+          </div>
+
+          <div className="home-search-wrapper">
+            <Search />
+          </div>
 
         <div
           className={
@@ -264,6 +280,15 @@ export default class Store extends React.Component {
             </div>
           </div>
           <div>
+
+          <div className="see-results-mobile d-sm-none">
+            <a class="see-result-button" href="/">See Result (88)</a>
+            <div class="results-cizgi" onClick={() => {
+                this.setState({ isTabletFilterOpen: false });
+                document.body.classList.remove("kes-lan");
+              }}></div>
+            </div>
+
             <div className="size-container">
               <h5>Size</h5>
               <select name="cars" id="cars">
@@ -355,7 +380,7 @@ export default class Store extends React.Component {
           </div>
         </div>
 
-        <div className="store-container p-2 text-dark">
+        <div className="store-container p-2 text-dark" style={{overflow:"none"}}>
           <div className="store-container__top d-none d-xl-block">
             <div className="bread">
               <Link to="/" className="bread__item">
@@ -665,7 +690,9 @@ export default class Store extends React.Component {
                       onClick={() => {
                         this.setState({
                           isFilterOpen: !this.state.isFilterOpen,
+
                         });
+                        document.body.classList.add("kes-lan")
                       }}
                       className="ayar-box"
                     >
@@ -1112,3 +1139,4 @@ export default class Store extends React.Component {
     );
   }
 }
+
