@@ -13,14 +13,18 @@ import Thankyou from "./views/pages/Thankyou";
 import BigServiceCircleSol from "./assets/img/atom-sag.png"
 import SellerGuide from "./views/pages/Sellerguide";
 import SellerAssets from "./views/pages/Sellerassets";
+import MyOrders from "./views/pages/MyOrders";
 import Index from "./views/pages/Index";
+import Blog from "./views/pages/Blog";
 
 function App() {
   return (
     <div className="App ">
       
       <span className="AppFrontWrapper"></span>
+
       <Router>
+        <Header/>
         <Switch>
 
           <Route path="/" exact>
@@ -35,6 +39,11 @@ function App() {
           <Route path="/store" exact>
             <Magaza />
           </Route>
+
+          <Route path="/my-orders" exact>
+            <MyOrders/>
+          </Route>
+
 
           <Route path="/checkout" exact>
             <CheckOut />

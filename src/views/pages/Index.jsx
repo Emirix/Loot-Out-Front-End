@@ -79,7 +79,7 @@ export default class Index extends Component {
   handleArama() {}
   render() {
     return (
-      <div className="container-fluid index">
+      <div className="container-fluid index overflow-hidden">
         <Header />
         <Sidebar/>
         <div className="home-sign-in-wrapper">

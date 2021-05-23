@@ -27,7 +27,9 @@ export default class Store extends React.Component {
       tabletSorterDropdown: false,
       isTabletFilterOpen: false,
       urunler:null,
-      searchString:""
+      searchString:"",
+      anim1:"",
+      yanMenu:null
     };
   }
 
@@ -35,12 +37,22 @@ export default class Store extends React.Component {
 
   componentDidMount() {
 
+    axios.get("/products/brands-model?format=json").then(res=>{
+      console.log(res.data);
+      this.setState({yanMenu:res.data})
+    })
+
     axios.get("/products/shoes/0/?format=json").then(res=>{
       console.log(res.data)
       this.setState({urunler:res.data})
     })
 
 
+
+  }
+
+  componentDidUpdate(){
+    
     for (
       var i = 0;
       i < document.querySelectorAll(".filter-dropdown__icerik .icerik").length;
@@ -62,11 +74,7 @@ export default class Store extends React.Component {
 
   drop(e, item) {
     if (document.getElementById(item).style.maxHeight == "300px") {
-      for (
-        var i = 0;
-        i < document.getElementsByClassName("filter-dropdown__icerik").length;
-        i++
-      ) {
+      for (var i = 0;i < document.getElementsByClassName("filter-dropdown__icerik").length;i++) {
         document.getElementsByClassName("filter-dropdown__icerik")[
           i
         ].style.maxHeight = "0px";
@@ -82,10 +90,10 @@ export default class Store extends React.Component {
         i < document.getElementsByClassName("filter-dropdown__icerik").length;
         i++
       ) {
-        document.getElementsByClassName("filter-dropdown__icerik")[
-          i
-        ].style.maxHeight = "0px";
+        document.getElementsByClassName("filter-dropdown__icerik")[i].style.maxHeight = "0px";
       }
+
+      document.getElementById(item).style.maxHeight="300px"
 
       for (
         var i = 0;
@@ -105,8 +113,11 @@ export default class Store extends React.Component {
           i
         ].innerText = "+";
       }
-      document.querySelectorAll("#"+item)[0].style.maxHeight = "300px";
-      document.querySelectorAll("#"+item)[1].style.maxHeight = "300px";
+
+
+     
+
+
       e.currentTarget.innerText = "-";
       e.currentTarget.style.backgroundColor = "rgba(122, 240, 209, 1)";
       e.currentTarget.style.color = "white";
@@ -129,6 +140,7 @@ export default class Store extends React.Component {
             <Search />
           </div>
 
+        {/** TELEFONN */}
         <div
           className={
             this.state.isTabletFilterOpen
@@ -138,169 +150,57 @@ export default class Store extends React.Component {
         >
           <div className="filter-title">Filter</div>
           <div className="kafam-sisti">
-            <div className="filter-dropdown">
-              <div className="filter-dropdown__top">
-                <h5 className="title">Air Jordan 1</h5>
-                <div
-                  className="button"
-                  onClick={(e) => {
-                    this.drop(e, "i-1");
-                  }}
-                >
-                  +
-                </div>
-              </div>
 
-              <div className="filter-dropdown__icerik" id="i-1">
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 High OG <div></div>
-                  </h5>
-                </div>
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 Mid <div></div>
-                  </h5>
-                </div>
+          {this.state.yanMenu == null ? <div className="e-spinner">
+                    <ESpinner color="#7af0d1" width={8} size={50} />
 
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 Low <div></div>
-                  </h5>
-                </div>
+                    </div> : this.state.yanMenu.map(val=>{
+                      return(
+                <div className="filter-dropdown">
+                  <div className="filter-dropdown__top">
+                    <h5 className="title">{val.name}</h5>
+                    <div
+                      className="button"
+                      onClick={(e) => {
+                        this.drop(e, `xi-${val.id}`);
+                      }}
+                    >
+                      +
+                    </div>
+                  </div>
 
-                <div className="icerik">
-                  <h5>
-                    Cosmetics <div></div>
-                  </h5>
-                </div>
+                  <div className="filter-dropdown__icerik" id={"xi-"+val.id}>
 
-                <div className="icerik">
-                  <h5>
-                    Hats <div></div>
-                  </h5>
-                </div>
+                    {val.models.map(v=>{
+                      return(
+                        <div className="icerik" key={v.id}>
+                        <h5>
+                          {v.name} <div></div>
+                        </h5>
+                      </div>
+  
+                      )
+                    })}
 
-                <div className="icerik">
-                  <h5>
-                    Jewelyr <div></div>
-                  </h5>
-                </div>
 
-                <div className="bottomx"></div>
-              </div>
-            </div>
-            <div className="filter-dropdown">
-              <div className="filter-dropdown__top">
-                <h5 className="title">Air Jordan</h5>
-                <div
-                  className="button"
-                  onClick={(e) => {
-                    this.drop(e, "i-3");
-                  }}
-                >
-                  +
-                </div>
-              </div>
 
-              <div className="filter-dropdown__icerik" id="i-3">
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 High OG <div></div>
-                  </h5>
+                    <div className="bottomx"></div>
+                  </div>
                 </div>
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 Mid <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 Low <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Cosmetics <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Hats <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Jewelyr <div></div>
-                  </h5>
-                </div>
-
-                <div className="bottomx"></div>
-              </div>
-            </div>
-            <div className="filter-dropdown">
-              <div className="filter-dropdown__top">
-                <h5 className="title">Yeezy</h5>
-                <div
-                  className="button"
-                  onClick={(e) => {
-                    this.drop(e, "i-2");
-                  }}
-                >
-                  +
-                </div>
-              </div>
-
-              <div className="filter-dropdown__icerik" id="i-2">
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 High OG <div></div>
-                  </h5>
-                </div>
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 Mid <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Air Jordan 1 Low <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Cosmetics <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Hats <div></div>
-                  </h5>
-                </div>
-
-                <div className="icerik">
-                  <h5>
-                    Jewelyr <div></div>
-                  </h5>
-                </div>
-
-                <div className="bottomx"></div>
-              </div>
-            </div>
-          </div>
+              )
+            }) }
+           
+           </div>
           <div>
 
           <div className="see-results-mobile d-sm-none">
-            <a class="see-result-button" href="/">See Result (88)</a>
+            <Link className="see-result-button" onClick={e=>{
+                              this.setState({ isTabletFilterOpen: false });
+
+            }}>See Result (88)</Link>
             <div class="results-cizgi" onClick={() => {
-                this.setState({ isTabletFilterOpen: false });
+                 this.setState({ isTabletFilterOpen: false });
+
                 document.body.classList.remove("kes-lan");
               }}></div>
             </div>
@@ -414,11 +314,13 @@ export default class Store extends React.Component {
             <div
               className={
                 this.state.isFilterOpen
-                  ? "col-2 d-none d-xl-block"
+                  ? "col-3 d-none d-xl-block"
                   : "d-none  "
               }
             >
-              <div className="filter-container ">
+
+              <div className="calis-lan-artik">
+   <div className="filter-container ">
                 <div className="filter-container__search">
                   <svg
                     width="20"
@@ -444,162 +346,45 @@ export default class Store extends React.Component {
                   }} />
                 </div>
 
+                  {this.state.yanMenu == null ? <div className="e-spinner">
+                    <ESpinner color="#7af0d1" width={8} size={50} />
+
+                    </div> : this.state.yanMenu.map(val=>{
+                      return(
                 <div className="filter-dropdown">
                   <div className="filter-dropdown__top">
-                    <h5 className="title">Air Jordan 1</h5>
+                    <h5 className="title">{val.name}</h5>
                     <div
                       className="button"
                       onClick={(e) => {
-                        this.drop(e, "i-1");
+                        this.drop(e, `i-${val.id}`);
                       }}
                     >
                       +
                     </div>
                   </div>
 
-                  <div className="filter-dropdown__icerik" id="i-1">
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 High OG <div></div>
-                      </h5>
-                    </div>
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 Mid <div></div>
-                      </h5>
-                    </div>
+                  <div className="filter-dropdown__icerik" id={"i-"+val.id}>
 
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 Low <div></div>
-                      </h5>
-                    </div>
+                    {val.models.map(v=>{
+                      return(
+                        <div className="icerik" key={v.id}>
+                        <h5>
+                          {v.name} <div></div>
+                        </h5>
+                      </div>
+  
+                      )
+                    })}
 
-                    <div className="icerik">
-                      <h5>
-                        Cosmetics <div></div>
-                      </h5>
-                    </div>
 
-                    <div className="icerik">
-                      <h5>
-                        Hats <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Jewelyr <div></div>
-                      </h5>
-                    </div>
 
                     <div className="bottomx"></div>
                   </div>
                 </div>
-                <div className="filter-dropdown">
-                  <div className="filter-dropdown__top">
-                    <h5 className="title">Air Jordan</h5>
-                    <div
-                      className="button"
-                      onClick={(e) => {
-                        this.drop(e, "i-3");
-                      }}
-                    >
-                      +
-                    </div>
-                  </div>
-
-                  <div className="filter-dropdown__icerik" id="i-3">
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 High OG <div></div>
-                      </h5>
-                    </div>
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 Mid <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 Low <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Cosmetics <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Hats <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Jewelyr <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="bottomx"></div>
-                  </div>
-                </div>
-                <div className="filter-dropdown">
-                  <div className="filter-dropdown__top">
-                    <h5 className="title">Yeezy</h5>
-                    <div
-                      className="button"
-                      onClick={(e) => {
-                        this.drop(e, "i-2");
-                      }}
-                    >
-                      +
-                    </div>
-                  </div>
-
-                  <div className="filter-dropdown__icerik" id="i-2">
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 High OG <div></div>
-                      </h5>
-                    </div>
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 Mid <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Air Jordan 1 Low <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Cosmetics <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Hats <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="icerik">
-                      <h5>
-                        Jewelyr <div></div>
-                      </h5>
-                    </div>
-
-                    <div className="bottomx"></div>
-                  </div>
-                </div>
+              )
+            }) }
+              
               </div>
 
               <div className="size-container">
@@ -678,13 +463,15 @@ export default class Store extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
+        
+              </div>
+               </div>
 
             <div
               className={
                 this.state.isFilterOpen
-                  ? "col-xl-10 col-12"
-                  : "col-12 filter-close"
+                  ? "col-xl-9 col-12 calis-artik "
+                  : "col-12 filter-close calis-artik"
               }
             >
               <div className="store-products">

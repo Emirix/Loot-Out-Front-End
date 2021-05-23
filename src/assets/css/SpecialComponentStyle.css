@@ -277,6 +277,9 @@ margin-top: 8px;
 .sidebar-body nav li + li {
   margin-top: 2rem;
 }
+.sidebar-body nav li a{
+  color:white;
+}
 .sidebar-body .logout-button {
   width: 108px;
   background: #c91a1a;

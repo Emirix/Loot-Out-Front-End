@@ -33,7 +33,7 @@ function Header() {
             </li>
           )}
           <li>
-            <Link to="/blog">Blog</Link>
+            <a href="">Blog</a>
           </li>
           <li>
             <Link to="/about-us">About Us</Link>

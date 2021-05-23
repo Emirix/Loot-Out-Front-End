@@ -80,6 +80,34 @@
   */
   
   @media (min-width: 768px) and (max-width: 1024px) {
+    .person-icon{
+      width:67px !important;
+      height:67px !important;
+
+      img{
+        position: relative;
+        top: 11px !important;
+        width: 45px !important;
+        height: 57px !important; 
+      }
+    }
+
+    
+    .sidebar-top{
+      .left-side{
+        width:214px !important;
+    
+      }
+    }
+    .guide-box{
+      padding:50px 10px !important;
+      height: auto !important;
+    }
+
+    .guide img{
+      width:77px;
+      height:77px;
+    }
 
     .store-urunler{
       grid-gap: 2rem !important;
@@ -184,6 +212,18 @@
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
+    .add-product-form-fields > *:nth-child(5) {
+      width: 90%;
+      font-size: 16px;
+  }
+    .guide-box{
+      padding:50px 10px !important;
+      height: auto !important;
+    }
+    .guide img{
+      width:45px;
+      height:45px;
+    }
     .filtered-item{
       font-size: 14px !important;
       height: 43px !important;
@@ -280,10 +320,32 @@
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .profile-con{
+      margin-left: 0rem !important;
+    }
+
+    .profile-dropdown{
+      left:0 !important;
+    }
+
+    .add-product-form-fields > *:nth-child(5) {
+      width: 90%;
+      font-size: 16px;
+  }
+    .guide-box{
+      padding:50px 10px !important;
+      height: auto !important;
+    }
     .filter-container-tablet{
       grid-template-columns: 1fr !important;
       display: block !important;
       
+    }
+
+    .guide img{
+      width:45px;
+      height:45px;
     }
     .results-bottom{
       display: none !important;
@@ -474,6 +536,12 @@
   }
 }
 
+@media screen and (max-width:1200px) {
+    .row{
+      margin-right:0 !important ;
+      
+    }
+}
 
 
 @media screen and (min-width:1025px) {
