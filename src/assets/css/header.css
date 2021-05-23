@@ -22,6 +22,10 @@
   color: #7AF0D1;
 }
 
+.header nav li:hover{
+  color: #7AF0D1;
+}
+
 
 .header > img {
   width: 182px;

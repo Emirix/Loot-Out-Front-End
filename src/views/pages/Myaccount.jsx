@@ -25,8 +25,7 @@ export default class Myaccount extends React.Component {
     return (
       <div className="container-fluid">
         <img src={Atom} className="atom-my-accout d-none d-xl-block" />
-        <Header />
-        <Sidebar />
+
         <div className="container text-white mt-4 user-info-container">
           <h1 className="title-slash cek-sola">
             USER INFORMATION <img src={Slash} className="d-none d-xl-block" />
@@ -209,7 +208,7 @@ export default class Myaccount extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
+       
       </div>
     );
   }

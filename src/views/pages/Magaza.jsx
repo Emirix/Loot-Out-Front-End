@@ -28,7 +28,7 @@ function Magaza() {
     }, [])
     return (
         <div className="Magaza">
-               <Sidebar/>
+       
             <div className="home-sign-in-wrapper">
                 <SignIn/>
             </div>
@@ -161,8 +161,6 @@ function Magaza() {
             
             </div>
 
-
-            <Footer/>
         </div>
     )
 }

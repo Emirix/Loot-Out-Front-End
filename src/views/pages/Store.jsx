@@ -127,8 +127,7 @@ export default class Store extends React.Component {
   render() {
     return (
       <div className="store container-fluid">
-        <Header />
-        <Sidebar/>
+
         <div className="home-sign-in-wrapper">
             <SignIn/>
           </div>
@@ -853,7 +852,7 @@ export default class Store extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
+      
       </div>
     );
   }

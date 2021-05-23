@@ -48,7 +48,7 @@ datasets: [
   render() {
     return (
       <div className="container-fluid">
-        <Header />
+       
 
         <div className="products-on-sale">
           {/** TITLE MOBILE */}
@@ -468,7 +468,7 @@ datasets: [
         OFFER SYSTEM WILL BE ANNOUNCED...
         </p>
       
-      <Footer/>
+  
       </div>
     );
   }

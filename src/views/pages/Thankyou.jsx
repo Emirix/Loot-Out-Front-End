@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 export default function Thankyou(){
     return(
         <div className="container-fluid">
-            <Header/>
+         
             <div className="container thankyou-container ">
                 <img src={Check}/>
                 <h1>ORDER COMPLETED</h1>
@@ -14,7 +14,7 @@ export default function Thankyou(){
 Stay drıpped, stay hype.</p>
             <Link to="/">HOMEPAGE</Link>
             </div>
-            <Footer/>
+       
         </div>
     )
 }

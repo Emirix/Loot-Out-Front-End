@@ -116,7 +116,7 @@ class Product extends React.Component {
   render() {
     return (
       <div className="Product">
-        <Sidebar />
+       
         <div className="home-sign-in-wrapper">
           <SignIn />
         </div>
@@ -532,7 +532,7 @@ class Product extends React.Component {
             
           </div>
         </div>
-        <Footer />
+     
       </div>
     );
   }

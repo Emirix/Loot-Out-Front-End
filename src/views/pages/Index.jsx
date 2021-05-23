@@ -80,8 +80,7 @@ export default class Index extends Component {
   render() {
     return (
       <div className="container-fluid index overflow-hidden">
-        <Header />
-        <Sidebar/>
+
         <div className="home-sign-in-wrapper">
             <SignIn/>
           </div>
@@ -1046,7 +1045,7 @@ export default class Index extends Component {
           </div>
         </div>
 
-        <Footer />
+     
       </div>
     );
   }

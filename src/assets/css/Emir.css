@@ -184,6 +184,11 @@
     height: 60px !important;
     width: 180px !important;
   }
+
+  .sell-btn-side {
+    width: 218px !important;
+    height: 60px !important;
+  }
 }
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -197,6 +202,15 @@
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+  .login-register-popup__container {
+    width: 98% !important;
+  }
+
+  .sell-btn-side {
+    width: 103px !important;
+    height: 34px !important;
+  }
+
   .add-product-form-fields > *:nth-child(5) {
     width: 90%;
     font-size: 16px;
@@ -305,6 +319,15 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .login-register-popup__container {
+    width: 98% !important;
+  }
+
+  .sell-btn-side {
+    width: 103px !important;
+    height: 35px !important;
+  }
+
   .profile-con {
     margin-left: 0rem !important;
   }
@@ -517,12 +540,28 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .sell-btn-side {
+    width: 218px !important;
+    height: 60px !important;
+  }
+
   .kam {
     display: block;
   }
 
   .topbarmobile {
     display: none;
+  }
+
+  .person-icon {
+    width: 67px !important;
+    height: 67px !important;
+  }
+  .person-icon img {
+    position: relative;
+    top: 11px !important;
+    width: 45px !important;
+    height: 57px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -546,6 +585,25 @@
   .products-on-sale .products-on-sale-title-desktop {
     top: -37px !important;
     width: 90% !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .login-register-popup__container {
+    width: 100% !important;
+    top: 0 !important;
+  }
+
+  .login-register-popup {
+    align-items: unset !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .login-register-popup {
+    align-items: unset !important;
+  }
+  .login-register-popup__container {
+    top: 20px;
+    overflow-y: auto;
   }
 }
 header .header-list li a {
@@ -928,14 +986,15 @@ a.mavi {
 }
 
 .sell-button {
-  color: #002a3f;
-  background-color: #7af0d1;
+  color: #002a3f !important;
+  background-color: #7af0d1 !important;
   font-family: Roboto !important;
   font-size: 22px !important;
   font-style: normal;
   font-weight: 500 !important;
   line-height: 26px !important;
   letter-spacing: 0.06em !important;
+  border: none !important;
 }
 
 .person-icon {
@@ -4061,6 +4120,132 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
 }
 .profile-con svg {
   margin-left: 1rem;
+}
+
+.sell-btn-side {
+  border-radius: 9in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-register-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.login-register-popup__container {
+  background: white;
+  width: 840px;
+  padding: 2rem;
+  padding-top: 0 !important;
+  box-sizing: border-box;
+  position: relative;
+  animation-name: popup;
+  animation-duration: 0.3s;
+}
+.login-register-popup__container svg {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  top: 20px;
+}
+.login-register-popup__container h4 {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 2rem;
+  font-size: 1.5em;
+}
+.login-register-popup__container .kisa-cizgi {
+  background: #7af0d1;
+  width: 10%;
+  height: 4px;
+  margin: 1.2rem 0;
+}
+.login-register-popup__container p {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #8b8b8b;
+  font-size: 0.9375em;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 1rem;
+}
+.login-register-popup__container form label {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin-bottom: 12px;
+  color: #242424;
+  font-size: 0.9375em;
+  font-weight: 700;
+}
+.login-register-popup__container form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  display: block;
+  height: 46px;
+  transition: 0.2s;
+  font-size: 0.75em;
+  font-weight: 900;
+  text-align: center;
+  background: #7af0d1;
+}
+.login-register-popup__container form button:hover {
+  filter: brightness(0.8);
+}
+.login-register-popup__container form input {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 14px;
+  color: #8b8b8b;
+  font-size: 0.875em;
+  margin-bottom: 1.3rem;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=Emir.css.map */

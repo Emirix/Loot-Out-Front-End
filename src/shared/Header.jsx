@@ -12,8 +12,8 @@ import dLogOut from "../assets/svg/dropdown/logout.svg";
 import "../assets/css/header.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-function Header() {
-  const [isLoggedIn, setIsloggedIn] = useState(true);
+function Header({logged,openPopup}) {
+
   const [isDropdown, setIsDropDown] = useState(false);
   {/**style={isLoggedIn && window.innerWidth > 768  ? {paddingRight:90}: {c:"none"}} */}
   return (
@@ -23,33 +23,48 @@ function Header() {
       </Link>
       <div className="right-side">
         <nav className="header-list">
-          {isLoggedIn ? (
-            <li>
+          {logged ? (
+            <>
+                        <li>
               <Link to="/store">Shop</Link>
             </li>
+            
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            
+            <li> 
+              <Link to="/about-us">About Us</Link>
+            </li> 
+
+            <li> 
+              <Link to="/customer-care">Customer Care</Link>
+            </li> 
+            </>
           ) : (
+            <>
             <li>
               <Link to="/store">Sneakers</Link>
             </li>
-          )}
-          <li>
-            <a href="">Blog</a>
-          </li>
-          <li>
-            <Link to="/about-us">About Us</Link>
-          </li>
-          {isLoggedIn ? (
+
             <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+
+            <li >
               <Link to="/about-us">About Us</Link>
             </li>
-          ) : (
-            <></>
+
+            <li onClick={openPopup} className="login-option">Sign In</li>
+            </>
+
           )}
-          <li className="login-option">Sign In</li>
+
+         
         </nav>
 
         <img
-          src={isLoggedIn ? SearchIconBlue : SearchIcon }
+          src={logged ? SearchIconBlue : SearchIcon }
           alt="Search Icon"
           className="search-header-icon"
         />
@@ -62,14 +77,14 @@ function Header() {
           }}
         />
         {
-            isLoggedIn ? 
+            logged ? 
             <button className="sell-button">SELL</button>
             :
-            <button className="sign-in-button">Sign Up</button>
+            <button className="sign-in-button" onClick={openPopup}>Sign Up</button>
         }
 
         {
-            isLoggedIn &&  window.innerWidth > 768  ?
+           logged &&  window.innerWidth > 768  ?
             <div className="profile-con">
             
                 <div className="person-icon">

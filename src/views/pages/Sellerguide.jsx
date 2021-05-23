@@ -12,8 +12,7 @@ import {Link} from "react-router-dom"
 export default function Sellerguide() {
     return (
         <div className="container-fluid ">
-            <Header/>
-      <Sidebar/>
+
             <div className="container text-center">
                 <h1 className="title-slash text-white d-flex justify-content-center mt-5 ">SELLER GUIDE</h1>
                 <div className="guide-box">
@@ -47,7 +46,7 @@ export default function Sellerguide() {
                 <Link to="/" >UNDERSTAND!</Link>
 
             </div>
-            <Footer/>
+        
         </div>
     )
 }

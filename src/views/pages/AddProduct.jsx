@@ -45,21 +45,12 @@ class AddProduct extends Component {
   render() {
     return (
       <div className="AddProduct">
-        <Sidebar />
-        <div className="home-sign-in-wrapper">
-          <SignIn />
-        </div>
-        <div className="home-login-wrapper">
-          <Login />
-        </div>
-
-        <div className="home-search-wrapper">
-          <Search />
-        </div>
+        
+ 
 
         <AddProductDonePopUp />
 
-        <Header />
+     
        
         <div className="add-product-body mt-5">
           <div className="main-heading">
@@ -629,7 +620,7 @@ class AddProduct extends Component {
           </form>
         </div>
        
-        <Footer />
+  
       </div>
     );
   }

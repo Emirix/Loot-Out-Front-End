@@ -10,7 +10,7 @@ export default class MyOrders extends React.Component {
   render() {
     return (
       <div className="my-orders container-fluid">
-        <Header />
+   
         <div className="p-4" style={{background:"#ededed"}}>
           <div className="my-orders-title">
             <img src={MyOrdersSVG} alt="" />

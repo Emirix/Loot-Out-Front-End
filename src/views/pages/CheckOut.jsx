@@ -71,7 +71,7 @@ export default class CheckOut extends Component {
   render() {
     return (
       <div className="checkout-container">
-       <div className="container"> <Header /></div>
+       <div className="container"></div>
         <div className="container-fluid bg-white">
           <div className="container pt-4">
             <div className="d-flex row zaa">
@@ -301,7 +301,7 @@ We are using the most advanced security to provide you the best experience ever.
             </div>
           </div>
         </div>
-        <Footer />
+   
       </div>
     );
   }

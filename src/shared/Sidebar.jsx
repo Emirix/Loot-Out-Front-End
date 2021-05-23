@@ -13,9 +13,9 @@ import dMyOrders from "../assets/svg/dropdown/my-order.svg";
 import dLogOut from "../assets/svg/dropdown/logout.svg";
 import Search from "./Search"
 
-function Sidebar() {
+function Sidebar({logged,openPopup}) {
 
-    const [isLoggedIn, setLoggedIn] = useState(true)
+   
     const [isDropdown, setIsDropDown] = useState(false)
 
     return (
@@ -33,12 +33,12 @@ function Sidebar() {
                 }}/>
                 </div>
             </div>
-            <div className="sidebar-body">
-            <div className="d-flex" style={{width:"100%"}}>
+            <div className="sidebar-body" style={logged ? {justifyContent:"space-between" } : {justifyContent:"normal"}}>
+            <div className="d-flex align-items-center" style={{width:"100%"}}>
 
             
             {
-            isLoggedIn ?
+            logged ?
             <div className="profile-con"  onClick={()=>{
                 setIsDropDown(!isDropdown)
             }}>
@@ -47,9 +47,9 @@ function Sidebar() {
                     <img src={Person} 
 />
                         
-
+    
                 </div>
-
+     
                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24.0466 2.08561L13 14.0427L2.04675 2" stroke="#7AF0D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -62,15 +62,17 @@ function Sidebar() {
                         <li><img src={dLogOut}/><Link to="">Logout</Link></li>
                     </ul>
                 </div>
+
+          
             </div>
             :
             <></>
         }
         
                 <div className="auth-buttons ms-auto">
-                    {isLoggedIn ? "": <>
-                    <button className="sign-in-button">sign up</button>
-                <button className="login-option ">sign in</button></>}
+                    {logged ? <Link to="/be-seller" className="sell-button ms-auto sell-btn-side">SELL</Link>: <>
+                    <button className="sign-in-button" onClick={openPopup} >sign up</button>
+                    <button className="login-option " onClick={openPopup}>sign in</button></>}
               
                 </div>
 
@@ -93,7 +95,7 @@ function Sidebar() {
                 </nav>
                 
                 {
-                    isLoggedIn ?   <button className="logout-button">log out</button> : ""
+                    logged ?   <button className="logout-button">log out</button> : ""
                 }
                
             </div>

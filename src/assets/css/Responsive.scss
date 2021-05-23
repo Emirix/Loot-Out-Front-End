@@ -192,6 +192,9 @@
     .product-available > .buy-now-button-wrapper button{
       height: 60px !important;
       width: 180px !important;
+    }   .sell-btn-side{
+      width:218px !important;
+      height:60px !important;
     }
   }
   
@@ -212,6 +215,15 @@
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
+    .login-register-popup__container{
+      width:98% !important;
+    }
+
+    .sell-btn-side{
+      width:103px !important;
+      height:34px !important;
+    }
+
     .add-product-form-fields > *:nth-child(5) {
       width: 90%;
       font-size: 16px;
@@ -320,6 +332,13 @@
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+    .login-register-popup__container{
+      width:98% !important;
+    }
+    .sell-btn-side{
+      width:103px !important;
+      height:35px !important;
+    }
 
     .profile-con{
       margin-left: 0rem !important;
@@ -583,6 +602,10 @@
 }
 
 @media screen and (min-width:1024px) {
+  .sell-btn-side{
+    width:218px !important;
+    height:60px !important;
+  }
     .kam{
       display: block;
     }
@@ -590,6 +613,19 @@
     .topbarmobile{
       display: none;
     }
+
+    .person-icon{
+      width:67px !important;
+      height:67px !important;
+
+      img{
+        position: relative;
+        top: 11px !important;
+        width: 45px !important;
+        height: 57px !important; 
+      }
+    }
+
 }
 
 @media screen and (max-width:1024px) {
@@ -615,5 +651,28 @@
     top:-37px !important;
     width: 90% !important;
 
+  }
+}
+
+@media screen and (max-width:950px){
+  .login-register-popup__container{
+    width:100% !important;
+    top:0 !important;
+  }
+
+  .login-register-popup{
+    align-items: unset !important;
+  }
+}
+
+@media screen and (max-width:992px){
+
+  .login-register-popup{
+    align-items: unset !important;
+
+    &__container{
+      top:20px;
+      overflow-y: auto;
+    }
   }
 }
