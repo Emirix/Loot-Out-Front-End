@@ -19,7 +19,9 @@ function Sidebar({logged,openPopup}) {
     const [isDropdown, setIsDropDown] = useState(false)
 
     return (
-        <div className="Sidebar">        
+        <div className="Sidebar">
+            <div className="sidebar-noise"></div>
+            <div className="sidebar-bg-logo"></div>        
             <div className="sidebar-top">
                 <div className="left-side">
                     <Link to="/">
@@ -34,7 +36,7 @@ function Sidebar({logged,openPopup}) {
                 </div>
             </div>
             <div className="sidebar-body" style={logged ? {justifyContent:"space-between" } : {justifyContent:"normal"}}>
-            <div className="d-flex align-items-center" style={{width:"100%"}}>
+            <div className="d-flex align-items-center " style={{width:"100%"}}>
 
             
             {
@@ -77,7 +79,7 @@ function Sidebar({logged,openPopup}) {
                 </div>
 
                 </div>
-                <nav>
+                <nav style={logged ? {} : {marginTop:"3rem"}}>
                     <li>
                     <Link to="/store">
                         Store

@@ -80,6 +80,9 @@
   */
   
   @media (min-width: 768px) and (max-width: 1024px) {
+
+
+
     .person-icon{
       width:67px !important;
       height:67px !important;
@@ -219,6 +222,8 @@
       width:98% !important;
     }
 
+
+
     .sell-btn-side{
       width:103px !important;
       height:34px !important;
@@ -332,6 +337,12 @@
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+    .on-sale-item .mobile-fer-fiyat input{
+      width:70% !important;
+    }
+    .Sidebar{
+      background-size: 74% !important;
+    }
     .login-register-popup__container{
       width:98% !important;
     }

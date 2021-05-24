@@ -12,6 +12,7 @@ export class Sellerassets extends Component {
   constructor() {
     super();
 
+  
     this.state = {
       pie: {
         labels: ["January", "February", "March", "April"],
@@ -166,10 +167,11 @@ datasets: [
 
           <div className="products-on-sale__middle">
             <div className="on-sale-item-wrapper">
-              <OnSaleItem />
-              <OnSaleItem />
-              <OnSaleItem />
-            </div>
+              <OnSaleItem name="Air Jordan M1" price={2000} tarih="28 march" />
+              <OnSaleItem name="Yeezy" price={650} tarih="29 march" />
+              <OnSaleItem name="Zoom M5" price={700} tarih="10 march" />
+
+            </div> 
           </div>
 
           <svg viewBox="0 0 1627 72" fill="none" xmlns="http://www.w3.org/2000/svg">

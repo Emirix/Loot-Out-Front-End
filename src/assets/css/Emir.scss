@@ -1,5 +1,5 @@
 @import "Responsive.scss";
-@import "theme.scss";
+
 
 $primary: #7af0d1;
 
@@ -3485,7 +3485,7 @@ div.filter-price-container
   .store-urun {
   }
 }
-
+/*
 .pagination {
   display: flex;
   align-items: center;
@@ -3562,7 +3562,7 @@ div.filter-price-container
     }
   }
 }
-
+*/
 .Footer {
   padding-top: 3rem;
 }
@@ -3999,3 +3999,265 @@ div.filter-price-container
     transform:scale(1);
   }
 }
+
+
+.pagination{
+  display:flex;
+  justify-content:center;
+  margin-top:1rem;
+  margin-bottom:3rem; 
+
+  &__box.active,&__box:hover{
+    background:$primary;
+    color:white;
+    cursor:pointer;
+    user-select: none !important;
+    border-color:$primary;
+  }
+
+  &__box{
+    transition:.2s;
+    background:white;
+    border:1px solid #bbbbbb;
+    font-family: "Roboto",sans-serif;
+     display:flex;
+     align-items: center;
+     justify-content:center;
+     border-radius:8px;
+     margin-right:8px;
+     font-size:16px;
+     box-sizing: border-box;
+     height:45px;
+     width:45px;
+
+     &:last-child{
+       margin-right:none;
+     }
+    
+    
+  }
+}
+
+.calis-lan-artik{
+  position: sticky;
+  top: 0;
+}
+
+
+.sidebar-noise{
+  position:absolute;
+  background-image: url(../img/noise-real.png);
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-3;
+}
+
+.sidebar-bg-logo{
+  background-image: url(../svg/SideBarBackground.svg);
+  background-position: center;
+  background-size: contain;
+  width:50%;
+  height:500px;;
+  position:absolute;
+  left:50%;
+  top:50%;
+  background-repeat:no-repeat;
+  transform:translate(-50%,-70%);
+}
+
+.kapatma{
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+
+.home-hero{
+  .button-wrapper{
+    button{
+      transition:.2s;
+    }
+    a:hover button{
+      background:$primary;
+      color:white;
+      box-shadow: 0px 2px 2px rgba($primary,0.2);
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.down-arrrow-wrapper{
+  img{transition:.2s}
+  img:hover{
+    transform:translateY(5px);
+  }
+}
+
+.navigation-shoe-wrapper{
+  a{
+    transition:.1s;
+    &::after{
+      transition:.2s;
+
+    }
+
+    &:hover {
+      margin-left:10px;
+      &::after{
+        margin-left:30px;
+      }
+    }
+  }
+}
+
+.slider-arrow {
+  div{
+    transition:.2s;
+  }
+  div:hover{
+    transform:scale(1.1);
+  }
+
+  div:active{
+    transform:scale(0.9);
+  }
+}
+button.sign-in-button{
+  transition:.1s;
+}
+button.sign-in-button:hover {
+  background: $primary;
+  color:white;
+  
+}
+
+ div.products-on-sale > svg:nth-child(7){
+   vertical-align:top !important;
+ }
+
+ .on-sale-item{
+   input{
+    background: transparent;
+    border: 1px solid #7af0d1;
+    outline: none;
+    border-radius: 9in;
+    box-sizing: border-box;
+    padding: 0px 1rem;
+    width: 54%;
+    font-size:15px;
+    color:white;
+    font-family:"Roboto",sans-serif;
+
+    &::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+      appearance: none;
+    }
+   }
+
+   .fiyat input{
+     width:54%;
+     height:50px;
+
+   }
+   .mobile-fer-fiyat input{
+     width:30%;
+     height:30px;
+
+   }
+ }
+
+ .confirm-popup{
+   background:rgba(#000,0.5);
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   z-index:300000000;
+  display:flex;
+  justify-content:center;
+  animation-name:confirm_popup2;
+  animation-duration: .4s;
+
+  &__container{
+    width:30%;
+    background:white;
+    height:200px;
+    padding:1rem;
+    margin-top:100px;
+    border-radius:5px;
+    animation-name:confirm_popup;
+    animation-duration: .4s;
+
+    h4{color:black;
+      font-family:"Roboto",sans-serif;
+      font-weight:500;
+      text-align:center;
+    }
+
+    p{
+      text-align:center;
+      color:#3f3f3f;
+    }
+
+    button{
+      width:30%;
+      border-radius:4px;
+      outline:none;
+      transition:.1s;
+      padding:0.5rem 0;
+      font-weight:500;
+      font-family:"Roboto",sans-serif;
+      font-size: 1.2rem;
+
+    }
+
+    button:nth-child(1){
+      border:1px solid $primary;
+      background:rgba($primary,0.1);
+      color:$primary;
+
+      &:hover{
+        background:$primary;
+        color:white;
+      }
+
+    }
+
+    button:nth-child(2){
+      border:1px solid #E5351D;
+      color:#E5351D;
+      margin-left:1rem;
+      background:transparent;
+      &:hover{
+        background:#e5341d9f;
+        color:white;
+      }
+    }
+
+  }
+
+ }
+
+ @keyframes confirm_popup{
+  from{
+    margin-top:0px;
+
+  }
+  to{
+    margin-top:100px;
+  }
+ }
+ @keyframes confirm_popup2{
+
+
+  from{
+    background:rgba(#000,0.1);
+
+   }
+
+   to{
+    background:rgba(#000,0.5);
+  }
+ }

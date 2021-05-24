@@ -11,8 +11,9 @@ import Sidebar from "../../shared/Sidebar";
 import Search from "../../shared/Search";
 import axios from "axios";
 import ESpinner from "../../Spinner/Spinner";
-
-
+import "../../assets/css/header.css"
+ 
+  
 export default class Store extends React.Component {
   constructor() {
     super();
@@ -147,6 +148,15 @@ export default class Store extends React.Component {
               : "d-none"
           }
         >
+          <div onClick={()=>{
+            this.setState({isTabletFilterOpen:false})
+            document.body.classList.remove("kes-lan");
+
+          }} className="kapatma"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1.5L20.5 21M1 21L20.5 1.5" stroke="black" stroke-width="2"/>
+</svg>
+
+</div>
           <div className="filter-title">Filter</div>
           <div className="kafam-sisti">
 
@@ -198,9 +208,7 @@ export default class Store extends React.Component {
 
             }}>See Result (88)</Link>
             <div class="results-cizgi" onClick={() => {
-                 this.setState({ isTabletFilterOpen: false });
-
-                document.body.classList.remove("kes-lan");
+                
               }}></div>
             </div>
 
@@ -759,9 +767,10 @@ export default class Store extends React.Component {
      
                   </div>
                 </div>
-
+                    {/** pagination d-none d-xl-flex */}
+                    {/** pagination-tablet d-xl-none */}
                 <div className="row">
-                  <div className="pagination d-none d-xl-flex">
+                  <div className="d-none">
                     <Link className="pagination__gray">
                       <svg
                         width="9"
@@ -816,7 +825,7 @@ export default class Store extends React.Component {
                       </svg>
                     </Link>
                   </div>
-                  <div className="pagination-tablet d-xl-none">
+                  <div className="d-none">
                     <div className="pagination-tablet__button">
                       <svg
                         width="9"
@@ -847,6 +856,30 @@ export default class Store extends React.Component {
                       </svg>
                     </div>
                   </div>
+                    
+          <div class="row justify-content-center">
+						<div class="col-12 pt-4">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center">
+                    <div className="pagination__box disabled"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 4L1.5 4M1.5 4L4.5 1M1.5 4L4.5 7" stroke="black"/>
+</svg>
+
+</div>
+                    <div className="pagination__box active">1</div>
+                    <div className="pagination__box">2</div>
+                    <div className="pagination__box">3</div>
+                    <div className="pagination__box"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5 4H8M8 4L5 7M8 4L5 1" stroke="black"/>
+</svg>
+
+
+</div>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
                 </div>
               </div>
             </div>
