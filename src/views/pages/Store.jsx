@@ -477,8 +477,8 @@ export default class Store extends React.Component {
             <div
               className={
                 this.state.isFilterOpen
-                  ? "col-xl-9 col-12 calis-artik "
-                  : "col-12 filter-close calis-artik"
+                  ? "col-xl-9 col-12 calis-artik padding-right-3rem"
+                  : "col-12 filter-close calis-artik "
               }
             >
               <div className="store-products">

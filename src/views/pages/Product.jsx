@@ -116,19 +116,7 @@ class Product extends React.Component {
   render() {
     return (
       <div className="Product">
-       
-        <div className="home-sign-in-wrapper">
-          <SignIn />
-        </div>
-        <div className="home-login-wrapper">
-          <Login />
-        </div>
-
-        <div className="home-search-wrapper">
-          <Search />
-        </div>
-
-        <Header />
+ 
 
         <div className="selection-area">
           <p className="location">

@@ -6,6 +6,10 @@
 
 @media (min-width: 1281px) {
 
+  .padding-right-3rem{
+    padding-right: 3rem;
+  }
+
   .product-available svg{
     width:30%;
   }
@@ -686,4 +690,28 @@
       overflow-y: auto;
     }
   }
+}
+
+@media screen  and (min-width:436px) {
+  .guide-box {
+    width: 78% !important;
+}
+}
+
+@media screen and(min-width:768px) {
+    .guide-box .guide p{
+      width:66% !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .guide-box{
+      width:50% !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .guide-box + a{
+      height:58px !important;
+    }
 }

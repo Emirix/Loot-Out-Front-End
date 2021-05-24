@@ -835,6 +835,7 @@ a.mavi {
   font-weight: 800;
   display: block;
   letter-spacing: 0em;
+  margin-bottom:2rem;
 }
 
 .user-info-container {
@@ -1084,7 +1085,6 @@ h1.title-slash {
   border: 1.5px solid rgba(122, 240, 209, 1);
   border-radius: 9in;
   padding: 100px 10px;
-  height: 1348px;
   width: 45%;
   margin: 0 auto;
 
@@ -1132,7 +1132,7 @@ h1.title-slash {
 
 @media screen and (max-width: 1024px) {
   .guide-box {
-    width: 80% !important;
+    width: 64% !important;
     & + a {
       width: 80% !important;
 
@@ -1151,13 +1151,12 @@ h1.title-slash {
 @media screen and (max-width: 576px) {
   .guide-box {
     width: 90% !important;
-    height: 1216px !important;
     & + a {
       width: 80% !important;
       font-size: 16px !important;
     }
     p {
-      font-size: 9px !important;
+      font-size: 13px !important;
       line-height: 15px !important;
     }
   }
@@ -2662,8 +2661,7 @@ z-index: 10000;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
-  padding: 0.8rem;
-  display: none;
+  padding: 0.47rem;  display: none;
   color: rgba(0, 42, 63, 1);
 }
 
