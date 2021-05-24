@@ -498,6 +498,10 @@
   .fiyat, .edit, .remove {
     display: none;
   }
+
+  .guide-box + a {
+    height: 58px !important;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile-fer-fiyat {
@@ -612,6 +616,21 @@
   .login-register-popup__container {
     top: 20px;
     overflow-y: auto;
+  }
+}
+@media screen and (min-width: 435px) {
+  .guide-box {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .guide-box .guide p {
+    width: 59% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .guide-box {
+    width: 65% !important;
   }
 }
 header .header-list li a {
