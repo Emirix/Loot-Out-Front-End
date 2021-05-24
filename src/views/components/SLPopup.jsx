@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-
+//push
 export default class SLPopup extends Component {
     render() {
-        return (
+        return ( 
             <div className={this.props.visible ? "login-register-popup " : "d-none"}>
                 <div className="login-register-popup__container">
                 <svg onClick={this.props.onClose} width="20" height="20" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
