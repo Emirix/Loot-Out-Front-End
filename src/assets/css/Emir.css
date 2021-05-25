@@ -326,6 +326,11 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .contact-info {
+    margin-top: 7rem !important;
+    padding-bottom: 2rem !important;
+  }
+
   .forgot-pass-container {
     width: 100% !important;
   }
@@ -4978,11 +4983,59 @@ div.products-on-sale > svg:nth-child(7) {
   padding: 0.8rem 1.4rem;
 }
 
+@media screen and (min-width: 550px) {
+  .pcde-kapa {
+    display: none;
+  }
+
+  .contact-us-container {
+    background-image: url(../img/contact-bg-md.png) !important;
+  }
+  .contact-us-container svg {
+    width: 97px !important;
+    height: 97px !important;
+  }
+  .contact-us-container .we-value {
+    font-size: 50px !important;
+  }
+  .contact-us-container .contact-info {
+    position: absolute !important;
+    bottom: 20px;
+    left: 50px;
+  }
+  .contact-us-container li.s {
+    font-size: 10px !important;
+    margin-bottom: 0.7rem !important;
+  }
+  .contact-us-container li.s:first-child {
+    margin-bottom: 1rem !important;
+    font-size: 30px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-us-container {
+    background-image: url(../img/contact-bg.png) !important;
+  }
+  .contact-us-container .we-value {
+    font-size: 70px !important;
+  }
+  .contact-us-container .contact-info {
+    position: static !important;
+  }
+  .contact-us-container li.s {
+    font-size: 17px !important;
+  }
+  .contact-us-container li.s:first-child {
+    margin-bottom: 2rem !important;
+    font-size: 40px !important;
+  }
+}
 .contact-us-container {
-  background-image: url(../img/contact-bg.png);
   height: 100vh;
   background-size: cover;
   font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 0;
 }
 .contact-us-container form input {
   width: 98%;
@@ -4990,7 +5043,7 @@ div.products-on-sale > svg:nth-child(7) {
   padding: 1rem 0rem;
   outline: none;
   border: none;
-  border-bottom: 1px solid #787A7C;
+  border-bottom: 1px solid #EDEDED;
   font-family: "Roboto", sans-serif;
   height: 43px;
   margin-bottom: 2rem;
@@ -5002,6 +5055,9 @@ div.products-on-sale > svg:nth-child(7) {
   letter-spacing: 0em;
   text-align: left;
 }
+.contact-us-container form input::placeholder {
+  color: #ededed;
+}
 .contact-us-container .topla {
   margin-top: 5rem;
 }
@@ -5010,7 +5066,6 @@ div.products-on-sale > svg:nth-child(7) {
 }
 .contact-us-container .we-value {
   font-weight: 200;
-  font-size: 70px;
   line-height: 110%;
   color: #F3F3F3;
 }
@@ -5018,16 +5073,43 @@ div.products-on-sale > svg:nth-child(7) {
   margin: 0;
   padding: 0;
 }
-.contact-us-container .contact-info li {
+.contact-us-container .contact-info li.s {
   font-weight: 300;
   font-size: 17px;
   line-height: 120%;
   margin-bottom: 1rem;
   color: #F3F3F3;
 }
-.contact-us-container .contact-info li:first-child {
+.contact-us-container .contact-info li.s:first-child {
   margin-bottom: 2rem;
   font-size: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 550px) {
+  .mobilde-kapa {
+    display: none;
+  }
+
+  .contact-us-container p {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 110%;
+    color: #F3F3F3;
+  }
+  .contact-us-container .form-cizgi {
+    height: 1px;
+    width: 100%;
+    background: #EDEDED;
+    margin-bottom: 2rem;
+  }
+
+  .contact-us-container form input {
+    margin-bottom: 1rem !important;
+  }
+  .contact-us-container form input:last-child {
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=Emir.css.map */

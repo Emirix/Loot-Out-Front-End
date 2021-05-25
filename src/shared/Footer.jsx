@@ -1,13 +1,6 @@
 import React from 'react'
 import FooterLogo from '../assets/img/logo/LogoIkon.svg'
-import facebook from '../assets/img/Facebook.png'
-import google from '../assets/img/google.png'
-import youtube from '../assets/img/Twitter.png'
-import twitter from '../assets/img/YouTube.png'
-import DiscoverCard from '../assets/img/Discover.png'
-import MasterCard from '../assets/img/MasterCard.png'
-import PayPal from '../assets/img/PayPal.png'
-import visaCard from '../assets/img/Visa.png'
+import {Link} from "react-router-dom"
 
 
 function Footer() {
@@ -25,7 +18,7 @@ function Footer() {
                         Main Menu
                     </li>
                     <li>
-                    Home
+                    <Link to="/">Home</Link>
                     </li>  
                     <li>
                     Our Services
@@ -37,7 +30,8 @@ function Footer() {
                       About Us
                     </li>
                     <li>
-                    Contact Us
+                      <Link to="/contact-us" exact>Contact Us</Link>
+                    
                     </li>
                 </ul>
                 <ul className="col2">

@@ -2,10 +2,11 @@ import React from 'react'
 import Header from '../../shared/Header'
 
 function ContactUs() {
+    window.scrollTo(0,0)
     return (
         <div className="contact-us-container container-fluid">
             <Header/>
-            <div className="container">
+            <div className="container mobilde-kapa">
                <div className="row mt-4">
                    <div className="we-value">We value transparency and<br/>integrity. </div>
                </div>
@@ -13,10 +14,10 @@ function ContactUs() {
                <div className="row topla">
                     <div className="col-4">
                     <ul className="contact-info">
-                        <li>My contact info</li>
-                        <li>Meininger Strasse 83, Berlin, Germany</li>
-                        <li>+ 34 2454 3459 21</li>
-                      <li>contact@lootout.com</li>
+                        <li className="s">My contact info</li>
+                        <li className="s">Meininger Strasse 83, Berlin, Germany</li>
+                        <li className="s">+ 34 2454 3459 21</li>
+                        <li className="s">contact@lootout.com</li>
                     </ul>
                     </div>
                     <div className="col-7  ms-auto">
@@ -52,6 +53,32 @@ function ContactUs() {
 
                    
                </div>
+            </div>
+            <div className="container px-4 pcde-kapa">
+                <p>We value transparency and<br/>integrity. </p>
+                <form action="">
+                    <input type="text" placeholder="Name" />
+                    <input type="mail" placeholder="Email" />
+                    <input type="text" placeholder="Message" />
+                    <div className="form-cizgi"></div>
+                    <div className="form-cizgi"></div>
+                    <div className="form-cizgi"></div>
+                    <svg className="d-block ms-auto" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="32" transform="rotate(-90 32 32)" fill="#7AF0D1"/>
+<path d="M28.5865 11.7299C27.688 11.2822 27.0581 10.8205 26.697 10.3448C26.3404 9.86592 26.2159 9.33455 26.3236 8.75064C26.4454 8.0899 26.8091 7.59293 27.4148 7.25971C28.0249 6.92337 28.7526 6.83311 29.5977 6.98893C30.1739 7.09518 30.6662 7.30114 31.0746 7.60682C31.4868 7.9132 31.7797 8.28498 31.9533 8.72214C32.1308 9.16001 32.1767 9.61136 32.0909 10.0762L30.9788 9.87113C31.0723 9.36405 30.9843 8.93671 30.7147 8.5891C30.4459 8.23765 30.0176 8.00774 29.4298 7.89937C28.8843 7.79879 28.4356 7.84118 28.0837 8.02653C27.7363 8.20875 27.5233 8.51306 27.4447 8.93946C27.3816 9.28136 27.4722 9.59795 27.7164 9.88925C27.9651 10.1774 28.4191 10.4835 29.0783 10.8077C29.7413 11.1325 30.2468 11.4501 30.5947 11.7605C30.9472 12.0678 31.1885 12.3963 31.3187 12.746C31.4526 13.0964 31.4803 13.4849 31.4017 13.9113C31.2763 14.5912 30.9107 15.0878 30.3048 15.4011C29.6996 15.7106 28.9533 15.7835 28.0659 15.6199C27.4897 15.5136 26.9721 15.305 26.513 14.9939C26.0547 14.6791 25.7246 14.3044 25.5227 13.87C25.3246 13.4362 25.2705 12.9754 25.3605 12.4876L26.4726 12.6926C26.3791 13.1997 26.4914 13.6355 26.8095 14C27.1321 14.3613 27.6065 14.5998 28.2327 14.7152C28.8166 14.8229 29.2861 14.7863 29.6412 14.6055C29.9963 14.4247 30.2117 14.1288 30.2875 13.7177C30.3633 13.3067 30.2776 12.9632 30.0306 12.6873C29.7843 12.4075 29.3029 12.0884 28.5865 11.7299Z" fill="#1F1F1F"/>
+<path d="M40.0307 15.1371L36.5642 13.8512L35.5127 16.6859L39.5395 18.1796L39.2196 19.0421L34.138 17.1571L37.1051 9.15846L42.1317 11.0231L41.8098 11.8911L37.8379 10.4177L36.8842 12.9887L40.3506 14.2746L40.0307 15.1371Z" fill="#1F1F1F"/>
+<path d="M46.8314 24.1285L45.9049 23.4801L46.1556 15.6313L42.3861 21.0175L41.4596 20.3691L46.3512 13.3795L47.2777 14.0279L47.0198 21.9075L50.8061 16.4972L51.723 17.1389L46.8314 24.1285Z" fill="#1F1F1F"/>
+<path d="M49.6757 26.749L56.1667 21.2129L57.7294 23.0452C58.2111 23.6099 58.5121 24.2156 58.6325 24.8625C58.753 25.5093 58.683 26.1466 58.4226 26.7743C58.1647 27.405 57.7383 27.9766 57.1435 28.489L56.7289 28.8427C56.1166 29.3648 55.4788 29.7035 54.8153 29.8586C54.1544 30.0167 53.513 29.9811 52.8911 29.7516C52.2718 29.5251 51.7108 29.1231 51.208 28.5457L49.6757 26.749ZM56.1924 22.6696L51.1056 27.008L51.8737 27.9086C52.4365 28.5684 53.0788 28.9061 53.8007 28.9219C54.5252 28.9406 55.2664 28.6268 56.0243 27.9804L56.4032 27.6572C57.1403 27.0286 57.5641 26.3667 57.6747 25.6717C57.7908 24.9771 57.5806 24.3093 57.0441 23.6682L56.1924 22.6696Z" fill="#1F1F1F"/>
+</svg>
+
+                </form>
+
+                <ul className="contact-info">
+                        <li className="s">My contact info</li>
+                        <li className="s">Meininger Strasse 83, Berlin, Germany</li>
+                        <li className="s">+ 34 2454 3459 21</li>
+                        <li className="s">contact@lootout.com</li>
+                    </ul>
             </div>
         </div>
     )

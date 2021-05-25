@@ -32,22 +32,17 @@ function App() {
   const [isLogged,setLogged] = useState(false);
   const [isPopup,setPopup] = useState(false)
 
-  useEffect(()=>{
-
-  },[])
-  
-
   return (
     <div className="App ">
       <button onClick={()=>{setLogged(!isLogged)}} style={{position:"absolute",top:"0",left:0}}>login</button>
       <span className="AppFrontWrapper"></span>
-
+      
       <Router>
+
       {window.location.pathname == "/contact-us" ?  <></>: <Header logged={isLogged} openPopup={()=>{   
           setPopup(true);
           document.body.classList.add("kes-lan")
         }}/>}
-
         <Sidebar logged={isLogged} openPopup={()=>{
           setPopup(true);
           document.body.classList.add("kes-lan")
@@ -112,10 +107,10 @@ function App() {
             <SellerAssets  />
           </Route>
         </Switch>
-        {window.location.pathname == "/contact-us" ?  <></>: <Footer/>}
-
+       
+        {window.location.pathname == "/contact-us" ?  <></>: <Footer />}
       </Router>
-     
+      
     </div>
   );
 }
