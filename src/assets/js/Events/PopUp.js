@@ -1,5 +1,5 @@
 export const HandleSigninPopUp = () => {
-  /*let SignInButtons = document.querySelectorAll(".sign-in-button");
+ /* let SignInButtons = document.querySelectorAll(".sign-in-button");
   let App = document.querySelector(".App");
   let AppFrontWrapper = document.querySelector(".AppFrontWrapper");
   let HomeSignInWrapper = document.querySelector(".home-sign-in-wrapper");

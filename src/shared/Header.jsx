@@ -38,7 +38,7 @@ function Header({logged,openPopup}) {
             </li> 
 
             <li> 
-              <Link to="/customer-care">Customer Care</Link>
+              <Link to="/contact-us">Customer Care</Link>
             </li> 
             </>
           ) : (
@@ -56,7 +56,7 @@ function Header({logged,openPopup}) {
             </li>
 
             <li> 
-              <Link to="/customer-care">Customer Care</Link>
+              <Link to="/contact-us">Customer Care</Link>
             </li> 
             </>
 

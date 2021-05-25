@@ -65,7 +65,9 @@ class Search extends React.Component {
    
     return(
 
-        <div key={val.id} className="result-box">
+        <div key={val.id} className="result-box" onClick={()=>{document.querySelector(".home-search-wrapper").style.display = "none";
+        document.querySelector(".AppFrontWrapper").style.height = "0";
+        document.body.classList.remove("kes-lan")}}>
             
         <div className="left-area">
                 <img src={val.image} alt=""/>

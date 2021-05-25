@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect} from 'react'
 import CloseIcon from '../assets/svg/close.svg'
 import SideBarBackground from '../assets/svg/SideBarBackground.svg'
 import SideBarSearch from '../assets/svg/SideBarSearch.svg'
@@ -14,6 +14,15 @@ import dLogOut from "../assets/svg/dropdown/logout.svg";
 import Search from "./Search"
 
 function Sidebar({logged,openPopup}) {
+
+    useEffect(()=>{
+        for(var i = 0; i < document.querySelectorAll(".Sidebar li").length; i++){
+            document.querySelectorAll(".Sidebar li")[i].addEventListener("click",()=>{
+                document.querySelector(".Sidebar").classList.remove("active")
+
+            })
+        }
+    })
 
    
     const [isDropdown, setIsDropDown] = useState(false)
@@ -92,7 +101,7 @@ function Sidebar({logged,openPopup}) {
                         <Link to="/about-us">About Us</Link>
                     </li>
                     <li>
-                       <Link to="/customer-care">Customer Care</Link>
+                       <Link to="/contact-us">Customer Care</Link>
                     </li>
                 </nav>
                 

@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App ">
-      <button onClick={()=>{setLogged(!isLogged)}} style={{position:"absolute",top:"0",left:0}}>login</button>
+      <button onClick={()=>{setLogged(!isLogged)}} style={{zIndex:1000000,position:"absolute",top:"0",left:0}}>login</button>
       <span className="AppFrontWrapper"></span>
       
       <Router>
