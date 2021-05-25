@@ -8,6 +8,7 @@ import CheckButton from "../../assets/svg/check-button.svg";
 import Footer from "../../shared/Footer";
 import Login from "../components/Auth/Login";
 import SignIn from "../components/Auth/SignIn";
+import Canvas from "../components/Canvas";
 import Sidebar from "../../shared/Sidebar";
 import Search from "../../shared/Search";
 import axios from "axios";
@@ -53,6 +54,8 @@ import "../../assets/css/header.css"
       this.setState({isFilterOpen:false})
     }
 
+
+  
 
 
   }
@@ -141,6 +144,9 @@ import "../../assets/css/header.css"
    
     return (
       <div className="store container-fluid">
+
+       
+
 
         <div className="home-sign-in-wrapper">
             <SignIn/>
@@ -335,7 +341,7 @@ import "../../assets/css/header.css"
                   : "d-none  "
               }
             >
-
+                {/** PC */}
               <div className="calis-lan-artik">
    <div className="filter-container ">
                 <div className="filter-container__search">
@@ -386,7 +392,7 @@ import "../../assets/css/header.css"
                     {val.models.map(v=>{
                       return(
                         <div className="icerik" key={v.id}>
-                        <h5>
+                        <h5 data-filtre={v.brand}>
                           {v.name} <div></div>
                         </h5>
                       </div>
@@ -763,12 +769,15 @@ import "../../assets/css/header.css"
                                     </div>
                           </div>
 
-                  <div className="store-urunler">
+                  <div className="store-urunler" style={this.state.urunler == null || this.state.urunler.length==0  ? {} : {display:"grid"}} >
 
                   {this.state.urunler == null ? <div className="e-spinner">
                     <ESpinner color="#7af0d1" width={8} size={100} />
 
-                    </div> : this.state.urunler.map(val=>{
+                    </div> : this.state.urunler.length == 0 ? <div className="not-found">
+                      <h3 className="text-center">Not Found</h3>
+                      <p  className="text-center">Please try to search another sneaker</p>
+                    </div>: this.state.urunler.map(val=>{
                       return(
                         <div className="store-urun" key={val.id}>
                         <div className="hover-wrapper">
@@ -792,7 +801,7 @@ import "../../assets/css/header.css"
                 </div>
                     {/** pagination d-none d-xl-flex */}
                     {/** pagination-tablet d-xl-none */}
-                <div className="row">
+                <div className={this.state.urunler == null || this.state.urunler.length == 0 ? "d-none":"row"}>
                   <div className="d-none">
                     <Link className="pagination__gray">
                       <svg
@@ -881,7 +890,13 @@ import "../../assets/css/header.css"
                   </div>
                     
      
-							<nav aria-label="Page navigation example">
+
+
+                </div>
+              
+              
+                <div className="row">
+                    <nav aria-label="Page navigation example">
 								<ul class="pagination justify-content-center">
                     <div className="pagination__box disabled"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 4L1.5 4M1.5 4L4.5 1M1.5 4L4.5 7" stroke="black"/>
@@ -900,10 +915,13 @@ import "../../assets/css/header.css"
 								</ul>
 							</nav>
 		
-
-                </div>
+                    </div>
               </div>
+
+              
+    
             </div>
+
           </div>
         </div>
       
@@ -913,3 +931,11 @@ import "../../assets/css/header.css"
 }
 
 export default withRouter(Store)
+
+
+{/****
+
+
+127.0.0.1:8000/products/model/?serch=Air jordan 1, yeezy,350
+
+*/}

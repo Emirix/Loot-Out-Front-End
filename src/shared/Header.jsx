@@ -73,6 +73,7 @@ function Header({logged,openPopup}) {
             document.querySelector(".home-search-wrapper").style.display = "flex";
             document.querySelector(".AppFrontWrapper").style.height = "100%";
             document.body.classList.add("kes-lan")
+
           }}
         />
         <img

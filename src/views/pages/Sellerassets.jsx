@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import OnSaleItem from "../components/OnSaleItem";
 import Offer from "../components/Offer";
 import { Pie, Line } from "react-chartjs-2";
+import Chart from "react-google-charts";
+
 
 export class Sellerassets extends Component {
   constructor() {
@@ -29,14 +31,15 @@ export class Sellerassets extends Component {
       line: {
         labels: ['January', 'February', 'March',
         'April', 'May'],
-datasets: [
- {
+        datasets: [
+            {
   label: 'My First Dataset',
   data: [65, 59, 80, 81, 56, 55, 40],
   fill: "start",
   borderColor: '#7AF0D1',
-  backgroundColor:"#7AF0D1",
-  
+  yAxesID: 'A',
+  backgroundColor:"#7AF0D130",
+
   tension: 0.3
  }
 ]
@@ -47,6 +50,7 @@ datasets: [
   componentDidMount() {}
 
   render() {
+   
     return (
       <div className="container-fluid">
        
@@ -417,17 +421,26 @@ datasets: [
           <div className="profile-container">
               <div className="profile-container__title mb-5">ASSETS ON SALE</div>
 
-              <Line
-                data={this.state.line}
+                <Line data={this.state.line}
                 options={{
-                  
+    
                   plugins: {
                     legend: {
                       display:false
-                    },
-                  },
-                }}
-              />
+                   },
+
+                   scales: {
+                    yAxes: [{
+                        gridLines: {
+                             color: ['rgba(36, 206, 0, 0.8)', 'rgba(255, 255, 0, .8)','rgba(255, 162, 0, 0.8)','rgba(36, 206, 0, 0.8)'],
+                        }
+                     }],
+                 },
+                  
+
+                   
+                }
+             }} />
 
               <div className="total-earning">
                 <div className="total-earning__title">Total Earning</div>

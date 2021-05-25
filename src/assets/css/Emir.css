@@ -1064,7 +1064,7 @@ a.mavi {
   position: absolute;
   width: 223px;
   height: 286px;
-  background: rgba(196, 196, 196, 0.4);
+  background: #c4c4c4;
   left: -100px;
   top: 80px;
 }
@@ -2172,6 +2172,7 @@ div.sidebar-top > div.left-side > img {
 }
 .most-searched-container {
   margin-top: 9rem;
+  padding: 1rem;
 }
 
 .urunler {
@@ -2396,7 +2397,7 @@ div.sidebar-top > div.left-side > img {
     font-size: 20px !important;
   }
   .urunler a .urun h2 {
-    font-size: 30px !important;
+    font-size: 12px !important;
   }
 }
 @media screen and (min-width: 576px) {
@@ -2874,8 +2875,8 @@ a {
   }
 
   .product-other-thumbs img {
-    width: 100px !important;
-    height: 100px !important;
+    width: 22% !important;
+    height: 22% !important;
   }
 }
 .pure-product img {
@@ -2888,8 +2889,8 @@ a {
   margin-top: 10px;
 }
 .product-other-thumbs img {
-  width: 70px;
-  height: 70px;
+  width: 22% !important;
+  height: 22% !important;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -2937,7 +2938,7 @@ a {
 .products-on-sale__middle {
   width: 100%;
   color: white;
-  background-image: url(../svg/product/product-info-middle.svg);
+  background-image: url(../svg/product/product-info-middle2.svg);
   background-repeat: repeat-y;
   padding: 0 0.5rem;
   background-size: 100%;
@@ -3738,7 +3739,6 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
 }
 
 .store-urunler {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1rem;
   grid-gap: 2rem;
@@ -4069,6 +4069,11 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
 
 .tablet-top {
   display: flex;
+}
+
+.results {
+  overflow-y: auto;
+  height: 466px;
 }
 
 .see-results-mobile {

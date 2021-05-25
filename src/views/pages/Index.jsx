@@ -413,6 +413,7 @@ export default class Index extends Component {
         <div className="most-searched-container fuck">
           <svg
             className="d-md-none"
+            style={{width:"90%",padding:"1rem"}}
             viewBox="0 0 298 46"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

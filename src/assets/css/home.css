@@ -22,8 +22,10 @@
   z-index: 101;
 }
 .home-search-wrapper {
-  padding-top: 8rem;
-  align-items: flex-start;
+ 
+  position: fixed;
+
+ z-index: 100;
 }
 .home-hero {
   display: flex;
