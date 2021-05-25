@@ -72,19 +72,19 @@ export default class MyAccount2 extends React.Component {
 
                   <InputLabel label="Surname" />
                   <InputLabel label="Email" type="mail" />
-                  <InputLabel label="Phone Number" type="number" />
+                  <InputLabel label="Phone Number" type="number" opt="no" />
                   <InputLabel label="Adress 1" />
-                  <InputLabel label="Adress 2"  />
+                  <InputLabel label="Adress 2"opt="no"   />
                   <InputLabel label="Country" ney="select" options={this.state.countries}/>
                   <InputLabel label="State" ney="select" options={this.state.sehirler} className="col-12 col-md-3" />
                   <InputLabel label="Zip Code" className="col-12 col-md-3" />
 
-                  <InputLabel label="Birth Date" ney="select" options={this.state.aylar} className="col-12 col-md-2" />
+                  <InputLabel label="Birth Date" opt="no"  ney="select" options={this.state.aylar} className="col-12 col-md-2" />
                   <InputLabel label=" " ney="select" options={this.state.gunler} className="col-12 col-md-2" />
                   <InputLabel label=" " ney="select" options={this.state.yillar} className="col-12 col-md-2" />
 
 
-                  <InputLabel label="Secondary Phone" type="number" />
+                  <InputLabel label="Secondary Phone"opt="no"  type="number" />
 
                   <div className="row mb-3">
                       <button className="button-primary col-3 ms-auto">SAVE ALL CHANGES</button>

@@ -4954,6 +4954,10 @@ div.products-on-sale > svg:nth-child(7) {
   color: #000000;
   margin-bottom: 0.5rem;
 }
+.fena-label span {
+  color: #7af0d1;
+  margin-left: 2px;
+}
 
 .fena-input, .fena-select {
   background: #fff;
