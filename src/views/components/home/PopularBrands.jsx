@@ -5,7 +5,7 @@ import PopularBrand1 from '../../../assets/img/popular-brand-1.png'
 import PopularBrand2 from '../../../assets/img/popular-brand-2.png'
 import PopularBrand3 from '../../../assets/img/popular-brand-3.png'
 import PopularBrand4 from '../../../assets/img/popular-brand-4.png'
-
+import PBDropdown from "../home/PBDropdown";
 import shoesTriangle from '../../../assets/img/shoes-triangle.png'
 import { Link } from 'react-router-dom'
 
@@ -166,10 +166,11 @@ function PopularBrands({PopularBrandDesltopSlash,PopularBrandMobileSlash}) {
             </div>
             <div className="navigation-shoe-wrapper">
                 <img src={shoesTriangle} draggable="false"/>
-                <Link to="/store/?model=other&filter=no" id="bir">Other</Link>
-                <Link to="/store/?model=Air Jordan 1&filter=no" id="iki">Air Jordan 1</Link>
-                <Link to="/store/?model=Air Jordan 1 Mid&filter=no" id="uc">Air Jordan 1 Mid</Link>
-                <Link to="/store/?model=yeezy&filter=no" id="dort">Yeezy</Link>
+                <Link to="/store/?model=other&filter=no" id="bir">Other <PBDropdown/>
+               </Link>
+                <Link to="/store/?model=Air Jordan 1&filter=no" id="iki">Air Jordan 1 <PBDropdown/></Link>
+                <Link to="/store/?model=Air Jordan 1 Mid&filter=no" id="uc">Air Jordan 1 Mid <PBDropdown sag={true}/></Link>
+                <Link to="/store/?model=yeezy&filter=no" id="dort">Yeezy <PBDropdown sag={true}/></Link>
             </div>
             {/* <img src={PopularBrandsPicture} alt="" className="popular-brands-img"/> */}
             <div className="mobile-mode-display ">
