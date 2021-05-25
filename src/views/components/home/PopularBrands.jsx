@@ -7,6 +7,8 @@ import PopularBrand3 from '../../../assets/img/popular-brand-3.png'
 import PopularBrand4 from '../../../assets/img/popular-brand-4.png'
 import PBDropdown from "../home/PBDropdown";
 import shoesTriangle from '../../../assets/img/shoes-triangle.png'
+import AirJordan1 from "../../../assets/img/air-jordan1.png"
+import AirJordan2 from "../../../assets/img/air-jordan2.png"
 import { Link } from 'react-router-dom'
 
 function PopularBrands({PopularBrandDesltopSlash,PopularBrandMobileSlash}) {
@@ -166,11 +168,49 @@ function PopularBrands({PopularBrandDesltopSlash,PopularBrandMobileSlash}) {
             </div>
             <div className="navigation-shoe-wrapper">
                 <img src={shoesTriangle} draggable="false"/>
-                <Link to="/store/?model=other&filter=no" id="bir">Other <PBDropdown/>
+
+                <Link to="/store/?model=other&filter=no" id="bir">Other
+                <PBDropdown
+                title="AIR JORDAN 1"
+                p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque ex vitae "
+                to="/store/?model=other&filter=no"
+                img1={AirJordan1}
+                img2={AirJordan2}
+                img3={AirJordan1}
+                img4={AirJordan2}
+                />
                </Link>
-                <Link to="/store/?model=Air Jordan 1&filter=no" id="iki">Air Jordan 1 <PBDropdown/></Link>
-                <Link to="/store/?model=Air Jordan 1 Mid&filter=no" id="uc">Air Jordan 1 Mid <PBDropdown sag={true}/></Link>
-                <Link to="/store/?model=yeezy&filter=no" id="dort">Yeezy <PBDropdown sag={true}/></Link>
+
+
+                <Link to="/store/?model=Air Jordan 1&filter=no" id="iki">Air Jordan 1                 <PBDropdown
+                title="AIR JORDAN 1"
+                p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque ex vitae "
+                to="/store/?model=Air Jordan 1&filter=no"
+                img1={AirJordan1}
+                img2={AirJordan2}
+                img3={AirJordan1}
+                img4={AirJordan2}
+                /></Link>
+                <Link to="/store/?model=Air Jordan 1 Mid&filter=no" id="uc">Air Jordan 1 Mid                 <PBDropdown
+                title="AIR JORDAN 1"
+                p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque ex vitae "
+                to="/store/?model=Air Jordan 1 Mid&filter=no"
+                img1={AirJordan1}
+                img2={AirJordan2}
+                img3={AirJordan1}
+                img4={AirJordan2}
+                sag={true}
+                /></Link>
+                <Link to="/store/?model=yeezy&filter=no" id="dort">Yeezy                <PBDropdown
+                title="AIR JORDAN 1"
+                p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque ex vitae "
+                to="/store/?model=yeezy&filter=no"
+                img1={AirJordan1}
+                img2={AirJordan2}
+                img3={AirJordan1}
+                img4={AirJordan2}
+                sag={true}
+                /></Link>
             </div>
             {/* <img src={PopularBrandsPicture} alt="" className="popular-brands-img"/> */}
             <div className="mobile-mode-display ">
