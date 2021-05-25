@@ -36,7 +36,12 @@ class Search extends React.Component {
    render(){
     return (
         <div className="search"> 
-        <div className="close-search"><svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="close-search" onClick={e=>{
+            document.querySelector(".home-search-wrapper").style.display = "none";
+            document.querySelector(".AppFrontWrapper").style.height = "0";
+            document.body.classList.remove("kes-lan")
+
+        }}><svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M131.5 5L5 131.5M131.5 131.5L5 5" stroke="#FFEFEF" stroke-width="14"/>
 </svg>
 </div>
@@ -45,6 +50,7 @@ class Search extends React.Component {
                     <label htmlFor="home-search">Search Sneaker</label>
                     <div className="input-wrapper">
                         <input
+                        autoComplete="off"
                         value={this.state.searchString}
                         onChange={this.handleSearch}
                         type="text" placeholder="Search" id="home-search"/>

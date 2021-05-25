@@ -220,9 +220,7 @@ import "../../assets/css/header.css"
                               this.setState({ isTabletFilterOpen: false });
 
             }}>See Result (88)</Link>
-            <div class="results-cizgi" onClick={() => {
-                
-              }}></div>
+            <div class="results-cizgi" o></div>
             </div>
 
             <div className="size-container">
@@ -311,9 +309,7 @@ import "../../assets/css/header.css"
             </Link>
             <div
               className="results-cizgi"
-              onClick={() => {
-                this.setState({ isTabletFilterOpen: false });
-              }}
+
             ></div>
           </div>
         </div>
@@ -530,7 +526,6 @@ import "../../assets/css/header.css"
                           isFilterOpen: !this.state.isFilterOpen,
 
                         });
-                        document.body.classList.add("kes-lan")
                       }}
                       className="ayar-box"
                     >
@@ -717,6 +712,8 @@ import "../../assets/css/header.css"
                           this.setState({
                             isTabletFilterOpen: !this.state.isTabletFilterOpen,
                           });
+                          document.body.classList.add("kes-lan")
+
                         }}
                         className="ayar-box"
                       >
@@ -776,7 +773,7 @@ import "../../assets/css/header.css"
                         <div className="store-urun" key={val.id}>
                         <div className="hover-wrapper">
                           <Link to={"/product/"+val.id}>
-                            <img src={CheckButton} alt="" />
+                            <img src={CheckButton} alt="check button" draggable={false} />
                           </Link>
                         </div>
                         <Link to={"/product/"+val.id}>
@@ -883,8 +880,7 @@ import "../../assets/css/header.css"
                     </div>
                   </div>
                     
-          <div class="row justify-content-center">
-						<div class="col-12 pt-4">
+     
 							<nav aria-label="Page navigation example">
 								<ul class="pagination justify-content-center">
                     <div className="pagination__box disabled"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -903,8 +899,7 @@ import "../../assets/css/header.css"
 </div>
 								</ul>
 							</nav>
-						</div>
-					</div>
+		
 
                 </div>
               </div>

@@ -257,7 +257,6 @@
   }
 
   #kucu {
-    width: 95%;
     margin: 0 auto;
   }
 
@@ -4517,11 +4516,15 @@ div.products-on-sale > svg:nth-child(7) {
 .close-search {
   position: fixed;
   right: 50px;
+  cursor: pointer;
   top: 50px;
 }
 .close-search svg {
   width: 30px;
   height: 30px;
+}
+.close-search:hover {
+  transform: scale(1.1);
 }
 
 .navigation-shoe-wrapper a:hover .popular-brands-dropdown-container {

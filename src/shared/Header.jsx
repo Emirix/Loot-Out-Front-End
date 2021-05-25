@@ -44,7 +44,7 @@ function Header({logged,openPopup}) {
           ) : (
             <>
             <li>
-              <Link to="/store">Sneakers</Link>
+              <Link to="/store/?filter=no">Sneakers</Link>
             </li>
 
             <li>
@@ -55,7 +55,9 @@ function Header({logged,openPopup}) {
               <Link to="/about-us">About Us</Link>
             </li>
 
-            <li onClick={openPopup} className="login-option">Sign In</li>
+            <li> 
+              <Link to="/customer-care">Customer Care</Link>
+            </li> 
             </>
 
           )}

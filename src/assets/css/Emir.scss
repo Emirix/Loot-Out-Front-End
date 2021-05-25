@@ -4268,11 +4268,18 @@ button.sign-in-button:hover {
  .close-search{
    position:fixed;
    right:50px;
+   cursor:pointer;
    top:50px;
    svg{
      width: 30px;
      height:30px;
    }
+
+   &:hover{
+     transform:scale(1.1)
+   }
+
+   
 
  }
 
