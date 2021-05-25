@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #002437;
+  font-family: "Syne", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.AppFrontWrapper {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  content: "";
+  position: fixed;
+  
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+ul {
+  list-style: none;
+}
+
+.App{
+  background-image: url(./assets/img/noise-real.png);
+  background-attachment: fixed;
+}

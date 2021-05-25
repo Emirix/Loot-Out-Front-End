@@ -1,0 +1,726 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  .padding-right-3rem{
+    padding-right: 3rem;
+  }
+
+  .product-available svg{
+    width:30%;
+  }
+
+  .offer{
+    width: 49%;
+  }
+
+  .profile-title-mobile{
+    display:none !important;
+  }
+    .add-product-button{
+        font-size: 24px;
+        padding:0.8rem 0rem;
+        width:21%;
+        top:19px;
+        right:76px;
+    }
+    
+  }
+   .profile-title-tablet{
+    display: none;
+   }
+  .profile-title-desktop{
+    display: block;
+  }
+
+  .otuzbir{
+    font-size: 24px;
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .product-available svg{
+      width:30%;
+    }
+    .offer{
+      width: 49%;
+      &__title{
+        font-size: 19px !important;
+      }
+
+      &__price{
+        font-size: 20px !important;
+      }
+    }
+    .add-product-button{
+        font-size: 20px;
+        padding: 0.3rem 0rem;
+        width: 22%;
+        top: 19px;
+        right: 52px;
+    }  .profile-title-mobile{
+      display:none !important;
+    }
+
+    .otuzbir,.fiyat{
+      font-size: 20px !important; 
+    }
+
+ 
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+    .person-icon{
+      width:67px !important;
+      height:67px !important;
+
+      img{
+        position: relative;
+        top: 11px !important;
+        width: 45px !important;
+        height: 57px !important; 
+      }
+    }
+
+    
+    .sidebar-top{
+      .left-side{
+        width:214px !important;
+    
+      }
+    }
+    .guide-box{
+      padding:50px 10px !important;
+      height: auto !important;
+    }
+
+    .guide img{
+      width:77px;
+      height:77px;
+    }
+
+    .store-urunler{
+      grid-gap: 2rem !important;
+    }
+   #kucu{
+     width:95%;
+     margin:0 auto;
+   }
+
+   .store-urun:nth-child(3n){
+    margin-right: 0rem !important;
+  
+   }
+
+   .store-urun{
+     margin-right: 0rem !important;
+     margin-top: 0rem !important;
+
+     &__isim{
+       font-size: 18px !important;
+     }
+
+     &__fiyat{
+       font-size: 20px !important;
+     }
+
+   }
+
+
+    .product-available svg{
+      width:30%;
+    }
+    .offers{
+      height: 252px;
+      overflow-y: scroll;
+    }
+
+    .offers-title{
+      width:70% !important;
+    }
+   
+    .offer{
+      width: 100% !important;
+      &__title{
+        font-size: 23px !important;
+      }
+
+      &__price{
+        font-size: 23px !important;
+      }
+    }
+   
+    .otuzbir,.fiyat{
+      font-size: 17px !important; 
+    }  .profile-title-mobile{
+      display:none !important;
+    }
+    .on-sale-item{
+      max-width: 100% !important; 
+    }
+    
+    .profile-title-tablet{
+      display: block !important;
+    }
+
+    .profile-title-desktop{
+      display: none !important;
+    }
+  
+    .add-product-button{
+        font-size: 16px;
+        padding: 0.3rem 0rem;
+        width: 23%;
+        top: 14px;
+        right: 33px;
+    }
+
+    .products-on-sale .products-on-sale-title-desktop{
+      top:15px !important;
+    }
+    
+    .product-available > .buy-now-button-wrapper button{
+      height: 60px !important;
+      width: 180px !important;
+    }   .sell-btn-side{
+      width:218px !important;
+      height:60px !important;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .login-register-popup__container{
+      width:98% !important;
+    }
+
+
+
+    .sell-btn-side{
+      width:103px !important;
+      height:34px !important;
+    }
+
+    .add-product-form-fields > *:nth-child(5) {
+      width: 90%;
+      font-size: 16px;
+  }
+    .guide-box{
+      padding:50px 10px !important;
+      height: auto !important;
+    }
+    .guide img{
+      width:45px;
+      height:45px;
+    }
+    .filtered-item{
+      font-size: 14px !important;
+      height: 43px !important;
+    }
+    .store-urun{
+      margin-right: 0rem !important;
+      margin-top: 0rem !important;
+
+      img{
+       
+      }
+ 
+      &__isim{
+        font-size: 12px !important;
+      }
+ 
+      &__fiyat{
+        font-size: 14px !important;
+      }
+ 
+    }
+    .container-fluid {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+  }
+    .store-urunler{
+      grid-gap: 1rem !important;    grid-template-columns: 1fr 1fr !important;
+    }
+   #kucu{
+    // width:95%;
+     margin:0 auto;
+   }
+
+    .product-available svg{
+      width:30%;
+    }
+    .offers{
+      height: 252px;
+      overflow-y: scroll;
+    }
+   
+    .offer{
+      width: 100% !important;
+      &__title{
+        font-size: 23px !important;
+      }
+
+      &__price{
+        font-size: 23px !important;
+      }
+    }
+
+    .profile-title-mobile{
+      display:none !important;
+    }
+    .profile-title-tablet{
+      display:block !important;
+    }
+
+    .profile-title-desktop{
+      display: none !important;
+    }
+  
+
+    .on-sale-item{
+      max-width: 98% !important;
+      margin-right: 0.5rem;
+    }
+    .add-product-button{
+        font-size: 12px;
+        padding: 0.2rem 0rem;
+        width: 23%;
+        top: 14px;
+        right: 27px;
+    }
+
+    .otuzbir,.fiyat{
+      font-size: 12px !important; 
+    }
+    .products-on-sale .products-on-sale-title-desktop{
+        top: 8px !important;
+        width: 62% !important;
+    }
+
+    .see-results-mobile{
+      display:none;
+    }
+    .forgot-pass-container{
+      width:100% !important;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .forgot-pass-container{
+      width:100% !important;
+    }
+
+    .on-sale-item .mobile-fer-fiyat input{
+      width:70% !important;
+    }
+    .Sidebar{
+      background-size: 74% !important;
+    }
+    .login-register-popup__container{
+      width:98% !important;
+    }
+    .sell-btn-side{
+      width:103px !important;
+      height:35px !important;
+    }
+
+    .profile-con{
+      margin-left: 0rem !important;
+    }
+
+    .profile-dropdown{
+      left:0 !important;
+    }
+
+    .add-product-form-fields > *:nth-child(5) {
+      width: 90%;
+      font-size: 16px;
+  }
+    .guide-box{
+      padding:50px 10px !important;
+      height: auto !important;
+    }
+    .filter-container-tablet{
+      grid-template-columns: 1fr !important;
+      display: block !important;
+      
+    }
+
+    .guide img{
+      width:45px;
+      height:45px;
+    }
+    .results-bottom{
+      display: none !important;
+    }
+    .tablet-search{
+      input{
+        font-size: 14px !important;
+      }
+    }
+    .ayar-box{
+      width:42px !important;
+      height:42px !important;
+    }
+    .filtered-item{
+      font-size: 10px !important;
+     height: 40px !important;
+     margin-bottom: 0.5rem;
+      padding-top: 0.5rem !important;
+      padding-top: 0.5rem !important;
+
+    }
+    .store-urun{
+      margin-right: 0rem !important;
+      margin-top: 0rem !important;
+
+      img{
+       
+      }
+ 
+      &__isim{
+        font-size: 12px !important;
+      }
+ 
+      &__fiyat{
+        font-size: 14px !important;
+      }
+ 
+    }
+    .container-fluid {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+  }
+    .store-urunler{
+      grid-gap: 1rem !important;    grid-template-columns: 1fr 1fr !important;
+    }
+   #kucu{
+     width:98%;
+     margin:0 auto;
+   }
+
+
+
+    .product-available svg{
+      width:60%;
+    }
+    .offers-title {
+      width: 70% !important;
+  }
+
+  
+    
+    .offers{
+      height: 252px;
+      overflow-y: scroll;
+
+      .offer{
+        img{
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .buttons{
+        width: 70px !important;
+
+        button{
+          font-size: 9px !important;
+          padding: 0.2rem 0.2rem !important;
+        }
+      }
+    }
+
+    .mobile-offer-info{
+      .offer__title{
+        font-size: 12px !important;
+      }
+
+      .offer__price{
+        font-size: 16px !important;
+      }
+    }
+   
+    .offer{
+      width: 100% !important;
+      &__title{
+        font-size: 23px !important;
+      }
+
+      &__price{
+        font-size: 23px !important;
+      }
+    }
+    
+   
+    .profile-title-mobile{
+      display: block !important;
+    }
+    .profile-title-tablet{
+      display: none !important;
+    }
+
+    .profile-title-desktop{
+      display: none !important;
+    } 
+    
+
+    .on-sale-item{
+      max-width: 98% !important;
+      margin-right: 0.5rem;
+    }
+    .products-on-sale .products-on-sale-title-desktop{
+        display: none;
+    }
+    .on-sale-item .about .urun-adi{
+      font-size: 12px !important;
+      line-height: unset !important;
+    }
+
+ 
+
+    .on-sale-item .about .added-date{
+      font-size: 10px;
+    }
+
+    .products-on-sale-title-mobile{
+        display: block;
+        width: 75%;
+        margin-bottom: 0.8rem;
+    }
+
+ 
+
+    
+  }
+
+  /* 31 */ 
+
+  @media (min-width: 481px){
+
+    .products-on-sale-title-mobile{
+        display: none;
+    }
+
+  
+
+
+  }
+
+@media screen and (max-width:768px) {
+ .fiyat,.edit,.remove{
+   display: none;
+ } 
+}
+
+@media screen and (min-width:768px) {
+
+  .mobile-fer-fiyat{
+    display: none;
+  }
+
+  .mobile-fer{
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width:1200px){
+  
+}
+
+@media screen and (min-width:1024px) {
+  .sneaker-news-title{
+    width:800px !important;
+  }
+
+  .most-searched-container .urunler .urun h2{
+    text-align: right;
+  }
+}
+
+@media screen and (max-width:1200px) {
+    .row{
+     margin-right:0 !important ;
+      
+    }
+}
+
+
+@media screen and (min-width:1025px) {
+
+
+
+
+
+  .title-popular{
+    width: 80%;
+  }
+
+  .popular-brands,.home-hero{
+    padding: 0 4rem !important;
+  }
+}
+
+@media screen and (max-width:1353px) {
+  .service-body-info-left-side{
+    top:-1.5% !important;
+    
+    svg{
+      width:70% !important;
+    }
+}
+
+}
+
+
+@media screen and (max-width:1215px) {
+  .service-body-info-left-side{
+    top:-2.5% !important;
+    
+    svg{
+      width:70% !important;
+    }
+}
+
+}
+
+@media screen and (min-width:1024px) {
+  .sell-btn-side{
+    width:218px !important;
+    height:60px !important;
+  }
+    .kam{
+      display: block;
+    }
+
+    .topbarmobile{
+      display: none;
+    }
+
+    .person-icon{
+      width:67px !important;
+      height:67px !important;
+
+      img{
+        position: relative;
+        top: 11px !important;
+        width: 45px !important;
+        height: 57px !important; 
+      }
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+  .kam{
+    display: none;
+  }
+
+    
+  .add-product-button-mobile{
+    display: block !important;
+  }
+
+  .topbarmobile{
+    display:block;
+    transform: scale(1,-1);
+  }
+
+  .add-product-button{
+    display:none
+}
+
+  .products-on-sale .products-on-sale-title-desktop{
+    top:-37px !important;
+    width: 90% !important;
+
+  }
+}
+
+@media screen and (max-width:950px){
+  .login-register-popup__container{
+    width:100% !important;
+    top:0 !important;
+  }
+
+  .login-register-popup{
+    align-items: unset !important;
+  }
+}
+
+@media screen and (max-width:992px){
+
+  .login-register-popup{
+    align-items: unset !important;
+
+    &__container{
+      top:20px;
+      overflow-y: auto;
+    }
+  }
+}
+
+@media screen  and (min-width:436px) {
+  .guide-box {
+    width: 78% !important;
+}
+}
+
+@media screen and(min-width:768px) {
+    .guide-box .guide p{
+      width:66% !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .guide-box{
+      width:50% !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .guide-box + a{
+      height:58px !important;
+    }
+}
