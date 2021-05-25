@@ -4687,6 +4687,7 @@ padding:1rem 1rem;
   background:$primary;
   width:10%;
   height:4px;
+  max-width:25px;
   margin:1.2rem 0;
 }
 
@@ -4696,4 +4697,84 @@ padding:1rem 1rem;
   &:hover{
     opacity:1;
   }
+}
+
+.my-account-container{
+  font-family: "Lato", sans-serif;
+  h4{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    line-height: 1em;
+  
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 2rem;
+    font-size: 1.5em;
+    color:black;
+  }
+
+  nav{
+    ul{
+      margin:0;
+      padding:0;
+
+      li{
+        font-weight:700;
+        font-size:1.2rem;
+        border-bottom:1px solid #ddd;
+        padding:0.7rem 0;
+        user-select:none !important;
+        color:#333;
+        cursor:pointer;
+        &:last-child(){
+          border-bottom:none;
+        }
+
+        &:hover{
+          color:black;
+        }
+      }
+    }
+  }
+}
+.fena-label{
+font-weight: bold;
+font-size: 15px;
+display:block;
+color: #000000;
+margin-bottom:0.5rem;
+
+}
+
+.fena-input,.fena-select{
+  background: #fff;
+border: 1px solid #E8E8E8;
+box-sizing: border-box;
+border-radius: 4px;
+height:51px;
+width:99%;
+outline: none;
+padding-left: 1.5rem;
+margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width:780px){
+  .fena-input,.fena-select{
+    padding-left:1rem !important;
+  }
+}
+
+
+.button-primary{
+  background:$primary;
+  color:#002A3F;
+  font-size:1.3rem;
+  border-radius:9in;
+  border:none;
+  font-weight: 800;
+  outline:none;
+  padding:0.8rem 1.4rem;
 }

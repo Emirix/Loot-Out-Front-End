@@ -10,7 +10,7 @@ import Product from "./views/pages/Product";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Magaza from "./views/pages/Store";
 import CheckOut from "./views/pages/CheckOut";
-import MyAccount from "./views/pages/Myaccount";
+import MyAccount2 from "./views/pages/MyAccount2";
 import Thankyou from "./views/pages/Thankyou";
 import BigServiceCircleSol from "./assets/img/atom-sag.png"
 import SellerGuide from "./views/pages/Sellerguide";
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App ">
-      <button onClick={()=>{setLogged(!isLogged)}}>login</button>
+      <button onClick={()=>{setLogged(!isLogged)}} style={{position:"absolute",top:"0",left:0}}>login</button>
       <span className="AppFrontWrapper"></span>
 
       <Router>
@@ -89,7 +89,7 @@ function App() {
           </Route>
 
           <Route path="/my-account" exact>
-            <MyAccount />
+            <MyAccount2 />
           </Route>
 
           <Route path="/thank-you" exact>
