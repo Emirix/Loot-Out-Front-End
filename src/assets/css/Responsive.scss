@@ -332,6 +332,10 @@
     .see-results-mobile{
       display:none;
     }
+    .forgot-pass-container{
+      width:100% !important;
+    }
+
     
   }
   
@@ -341,6 +345,11 @@
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .forgot-pass-container{
+      width:100% !important;
+    }
+
     .on-sale-item .mobile-fer-fiyat input{
       width:70% !important;
     }

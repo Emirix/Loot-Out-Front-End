@@ -316,12 +316,20 @@
   .see-results-mobile {
     display: none;
   }
+
+  .forgot-pass-container {
+    width: 100% !important;
+  }
 }
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .forgot-pass-container {
+    width: 100% !important;
+  }
+
   .on-sale-item .mobile-fer-fiyat input {
     width: 70% !important;
   }
@@ -4208,12 +4216,6 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
   margin-top: 2rem;
   font-size: 1.5em;
 }
-.login-register-popup__container .kisa-cizgi {
-  background: #7af0d1;
-  width: 10%;
-  height: 4px;
-  margin: 1.2rem 0;
-}
 .login-register-popup__container p {
   margin: 0;
   padding: 0;
@@ -4235,7 +4237,7 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   color: #242424;
   font-size: 0.9375em;
   font-weight: 700;
@@ -4621,6 +4623,281 @@ div.products-on-sale > svg:nth-child(7) {
 }
 .popular-brands-dropdown-container__sol a:hover {
   margin-left: 0 !important;
+}
+
+.b-contain *, .b-contain *::before, .b-contain *::after {
+  box-sizing: content-box !important;
+}
+
+.b-contain input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.b-contain span {
+  line-height: 1.54;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-left: 2rem;
+}
+
+.b-contain {
+  display: table;
+  position: relative;
+  padding-left: 1.8rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.b-contain input[type=checkbox] ~ .b-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #f1f5f8;
+  transition: background 250ms;
+  border: 1px solid #b8c2cc;
+  border-radius: 0.125rem;
+}
+
+.b-contain input[type=radio] ~ .b-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #f1f5f8;
+  transition: background 250ms;
+  border: 1px solid #b8c2cc;
+  border-radius: 2rem;
+}
+
+.b-contain input[type=checkbox] ~ .b-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.45rem;
+  top: 0.18rem;
+  width: 0.25rem;
+  height: 0.6rem;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transition: background 250ms;
+  transform: rotate(45deg);
+}
+
+.b-contain input[type=radio] ~ .b-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.25rem;
+  top: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2rem;
+  background: white;
+  transition: background 250ms;
+}
+
+.b-contain input:disabled ~ .b-input::after {
+  border-color: #8795a1;
+}
+
+.b-contain input:checked ~ .b-input::after {
+  display: block;
+}
+
+.b-contain:hover input ~ .b-input,
+.b-contain input:focus ~ .b-input {
+  background: #e7eef3;
+}
+
+.b-contain input:focus ~ .b-input {
+  box-shadow: 0 0 0 2px rgba(52, 144, 220, 0.5);
+}
+
+.b-contain input:checked ~ .b-input {
+  background: #0082f3;
+  border-color: #0082f3;
+}
+
+.b-contain input[type=checkbox]:disabled ~ .b-input {
+  background: #f1f5f8;
+  border-color: #b8c2cc;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.b-contain input[type=radio]:disabled ~ .b-input {
+  background: #f1f5f8;
+  border-color: #b8c2cc;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.b-contain input[type=radio]:disabled ~ .b-input::after {
+  background: #8795a1;
+}
+
+.b-contain input:checked:focus ~ .b-input, .b-contain:hover input:not([disabled]):checked ~ .b-input {
+  background: #0d8fff;
+  border-color: #0d8fff;
+}
+
+.b-contain .b-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  margin-left: -0.85rem;
+  margin-top: -0.85rem;
+  background: #0082f3;
+  border-radius: 2rem;
+  opacity: 0.6;
+  z-index: 99999;
+  transform: scale(0);
+}
+
+@keyframes b-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes b-ripple-duplicate {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.b-contain input + .b-input::before {
+  animation: b-ripple 250ms ease-out;
+}
+
+.b-contain input:checked + .b-input::before {
+  animation-name: b-ripple-duplicate;
+}
+
+.b-contain .b-input::before {
+  visibility: hidden;
+}
+
+.b-contain input:focus + .b-input::before {
+  visibility: visible;
+}
+
+.b-contain:first-child .b-input::before {
+  visibility: hidden;
+}
+
+.forgot-pass-container {
+  width: 40%;
+  padding: 1rem;
+  background: white;
+  position: relative;
+}
+.forgot-pass-container svg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.forgot-pass-container h4 {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.forgot-pass-container p {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin-bottom: 12px;
+  color: #444444;
+  font-size: 0.9375em;
+}
+.forgot-pass-container label {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin-bottom: 12px;
+  color: #242424;
+  font-size: 0.9375em;
+  font-weight: 700;
+}
+.forgot-pass-container button {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.1s;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  background: #7af0d1;
+  border: none;
+  outline: none;
+}
+.forgot-pass-container input {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 14px;
+  color: #8b8b8b;
+  font-size: 0.875em;
+  margin-bottom: 1.3rem;
+}
+
+.kisa-cizgi {
+  background: #7af0d1;
+  width: 10%;
+  height: 4px;
+  margin: 1.2rem 0;
+}
+
+.forgot-pass-link {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.forgot-pass-link:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=Emir.css.map */
