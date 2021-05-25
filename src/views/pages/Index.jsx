@@ -121,7 +121,7 @@ export default class Index extends Component {
               <div className="button-wrapper">
                 <Link to="/store"><button>Buy</button></Link>
                 <p>{"&"}</p>
-                <Link to="/seller"><button>Sell</button></Link>
+                <Link to="/be-seller"><button>Sell</button></Link>
               </div>
             </form>
           </div>

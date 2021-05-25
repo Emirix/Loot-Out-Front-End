@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../shared/Header";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import {withRouter} from "react-router"
 import InputRange from "react-input-range";
 import Recent1 from "../../assets/img/recent-1.png";
 import CheckButton from "../../assets/svg/check-button.svg";
@@ -14,7 +15,7 @@ import ESpinner from "../../Spinner/Spinner";
 import "../../assets/css/header.css"
  
   
-export default class Store extends React.Component {
+ class Store extends React.Component {
   constructor() {
     super();
     this.drop = this.drop.bind(this);
@@ -37,7 +38,7 @@ export default class Store extends React.Component {
 
 
   componentDidMount() {
-
+    window.scrollTo(0,0)
     axios.get("/products/brands-model?format=json").then(res=>{
       console.log(res.data);
       this.setState({yanMenu:res.data})
@@ -47,6 +48,10 @@ export default class Store extends React.Component {
       console.log(res.data)
       this.setState({urunler:res.data})
     })
+
+    if(new URLSearchParams(window.location.search).get("filter") == "no"){
+      this.setState({isFilterOpen:false})
+    }
 
 
 
@@ -126,6 +131,14 @@ export default class Store extends React.Component {
     }
   }
   render() {
+    const urlParams = new URLSearchParams(window.location.search)
+    const model = urlParams.get("model")
+    const size = urlParams.get("size")
+    const min = urlParams.get("min")
+    const max = urlParams.get("max")
+    const filter = urlParams.get("filter")
+  
+   
     return (
       <div className="store container-fluid">
 
@@ -143,7 +156,7 @@ export default class Store extends React.Component {
         {/** TELEFONN */}
         <div
           className={
-            this.state.isTabletFilterOpen
+            this.state.isTabletFilterOpen 
               ? "filter-container filter-container-tablet"
               : "d-none"
           }
@@ -215,10 +228,11 @@ export default class Store extends React.Component {
             <div className="size-container">
               <h5>Size</h5>
               <select name="cars" id="cars">
-                <option value="volvo">35</option>
-                <option value="saab">36</option>
-                <option value="opel">37</option>
-                <option value="audi">38</option>
+                <option value="all">All</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
               </select>
             </div>
 
@@ -397,11 +411,12 @@ export default class Store extends React.Component {
               <div className="size-container">
                 <h5>Size</h5>
                 <select name="cars" id="cars">
-                  <option value="volvo">35</option>
-                  <option value="saab">36</option>
-                  <option value="opel">37</option>
-                  <option value="audi">38</option>
-                </select>
+                <option value="all">All</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+              </select>
               </div>
 
               <div className="filter-price-container">
@@ -484,16 +499,21 @@ export default class Store extends React.Component {
               <div className="store-products">
                 <div className="store-products__top d-none d-xl-flex">
                   <div className="filtered">
-                    <div className="filtered-item">
-                      Air Jordan 1 Mid
+
+                    {model ? <div className="filtered-item">
+                      {model}
                       <div className="close"></div>
-                    </div>
-                    <div className="filtered-item">
-                      38.5 <div className="close"></div>
-                    </div>
-                    <div className="filtered-item">
-                      300-1500 <div className="close"></div>
-                    </div>
+                    </div> : ""}
+
+                    
+                    {size ? <div className="filtered-item">
+                      {size} <div className="close"></div>
+                    </div> :<></> 
+                    }
+                    {min && max ? <div className="filtered-item">
+                      {min}-{max} <div className="close"></div>
+                    </div> : ""}
+
                   </div>
 
                   <div className="sorters ms-auto">
@@ -730,13 +750,19 @@ export default class Store extends React.Component {
                           
                           <div className="row d-xl-none ">
                                     <div className="filtered">
-                                       <div className="filtered-item">
-                                       Air Jordan 1 Mid
-                                       <div className="close"></div>
-                                       </div>
-                                       <div className="filtered-item">38.5  <div className="close"></div></div>
-                                       <div className="filtered-item">300₺-1500₺  <div className="close"></div></div>
-                                   </div>
+                                    {model ? <div className="filtered-item">
+                      {model}
+                      <div className="close"></div>
+                    </div> : ""}
+
+                    
+                    {size ? <div className="filtered-item">
+                      {size} <div className="close"></div>
+                    </div> :<></> 
+                    }
+                    {min && max ? <div className="filtered-item">
+                      {min}-{max} <div className="close"></div>
+                    </div> : ""}              </div>
                                     </div>
                           </div>
 
@@ -891,3 +917,4 @@ export default class Store extends React.Component {
   }
 }
 
+export default withRouter(Store)

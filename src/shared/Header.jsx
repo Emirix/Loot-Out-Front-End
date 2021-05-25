@@ -78,7 +78,7 @@ function Header({logged,openPopup}) {
         />
         {
             logged ? 
-            <button className="sell-button">SELL</button>
+            <Link to="be-seller"><button className="sell-button">SELL</button></Link>
             :
             <button className="sign-in-button" onClick={openPopup}>Sign Up</button>
         }

@@ -2238,7 +2238,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr !important;
 
     .size label {
-      font-size: 12px !important;
+      font-size: 11px !important;
       height: 32px !important;
     }
   }
@@ -4258,4 +4258,9 @@ button.sign-in-button:hover {
    to{
     background:rgba(#000,0.5);
   }
+ }
+
+ .sidebar-body{
+   position:relative;
+   z-index:1000;
  }

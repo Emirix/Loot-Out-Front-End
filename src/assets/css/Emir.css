@@ -2657,7 +2657,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr !important;
   }
   .size-buttons .size label {
-    font-size: 12px !important;
+    font-size: 11px !important;
     height: 32px !important;
   }
 
@@ -4508,6 +4508,10 @@ div.products-on-sale > svg:nth-child(7) {
   to {
     background: rgba(0, 0, 0, 0.5);
   }
+}
+.sidebar-body {
+  position: relative;
+  z-index: 1000;
 }
 
 /*# sourceMappingURL=Emir.css.map */

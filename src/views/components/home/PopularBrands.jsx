@@ -166,39 +166,43 @@ function PopularBrands({PopularBrandDesltopSlash,PopularBrandMobileSlash}) {
             </div>
             <div className="navigation-shoe-wrapper">
                 <img src={shoesTriangle} draggable="false"/>
-                <Link to="/product" id="bir">Other</Link>
-                <Link to="/product" id="iki">Air Jordan 1</Link>
-                <Link to="/product" id="uc">Air Jordan</Link>
-                <Link to="/product" id="dort">Yeezy</Link>
+                <Link to="/store/?model=other&filter=no" id="bir">Other</Link>
+                <Link to="/store/?model=Air Jordan 1&filter=no" id="iki">Air Jordan 1</Link>
+                <Link to="/store/?model=Air Jordan 1 Mid&filter=no" id="uc">Air Jordan 1 Mid</Link>
+                <Link to="/store/?model=yeezy&filter=no" id="dort">Yeezy</Link>
             </div>
             {/* <img src={PopularBrandsPicture} alt="" className="popular-brands-img"/> */}
             <div className="mobile-mode-display ">
                 
                 <div className="card">
-                    <Link to="/product">
+                    <Link to="/store/?model=Air Jordan 1&filter=no">
                 <div className="image-wrapper">
                 <img src={PopularBrand1} alt=""/>
                 </div>
                     <p>Air Jordan 1</p>
                     </Link>
                 </div>
+
                  <div className="card">
+                     <Link  to="/store/?model=other&filter=no">
                  <div className="image-wrapper">
                  <img src={PopularBrand2} alt=""/>
                  </div>
-                    <p>Other</p>
+                    <p>Other</p></Link>
                 </div>
+
                  <div className="card">
+                     <Link to="/store/?model=Air Jordan 1 Mid&filter=no">
                  <div className="image-wrapper">
                  <img src={PopularBrand3} alt=""/>
                  </div>
-                    <p>Air Jordan 1 Mid</p>
+                    <p>Air Jordan 1 Mid</p></Link>
                 </div>
-                 <div className="card">
+                 <div className="card"> <Link to="/store/?model=yeezy&filter=no"> 
                  <div className="image-wrapper">
                  <img src={PopularBrand4} alt=""/>
                  </div>
-                    <p>Yeezy</p>
+                    <p>Yeezy</p></Link>
                 </div>
             </div>
         </div>
