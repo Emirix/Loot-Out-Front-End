@@ -21,6 +21,7 @@ import Sidebar from "./shared/Sidebar";
 import Search from "./shared/Search"
 
 import SLPopup from "./views/components/SLPopup";
+import ContactUs from "./views/pages/ContactUs";
 
 
 
@@ -42,10 +43,11 @@ function App() {
       <span className="AppFrontWrapper"></span>
 
       <Router>
-        <Header logged={isLogged} openPopup={()=>{
+      {window.location.pathname == "/contact-us" ?  <></>: <Header logged={isLogged} openPopup={()=>{   
           setPopup(true);
           document.body.classList.add("kes-lan")
-        }}/>
+        }}/>}
+
         <Sidebar logged={isLogged} openPopup={()=>{
           setPopup(true);
           document.body.classList.add("kes-lan")
@@ -79,6 +81,10 @@ function App() {
             <Magaza />
           </Route>
 
+          <Route path="/contact-us" exact>
+            <ContactUs/>
+          </Route>
+
           <Route path="/my-orders" exact>
             <MyOrders/>
           </Route>
@@ -106,7 +112,8 @@ function App() {
             <SellerAssets  />
           </Route>
         </Switch>
-        <Footer/>
+        {window.location.pathname == "/contact-us" ?  <></>: <Footer/>}
+
       </Router>
      
     </div>
