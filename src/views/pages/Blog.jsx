@@ -26,6 +26,8 @@ export default class Blog extends React.Component {
   }
 
   componentDidMount(){
+    window.scrollTo(0,0)
+
     const slider = document.querySelector('.blog-list-container');
 let isDown = false;
 let startX;
@@ -53,7 +55,9 @@ slider.addEventListener('mousemove', (e) => {
   slider.scrollLeft = scrollLeft - walk;
   console.log(walk);
 });
-  }
+
+
+}
 
 
     render(){
@@ -110,8 +114,11 @@ slider.addEventListener('mousemove', (e) => {
 
             </div>      
             
-            <div className="row yukarii">
-            dsa
+            <div className="row yukarii mt-4">
+            <div className="pager">
+              <div className="first">01</div>
+              <div className="second">/09</div>
+            </div>
           </div>
         </div> 
     )

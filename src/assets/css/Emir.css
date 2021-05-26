@@ -727,6 +727,21 @@
   color: #F3F3F3;
 }
 
+.pager {
+  display: flex;
+  font-weight: 300;
+  color: #F3F3F3;
+}
+.pager .first {
+  font-size: 70px;
+  line-height: 60px;
+  align-self: flex-start;
+}
+.pager .second {
+  font-size: 18px;
+  align-self: flex-start;
+}
+
 header .header-list li a {
   text-decoration: none;
   color: white;

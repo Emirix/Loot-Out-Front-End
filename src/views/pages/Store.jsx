@@ -933,9 +933,4 @@ import "../../assets/css/header.css"
 export default withRouter(Store)
 
 
-{/****
-
-
-127.0.0.1:8000/products/model/?serch=Air jordan 1, yeezy,350
-
-*/}
+  

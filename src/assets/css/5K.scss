@@ -85,3 +85,22 @@ margin: 0;        font-size: 22px;
 color: #F3F3F3;
     }
 }
+
+.pager{
+    display:flex;
+    font-weight: 300;
+    color:#F3F3F3;
+    .first{
+        
+font-size: 70px;
+line-height: 60px;
+align-self: flex-start;
+
+
+    }
+
+    .second{
+        font-size: 18px;
+        align-self: flex-start;
+    }
+}

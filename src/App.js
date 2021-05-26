@@ -7,7 +7,7 @@ import Footer from "./shared/Footer";
 import {HandleSigninPopUp} from "./assets/js/Events/PopUp"
 import AddProduct from "./views/pages/AddProduct";
 import Product from "./views/pages/Product";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch,useHistory,withRouter } from "react-router-dom";
 import Magaza from "./views/pages/Store";
 import CheckOut from "./views/pages/CheckOut";
 import MyAccount2 from "./views/pages/MyAccount2";
@@ -32,6 +32,8 @@ function App() {
 
   const [isLogged,setLogged] = useState(false);
   const [isPopup,setPopup] = useState(false)
+  const history = useHistory() 
+
 
   return (
     <div className="App ">
@@ -40,10 +42,10 @@ function App() {
       
       <Router>
 
-      {window.location.pathname == "/contact-us" || window.location.pathname == "/blog"?  <></>: <Header logged={isLogged} openPopup={()=>{   
+ <Header logged={isLogged} openPopup={()=>{   
           setPopup(true);
           document.body.classList.add("kes-lan")
-        }}/>}
+        }}/>
         <Sidebar logged={isLogged} openPopup={()=>{
           setPopup(true);
           document.body.classList.add("kes-lan")
@@ -113,7 +115,7 @@ function App() {
           </Route>
         </Switch>
        
-        {window.location.pathname == "/contact-us" || window.location.pathname == "/blog" ?  <></>: <Footer />}
+        <Footer />
       </Router>
       
     </div>
