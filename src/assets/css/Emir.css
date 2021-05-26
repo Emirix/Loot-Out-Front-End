@@ -650,6 +650,19 @@
     height: 58px !important;
   }
 }
+.blog-page-container {
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+.blog-page-container .blog-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 header .header-list li a {
   text-decoration: none;
   color: white;

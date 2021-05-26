@@ -22,6 +22,7 @@ import Search from "./shared/Search"
 
 import SLPopup from "./views/components/SLPopup";
 import ContactUs from "./views/pages/ContactUs";
+import Blog from "./views/pages/Blog";
 
 
 
@@ -39,7 +40,7 @@ function App() {
       
       <Router>
 
-      {window.location.pathname == "/contact-us" ?  <></>: <Header logged={isLogged} openPopup={()=>{   
+      {window.location.pathname == "/contact-us" || window.location.pathname == "/blog"?  <></>: <Header logged={isLogged} openPopup={()=>{   
           setPopup(true);
           document.body.classList.add("kes-lan")
         }}/>}
@@ -76,6 +77,10 @@ function App() {
             <Magaza />
           </Route>
 
+          <Route path="/blog" exact>
+            <Blog/> 
+          </Route>
+
           <Route path="/contact-us" exact>
             <ContactUs/>
           </Route>
@@ -108,7 +113,7 @@ function App() {
           </Route>
         </Switch>
        
-        {window.location.pathname == "/contact-us" ?  <></>: <Footer />}
+        {window.location.pathname == "/contact-us" || window.location.pathname == "/blog" ?  <></>: <Footer />}
       </Router>
       
     </div>
