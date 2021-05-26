@@ -706,6 +706,10 @@ padding-right: 0 !important;
 
 @media screen and (max-width:992px){
 
+  .contact-us-container .contact-info{
+    left: 126px;
+  }
+
   .login-register-popup{
     align-items: unset !important;
 
@@ -738,4 +742,12 @@ padding-right: 0 !important;
   .guide-box + a{
       height:58px !important;
     }
+}
+
+@media  screen and (max-width:1024px) {
+  .contact-us-container .contact-info{
+    position: relative;
+    top: 490px;
+} 
+
 }

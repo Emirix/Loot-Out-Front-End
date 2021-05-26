@@ -1,6 +1,6 @@
 import React from "react";
 import InputLabel from "../components/InputLabel";
-
+// 2. ekrana gel la
 export default class MyAccount2 extends React.Component {
     constructor(){
         super();
