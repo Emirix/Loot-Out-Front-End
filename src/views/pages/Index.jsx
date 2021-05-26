@@ -63,6 +63,9 @@ export default class Index extends Component {
       this.setState({mostSearchedItems:res.data})
      
     })
+
+    
+
   }
 
   slide(w, to) {

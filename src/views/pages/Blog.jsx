@@ -1,15 +1,119 @@
 import React from 'react'
 import Header from '../../shared/Header'
-import BG from "../../assets/img/blog-bg1440.jpg"
+import BG from "../../assets/img/blog-bg1366.jpg"
 import Atom from "../../assets/img/blog-atom.png"
+import BlogLink from '../components/BlogLink'
+import * as $ from "jquery"
+import Swipale from 'react-swipeable';
 
-function Blog() {
-    return (
+
+export default class Blog extends React.Component {
+
+  constructor(){
+    super();
+    this.slide = this.slide.bind(this)
+  }
+  
+  slide(w, to) {
+    if (to == "right") {
+      var now = $(w).scrollLeft()
+      $(w).scrollLeft((now + window.innerWidth) - 70)
+    } else {
+    
+      var now = $(w).scrollLeft() - window.innerWidth;
+      $(w).scrollLeft(now);
+    }
+  }
+
+  componentDidMount(){
+    const slider = document.querySelector('.blog-list-container');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+  }
+
+
+    render(){
+      return (
         <div className="blog-page-container container-fluid">
             <Header/>  
-            <img className="blog-bg" src={BG}/>
+            <img className="blog-bg" src={BG} draggable={false}/>
+            <img className="blog-atom" src={Atom} draggable={false}/>
+
+            <div className="yukarii mt-3">
+            <div className="row">
+
+              
+                <div className="d-flex align-items-center">
+                <div className="sneaker-blog-title">Sneaker Blog</div>
+
+<div className="slider-arrow-blog ms-auto d-flex">
+   <div className="arrow"  onClick={()=>{this.slide(".blog-list-container","left")}}><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 1L1 8L9 15" stroke="#7AF0D1"/>
+</svg>
+</div>
+   <div className="arrow" onClick={()=>{this.slide(".blog-list-container","right")}}><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 15L9 8L0.999999 1" stroke="#F3F3F3"/>
+</svg>
+</div>
+</div>
+
+                </div>
+
+                
+            </div>
+            </div>
+        
+
+     
+
+           
+           <div className="blog-list-container yukarii">
+               
+                    
+                 <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+                <BlogLink/>
+
+            </div>      
+            
+            <div className="row yukarii">
+            dsa
+          </div>
         </div> 
     )
+    }
 }
-
-export default Blog
