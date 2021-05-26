@@ -511,6 +511,16 @@
   }
 }
 @media screen and (max-width: 768px) {
+  div.my-account-container.container-fluid > div.container > div > div.col-lg-9 > form > div > div.row.mb-3 > button {
+    width: 80% !important;
+    margin: 0 auto !important;
+    font-size: 1rem;
+  }
+
+  #selamunaleykum {
+    padding-right: 0 !important;
+  }
+
   .fiyat, .edit, .remove {
     display: none;
   }
@@ -765,6 +775,67 @@
     top: 19% !important;
     width: 58vw !important;
     height: 55vw !important;
+  }
+}
+.ortala1 {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 666px) {
+  div.blog-page-container.container-fluid > div:nth-child(6) > div {
+    padding-right: 0 !important;
+  }
+
+  .ortala1 {
+    padding-right: 0 !important;
+  }
+
+  .blog-page-container .blog-bg {
+    width: 100% !important;
+  }
+
+  .blog-page-container .blog-atom {
+    right: -67% !important;
+    top: 22% !important;
+    width: 117vw !important;
+    height: 129vw !important;
+  }
+
+  .blog-link-container {
+    min-width: 250px !important;
+    max-width: 250px !important;
+  }
+
+  .yukarii {
+    padding: 0 1rem !important;
+  }
+
+  .ortala1 {
+    display: block !important;
+  }
+
+  .sneaker-blog-title {
+    font-size: 38px !important;
+  }
+
+  .blog-list-container {
+    margin-top: 1rem !important;
+  }
+
+  .slider-arrow-blog {
+    text-align: right !important;
+  }
+  .slider-arrow-blog .arrow {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .slider-arrow-blog .arrow:nth-child(1) {
+    margin-left: auto;
+  }
+  .slider-arrow-blog .arrow svg {
+    width: 8px !important;
+    height: 8px !important;
   }
 }
 header .header-list li a {
@@ -5096,7 +5167,7 @@ div.products-on-sale > svg:nth-child(7) {
 .button-primary {
   background: #7af0d1;
   color: #002A3F;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border-radius: 9in;
   border: none;
   font-weight: 800;

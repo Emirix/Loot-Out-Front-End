@@ -552,6 +552,17 @@
   }
 
 @media screen and (max-width:768px) {
+
+ div.my-account-container.container-fluid > div.container > div > div.col-lg-9 > form > div > div.row.mb-3 > button{
+  width:80% !important;
+  margin:0 auto !important;
+  font-size: 1rem;
+  }
+  #selamunaleykum{
+padding-right: 0 !important;
+  }
+
+
  .fiyat,.edit,.remove{
    display: none;
  } 

@@ -62,7 +62,7 @@ export default class MyAccount2 extends React.Component {
               </nav>
             </div>
 
-            <div className="col-lg-9">
+            <div className="col-lg-9" id="selamunaleykum">
               <h4>WELCOME BACK!</h4>
               <div className="kisa-cizgi"></div>
 
@@ -87,7 +87,7 @@ export default class MyAccount2 extends React.Component {
                   <InputLabel label="Secondary Phone"opt="no"  type="number" />
 
                   <div className="row mb-3">
-                      <button className="button-primary col-3 ms-auto">SAVE ALL CHANGES</button>
+                      <button className="button-primary col-6 ms-auto">SAVE ALL CHANGES</button>
                   </div>
 
 

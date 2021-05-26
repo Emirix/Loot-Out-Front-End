@@ -127,6 +127,68 @@ align-self: flex-start;
         width: 58vw !important;
         height: 55vw !important;}
 }
-@media screen and(max-width:480px){
-
+.ortala1{
+    display: flex;
+    align-items: center;
 }
+@media screen and(max-width:666px){
+
+
+    div.blog-page-container.container-fluid > div:nth-child(6) > div{
+        padding-right: 0 !important;
+    }
+
+        .ortala1{
+            padding-right: 0 !important;
+        }
+
+    .blog-page-container .blog-bg{
+        width: 100% !important;
+    }
+
+    .blog-page-container .blog-atom{
+        right: -67% !important;
+        top: 22% !important;
+        width: 117vw !important;
+        height: 129vw !important; 
+    }
+
+    .blog-link-container{
+        
+           min-width: 250px !important;
+            max-width: 250px !important;
+      
+    }
+
+    .yukarii{
+        padding:0 1rem !important
+    }
+    .ortala1{
+        display: block !important;
+    }
+
+    .sneaker-blog-title{
+        font-size: 38px !important;
+    }
+
+    .blog-list-container{
+        margin-top: 1rem !important;
+    }
+
+    .slider-arrow-blog{
+        text-align: right !important;
+        .arrow{
+            width: 28px !important;
+            height: 28px !important;
+
+            &:nth-child(1){
+                margin-left: auto;
+            }
+
+            svg{
+                width: 8px !important;
+                height:8px !important;
+            }
+        }
+    }
+} 

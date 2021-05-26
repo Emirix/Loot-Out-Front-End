@@ -97,6 +97,10 @@ function Sidebar({logged,openPopup}) {
                     <li>
                         <Link to="/my-account">My Account</Link>
                     </li>
+
+                    <li>
+                        <Link to="/blog">Blog</Link>
+                    </li>
                     <li>
                         <Link to="/about-us">About Us</Link>
                     </li>
