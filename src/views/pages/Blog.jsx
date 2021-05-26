@@ -4,17 +4,18 @@ import BG from "../../assets/img/blog-bg1366.jpg"
 import Atom from "../../assets/img/blog-atom.png"
 import BlogLink from '../components/BlogLink'
 import * as $ from "jquery"
+import {withRouter } from "react-router-dom"
 import Swipale from 'react-swipeable';
+ 
 
-
-export default class Blog extends React.Component {
+ class Blog extends React.Component {
 
   constructor(){
     super();
     this.slide = this.slide.bind(this)
   }
   
-  slide(w, to) {
+  slide(w, to ) {
     if (to == "right") {
       var now = $(w).scrollLeft()
       $(w).scrollLeft((now + window.innerWidth) - 70)
@@ -57,13 +58,21 @@ slider.addEventListener('mousemove', (e) => {
 });
 
 
+if(this.props.location.pathname == "/blog"){
+  document.querySelector(".Footer").classList.add("d-none")
+}
+
+}
+
+componentWillUnmount(){
+  document.querySelector(".Footer").classList.remove("d-none")
+
 }
 
 
     render(){
       return (
         <div className="blog-page-container container-fluid">
-            <Header/>  
             <img className="blog-bg" src={BG} draggable={false}/>
             <img className="blog-atom" src={Atom} draggable={false}/>
 
@@ -124,3 +133,4 @@ slider.addEventListener('mousemove', (e) => {
     )
     }
 }
+export default withRouter(Blog)

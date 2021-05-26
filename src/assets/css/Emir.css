@@ -667,8 +667,8 @@
   position: fixed;
   right: 23%;
   top: 27;
-  width: 27%;
-  height: 48%;
+  width: 27vw;
+  height: 25vw;
   user-select: none !important;
 }
 
@@ -742,6 +742,31 @@
   align-self: flex-start;
 }
 
+@media screen and (max-width: 1024px) {
+  .blog-link-container p {
+    font-size: 16px !important;
+  }
+
+  .blog-link-container {
+    min-width: 311px !important;
+    max-width: 311px !important;
+  }
+
+  .pager {
+    display: none !important;
+  }
+
+  .blog-page-container .blog-bg {
+    width: 136% !important;
+  }
+
+  .blog-page-container .blog-atom {
+    right: -17% !important;
+    top: 19% !important;
+    width: 58vw !important;
+    height: 55vw !important;
+  }
+}
 header .header-list li a {
   text-decoration: none;
   color: white;
