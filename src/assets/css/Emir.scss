@@ -4757,149 +4757,20 @@ div.products-on-sale > svg:nth-child(7) {
   .pcde-kapa {
     display: none;
   }
-  .contact-us-container {
-    background-image: url(../img/contact-bg-md.png) !important;
-    svg {
-      width: 97px !important;
-      height: 97px !important;
-    }
-    .we-value {
-      font-size: 50px !important;
-    }
-    .contact-info {
-      position: absolute !important;
-      bottom: 20px;
-      left: 50px;
-    }
-
-    li.s {
-      font-size: 10px !important;
-      margin-bottom: 0.7rem !important;
-
-      &:first-child {
-        margin-bottom: 1rem !important;
-        font-size: 30px !important;
-      }
-    }
-  }
+ 
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-us-container {
-    background-image: url(../img/contact-bg.png) !important;
-    .we-value {
-      font-size: 70px !important;
-    }
-    .contact-info {
-      position: static !important;
-    }
-    li.s {
-      font-size: 17px !important;
-
-      &:first-child {
-        margin-bottom: 2rem !important;
-        font-size: 40px !important;
-      }
-    }
-  }
+ 
 }
 
-.contact-us-container {
-  height: 100vh;
-  background-size: cover;
-  font-family: "Roboto", sans-serif;
-  position: absolute;
-  top: 0;
-  form {
-    input {
-      width: 98%;
-      background: transparent;
-      padding: 1rem 0rem;
-      outline: none;
-      border: none;
-      border-bottom: 1px solid #ededed;
-      font-family: "Roboto", sans-serif;
-      height: 43px;
-      margin-bottom: 2rem;
-      color: white;
-      font-size: 17px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 22px;
-      letter-spacing: 0em;
-      text-align: left;
 
-      &::placeholder {
-        color: #ededed;
-      }
-    }
-  }
-
-  .topla {
-    margin-top: 5rem;
-  }
-
-  svg {
-    display: block;
-  }
-
-  .we-value {
-    font-family: "Reem Kufi", sans-serif;
-    font-size: 70px;
-    font-style: normal;
-    line-height: 77px;
-    white-space:pre;
-    color: #f3f3f3;
-  }
-
-  .contact-info {
-    margin: 0;
-    padding: 0;
-
-    li.s {
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 120%;
-      margin-bottom: 1rem;
-      color: #f3f3f3;
-
-      &:first-child {
-        margin-bottom: 2rem;
-        font-size: 40px;
-      }
-    }
-  }
-}
 
 @media (min-width: 320px) and (max-width: 550px) {
   .mobilde-kapa {
     display: none;
   }
 
-  .contact-us-container {
-    p {
-      font-family: "Reem Kufi", sans-serif;;
-
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 110%;
-
-      color: #f3f3f3;
-    }
-    .form-cizgi {
-      height: 1px;
-      width: 100%;
-      background: #ededed;
-      margin-bottom: 2rem;
-    }
-  }
-  .contact-us-container form input {
-    margin-bottom: 1rem !important;
-
-    &:last-child {
-      margin-bottom: 2rem;
-    }
-  }
 }
 
 .account-atom{

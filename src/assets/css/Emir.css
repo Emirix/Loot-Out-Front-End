@@ -80,6 +80,22 @@
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .contact-us__info-container {
+    position: relative;
+    top: 100px;
+    font-family: "Roboto";
+  }
+  .contact-us__info-container h1 {
+    font-size: 30px !important;
+    color: #F3F3F3 !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .contact-us__info-container p {
+    font-size: 14px !important;
+    margin-bottom: 1rem !important;
+    color: #F3F3F3 !important;
+  }
+
   .person-icon {
     width: 67px !important;
     height: 67px !important;
@@ -663,6 +679,44 @@
   .guide-box + a {
     height: 58px !important;
   }
+
+  .contact-top {
+    flex-direction: column-reverse;
+    margin-top: 2rem !important;
+    margin-left: auto;
+  }
+
+  .contact-us__container__atom {
+    bottom: 0px !important;
+    right: -130px !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .contact-us__container form button {
+    width: 116px !important;
+    height: 33px !important;
+    font-size: 15px !important;
+    margin-right: 1rem;
+  }
+  .contact-us__title {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .contact-us__info-container {
+    margin-top: 2rem !important;
+    position: static !important;
+    font-family: "Roboto";
+  }
+  .contact-us__info-container h1 {
+    font-size: 30px !important;
+    color: #F3F3F3 !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .contact-us__info-container p {
+    font-size: 17px !important;
+    margin-bottom: 1rem !important;
+    color: #F3F3F3 !important;
+  }
 }
 @media screen and (max-width: 1024px) {
   .contact-us-container .contact-info {
@@ -848,6 +902,87 @@
     height: 8px !important;
   }
 }
+.yukari2 {
+  position: relative;
+  color: white;
+}
+
+.contact-top {
+  margin-top: 5rem;
+}
+
+.contact-us__container form input {
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ededed !important;
+  font-size: 17px;
+  border: none;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: #ededed;
+}
+.contact-us__container form input::placeholder {
+  color: #ededed;
+}
+.contact-us__container form button {
+  background: #7AF0D1;
+  margin-top: 1rem;
+  border-radius: 9in;
+  color: #002A3F;
+  border: none;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  font-size: 18px;
+  width: 176px;
+  height: 41px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.contact-us__atom {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 35vw;
+  height: 34vw;
+}
+.contact-us__atom svg {
+  width: 100%;
+  height: 100%;
+}
+.contact-us__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-us__title {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+}
+.contact-us__info-container {
+  font-family: "Roboto";
+}
+.contact-us__info-container h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 48px;
+  margin-bottom: 3rem;
+  color: #f3f3f3;
+}
+.contact-us__info-container p {
+  margin-bottom: 1.4rem;
+  font-size: 17px;
+  font-weight: 400;
+  color: #f3f3f3;
+}
+
 header .header-list li a {
   text-decoration: none;
   color: white;
@@ -5194,131 +5329,10 @@ div.products-on-sale > svg:nth-child(7) {
   .pcde-kapa {
     display: none;
   }
-
-  .contact-us-container {
-    background-image: url(../img/contact-bg-md.png) !important;
-  }
-  .contact-us-container svg {
-    width: 97px !important;
-    height: 97px !important;
-  }
-  .contact-us-container .we-value {
-    font-size: 50px !important;
-  }
-  .contact-us-container .contact-info {
-    position: absolute !important;
-    bottom: 20px;
-    left: 50px;
-  }
-  .contact-us-container li.s {
-    font-size: 10px !important;
-    margin-bottom: 0.7rem !important;
-  }
-  .contact-us-container li.s:first-child {
-    margin-bottom: 1rem !important;
-    font-size: 30px !important;
-  }
 }
-@media screen and (min-width: 1024px) {
-  .contact-us-container {
-    background-image: url(../img/contact-bg.png) !important;
-  }
-  .contact-us-container .we-value {
-    font-size: 70px !important;
-  }
-  .contact-us-container .contact-info {
-    position: static !important;
-  }
-  .contact-us-container li.s {
-    font-size: 17px !important;
-  }
-  .contact-us-container li.s:first-child {
-    margin-bottom: 2rem !important;
-    font-size: 40px !important;
-  }
-}
-.contact-us-container {
-  height: 100vh;
-  background-size: cover;
-  font-family: "Roboto", sans-serif;
-  position: absolute;
-  top: 0;
-}
-.contact-us-container form input {
-  width: 98%;
-  background: transparent;
-  padding: 1rem 0rem;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #ededed;
-  font-family: "Roboto", sans-serif;
-  height: 43px;
-  margin-bottom: 2rem;
-  color: white;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.contact-us-container form input::placeholder {
-  color: #ededed;
-}
-.contact-us-container .topla {
-  margin-top: 5rem;
-}
-.contact-us-container svg {
-  display: block;
-}
-.contact-us-container .we-value {
-  font-family: "Reem Kufi", sans-serif;
-  font-size: 70px;
-  font-style: normal;
-  line-height: 77px;
-  white-space: pre;
-  color: #f3f3f3;
-}
-.contact-us-container .contact-info {
-  margin: 0;
-  padding: 0;
-}
-.contact-us-container .contact-info li.s {
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 120%;
-  margin-bottom: 1rem;
-  color: #f3f3f3;
-}
-.contact-us-container .contact-info li.s:first-child {
-  margin-bottom: 2rem;
-  font-size: 40px;
-}
-
 @media (min-width: 320px) and (max-width: 550px) {
   .mobilde-kapa {
     display: none;
-  }
-
-  .contact-us-container p {
-    font-family: "Reem Kufi", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 110%;
-    color: #f3f3f3;
-  }
-  .contact-us-container .form-cizgi {
-    height: 1px;
-    width: 100%;
-    background: #ededed;
-    margin-bottom: 2rem;
-  }
-
-  .contact-us-container form input {
-    margin-bottom: 1rem !important;
-  }
-  .contact-us-container form input:last-child {
-    margin-bottom: 2rem;
   }
 }
 .account-atom {

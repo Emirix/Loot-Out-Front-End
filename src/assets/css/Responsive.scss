@@ -86,6 +86,29 @@
   @media (min-width: 768px) and (max-width: 1024px) {
 
 
+    .contact-us{
+      &__info-container{
+        position: relative;
+        top:100px;
+          font-family: "Roboto";
+          h1{
+              font-size: 30px !important;
+            color:#F3F3F3 !important;
+            margin-bottom: 1.2rem !important;
+          }
+  
+          p{
+
+              font-size: 14px !important;
+              margin-bottom: 1rem !important;
+              color:#F3F3F3 !important;
+  
+          }
+  
+  
+      }
+  }
+
 
     .person-icon{
       width:67px !important;
@@ -222,6 +245,9 @@
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
+
+
+    
     .login-register-popup__container{
       width:98% !important;
     }
@@ -742,6 +768,65 @@ padding-right: 0 !important;
   .guide-box + a{
       height:58px !important;
     }
+
+      .contact-top{
+            flex-direction: column-reverse;
+            margin-top: 2rem !important;
+            margin-left: auto;
+      }
+    .contact-us{
+
+
+      &__container{
+
+        &__atom{
+          bottom: 0px !important;
+          right: -130px !important;
+          width: 300px !important;
+          height: 300px !important;
+        }
+        form{
+          button{
+            width: 116px !important;
+            height: 33px !important;
+            font-size: 15px !important;
+            margin-right: 1rem;
+    
+          }
+        }
+      }
+    
+
+      &__title{
+        font-size: 24px !important;
+        line-height: 32px !important;
+    
+      }
+      &__info-container{
+
+
+
+        margin-top: 2rem !important;
+        position: static !important;
+      
+          font-family: "Roboto";
+          h1{
+              font-size: 30px !important;
+            color:#F3F3F3 !important;
+            margin-bottom: 1.2rem !important;
+          }
+  
+          p{
+
+              font-size: 17px !important;
+              margin-bottom: 1rem !important;
+              color:#F3F3F3 !important;
+  
+          }
+  
+  
+      }
+  }
 }
 
 @media  screen and (max-width:1024px) {
@@ -751,3 +836,4 @@ padding-right: 0 !important;
 } 
 
 }
+
