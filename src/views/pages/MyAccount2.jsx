@@ -1,11 +1,13 @@
 import React from "react";
 import InputLabel from "../components/InputLabel";
+import {withRouter,Link} from "react-router-dom"
 // 2. ekrana gel la
-export default class MyAccount2 extends React.Component {
+ class MyAccount2 extends React.Component {
     constructor(){
         super();
         this.state = {
-            sa:[],
+            mode:0,
+            isFormsFull:false,
             countries: ["Turkey"],
             aylar: [
                 "Ocak",
@@ -36,8 +38,21 @@ export default class MyAccount2 extends React.Component {
     }
   componentDidMount(){
 
-    
+  if(this.props.location.hash == ""){
+      this.setState({mode:0})
 
+    }
+  
+    if(this.props.location.hash == "#edit"){
+      this.setState({mode:0})
+    }
+
+    if(this.props.location.hash == "#be-seller"){
+      this.setState({mode:1})
+    }
+  }
+
+  componentDidUpdate(){
   }
 
   render() {
@@ -56,14 +71,18 @@ export default class MyAccount2 extends React.Component {
 
               <nav>
                 <ul>
-                  <li>My Account</li>
+                  <li onClick={()=>{this.setState({mode:0})}}>My Account</li>
                   <li>My Orders</li>
+                  <li className="li-be-seller">
+                    <button onClick={()=>{this.setState({mode:1})}}>Be Seller</button></li>
                 </ul>
               </nav>
             </div>
 
+            {this.state.mode == 0 ? 
+
             <div className="col-lg-9" id="selamunaleykum">
-              <h4>WELCOME BACK!</h4>
+              <h4>MY ACCOUNT</h4>
               <div className="kisa-cizgi"></div>
 
               <form action="">
@@ -86,8 +105,8 @@ export default class MyAccount2 extends React.Component {
 
                   <InputLabel label="Secondary Phone"opt="no"  type="number" />
 
-                  <div className="row mb-3">
-                      <button className="button-primary col-6 ms-auto">SAVE ALL CHANGES</button>
+                  <div className="row mb-3 mt-3">
+                      <button className="button-primary col-4 ms-auto">SAVE ALL CHANGES</button>
                   </div>
 
 
@@ -96,9 +115,48 @@ export default class MyAccount2 extends React.Component {
                 </div>
               </form>
             </div>
+            : <></>}
+
+            {this.state.mode == 1 ? 
+            
+            <div className="col-lg-9">
+               <h4>BE SELLER</h4>
+              <div className="kisa-cizgi"></div>
+
+              {this.state.isFormsFull ? 
+              <form action="">
+                <div className="row ">
+                <InputLabel label="Email" type="mail" dis={true} value="emir@gmail.com"/>
+
+                  <InputLabel label="Name" className="col-md-3" value="Emir" dis={true}/>
+                  <InputLabel label="Surname" className="col-md-3"value="Tanır" dis={true}/>
+
+                  <InputLabel label="Nationally Number (TC)" type="number"/>
+                  <InputLabel label="IBAN" />
+
+
+                  <div className="row mb-3 mt-3">
+                      <button className="button-primary col-4 ms-auto">SAVE ALL CHANGES</button>
+                  </div>
+
+
+
+
+                </div>
+              </form>
+              : <div className="not-full">
+                  <p>To become a seller, first, please fill in the information in your account completely.</p>
+                  <button className="mb-4" onClick={()=>this.setState({mode:0})}>Go to My Account</button>
+              </div> }
+            </div>
+            
+            : <></>}
+
           </div>
         </div>
       </div>
     );
   }
 }
+
+export default withRouter(MyAccount2)

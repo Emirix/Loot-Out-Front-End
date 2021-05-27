@@ -295,3 +295,58 @@ align-self: flex-start;
 
     }
 }
+
+
+.li-be-seller{
+  border: none !important;
+  button{
+      border-radius: 9in;
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      color:#002A3F;
+      border: none !important;
+       background:#7AF0D1;
+       font-family: "Lato",sans-serif;
+       padding: 0.5rem 0;
+       font-size: 1.2rem;
+       font-weight: bold;
+    }
+}
+
+.my-account-container .col-lg-9{
+    animation-name: gel;
+    animation-duration: .2s;
+    transition: .2s;
+}
+
+@keyframes gel{
+    from{
+        transform: translateX(-30px);
+        transform: scale(0.9);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.not-full{
+    p{
+        font-size: 1.2rem;
+    }
+
+    button{
+        border-radius: 9in;
+        display: block;
+        color:#002A3F;
+        border: none !important;
+         background:#7AF0D1;
+         font-family: "Lato",sans-serif;
+         padding: 0.5rem 1.5rem;
+         font-size: 1.2rem;
+         font-weight: bold;
+
+    }
+}
+
+.my-account-container .row>*{
+    padding-right: 0 !important;
+}

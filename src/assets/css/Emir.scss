@@ -4788,3 +4788,14 @@ div.products-on-sale > svg:nth-child(7) {
     @include size(100%,100%)
   }
 }
+
+.fena-input:disabled{
+  background:#e6e6e6;
+}
+.fena-disabled{
+  position:absolute;
+  right:28px;
+  width:20px;
+  height:20px;
+  top:45px;
+}

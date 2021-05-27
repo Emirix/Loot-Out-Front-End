@@ -86,6 +86,7 @@ export default class SLPopup extends Component {
                                 </div>
 
                                 <button>LOGIN</button>
+                                <button style={{background:"#e94034",marginTop:10,color:"white"}}>LOGIN WITH GOOGLE</button>
                             </form>
                         </div>
                     </div>
