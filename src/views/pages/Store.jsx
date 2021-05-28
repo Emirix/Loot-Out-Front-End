@@ -39,6 +39,7 @@ import "../../assets/css/header.css"
 
 
   componentDidMount() {
+    
     window.scrollTo(0,0)
     axios.get("/products/brands-model?format=json").then(res=>{
       console.log(res.data);
