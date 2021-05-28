@@ -3719,6 +3719,8 @@ div.filter-price-container
   padding-top: 1.7rem;
 }
 .see-result-button {
+  border:none;
+  outline:none;
   background: #7af0d1;
   border-radius: 12px;
   display: block;
@@ -4800,6 +4802,3 @@ div.products-on-sale > svg:nth-child(7) {
   top:45px;
 }
 
-.filtered-item:last-child{
-  display:none;
-}

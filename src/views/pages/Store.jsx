@@ -20,11 +20,11 @@ import "../../assets/css/header.css"
   constructor() {
     super();
     this.drop = this.drop.bind(this);
-   
+    this.ara = this.ara.bind(this);
     this.state = {
-      filtreModels:"",
-      filtreHtml:"",
-      sex:["sa","asd","kes"],
+      filtreModels:[],
+      filtreHtml:[],
+      
       sliderValue: {
         min: 0,
         max: 15000,
@@ -83,10 +83,16 @@ import "../../assets/css/header.css"
 
   }
 
-  componentDidUpdate(){
-    
+  ara(){
+    window.scrollTo(0,0)
+    this.setState({urunler:null})
+    axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+      this.setState({urunler:res.data})       
 
- 
+    }) 
+  }
+
+  componentDidUpdate(){
   }
 
 
@@ -208,10 +214,32 @@ import "../../assets/css/header.css"
 
                   <div className="filter-dropdown__icerik" id={"xi-"+val.id}>
 
-                    {val.models.map(v=>{
+                  {val.models.map(v=>{
                       return(
-                        <div className="icerik" key={v.id}>
-                        <h5>
+                        <div className="icerik" key={v.id} data-filtre={v.name}
+                        onClick={e=>{
+                          if(e.target.querySelector("div").classList[0] == "tick"){
+
+                            e.target.querySelector("div").classList.remove("tick")
+                            var array = [...this.state.filtreModels]; // make a separate copy of the array
+                            var index = array.indexOf(e.currentTarget.getAttribute("data-filtre"))
+                            if (index !== -1) {
+                              array.splice(index, 1);
+                              this.setState({filtreModels: array});
+                            }
+                            
+                          }else{
+                         
+                            this.setState({
+                              filtreModels : [...this.state.filtreModels,e.currentTarget.getAttribute("data-filtre")]
+                            })
+                            e.target.querySelector("div").classList.add("tick")
+                              
+                          }
+
+
+                          }}>
+                        <h5 >
                           {v.name} <div></div>
                         </h5>
                       </div>
@@ -231,10 +259,11 @@ import "../../assets/css/header.css"
           <div>
 
           <div className="see-results-mobile d-sm-none">
-            <Link className="see-result-button" onClick={e=>{
+            <button className="see-result-button" onClick={e=>{
+                 this.ara()
                               this.setState({ isTabletFilterOpen: false });
-
-            }}>See Result (88)</Link>
+                             
+            }}>See Results</button>
             <div class="results-cizgi" o></div>
             </div>
 
@@ -275,12 +304,6 @@ import "../../assets/css/header.css"
                     ".input-range__label-container"
                   )[1].style.opacity = "0";
 
-                  axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-                    console.log("ÇEKTİMM")
-                    this.setState({urunler:res.data})
-                    
-               
-                  })
                 }}
               />
 
@@ -326,9 +349,12 @@ import "../../assets/css/header.css"
           </div>
 
           <div className="results-bottom">
-            <Link to="/" className="see-result-button">
-              See Result (88)
-            </Link>
+            <button onClick={()=>{
+              this.ara()
+              this.setState({ isTabletFilterOpen: false })
+            }} className="see-result-button">
+              See Results 
+            </button>
             <div
               className="results-cizgi"
 
@@ -410,26 +436,24 @@ import "../../assets/css/header.css"
                         <div className="icerik" key={v.id} data-filtre={v.name}
                         onClick={e=>{
                           if(e.target.querySelector("div").classList[0] == "tick"){
+
                             e.target.querySelector("div").classList.remove("tick")
-                            this.setState({filtreModels:this.state.filtreModels.replace(e.currentTarget.getAttribute("data-filtre"),"").replace(",","")})
-                            axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-                              this.setState({urunler:res.data})       
-                            })
-                          }else{
-                            e.target.querySelector("div").classList.add("tick")
-
-                            this.setState({filtreModels:this.state.filtreModels+=e.currentTarget.getAttribute("data-filtre")+","})
-
+                            var array = [...this.state.filtreModels]; // make a separate copy of the array
+                            var index = array.indexOf(e.currentTarget.getAttribute("data-filtre"))
+                            if (index !== -1) {
+                              array.splice(index, 1);
+                              this.setState({filtreModels: array});
+                            }
                             
-                            axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-                              this.setState({urunler:res.data})       
+                          }else{
+                         
+                            this.setState({
+                              filtreModels : [...this.state.filtreModels,e.currentTarget.getAttribute("data-filtre")]
                             })
+                            e.target.querySelector("div").classList.add("tick")
+                              
                           }
 
-                          axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-                            this.setState({urunler:res.data})       
-                            this.setState({urunler:res.data})       
-                          })
 
                           }}>
                         <h5 >
@@ -489,12 +513,7 @@ import "../../assets/css/header.css"
                       ".input-range__label-container"
                     )[5].style.opacity = "0";
 
-                    axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-                      console.log("ÇEKTİMM")
-                      this.setState({urunler:res.data})
-                      
-                
-                    })
+
                   }}
                 />
 
@@ -536,7 +555,7 @@ import "../../assets/css/header.css"
                   </div>
                 </div>
               </div>
-        
+              <div className="filter-search-button" onClick={()=>{this.ara()}}>ARA</div>
               </div>
                </div>
 
@@ -552,12 +571,15 @@ import "../../assets/css/header.css"
                   <div className="filtered">
 
 
-                    {this.state.filtreModels == "" ? "":this.state.filtreModels.split(",").map(val=>{
+                    {this.state.filtreModels.length == 0 ? "":this.state.filtreModels.map((val,index)=>{
                         return(
                           
-                    <div className="filtered-item">
-                      {val}
-                    <div className="close"></div>
+                    <div className="filtered-item"  key={index}>
+                      {val} 
+                    <div className="close"data-filtre2={val} onClick={e=>{
+                      document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[0].click()
+                      document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[1].click()
+                    }}></div>
                   </div>
                         )
                       })}
@@ -675,7 +697,14 @@ import "../../assets/css/header.css"
                 <div className="row" id="kucu">
                   <div className="tablet-top d-md-flex d-xl-none">
                     <div className="tablet-search">
-                      <input type="text" placeholder="Search Sneakers" />
+                      <input type="text" placeholder="Search Sneakers" value={this.state.searchString} onChange={e=>{
+                    this.setState({urunler:null})
+                    this.setState({searchString:e.target.value})
+                    axios.get("/products/search/?search="+e.target.value).then(res=>{
+                      console.log(res.data)
+                      this.setState({urunler:res.data})
+                    })
+                  }} />
                       <svg
                         width="21"
                         height="21"
@@ -801,20 +830,22 @@ import "../../assets/css/header.css"
                   <div className="row">
                           
                           <div className="row d-xl-none ">
-                                    <div className="filtered">
-                                    {model ? <div className="filtered-item">
-                      {model}
-                      <div className="close"></div>
-                    </div> : ""}
+                  <div className="filtered">
 
-                    
-                    {size ? <div className="filtered-item">
-                      {size} <div className="close"></div>
-                    </div> :<></> 
-                    }
-                    {min && max ? <div className="filtered-item">
-                      {min}-{max} <div className="close"></div>
-                    </div> : ""}              </div>
+                  {this.state.filtreModels.length == 0 ? "":this.state.filtreModels.map((val,index)=>{
+                        return(
+                          
+                    <div className="filtered-item" key={index}>
+                      {val} 
+                      <div className="close"data-filtre2={val} onClick={e=>{
+                                                document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[0].click()
+                                                document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[1].click()
+                    }}></div>
+                  </div>
+                        )
+                      })}
+                 
+                            </div>
                                     </div>
                           </div>
 

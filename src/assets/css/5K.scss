@@ -350,3 +350,18 @@ align-self: flex-start;
 .my-account-container .row>*{
     padding-right: 0 !important;
 }
+
+.filter-search-button{
+    width:97%;
+    background:#7AF0D1;
+    color:#002A3F;
+    border-radius: 9in;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.7rem 0;
+}
