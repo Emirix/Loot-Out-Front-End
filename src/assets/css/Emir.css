@@ -5411,4 +5411,8 @@ div.products-on-sale > svg:nth-child(7) {
   top: 45px;
 }
 
+.filtered-item:last-child {
+  display: none;
+}
+
 /*# sourceMappingURL=Emir.css.map */

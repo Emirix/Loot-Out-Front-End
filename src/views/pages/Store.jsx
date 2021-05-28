@@ -22,9 +22,12 @@ import "../../assets/css/header.css"
     this.drop = this.drop.bind(this);
    
     this.state = {
+      filtreModels:"",
+      filtreHtml:"",
+      sex:["sa","asd","kes"],
       sliderValue: {
         min: 0,
-        max: 1000,
+        max: 15000,
       },
       isFilterOpen: true,
       tabletSorterDropdown: false,
@@ -41,14 +44,19 @@ import "../../assets/css/header.css"
   componentDidMount() {
     
     window.scrollTo(0,0)
-    axios.get("/products/brands-model?format=json").then(res=>{
-      console.log(res.data);
-      this.setState({yanMenu:res.data})
-    })
 
-    axios.get("/products/shoes/0/?format=json").then(res=>{
-      console.log(res.data)
+    axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+      console.log("ÇEKTİMM")
       this.setState({urunler:res.data})
+      
+
+    }).then(()=>{
+
+      axios.get(`/products/brands-model?format=json`).then(res=>{
+        console.log(res.data);
+        this.setState({yanMenu:res.data})
+      })
+  
     })
 
     if(new URLSearchParams(window.location.search).get("filter") == "no"){
@@ -56,14 +64,7 @@ import "../../assets/css/header.css"
     }
 
 
-  
-
-
-  }
-
-  componentDidUpdate(){
-    
-    for (
+    /*for (
       var i = 0;
       i < document.querySelectorAll(".filter-dropdown__icerik .icerik").length;
       i++
@@ -77,7 +78,14 @@ import "../../assets/css/header.css"
             e.target.querySelector("div").classList.add("tick");
           }
         });
-    }
+    }*/
+
+
+  }
+
+  componentDidUpdate(){
+    
+
  
   }
 
@@ -185,7 +193,7 @@ import "../../assets/css/header.css"
 
                     </div> : this.state.yanMenu.map(val=>{
                       return(
-                <div className="filter-dropdown">
+                <div className="filter-dropdown" key={val.id}>
                   <div className="filter-dropdown__top">
                     <h5 className="title">{val.name}</h5>
                     <div
@@ -244,7 +252,7 @@ import "../../assets/css/header.css"
             <div className="filter-price-container">
               <h5 className="mb-5">Filter by price</h5>
               <InputRange
-                maxValue={1000}
+                maxValue={15000}
                 minValue={0}
                 value={this.state.sliderValue}
                 onChange={(value) => {
@@ -266,6 +274,13 @@ import "../../assets/css/header.css"
                   document.querySelectorAll(
                     ".input-range__label-container"
                   )[1].style.opacity = "0";
+
+                  axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+                    console.log("ÇEKTİMM")
+                    this.setState({urunler:res.data})
+                    
+               
+                  })
                 }}
               />
 
@@ -375,7 +390,7 @@ import "../../assets/css/header.css"
 
                     </div> : this.state.yanMenu.map(val=>{
                       return(
-                <div className="filter-dropdown">
+                <div className="filter-dropdown" key={val.id}>
                   <div className="filter-dropdown__top">
                     <h5 className="title">{val.name}</h5>
                     <div
@@ -392,8 +407,32 @@ import "../../assets/css/header.css"
 
                     {val.models.map(v=>{
                       return(
-                        <div className="icerik" key={v.id}>
-                        <h5 data-filtre={v.brand}>
+                        <div className="icerik" key={v.id} data-filtre={v.name}
+                        onClick={e=>{
+                          if(e.target.querySelector("div").classList[0] == "tick"){
+                            e.target.querySelector("div").classList.remove("tick")
+                            this.setState({filtreModels:this.state.filtreModels.replace(e.currentTarget.getAttribute("data-filtre"),"").replace(",","")})
+                            axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+                              this.setState({urunler:res.data})       
+                            })
+                          }else{
+                            e.target.querySelector("div").classList.add("tick")
+
+                            this.setState({filtreModels:this.state.filtreModels+=e.currentTarget.getAttribute("data-filtre")+","})
+
+                            
+                            axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+                              this.setState({urunler:res.data})       
+                            })
+                          }
+
+                          axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+                            this.setState({urunler:res.data})       
+                            this.setState({urunler:res.data})       
+                          })
+
+                          }}>
+                        <h5 >
                           {v.name} <div></div>
                         </h5>
                       </div>
@@ -424,9 +463,9 @@ import "../../assets/css/header.css"
 
               <div className="filter-price-container">
                 <h5 className="mb-5">Filter by price</h5>
-
+ 
                 <InputRange
-                  maxValue={1000}
+                  maxValue={15000}
                   minValue={0}
                   value={this.state.sliderValue}
                   onChange={(value) => {
@@ -439,6 +478,8 @@ import "../../assets/css/header.css"
                     document.querySelectorAll(
                       ".input-range__label-container"
                     )[5].style.opacity = "1";
+
+
                   }}
                   onChangeComplete={() => {
                     document.querySelectorAll(
@@ -447,6 +488,13 @@ import "../../assets/css/header.css"
                     document.querySelectorAll(
                       ".input-range__label-container"
                     )[5].style.opacity = "0";
+
+                    axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
+                      console.log("ÇEKTİMM")
+                      this.setState({urunler:res.data})
+                      
+                
+                    })
                   }}
                 />
 
@@ -503,19 +551,19 @@ import "../../assets/css/header.css"
                 <div className="store-products__top d-none d-xl-flex">
                   <div className="filtered">
 
-                    {model ? <div className="filtered-item">
-                      {model}
-                      <div className="close"></div>
-                    </div> : ""}
+
+                    {this.state.filtreModels == "" ? "":this.state.filtreModels.split(",").map(val=>{
+                        return(
+                          
+                    <div className="filtered-item">
+                      {val}
+                    <div className="close"></div>
+                  </div>
+                        )
+                      })}
 
                     
-                    {size ? <div className="filtered-item">
-                      {size} <div className="close"></div>
-                    </div> :<></> 
-                    }
-                    {min && max ? <div className="filtered-item">
-                      {min}-{max} <div className="close"></div>
-                    </div> : ""}
+
 
                   </div>
 
@@ -787,9 +835,9 @@ import "../../assets/css/header.css"
                           </Link>
                         </div>
                         <Link to={"/product/"+val.id}>
-                          <img src={val.image.replace("http://127.0.0.1:8000","").replace("/media/","").replace("https%3A/","https://")} alt="" />
-                          <div className="store-urun__isim">{val.name}</div>
-                          <div className="store-urun__fiyat">145 €</div>
+                          <img src={"http://127.0.0.1:8000" + val.image} alt={val.product_name} />
+                          <div className="store-urun__isim">{val.product_name}</div>
+                          <div className="store-urun__fiyat">{val.price} €</div>
                         </Link>
                       </div>
                       )

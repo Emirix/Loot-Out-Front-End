@@ -4799,3 +4799,7 @@ div.products-on-sale > svg:nth-child(7) {
   height:20px;
   top:45px;
 }
+
+.filtered-item:last-child{
+  display:none;
+}
