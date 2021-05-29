@@ -1216,7 +1216,6 @@
   }
 
   .order-dropdown {
-    padding: 0.7rem;
     box-sizing: border-box;
     overflow: scroll !important;
     grid-template-columns: 1fr !important;

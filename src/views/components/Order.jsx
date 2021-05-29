@@ -12,7 +12,7 @@ function Order({ statusColor, status }) {
             document.querySelectorAll(".order-dropdown")[i].style.height="0";
         }
         dropdown.current.style.height="500px"
-        dropdown.current.style.padding="0"
+        dropdown.current.style.padding="0.5rem"
 
         setDurum(true)
       }else{
