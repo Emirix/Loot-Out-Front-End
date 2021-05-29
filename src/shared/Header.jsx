@@ -106,7 +106,7 @@ function Header({logged,openPopup}) {
                         <li className=""><img src={dPerson}/><Link to="/my-account">My Account</Link></li>
                         <li><img src={dSellerGraph}/><Link to="/seller-assets">Seller Profile</Link></li>
                         <li><img src={dMyOffer}/><Link to="/my-offers">My Offers</Link></li>
-                        <li><img src={dMyOrders}/><Link to="/my-orders">My Orders</Link> <div className="order-count">19</div></li>
+                        <li><img src={dMyOrders}/><Link to="/my-account#my-orders">My Orders</Link> <div className="order-count">19</div></li>
                         <li><img src={dLogOut}/><Link to="">Logout</Link></li>
                     </ul>
                 </div>

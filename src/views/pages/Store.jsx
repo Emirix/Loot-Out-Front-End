@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../shared/Header";
-import { Link} from "react-router-dom";
-import {withRouter} from "react-router"
+import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 import InputRange from "react-input-range";
 import Recent1 from "../../assets/img/recent-1.png";
 import CheckButton from "../../assets/svg/check-button.svg";
@@ -13,18 +13,17 @@ import Sidebar from "../../shared/Sidebar";
 import Search from "../../shared/Search";
 import axios from "axios";
 import ESpinner from "../../Spinner/Spinner";
-import "../../assets/css/header.css"
- 
-  
- class Store extends React.Component {
+import "../../assets/css/header.css";
+
+class Store extends React.Component {
   constructor() {
     super();
     this.drop = this.drop.bind(this);
     this.ara = this.ara.bind(this);
     this.state = {
-      filtreModels:[],
-      filtreHtml:[],
-      
+      filtreModels: [],
+      filtreHtml: [],
+
       sliderValue: {
         min: 0,
         max: 15000,
@@ -32,37 +31,40 @@ import "../../assets/css/header.css"
       isFilterOpen: true,
       tabletSorterDropdown: false,
       isTabletFilterOpen: false,
-      urunler:null,
-      searchString:"",
-      anim1:"",
-      yanMenu:null
+      urunler: null,
+      searchString: "",
+      anim1: "",
+      yanMenu: null,
     };
   }
 
-
-
   componentDidMount() {
-    
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
 
-    axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-      console.log("ÇEKTİMM")
-      this.setState({urunler:res.data})
-      
-
-    }).then(()=>{
-
-      axios.get(`/products/brands-model?format=json`).then(res=>{
-        console.log(res.data);
-        this.setState({yanMenu:res.data})
+    axios
+      .get(
+        `/products/get-products?format=json&min=${
+          this.state.sliderValue.min
+        }&max=${this.state.sliderValue.max}${
+          this.state.filtreModels == ""
+            ? ""
+            : `&model=${this.state.filtreModels}`
+        }`
+      )
+      .then((res) => {
+        console.log("ÇEKTİMM");
+        this.setState({ urunler: res.data });
       })
-  
-    })
+      .then(() => {
+        axios.get(`/products/brands-model?format=json`).then((res) => {
+          console.log(res.data);
+          this.setState({ yanMenu: res.data });
+        });
+      });
 
-    if(new URLSearchParams(window.location.search).get("filter") == "no"){
-      this.setState({isFilterOpen:false})
+    if (new URLSearchParams(window.location.search).get("filter") == "no") {
+      this.setState({ isFilterOpen: false });
     }
-
 
     /*for (
       var i = 0;
@@ -79,26 +81,35 @@ import "../../assets/css/header.css"
           }
         });
     }*/
-
-
   }
 
-  ara(){
-    window.scrollTo(0,0)
-    this.setState({urunler:null})
-    axios.get(`/products/get-products?format=json&min=${this.state.sliderValue.min}&max=${this.state.sliderValue.max}${this.state.filtreModels == "" ? "" : `&model=${this.state.filtreModels}`}`).then(res=>{
-      this.setState({urunler:res.data})       
-
-    }) 
+  ara() {
+    window.scrollTo(0, 0);
+    this.setState({ urunler: null });
+    axios
+      .get(
+        `/products/get-products?format=json&min=${
+          this.state.sliderValue.min
+        }&max=${this.state.sliderValue.max}${
+          this.state.filtreModels == ""
+            ? ""
+            : `&model=${this.state.filtreModels}`
+        }`
+      )
+      .then((res) => {
+        this.setState({ urunler: res.data });
+      });
   }
 
-  componentDidUpdate(){
-  }
-
+  componentDidUpdate() {}
 
   drop(e, item) {
     if (document.getElementById(item).style.maxHeight == "300px") {
-      for (var i = 0;i < document.getElementsByClassName("filter-dropdown__icerik").length;i++) {
+      for (
+        var i = 0;
+        i < document.getElementsByClassName("filter-dropdown__icerik").length;
+        i++
+      ) {
         document.getElementsByClassName("filter-dropdown__icerik")[
           i
         ].style.maxHeight = "0px";
@@ -114,10 +125,12 @@ import "../../assets/css/header.css"
         i < document.getElementsByClassName("filter-dropdown__icerik").length;
         i++
       ) {
-        document.getElementsByClassName("filter-dropdown__icerik")[i].style.maxHeight = "0px";
+        document.getElementsByClassName("filter-dropdown__icerik")[
+          i
+        ].style.maxHeight = "0px";
       }
 
-      document.getElementById(item).style.maxHeight="300px"
+      document.getElementById(item).style.maxHeight = "300px";
 
       for (
         var i = 0;
@@ -138,10 +151,6 @@ import "../../assets/css/header.css"
         ].innerText = "+";
       }
 
-
-     
-
-
       e.currentTarget.innerText = "-";
       e.currentTarget.style.backgroundColor = "rgba(122, 240, 209, 1)";
       e.currentTarget.style.color = "white";
@@ -149,122 +158,142 @@ import "../../assets/css/header.css"
     }
   }
   render() {
-    const urlParams = new URLSearchParams(window.location.search)
-    const model = urlParams.get("model")
-    const size = urlParams.get("size")
-    const min = urlParams.get("min")
-    const max = urlParams.get("max")
-    const filter = urlParams.get("filter")
-  
-   
+    const urlParams = new URLSearchParams(window.location.search);
+    const model = urlParams.get("model");
+    const size = urlParams.get("size");
+    const min = urlParams.get("min");
+    const max = urlParams.get("max");
+    const filter = urlParams.get("filter");
+
     return (
       <div className="store container-fluid">
-
-       
-
-
         <div className="home-sign-in-wrapper">
-            <SignIn/>
-          </div>
-          <div className="home-login-wrapper">
-            <Login />
-          </div>
+          <SignIn />
+        </div>
+        <div className="home-login-wrapper">
+          <Login />
+        </div>
 
-          <div className="home-search-wrapper">
-            <Search />
-          </div>
+        <div className="home-search-wrapper">
+          <Search />
+        </div>
 
         {/** TELEFONN */}
         <div
           className={
-            this.state.isTabletFilterOpen 
+            this.state.isTabletFilterOpen
               ? "filter-container filter-container-tablet"
               : "d-none"
           }
         >
-          <div onClick={()=>{
-            this.setState({isTabletFilterOpen:false})
-            document.body.classList.remove("kes-lan");
-
-          }} className="kapatma"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1.5L20.5 21M1 21L20.5 1.5" stroke="black" stroke-width="2"/>
-</svg>
-
-</div>
+          <div
+            onClick={() => {
+              this.setState({ isTabletFilterOpen: false });
+              document.body.classList.remove("kes-lan");
+            }}
+            className="kapatma"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1.5L20.5 21M1 21L20.5 1.5"
+                stroke="black"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
           <div className="filter-title">Filter</div>
           <div className="kafam-sisti">
+            {this.state.yanMenu == null ? (
+              <div className="e-spinner">
+                <ESpinner color="#7af0d1" width={8} size={50} />
+              </div>
+            ) : (
+              this.state.yanMenu.map((val) => {
+                return (
+                  <div className="filter-dropdown" key={val.id}>
+                    <div className="filter-dropdown__top">
+                      <h5 className="title">{val.name}</h5>
+                      <div
+                        className="button"
+                        onClick={(e) => {
+                          this.drop(e, `xi-${val.id}`);
+                        }}
+                      >
+                        +
+                      </div>
+                    </div>
 
-          {this.state.yanMenu == null ? <div className="e-spinner">
-                    <ESpinner color="#7af0d1" width={8} size={50} />
-
-                    </div> : this.state.yanMenu.map(val=>{
-                      return(
-                <div className="filter-dropdown" key={val.id}>
-                  <div className="filter-dropdown__top">
-                    <h5 className="title">{val.name}</h5>
                     <div
-                      className="button"
-                      onClick={(e) => {
-                        this.drop(e, `xi-${val.id}`);
-                      }}
+                      className="filter-dropdown__icerik"
+                      id={"xi-" + val.id}
                     >
-                      +
+                      {val.models.map((v) => {
+                        return (
+                          <div
+                            className="icerik"
+                            key={v.id}
+                            data-filtre={v.name}
+                            onClick={(e) => {
+                              if (
+                                e.target.querySelector("div").classList[0] ==
+                                "tick"
+                              ) {
+                                e.target
+                                  .querySelector("div")
+                                  .classList.remove("tick");
+                                var array = [...this.state.filtreModels]; // make a separate copy of the array
+                                var index = array.indexOf(
+                                  e.currentTarget.getAttribute("data-filtre")
+                                );
+                                if (index !== -1) {
+                                  array.splice(index, 1);
+                                  this.setState({ filtreModels: array });
+                                }
+                              } else {
+                                this.setState({
+                                  filtreModels: [
+                                    ...this.state.filtreModels,
+                                    e.currentTarget.getAttribute("data-filtre"),
+                                  ],
+                                });
+                                e.target
+                                  .querySelector("div")
+                                  .classList.add("tick");
+                              }
+                            }}
+                          >
+                            <h5>
+                              {v.name} <div></div>
+                            </h5>
+                          </div>
+                        );
+                      })}
+
+                      <div className="bottomx"></div>
                     </div>
                   </div>
-
-                  <div className="filter-dropdown__icerik" id={"xi-"+val.id}>
-
-                  {val.models.map(v=>{
-                      return(
-                        <div className="icerik" key={v.id} data-filtre={v.name}
-                        onClick={e=>{
-                          if(e.target.querySelector("div").classList[0] == "tick"){
-
-                            e.target.querySelector("div").classList.remove("tick")
-                            var array = [...this.state.filtreModels]; // make a separate copy of the array
-                            var index = array.indexOf(e.currentTarget.getAttribute("data-filtre"))
-                            if (index !== -1) {
-                              array.splice(index, 1);
-                              this.setState({filtreModels: array});
-                            }
-                            
-                          }else{
-                         
-                            this.setState({
-                              filtreModels : [...this.state.filtreModels,e.currentTarget.getAttribute("data-filtre")]
-                            })
-                            e.target.querySelector("div").classList.add("tick")
-                              
-                          }
-
-
-                          }}>
-                        <h5 >
-                          {v.name} <div></div>
-                        </h5>
-                      </div>
-  
-                      )
-                    })}
-
-
-
-                    <div className="bottomx"></div>
-                  </div>
-                </div>
-              )
-            }) }
-           
-           </div>
+                );
+              })
+            )}
+          </div>
           <div>
-
-          <div className="see-results-mobile d-sm-none">
-            <button className="see-result-button" onClick={e=>{
-                 this.ara()
-                              this.setState({ isTabletFilterOpen: false });
-                             
-            }}>See Results</button>
-            <div class="results-cizgi" o></div>
+            <div className="see-results-mobile d-sm-none">
+              <button
+                className="see-result-button"
+                onClick={(e) => {
+                  this.ara();
+                  this.setState({ isTabletFilterOpen: false });
+                }}
+              >
+                See Results
+              </button>
+              <div class="results-cizgi" o></div>
             </div>
 
             <div className="size-container">
@@ -294,7 +323,6 @@ import "../../assets/css/header.css"
                   document.querySelectorAll(
                     ".input-range__label-container"
                   )[1].style.opacity = "1";
-
                 }}
                 onChangeComplete={() => {
                   document.querySelectorAll(
@@ -303,11 +331,9 @@ import "../../assets/css/header.css"
                   document.querySelectorAll(
                     ".input-range__label-container"
                   )[1].style.opacity = "0";
-
                 }}
               />
 
-           
               <div className="price-filter-flex">
                 <div className="price-filter-flex__min-max">
                   <input
@@ -349,20 +375,23 @@ import "../../assets/css/header.css"
           </div>
 
           <div className="results-bottom">
-            <button onClick={()=>{
-              this.ara()
-              this.setState({ isTabletFilterOpen: false })
-            }} className="see-result-button">
-              See Results 
+            <button
+              onClick={() => {
+                this.ara();
+                this.setState({ isTabletFilterOpen: false });
+              }}
+              className="see-result-button"
+            >
+              See Results
             </button>
-            <div
-              className="results-cizgi"
-
-            ></div>
+            <div className="results-cizgi"></div>
           </div>
         </div>
 
-        <div className="store-container p-2 text-dark" style={{overflow:"none"}}>
+        <div
+          className="store-container p-2 text-dark"
+          style={{ overflow: "none" }}
+        >
           <div className="store-container__top d-none d-xl-block">
             <div className="bread">
               <Link to="/" className="bread__item">
@@ -378,186 +407,209 @@ import "../../assets/css/header.css"
           <div className="row">
             <div
               className={
-                this.state.isFilterOpen
-                  ? "col-3 d-none d-xl-block"
-                  : "d-none  "
+                this.state.isFilterOpen ? "col-3 d-none d-xl-block" : "d-none  "
               }
             >
-                {/** PC */}
+              {/** PC */}
               <div className="calis-lan-artik">
-   <div className="filter-container ">
-                <div className="filter-container__search">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M14.3257 12.8992L19.7057 18.2792C19.8948 18.4685 20.001 18.7251 20.0009 18.9926C20.0008 19.2601 19.8945 19.5166 19.7052 19.7057C19.516 19.8948 19.2594 20.001 18.9919 20.0009C18.7244 20.0008 18.4678 19.8945 18.2787 19.7052L12.8987 14.3252C11.2905 15.5709 9.26802 16.1571 7.24287 15.9646C5.21772 15.7721 3.34198 14.8153 1.99723 13.2888C0.652477 11.7624 -0.0602651 9.78105 0.00399633 7.74778C0.0682577 5.71451 0.904695 3.78209 2.34315 2.34364C3.7816 0.905183 5.71402 0.068746 7.74729 0.00448461C9.78056 -0.0597768 11.7619 0.652965 13.2884 1.99771C14.8148 3.34246 15.7716 5.21821 15.9641 7.24336C16.1566 9.26851 15.5704 11.2909 14.3247 12.8992H14.3257ZM8.00074 14.0002C9.59204 14.0002 11.1182 13.3681 12.2434 12.2429C13.3686 11.1177 14.0007 9.59153 14.0007 8.00023C14.0007 6.40893 13.3686 4.88281 12.2434 3.75759C11.1182 2.63237 9.59204 2.00023 8.00074 2.00023C6.40944 2.00023 4.88332 2.63237 3.7581 3.75759C2.63289 4.88281 2.00074 6.40893 2.00074 8.00023C2.00074 9.59153 2.63289 11.1177 3.7581 12.2429C4.88332 13.3681 6.40944 14.0002 8.00074 14.0002Z"
-                      fill="#737373"
+                <div className="filter-container ">
+                  <div className="filter-container__search">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.3257 12.8992L19.7057 18.2792C19.8948 18.4685 20.001 18.7251 20.0009 18.9926C20.0008 19.2601 19.8945 19.5166 19.7052 19.7057C19.516 19.8948 19.2594 20.001 18.9919 20.0009C18.7244 20.0008 18.4678 19.8945 18.2787 19.7052L12.8987 14.3252C11.2905 15.5709 9.26802 16.1571 7.24287 15.9646C5.21772 15.7721 3.34198 14.8153 1.99723 13.2888C0.652477 11.7624 -0.0602651 9.78105 0.00399633 7.74778C0.0682577 5.71451 0.904695 3.78209 2.34315 2.34364C3.7816 0.905183 5.71402 0.068746 7.74729 0.00448461C9.78056 -0.0597768 11.7619 0.652965 13.2884 1.99771C14.8148 3.34246 15.7716 5.21821 15.9641 7.24336C16.1566 9.26851 15.5704 11.2909 14.3247 12.8992H14.3257ZM8.00074 14.0002C9.59204 14.0002 11.1182 13.3681 12.2434 12.2429C13.3686 11.1177 14.0007 9.59153 14.0007 8.00023C14.0007 6.40893 13.3686 4.88281 12.2434 3.75759C11.1182 2.63237 9.59204 2.00023 8.00074 2.00023C6.40944 2.00023 4.88332 2.63237 3.7581 3.75759C2.63289 4.88281 2.00074 6.40893 2.00074 8.00023C2.00074 9.59153 2.63289 11.1177 3.7581 12.2429C4.88332 13.3681 6.40944 14.0002 8.00074 14.0002Z"
+                        fill="#737373"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      value={this.state.searchString}
+                      onChange={(e) => {
+                        this.setState({ urunler: null });
+                        this.setState({ searchString: e.target.value });
+                        axios
+                          .get("/products/search/?search=" + e.target.value)
+                          .then((res) => {
+                            console.log(res.data);
+                            this.setState({ urunler: res.data });
+                          });
+                      }}
                     />
-                  </svg>
-                  <input type="text" placeholder="Search" value={this.state.searchString} onChange={e=>{
-                    this.setState({urunler:null})
-                    this.setState({searchString:e.target.value})
-                    axios.get("/products/search/?search="+e.target.value).then(res=>{
-                      console.log(res.data)
-                      this.setState({urunler:res.data})
+                  </div>
+
+                  {this.state.yanMenu == null ? (
+                    <div className="e-spinner">
+                      <ESpinner color="#7af0d1" width={8} size={50} />
+                    </div>
+                  ) : (
+                    this.state.yanMenu.map((val) => {
+                      return (
+                        <div className="filter-dropdown" key={val.id}>
+                          <div className="filter-dropdown__top">
+                            <h5 className="title">{val.name}</h5>
+                            <div
+                              className="button"
+                              onClick={(e) => {
+                                this.drop(e, `i-${val.id}`);
+                              }}
+                            >
+                              +
+                            </div>
+                          </div>
+
+                          <div
+                            className="filter-dropdown__icerik"
+                            id={"i-" + val.id}
+                          >
+                            {val.models.map((v) => {
+                              return (
+                                <div
+                                  className="icerik"
+                                  key={v.id}
+                                  data-filtre={v.name}
+                                  onClick={(e) => {
+                                    if (
+                                      e.target.querySelector("div")
+                                        .classList[0] == "tick"
+                                    ) {
+                                      e.target
+                                        .querySelector("div")
+                                        .classList.remove("tick");
+                                      var array = [...this.state.filtreModels]; // make a separate copy of the array
+                                      var index = array.indexOf(
+                                        e.currentTarget.getAttribute(
+                                          "data-filtre"
+                                        )
+                                      );
+                                      if (index !== -1) {
+                                        array.splice(index, 1);
+                                        this.setState({ filtreModels: array });
+                                      }
+                                    } else {
+                                      this.setState({
+                                        filtreModels: [
+                                          ...this.state.filtreModels,
+                                          e.currentTarget.getAttribute(
+                                            "data-filtre"
+                                          ),
+                                        ],
+                                      });
+                                      e.target
+                                        .querySelector("div")
+                                        .classList.add("tick");
+                                    }
+                                  }}
+                                >
+                                  <h5>
+                                    {v.name} <div></div>
+                                  </h5>
+                                </div>
+                              );
+                            })}
+
+                            <div className="bottomx"></div>
+                          </div>
+                        </div>
+                      );
                     })
-                  }} />
+                  )}
+                </div>
+                    
+                <div className="size-container">
+                  <h5>Size</h5>
+                  <select name="cars" id="cars">
+                    <option value="all">All</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                  </select>
                 </div>
 
-                  {this.state.yanMenu == null ? <div className="e-spinner">
-                    <ESpinner color="#7af0d1" width={8} size={50} />
+                <div className="filter-price-container">
+                  <h5 className="mb-5">Filter by price</h5>
+                      
+                  <InputRange
+                    maxValue={15000}
+                    minValue={0}
+                    value={this.state.sliderValue}
+                    onChange={(value) => {
+                      this.setState({ sliderValue: value });
+                    }}
+                    onChangeStart={() => {
+                      document.querySelectorAll(
+                        ".input-range__label-container"
+                      )[6].style.opacity = "1";
+                      document.querySelectorAll(
+                        ".input-range__label-container"
+                      )[5].style.opacity = "1";
+                    }}
+                    onChangeComplete={() => {
+                      document.querySelectorAll(
+                        ".input-range__label-container"
+                      )[6].style.opacity = "0";
+                      document.querySelectorAll(
+                        ".input-range__label-container"
+                      )[5].style.opacity = "0";
+                    }}
+                  />
 
-                    </div> : this.state.yanMenu.map(val=>{
-                      return(
-                <div className="filter-dropdown" key={val.id}>
-                  <div className="filter-dropdown__top">
-                    <h5 className="title">{val.name}</h5>
-                    <div
-                      className="button"
-                      onClick={(e) => {
-                        this.drop(e, `i-${val.id}`);
-                      }}
-                    >
-                      +
+                  <div className="price-filter-flex">
+                    <div className="price-filter-flex__min-max">
+                      <input
+                        type="number"
+                        value={this.state.sliderValue.min}
+                        min={this.state.sliderValue.min}
+                        max={this.state.sliderValue.max}
+                        onChange={(e) => {
+                          this.setState((prev) => ({
+                            sliderValue: {
+                              ...prev.sliderValue,
+                              min: e.target.value,
+                            },
+                          }));
+                        }}
+                      />
+                      <div className="tl">₺</div>
+                    </div>
+
+                    <div className="price-filter-flex__min-max">
+                      <input
+                        type="number"
+                        value={this.state.sliderValue.max}
+                        min={this.state.sliderValue.min}
+                        max={this.state.sliderValue.max}
+                        onChange={(e) => {
+                          this.setState((prev) => ({
+                            sliderValue: {
+                              ...prev.sliderValue,
+                              max: e.target.value,
+                            },
+                          }));
+                        }}
+                      />
+                      <div className="tl">₺</div>
                     </div>
                   </div>
-
-                  <div className="filter-dropdown__icerik" id={"i-"+val.id}>
-
-                    {val.models.map(v=>{
-                      return(
-                        <div className="icerik" key={v.id} data-filtre={v.name}
-                        onClick={e=>{
-                          if(e.target.querySelector("div").classList[0] == "tick"){
-
-                            e.target.querySelector("div").classList.remove("tick")
-                            var array = [...this.state.filtreModels]; // make a separate copy of the array
-                            var index = array.indexOf(e.currentTarget.getAttribute("data-filtre"))
-                            if (index !== -1) {
-                              array.splice(index, 1);
-                              this.setState({filtreModels: array});
-                            }
-                            
-                          }else{
-                         
-                            this.setState({
-                              filtreModels : [...this.state.filtreModels,e.currentTarget.getAttribute("data-filtre")]
-                            })
-                            e.target.querySelector("div").classList.add("tick")
-                              
-                          }
-
-
-                          }}>
-                        <h5 >
-                          {v.name} <div></div>
-                        </h5>
-                      </div>
-  
-                      )
-                    })}
-
-
-
-                    <div className="bottomx"></div>
-                  </div>
                 </div>
-              )
-            }) }
-              
-              </div>
-
-              <div className="size-container">
-                <h5>Size</h5>
-                <select name="cars" id="cars">
-                <option value="all">All</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-                <option value="38">38</option>
-              </select>
-              </div>
-
-              <div className="filter-price-container">
-                <h5 className="mb-5">Filter by price</h5>
- 
-                <InputRange
-                  maxValue={15000}
-                  minValue={0}
-                  value={this.state.sliderValue}
-                  onChange={(value) => {
-                    this.setState({ sliderValue: value });
+                <div
+                  className="filter-search-button"
+                  onClick={() => {
+                    this.ara();
                   }}
-                  onChangeStart={() => {
-                    document.querySelectorAll(
-                      ".input-range__label-container"
-                    )[6].style.opacity = "1";
-                    document.querySelectorAll(
-                      ".input-range__label-container"
-                    )[5].style.opacity = "1";
-
-
-                  }}
-                  onChangeComplete={() => {
-                    document.querySelectorAll(
-                      ".input-range__label-container"
-                    )[6].style.opacity = "0";
-                    document.querySelectorAll(
-                      ".input-range__label-container"
-                    )[5].style.opacity = "0";
-
-
-                  }}
-                />
-
-                <div className="price-filter-flex">
-                  <div className="price-filter-flex__min-max">
-                    <input
-                      type="number"
-                      value={this.state.sliderValue.min}
-                      min={this.state.sliderValue.min}
-                      max={this.state.sliderValue.max}
-                      onChange={(e) => {
-                        this.setState((prev) => ({
-                          sliderValue: {
-                            ...prev.sliderValue,
-                            min: e.target.value,
-                          },
-                        }));
-                      }}
-                    />
-                    <div className="tl">₺</div>
-                  </div>
-
-                  <div className="price-filter-flex__min-max">
-                    <input
-                      type="number"
-                      value={this.state.sliderValue.max}
-                      min={this.state.sliderValue.min}
-                      max={this.state.sliderValue.max}
-                      onChange={(e) => {
-                        this.setState((prev) => ({
-                          sliderValue: {
-                            ...prev.sliderValue,
-                            max: e.target.value,
-                          },
-                        }));
-                      }}
-                    />
-                    <div className="tl">₺</div>
-                  </div>
+                >
+                  ARA
                 </div>
               </div>
-              <div className="filter-search-button" onClick={()=>{this.ara()}}>ARA</div>
-              </div>
-               </div>
+            </div>
 
             <div
               className={
@@ -569,24 +621,35 @@ import "../../assets/css/header.css"
               <div className="store-products">
                 <div className="store-products__top d-none d-xl-flex">
                   <div className="filtered">
-
-
-                    {this.state.filtreModels.length == 0 ? "":this.state.filtreModels.map((val,index)=>{
-                        return(
-                          
-                    <div className="filtered-item"  key={index}>
-                      {val} 
-                    <div className="close"data-filtre2={val} onClick={e=>{
-                      document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[0].click()
-                      document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[1].click()
-                    }}></div>
-                  </div>
-                        )
-                      })}
-
-                    
-
-
+                    {this.state.filtreModels.length == 0
+                      ? ""
+                      : this.state.filtreModels.map((val, index) => {
+                          return (
+                            <div className="filtered-item" key={index}>
+                              {val}
+                              <div
+                                className="close"
+                                data-filtre2={val}
+                                onClick={(e) => {
+                                  document
+                                    .querySelectorAll(
+                                      `.icerik[data-filtre="${e.currentTarget.getAttribute(
+                                        "data-filtre2"
+                                      )}"]`
+                                    )[0]
+                                    .click();
+                                  document
+                                    .querySelectorAll(
+                                      `.icerik[data-filtre="${e.currentTarget.getAttribute(
+                                        "data-filtre2"
+                                      )}"]`
+                                    )[1]
+                                    .click();
+                                }}
+                              ></div>
+                            </div>
+                          );
+                        })}
                   </div>
 
                   <div className="sorters ms-auto">
@@ -601,7 +664,6 @@ import "../../assets/css/header.css"
                       onClick={() => {
                         this.setState({
                           isFilterOpen: !this.state.isFilterOpen,
-
                         });
                       }}
                       className="ayar-box"
@@ -697,14 +759,21 @@ import "../../assets/css/header.css"
                 <div className="row" id="kucu">
                   <div className="tablet-top d-md-flex d-xl-none">
                     <div className="tablet-search">
-                      <input type="text" placeholder="Search Sneakers" value={this.state.searchString} onChange={e=>{
-                    this.setState({urunler:null})
-                    this.setState({searchString:e.target.value})
-                    axios.get("/products/search/?search="+e.target.value).then(res=>{
-                      console.log(res.data)
-                      this.setState({urunler:res.data})
-                    })
-                  }} />
+                      <input
+                        type="text"
+                        placeholder="Search Sneakers"
+                        value={this.state.searchString}
+                        onChange={(e) => {
+                          this.setState({ urunler: null });
+                          this.setState({ searchString: e.target.value });
+                          axios
+                            .get("/products/search/?search=" + e.target.value)
+                            .then((res) => {
+                              console.log(res.data);
+                              this.setState({ urunler: res.data });
+                            });
+                        }}
+                      />
                       <svg
                         width="21"
                         height="21"
@@ -790,14 +859,12 @@ import "../../assets/css/header.css"
                         </div>
                       </div>
 
-                
                       <div
                         onClick={() => {
                           this.setState({
                             isTabletFilterOpen: !this.state.isTabletFilterOpen,
                           });
-                          document.body.classList.add("kes-lan")
-
+                          document.body.classList.add("kes-lan");
                         }}
                         className="ayar-box"
                       >
@@ -823,65 +890,104 @@ import "../../assets/css/header.css"
                         </svg>
                       </div>
                     </div>
-
                   </div>
 
-                  
                   <div className="row">
-                          
-                          <div className="row d-xl-none ">
-                  <div className="filtered">
-
-                  {this.state.filtreModels.length == 0 ? "":this.state.filtreModels.map((val,index)=>{
-                        return(
-                          
-                    <div className="filtered-item" key={index}>
-                      {val} 
-                      <div className="close"data-filtre2={val} onClick={e=>{
-                                                document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[0].click()
-                                                document.querySelectorAll(`.icerik[data-filtre="${e.currentTarget.getAttribute("data-filtre2")}"]`)[1].click()
-                    }}></div>
-                  </div>
-                        )
-                      })}
-                 
-                            </div>
-                                    </div>
-                          </div>
-
-                  <div className="store-urunler" style={this.state.urunler == null || this.state.urunler.length==0  ? {} : {display:"grid"}} >
-
-                  {this.state.urunler == null ? <div className="e-spinner">
-                    <ESpinner color="#7af0d1" width={8} size={100} />
-
-                    </div> : this.state.urunler.length == 0 ? <div className="not-found">
-                      <h3 className="text-center">Not Found</h3>
-                      <p  className="text-center">Please try to search another sneaker</p>
-                    </div>: this.state.urunler.map(val=>{
-                      return(
-                        <div className="store-urun" key={val.id}>
-                        <div className="hover-wrapper">
-                          <Link to={"/product/"+val.id}>
-                            <img src={CheckButton} alt="check button" draggable={false} />
-                          </Link>
-                        </div>
-                        <Link to={"/product/"+val.id}>
-                          <img src={"http://127.0.0.1:8000" + val.image} alt={val.product_name} />
-                          <div className="store-urun__isim">{val.product_name}</div>
-                          <div className="store-urun__fiyat">{val.price} €</div>
-                        </Link>
+                    <div className="row d-xl-none ">
+                      <div className="filtered">
+                        {this.state.filtreModels.length == 0
+                          ? ""
+                          : this.state.filtreModels.map((val, index) => {
+                              return (
+                                <div className="filtered-item" key={index}>
+                                  {val}
+                                  <div
+                                    className="close"
+                                    data-filtre2={val}
+                                    onClick={(e) => {
+                                      document
+                                        .querySelectorAll(
+                                          `.icerik[data-filtre="${e.currentTarget.getAttribute(
+                                            "data-filtre2"
+                                          )}"]`
+                                        )[0]
+                                        .click();
+                                      document
+                                        .querySelectorAll(
+                                          `.icerik[data-filtre="${e.currentTarget.getAttribute(
+                                            "data-filtre2"
+                                          )}"]`
+                                        )[1]
+                                        .click();
+                                    }}
+                                  ></div>
+                                </div>
+                              );
+                            })}
                       </div>
-                      )
-                    })}
+                    </div>
+                  </div>
 
-
-        
-     
+                  <div
+                    className="store-urunler"
+                    style={
+                      this.state.urunler == null ||
+                      this.state.urunler.length == 0
+                        ? {}
+                        : { display: "grid" }
+                    }
+                  >
+                    {this.state.urunler == null ? (
+                      <div className="e-spinner">
+                        <ESpinner color="#7af0d1" width={8} size={100} />
+                      </div>
+                    ) : this.state.urunler.length == 0 ? (
+                      <div className="not-found">
+                        <h3 className="text-center">Not Found</h3>
+                        <p className="text-center">
+                          Please try to search another sneaker
+                        </p>
+                      </div>
+                    ) : (
+                      this.state.urunler.map((val) => {
+                        return (
+                          <div className="store-urun" key={val.id}>
+                            <div className="hover-wrapper">
+                              <Link to={"/product/" + val.id}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+                            <Link to={"/product/" + val.id}>
+                              <img
+                                src={"http://127.0.0.1:8000" + val.image}
+                                alt={val.product_name}
+                              />
+                              <div className="store-urun__isim">
+                                {val.product_name}
+                              </div>
+                              <div className="store-urun__fiyat">
+                                {val.price} €
+                              </div>
+                            </Link>
+                          </div>
+                        );
+                      })
+                    )}
                   </div>
                 </div>
-                    {/** pagination d-none d-xl-flex */}
-                    {/** pagination-tablet d-xl-none */}
-                <div className={this.state.urunler == null || this.state.urunler.length == 0 ? "d-none":"row"}>
+                {/** pagination d-none d-xl-flex */}
+                {/** pagination-tablet d-xl-none */}
+                <div
+                  className={
+                    this.state.urunler == null || this.state.urunler.length == 0
+                      ? "d-none"
+                      : "row"
+                  }
+                >
                   <div className="d-none">
                     <Link className="pagination__gray">
                       <svg
@@ -968,49 +1074,49 @@ import "../../assets/css/header.css"
                       </svg>
                     </div>
                   </div>
-                    
-     
-
-
                 </div>
-              
-              
+
                 <div className="row">
-                    <nav aria-label="Page navigation example">
-								<ul class="pagination justify-content-center">
-                    <div className="pagination__box disabled"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 4L1.5 4M1.5 4L4.5 1M1.5 4L4.5 7" stroke="black"/>
-</svg>
-
-</div>
-                    <div className="pagination__box active">1</div>
-                    <div className="pagination__box">2</div>
-                    <div className="pagination__box">3</div>
-                    <div className="pagination__box"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 4H8M8 4L5 7M8 4L5 1" stroke="black"/>
-</svg>
-
-
-</div>
-								</ul>
-							</nav>
-		
-                    </div>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <div className="pagination__box disabled">
+                        <svg
+                          width="9"
+                          height="8"
+                          viewBox="0 0 9 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 4L1.5 4M1.5 4L4.5 1M1.5 4L4.5 7"
+                            stroke="black"
+                          />
+                        </svg>
+                      </div>
+                      <div className="pagination__box active">1</div>
+                      <div className="pagination__box">2</div>
+                      <div className="pagination__box">3</div>
+                      <div className="pagination__box">
+                        <svg
+                          width="9"
+                          height="8"
+                          viewBox="0 0 9 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0.5 4H8M8 4L5 7M8 4L5 1" stroke="black" />
+                        </svg>
+                      </div>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-
-              
-    
             </div>
-
           </div>
         </div>
-      
       </div>
     );
   }
 }
 
-export default withRouter(Store)
-
-
-  
+export default withRouter(Store);

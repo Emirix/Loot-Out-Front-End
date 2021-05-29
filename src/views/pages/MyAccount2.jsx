@@ -1,12 +1,13 @@
 import React from "react";
 import InputLabel from "../components/InputLabel";
 import {withRouter,Link} from "react-router-dom"
+import Order from "../components/Order";
 // 2. ekrana gel la
  class MyAccount2 extends React.Component {
     constructor(){
         super();
         this.state = {
-            mode:0,
+            mode:2,
             isFormsFull:false,
             countries: ["Turkey"],
             aylar: [
@@ -50,6 +51,10 @@ import {withRouter,Link} from "react-router-dom"
     if(this.props.location.hash == "#be-seller"){
       this.setState({mode:1})
     }
+
+    if(this.props.location.hash == "#my-orders"){
+      this.setState({mode:2})
+    }
   }
 
   componentDidUpdate(){
@@ -67,12 +72,11 @@ import {withRouter,Link} from "react-router-dom"
             <div className="col-lg-3">
               <h4>WELCOME BACK!</h4>
               <div className="kisa-cizgi"></div>
-              {this.state.sa}
 
               <nav>
                 <ul>
                   <li onClick={()=>{this.setState({mode:0})}}>My Account</li>
-                  <li>My Orders</li>
+                  <li onClick={()=>{this.setState({mode:2})}}>My Orders</li>
                   <li className="li-be-seller">
                     <button onClick={()=>{this.setState({mode:1})}}>Be Seller</button></li>
                 </ul>
@@ -151,6 +155,35 @@ import {withRouter,Link} from "react-router-dom"
             </div>
             
             : <></>}
+
+
+            {this.state.mode == 2 ? 
+            <div className="col-lg-9">
+              <div className="siparislerim-container">
+                <h4>Siparislerim</h4>
+                <div className="kisa-cizgi"></div>
+                  <div className="row">
+                    <div className="col-12">
+                      <Order
+                      status="COMPLETED"
+                      statusColor="green"/>
+                      
+                      <Order
+                      status="IN CARGO"
+                      statusColor="yellow"/>
+
+                      <Order
+                      status="REJECTED"
+                      statusColor="red"/>
+
+                      <Order
+                      status="CANCELLED"
+                      statusColor="orange"/>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            :<></>}
 
           </div>
         </div>
