@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Header from "../../shared/Header";
 import { withRouter } from "react-router-dom";
-import BG from "../../assets/img/contactus-bg-desktop.jpg";
-import BG360 from "../../assets/img/contact-bg-mobile.jpg";
+import BG from "../../assets/img/contact-bg-desktop.png";
+//import BG from "../../assets/img/contactus-bg-desktop.jpg";
+import BG360 from "../../assets/img/contact-bg-mobile.png";
 class ContactUs extends Component {
   constructor() {
     super();

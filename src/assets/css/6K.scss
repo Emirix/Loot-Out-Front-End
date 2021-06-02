@@ -1,4 +1,4 @@
-.weekly-graph{
+/*.weekly-graph{
     font-family: "Lato",sans-serif;
     margin: 0 1.4rem;
     
@@ -58,12 +58,116 @@
 
 
     &:hover{
-        animation-play-state: paused
 
     }
 }
+*/
 
-@keyframes kayan{
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
+  .marquee-wrapper{
+    text-align:center;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .marquee-wrapper .container31{
+    overflow:hidden;
+    width: 100%;
+  }
+  .marquee-inner span{
+    float:left;
+    width:50%;
+  }
+  .marquee-wrapper .marquee-block{
+    --total-marquee-items:5;
+    height: 150px;
+    //width: calc(150px * (var(--total-marquee-items)));
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 !important;
+    padding: 30px 0;
+  }
+  .marquee-inner{
+    display: block;
+    width: 200%;
+    position: absolute;
+
+  }
+  .marquee-inner p{
+    font-weight: 800;
+    font-size: 30px;
+  }
+  .marquee-inner.to-left{
+    transition: .5s;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+    animation: marqueeLeft 20s linear infinite;
+  }
+
+  .marquee-item{
+      width: 130px;
+    height: auto;
+    display: inline-block;
+    margin: 0 10px;
+    float: left;
+    transition: all .2s ease-out;
+
+    
+ 
+  }
+
+  .weekly-graph{
+      font-family: "Lato",sans-serif;
+    &__title{
+        color:#77838F;
+        user-select: none !important;
+        text-align: left;
+    }
+
+    &__price{
+        color: white;
+        font-size:14px;
+        margin-left: 3px;
+    }
+
+    .arrow-red{
+        background: #EF2945;
+    }
+
+    .arrow-green{
+        background: #03D07D;
+    }
+
+    .arrow-red{
+        background: #EF2945;
+    }
+
+    .arrow-green{
+        background: #03D07D;
+    }
+
+
+    .arrow{
+        
+        width: 18px;
+        height: 18px;
+        border-radius: 9in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            width: 10px;
+        }
+    }
+    
+  }
+  @keyframes marqueeLeft{
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }

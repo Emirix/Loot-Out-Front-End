@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../shared/Header'
-import BG from "../../assets/img/blog-bg1366.jpg"
-import BG320 from "../../assets/img/blog-bg320.png"
+import BG from "../../assets/img/blog-bg-desktop.png"
+import BG320 from "../../assets/img/blog-bg-mobile.png"
 import Atom from "../../assets/img/blog-atom.png"
 import BlogLink from '../components/BlogLink'
 import * as $ from "jquery"
@@ -71,7 +71,7 @@ componentWillUnmount(){
 }
 
 
-    render(){
+    render(){             
       return (
         <div className="blog-page-container container-fluid">
             <img className="blog-bg d-none d-sm-block" src={BG} draggable={false}/>
@@ -80,7 +80,7 @@ componentWillUnmount(){
 
             <div className="yukarii">
             <div className="row">
-
+ 
               
                 <div className="ortala1">
                 <div className="sneaker-blog-title">Sneaker Blog</div>

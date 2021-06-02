@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function KayanData({title,arrow="up",price}) {
     return (
-        <div className="weekly-graph">
+        <div className="weekly-graph marquee-item">
             <div className="weekly-graph__title">{title}</div>
             <div className="d-flex align-items-center mt-1">
                 <div className={arrow == "up" ? "arrow arrow-green" : "arrow arrow-red"}>

@@ -1244,21 +1244,142 @@
     grid-gap: 20px 20px;
   }
 }
+/*.weekly-graph{
+    font-family: "Lato",sans-serif;
+    margin: 0 1.4rem;
+
+    &:last-child{
+        margin-right: 0 !important;
+    }
+
+
+    &__title{
+        color:#77838F;
+        user-select: none !important;
+    }
+
+    &__price{
+        color: white;
+        font-size:14px;
+        margin-left: 3px;
+    }
+
+    .arrow-red{
+        background: #EF2945;
+    }
+
+    .arrow-green{
+        background: #03D07D;
+    }
+
+
+    .arrow{
+
+        width: 18px;
+        height: 18px;
+        border-radius: 9in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            width: 10px;
+        }
+    }
+
+}
+
+.kayan-data{
+   // animation: kayan 5s linear infinite ;
+
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    overflow-x: hidden;
+
+    transition: .2s;
+    white-space: nowrap;
+
+
+
+    &:hover{
+
+    }
+}
+*/
+.marquee-wrapper {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.marquee-wrapper .container31 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-inner span {
+  float: left;
+  width: 50%;
+}
+
+.marquee-wrapper .marquee-block {
+  --total-marquee-items:5;
+  height: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 !important;
+  padding: 30px 0;
+}
+
+.marquee-inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+}
+
+.marquee-inner p {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.marquee-inner.to-left {
+  transition: 0.5s;
+  animation: marqueeLeft 20s linear infinite;
+}
+.marquee-inner.to-left:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  width: 130px;
+  height: auto;
+  display: inline-block;
+  margin: 0 10px;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+
 .weekly-graph {
   font-family: "Lato", sans-serif;
-  margin: 0 1.4rem;
-}
-.weekly-graph:last-child {
-  margin-right: 0 !important;
 }
 .weekly-graph__title {
   color: #77838F;
   user-select: none !important;
+  text-align: left;
 }
 .weekly-graph__price {
   color: white;
   font-size: 14px;
   margin-left: 3px;
+}
+.weekly-graph .arrow-red {
+  background: #EF2945;
+}
+.weekly-graph .arrow-green {
+  background: #03D07D;
 }
 .weekly-graph .arrow-red {
   background: #EF2945;
@@ -1278,24 +1399,12 @@
   width: 10px;
 }
 
-.kayan-data {
-  font-size: 14px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  overflow-x: hidden;
-  transition: 0.2s;
-  white-space: nowrap;
-}
-.kayan-data:hover {
-  animation-play-state: paused;
-}
-
-@keyframes kayan {
+@keyframes marqueeLeft {
   0% {
-    transform: translate(0, 0);
+    left: 0;
   }
   100% {
-    transform: translate(-100%, 0);
+    left: -100%;
   }
 }
 header .header-list li a {
