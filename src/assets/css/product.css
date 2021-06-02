@@ -78,7 +78,7 @@
   font-weight: 400;
   color: #fff;
 }
-.product-available > .size-buttons {
+ .size-buttons {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-column-gap: 0rem;
@@ -87,10 +87,10 @@
   margin-top: 2rem;
   flex: 1;
 }
-.product-available > .size-buttons .size input {
+.size-buttons .size input {
   display: none;
 }
-.product-available > .size-buttons .size label {
+.size-buttons .size label {
   font-family: "Roboto", sans-serif;
   width: 88%;
   display: block;
@@ -105,11 +105,11 @@
   color: #fff;
   cursor: pointer;
 }
-.product-available > .size-buttons .size input:disabled + label {
+.size-buttons .size input:disabled + label {
   color: #555555;
   pointer-events: none;
 }
-.product-available > .size-buttons .size input:checked + label {
+.size-buttons .size input:checked + label {
   background: #51d7bf;
   border-color: #51d7bf;
 }
@@ -313,7 +313,7 @@
 }
 }
 @media screen and (max-width:650px){
-  .product-available > .size-buttons {
+  .size-buttons {
   
     grid-template-columns: repeat(2,1fr);
 
@@ -346,7 +346,7 @@
     margin-bottom:1rem;
 }
 
-   .product-available > .size-buttons {
+    .size-buttons {
   
     grid-template-columns: repeat(1,1fr);
 

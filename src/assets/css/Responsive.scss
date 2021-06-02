@@ -82,8 +82,45 @@
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
+
+  @media (min-width: 768px) and (max-width: 972px) {
+    .product-page-container__urun{
+      grid-template-columns: 1fr !important;
+    }
+
+    .product-page-container__bilgi svg{
+      //width: 76% !important;
+    }
+
+    .size-buttons .size label{
+      font-size: 18px !important;
+    }
+
+    .pp-urun-sag{
+      margin: 0 auto;
+      margin-top: 2rem !important;
+    }
+  }
   
   @media (min-width: 768px) and (max-width: 1024px) {
+
+
+    .size-buttons .size label{
+      font-size: 14px;
+    }
+
+
+    .product-page-container__bilgi{
+      grid-template-columns: 1fr !important;
+    }
+    .price-info-container {
+      width: 100% !important;
+      margin: 0 auto;
+  }
+  .pp-bilgi-sag {
+  
+    margin: 0 auto;
+}
 
 
     .contact-us{
@@ -245,6 +282,65 @@
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
+  
+    .price-info-container-middle p{
+      font-size: 16px !important;
+    }
+
+    .size-buttons .size label{
+      font-size: 13px !important;
+    }
+    .pp-bilgi-table{
+      table{
+        th{
+          font-size: 1rem !important;
+        }
+
+        tr td{font-size: 0.9rem !important;}
+      }
+    }
+
+    .product-page-container__bilgi{
+      grid-template-columns: 1fr !important;
+    }
+
+
+    .pp-urun-sag{
+      margin: 0 auto;
+    }
+    .product-page-container__urun .pp-urun-sag__buy .pp-fiyat{
+      font-size: 30px !important;
+    }
+
+    .product-page-container__urun .pp-urun-sag__buy button{
+      width: 111px !important;
+      height: 38px !important;
+      font-size: 16px !important;
+      margin-right: 1.2rem;
+    }
+
+    .product-page-container__urun .pp-urun-sag__select-size{
+      font-size: 16px !important;
+    }
+
+    .product-page-container__urun .pp-urun-sag__buy .pp-fiyat{
+      font-size: 36px !important;
+    }
+
+    .size-buttons{
+      margin-top: 1rem !important;
+    }
+    
+    .product-page-container__urun{
+      grid-template-columns: 1fr !important;
+    }
+
+    .pp-bilgi-chart{
+      canvas{
+          height: 164px !important;
+          width: 100%;
+      }
+  }
 
 
     
@@ -365,12 +461,132 @@
     
   }
   
+
+
+
+
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .urunler a .urun h2{
+      font-size: 30px !important;
+    }
+
+    .most-recent-item-container{
+      margin: 1rem auto !important;
+    }
+
+    .pp-bilgi-table .view-all-table{
+      font-size: 1rem  !important;
+    }
+    .pp-bilgi-table .s{
+      font-size: 1rem !important;
+    }
+
+    .pp-bilgi-table{
+      table{
+        th{
+          font-size: 1rem !important;
+        }
+
+        tr td{font-size: 0.9rem !important;}
+      }
+    }
+
+    .product-page-container__urun .pp-urun-sag__buy .pp-fiyat{
+      font-size: 30px !important;
+    }
+
+    .product-page-container__urun .pp-urun-sag__buy button{
+      width: 111px !important;
+      height: 38px !important;
+      font-size: 16px !important;
+      margin-right: 1.2rem;
+    }
+
+    .product-page-container__urun .pp-urun-sag__select-size{
+      font-size: 16px !important;
+    }
+
+    .product-page-container__urun .pp-urun-sag__buy .pp-fiyat{
+      font-size: 36px !important;
+    }
+
+    .size-buttons{
+      margin-top: 1rem !important;
+    }
+
+    .calis-artik-orr{
+      padding: 0 1rem !important;
+    }
+
+    .product-page-container__urun .pp-urun-sol__big-img img{
+      height: 270px !important;
+    }
+
+
+    .product-page-container__name{
+      font-size: 24px !important;
+    }
+
+    .size-buttons .size label{
+      font-size: 10px !important;
+      height: 33px !important;
+    }
+
+
+
+    /************/
+    .size-buttons .size label{
+      font-size: 14px;
+    }
+    
+
+    .pp-bilgi-chart{
+      canvas{
+          height: 164px !important;
+          width: 100%;
+      }
+  }
+
+
+    .product-page-container__bilgi{
+      grid-template-columns: 1fr !important;
+    }
+    .price-info-container {
+      width: 100% !important;
+      margin: 0 auto;
+  }
+  .pp-bilgi-sag {
+  
+    margin: 0 auto;
+}
+
+
+    .product-page-container__urun{
+      grid-template-columns: 1fr !important;
+    }
+
+    /*.product-page-container__bilgi svg{
+      width: 76% !important;
+    }*/
+
+    .size-buttons .size label{
+    }
+
+    .pp-urun-sag{
+      margin: 0 auto;
+      margin-top: 2rem !important;
+    }
+
+
+
+
+
 
     .contact-info{
       margin-top: 7rem !important;

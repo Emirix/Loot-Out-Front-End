@@ -6,7 +6,7 @@ import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import {HandleSigninPopUp} from "./assets/js/Events/PopUp"
 import AddProduct from "./views/pages/AddProduct";
-import Product from "./views/pages/Product";
+import Product from "./views/pages/ProductPage";
 import { BrowserRouter as Router, Route, Switch,useLocation } from "react-router-dom";
 import Magaza from "./views/pages/Store";
 import CheckOut from "./views/pages/CheckOut";

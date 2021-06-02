@@ -177,7 +177,7 @@ class Product extends React.Component {
  
 
               <div className="size-buttons">
-                <div className="size">
+              <div className="size">
                   <input type="radio" name="size" id="size1" />
                   <label htmlFor="size1">US 3.5 (EU 35.5)</label>
                 </div>
@@ -234,47 +234,9 @@ class Product extends React.Component {
                   <input type="radio" name="size" id="size14" disabled />
                   <label htmlFor="size14">US 4 (EU 43)</label>
                 </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size15" disabled />
-                  <label htmlFor="size15">US 4 (EU 44)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size16" disabled />
-                  <label htmlFor="size16">US 4 (EU 44.5)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size17" disabled />
-                  <label htmlFor="size17">US 4 (EU 45)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size18" disabled />
-                  <label htmlFor="size18">US 4 (EU 45.5)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size19" disabled />
-                  <label htmlFor="size19">US 4 (EU 46)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size20" disabled />
-                  <label htmlFor="size20">US 4 (EU 46.5)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size21" disabled />
-                  <label htmlFor="size21">US 4 (EU 47)</label>
-                </div>
-
-                <div className="size">
-                  <input type="radio" name="size" id="size22" disabled />
-                  <label htmlFor="size22">US 4 (EU 48)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size23" disabled />
-                  <label htmlFor="size23">US 4 (EU 49)</label>
-                </div>
-                <div className="size">
-                  <input type="radio" name="size" id="size24" disabled />
-                  <label htmlFor="size24">US 4 (EU 50)</label>
-                </div>
+    
+               
+               
               </div>
 
               <div className="buy-now-button-wrapper me-4">

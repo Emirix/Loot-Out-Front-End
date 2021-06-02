@@ -1958,7 +1958,8 @@ div.sidebar-top > div.left-side > img {
         font-size: 20px !important;
       }
       h2 {
-        font-size: 12px !important;
+        //font-size: 12px !important;
+        font-size: 30px !important;
       }
     }
   }
@@ -2243,8 +2244,6 @@ a {
     grid-template-columns: 1fr 1fr 1fr !important;
 
     .size label {
-      font-size: 11px !important;
-      height: 32px !important;
     }
   }
 
