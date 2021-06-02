@@ -101,7 +101,7 @@ class Product extends React.Component {
     console.log("yolllaa");
     const id = this.props.match.params.id;
 
-    fetch(url + "/products/shoes/" + id + j)
+    /*fetch(url + "/products/shoes/" + id + j)
       .then((res) => res.json())
       .then((data) => {
         this.setState({ urun: data });
@@ -110,7 +110,7 @@ class Product extends React.Component {
         axios.get(url + "/products/brands" + j).then((res) => {
           this.setState({ model: res.data[this.state.urun[0].brand - 1].name });
         });
-      });
+      });*/
   }
 
   render() {
@@ -128,7 +128,7 @@ class Product extends React.Component {
           </p>
           <div className="product-name">
             <h1>
-              {this.state.urun === null ? (
+              {this.state.urun == null ? (
                 <>loading...</>
               ) : (
                 this.state.urun[0].name

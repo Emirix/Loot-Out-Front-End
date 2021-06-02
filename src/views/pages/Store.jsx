@@ -52,12 +52,11 @@ class Store extends React.Component {
         }`
       )
       .then((res) => {
-        console.log("ÇEKTİMM");
+        console.log(res.data);
         this.setState({ urunler: res.data });
       })
       .then(() => {
         axios.get(`/products/brands-model?format=json`).then((res) => {
-          console.log(res.data);
           this.setState({ yanMenu: res.data });
         });
       });
@@ -438,7 +437,6 @@ class Store extends React.Component {
                         axios
                           .get("/products/search/?search=" + e.target.value)
                           .then((res) => {
-                            console.log(res.data);
                             this.setState({ urunler: res.data });
                           });
                       }}

@@ -136,29 +136,7 @@ export default class Index extends Component {
           </div>
         </div>
 
-        <marquee className="kayan-data mb-5" direction="left" width="100%">
-                  <div className="d-flex">
-                  <KayanData arrow="down" price="1.234" title="Weekly"/>
-            <KayanData arrow="up"  price="3.434" title="Monthly"/>
-            <KayanData arrow="down"  price="2.422" title="Daily"/>
-            <KayanData arrow="up"  price="7.242" title="Monthly"/>
-            <KayanData arrow="down"  price="1.234" title="Daily"/>
-            <KayanData arrow="up"  price="1.234" title="Weekly"/>
-            <KayanData arrow="down" price="1.234" title="Weekly"/>
-            <KayanData arrow="up"  price="3.434" title="Monthly"/>
-            <KayanData arrow="down"  price="2.422" title="Daily"/>
-            <KayanData arrow="up"  price="7.242" title="Monthly"/>
-            <KayanData arrow="down"  price="1.234" title="Daily"/>
-            <KayanData arrow="up"  price="1.234" title="Weekly"/>
-            <KayanData arrow="down" price="1.234" title="Weekly"/>
-            <KayanData arrow="up"  price="3.434" title="Monthly"/>
-            <KayanData arrow="down"  price="2.422" title="Daily"/>
-            <KayanData arrow="up"  price="7.242" title="Monthly"/>
-            <KayanData arrow="down"  price="1.234" title="Daily"/>
-            <KayanData arrow="up"  price="1.234" title="Weekly"/>
-                  </div>
-        </marquee>
-
+        
         <div className="down-arrrow-wrapper">
           <img src={DownArrow} className="d-none d-lg-block mx-auto" />
           <div className="mobile-arrow d-flex d-md-none">
@@ -179,6 +157,28 @@ export default class Index extends Component {
             </svg>
           </div>
         </div>
+        <marquee className="kayan-data mt-5" direction="right" width="100%">
+           <div className="d-flex">
+            <KayanData arrow="down" price="1.234" title="Weekly"/>
+            <KayanData arrow="up"  price="3.434" title="Monthly"/>
+            <KayanData arrow="down"  price="2.422" title="Daily"/>
+            <KayanData arrow="up"  price="7.242" title="Monthly"/>
+            <KayanData arrow="down"  price="1.234" title="Daily"/>
+            <KayanData arrow="up"  price="1.234" title="Weekly"/>
+            <KayanData arrow="down" price="1.234" title="Weekly"/>
+            <KayanData arrow="up"  price="3.434" title="Monthly"/>
+            <KayanData arrow="down"  price="2.422" title="Daily"/>
+            <KayanData arrow="up"  price="7.242" title="Monthly"/>
+            <KayanData arrow="down"  price="1.234" title="Daily"/>
+            <KayanData arrow="up"  price="1.234" title="Weekly"/>
+            <KayanData arrow="down" price="1.234" title="Weekly"/>
+            <KayanData arrow="up"  price="3.434" title="Monthly"/>
+            <KayanData arrow="down"  price="2.422" title="Daily"/>
+            <KayanData arrow="up"  price="7.242" title="Monthly"/>
+            <KayanData arrow="down"  price="1.234" title="Daily"/>
+            <KayanData arrow="up"  price="1.234" title="Weekly"/>
+                  </div>
+        </marquee>
 
         <PopularBrands
           PopularBrandDesltopSlash={PopularBrandDesltopSlash}
