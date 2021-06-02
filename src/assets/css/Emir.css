@@ -1244,6 +1244,60 @@
     grid-gap: 20px 20px;
   }
 }
+.weekly-graph {
+  font-family: "Lato", sans-serif;
+  margin: 0 1.4rem;
+}
+.weekly-graph:last-child {
+  margin-right: 0 !important;
+}
+.weekly-graph__title {
+  color: #77838F;
+  user-select: none !important;
+}
+.weekly-graph__price {
+  color: white;
+  font-size: 14px;
+  margin-left: 3px;
+}
+.weekly-graph .arrow-red {
+  background: #EF2945;
+}
+.weekly-graph .arrow-green {
+  background: #03D07D;
+}
+.weekly-graph .arrow {
+  width: 18px;
+  height: 18px;
+  border-radius: 9in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weekly-graph .arrow svg {
+  width: 10px;
+}
+
+.kayan-data {
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-x: hidden;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+.kayan-data:hover {
+  animation-play-state: paused;
+}
+
+@keyframes kayan {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 header .header-list li a {
   text-decoration: none;
   color: white;

@@ -1,0 +1,69 @@
+.weekly-graph{
+    font-family: "Lato",sans-serif;
+    margin: 0 1.4rem;
+    
+    &:last-child{
+        margin-right: 0 !important;
+    }
+
+
+    &__title{
+        color:#77838F;
+        user-select: none !important;
+    }
+
+    &__price{
+        color: white;
+        font-size:14px;
+        margin-left: 3px;
+    }
+
+    .arrow-red{
+        background: #EF2945;
+    }
+
+    .arrow-green{
+        background: #03D07D;
+    }
+
+
+    .arrow{
+        
+        width: 18px;
+        height: 18px;
+        border-radius: 9in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            width: 10px;
+        }
+    }
+
+}
+
+.kayan-data{
+   // animation: kayan 5s linear infinite ;
+
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    overflow-x: hidden;
+   
+    transition: .2s;
+    white-space: nowrap;
+  
+
+
+    &:hover{
+        animation-play-state: paused
+
+    }
+}
+
+@keyframes kayan{
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}

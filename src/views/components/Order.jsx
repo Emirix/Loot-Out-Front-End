@@ -15,8 +15,7 @@ function Order({ statusColor, status }) {
         dropdown.current.style.padding="0.5rem"
 
         setDurum(true)
-      }else{
-         
+      }else{        
           dropdown.current.style.height="0"
           dropdown.current.style.padding="0"
           setDurum(false)

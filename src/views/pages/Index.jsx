@@ -41,6 +41,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 
 import { HandleSigninPopUp } from "../../assets/js/Events/PopUp";
+import KayanData from "../components/KayanData";
 export default class Index extends Component {
   constructor() {
     super();
@@ -134,6 +135,29 @@ export default class Index extends Component {
             <img src={ShoeWithChart} alt="" />
           </div>
         </div>
+
+        <marquee className="kayan-data mb-5" direction="left" width="100%">
+                  <div className="d-flex">
+                  <KayanData arrow="down" price="1.234" title="Weekly"/>
+            <KayanData arrow="up"  price="3.434" title="Monthly"/>
+            <KayanData arrow="down"  price="2.422" title="Daily"/>
+            <KayanData arrow="up"  price="7.242" title="Monthly"/>
+            <KayanData arrow="down"  price="1.234" title="Daily"/>
+            <KayanData arrow="up"  price="1.234" title="Weekly"/>
+            <KayanData arrow="down" price="1.234" title="Weekly"/>
+            <KayanData arrow="up"  price="3.434" title="Monthly"/>
+            <KayanData arrow="down"  price="2.422" title="Daily"/>
+            <KayanData arrow="up"  price="7.242" title="Monthly"/>
+            <KayanData arrow="down"  price="1.234" title="Daily"/>
+            <KayanData arrow="up"  price="1.234" title="Weekly"/>
+            <KayanData arrow="down" price="1.234" title="Weekly"/>
+            <KayanData arrow="up"  price="3.434" title="Monthly"/>
+            <KayanData arrow="down"  price="2.422" title="Daily"/>
+            <KayanData arrow="up"  price="7.242" title="Monthly"/>
+            <KayanData arrow="down"  price="1.234" title="Daily"/>
+            <KayanData arrow="up"  price="1.234" title="Weekly"/>
+                  </div>
+        </marquee>
 
         <div className="down-arrrow-wrapper">
           <img src={DownArrow} className="d-none d-lg-block mx-auto" />
