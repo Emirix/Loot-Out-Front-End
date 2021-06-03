@@ -4214,7 +4214,7 @@ a {
 }
 .on-sale-item .fiyat {
   flex-grow: 3;
-  font-family: Microsoft Tai Le;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
