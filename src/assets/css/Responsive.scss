@@ -472,6 +472,28 @@
   
   @media (min-width: 320px) and (max-width: 480px) {
 
+    .profile-container canvas{
+      height: 227px !important;
+    width: 265.2px !important;
+    }
+
+    .total-earning{
+      margin-top: 1rem;
+    }
+
+    .total-earning__title{
+      font-size: 1rem !important;
+    }
+
+    .total-earning__price{
+      font-size: 1.7rem !important;
+    }
+
+    .on-sale-item img{
+      width: 60px;
+      height: 60px;
+    }
+
     .urunler a .urun h2{
       font-size: 30px !important;
     }

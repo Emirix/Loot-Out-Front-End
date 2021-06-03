@@ -428,6 +428,28 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+  .profile-container canvas {
+    height: 227px !important;
+    width: 265.2px !important;
+  }
+
+  .total-earning {
+    margin-top: 1rem;
+  }
+
+  .total-earning__title {
+    font-size: 1rem !important;
+  }
+
+  .total-earning__price {
+    font-size: 1.7rem !important;
+  }
+
+  .on-sale-item img {
+    width: 60px;
+    height: 60px;
+  }
+
   .urunler a .urun h2 {
     font-size: 30px !important;
   }
@@ -1531,14 +1553,14 @@
 
 .marquee-inner.to-left {
   transition: 0.5s;
-  animation: marqueeLeft 20s linear infinite;
+  animation: marqueeLeft 30s linear infinite;
 }
 .marquee-inner.to-left:hover {
   animation-play-state: paused;
 }
 
 .marquee-item {
-  width: 130px;
+  width: 100px;
   height: auto;
   display: inline-block;
   margin: 0 10px;
@@ -1690,6 +1712,10 @@
   object-fit: contain;
 }
 
+.total-earning {
+  margin-top: 1rem;
+}
+
 .size-buttons {
   display: grid;
   grid-column-gap: 0rem;
@@ -1825,6 +1851,24 @@
 
 .calis-artik-orr {
   padding: 0 2rem;
+}
+
+@media screen and (max-width: 449px) {
+  .pp-bilgi-kontrols .button-group .grp-btn {
+    font-size: 14px;
+    width: 63px !important;
+  }
+
+  .pp-bilgi-kontrols select {
+    width: 81px !important;
+    font-size: 11px !important;
+  }
+}
+.sneaker-blog-title {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 56px;
+  text-transform: uppercase;
 }
 
 header .header-list li a {
@@ -3431,7 +3475,7 @@ div.sidebar-top > div.left-side > img {
 
   .most-searched-container {
     background-color: #e5e5e5;
-    padding: 6rem 1rem;
+    padding: 2em 1rem;
   }
   .most-searched-container .urun {
     background-color: white;
@@ -3603,10 +3647,11 @@ div.sidebar-top > div.left-side > img {
 }
 @media screen and (min-width: 1024px) {
   .urunler a {
-    min-width: 26% !important;
+    min-width: 24% !important;
   }
   .urunler a .urun h1 {
-    font-size: 20px !important;
+    font-size: 24px !important;
+    font-weight: 400;
   }
   .urunler a .urun h2 {
     font-size: 30px;
@@ -4134,6 +4179,9 @@ a {
   padding-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+.on-sale-item:last-child {
+  border: none !important;
+}
 .on-sale-item:nth-child(1) {
   margin-top: 0;
 }
@@ -4477,7 +4525,6 @@ a {
 .on-sale-item-wrapper {
   overflow-y: scroll;
   margin-right: 1rem;
-  height: 350px;
 }
 
 /*******/

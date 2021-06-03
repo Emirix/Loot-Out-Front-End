@@ -59,6 +59,20 @@ export default class ProductPage extends Component {
 
         <div className="product-page-container__name">
           AIR JORDAN XXXV PARIS
+          <svg  viewBox="0 0 210 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.881 1L172.867 39.6613" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M191.693 1.00879L155.679 39.67" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M174.505 1.00879L138.491 39.6785" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M157.325 1.01672L121.302 39.6865" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M140.137 1.02515L104.114 39.6864" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M122.948 1.03406L86.9336 39.6953" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M105.759 1.04199L69.7451 39.7032" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M88.5794 1.0509L52.5566 39.7122" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M71.3909 1.0592L35.3682 39.7205" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M54.2029 1.0592L18.1802 39.7289" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M37.0143 1.06763L1 39.7374" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
+
         </div>
 
         <div className="product-page-container__urun">

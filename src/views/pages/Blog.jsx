@@ -6,8 +6,9 @@ import Atom from "../../assets/img/blog-atom.png"
 import BlogLink from '../components/BlogLink'
 import * as $ from "jquery"
 import {withRouter } from "react-router-dom"
-import Swipale from 'react-swipeable';
- 
+import Blog1 from "../../assets/img/blog/blog.jpg" 
+import Blog2 from "../../assets/img/blog/blog2.png" 
+import Blog3 from "../../assets/img/blog/blog3.png" 
 
  class Blog extends React.Component {
 
@@ -107,19 +108,10 @@ componentWillUnmount(){
            <div className="blog-list-container yukarii">
                
                     
-                 <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
-                <BlogLink/>
+                 <BlogLink img={Blog1}/>
+                <BlogLink img={Blog2} />
+                <BlogLink img={Blog3}/>
+
 
             </div>      
 

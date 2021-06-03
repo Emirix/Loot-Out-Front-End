@@ -28,22 +28,30 @@ export class Sellerassets extends Component {
           },
         ],
       },
+     
       line: {
-        labels: ['January', 'February', 'March',
-        'April', 'May'],
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
         datasets: [
-            {
-  label: 'My First Dataset',
-  data: [65, 59, 80, 81, 56, 55, 40],
-  fill: "start",
-  borderColor: '#7AF0D1',
-  yAxesID: 'A',
-  backgroundColor:"#7AF0D130",
-
-  tension: 0.3
- }
-]
+          {
+            fill: true,
+            lineTension: 0.5,
+            backgroundColor: "rgba(122, 240, 209, 0.2)",
+            borderColor: "#51d7bf",
+            borderWidth: 1,
+            borderJoinStyle: "miter",
+            borderCapStyle: "butt",
+            pointBackgroundColor: "#51d7bf",
+            pointBorderColor: "#51d7bf",
+            pointBorderWidth: 2,
+            pointRadius: 7,
+            pointHoverRadius: 10,
+            borderWidth: 3,
+            data: [250, 300, 270, 300, 350, 400, 450],
+          },
+        ],
       },
+  
+
     };
   }
 
@@ -399,16 +407,19 @@ export class Sellerassets extends Component {
               <div className="profile-container__title">ASSETS ON SALE</div>
 
               <Pie
+                className="mt-4"
                 data={this.state.pie}
                 options={{
                   borderWidth: 0,
                   plugins: {
                     legend: {
-                      position: "right",
+                      display:false
                     },
                   },
                 }}
               />
+
+
 
               <div className="total-earning">
                 <div className="total-earning__title">Total Earning</div>

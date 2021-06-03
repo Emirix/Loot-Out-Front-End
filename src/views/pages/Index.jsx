@@ -159,7 +159,7 @@ export default class Index extends Component {
         </div>
         <div class="marquee-wrapper mt-5">
 	<div class="container31">
-		<div class="marquee-block" style={{width:`calc(150px * 15)`}}>
+		<div class="marquee-block" style={{width:`calc(120px * 15)`}}>
 			<div class="marquee-inner to-left">
 				<span>
             <KayanData arrow="down" price="1.234" title="Weekly"/>
@@ -434,23 +434,45 @@ export default class Index extends Component {
 
           <div className="urunler qwe">
 
-            {this.state.mostSearchedItems === null ? <></> : 
-            this.state.mostSearchedItems.map(val=>{
-                return(
-                  <Link to={"/product/"+val.id} key={val.id}>
-              <div className="urun" >
-                
-                  <img src={val.image.replace("/media/","").replace("https%3A/","https://")} alt={val.name} />
-                  <h1 className="urun-adi">{val.name}</h1>
-                  <h2 className="urun-fiyat">145 $</h2>
-                 
-               
-            </div> </Link>
-                ) 
-            })
-            
+          <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
 
-          }
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
 
 
     
@@ -786,6 +808,30 @@ export default class Index extends Component {
             </div>
 
           <div className="urunler qwe2">
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
 
             <Link to="/product/2">
             <div className="urun">

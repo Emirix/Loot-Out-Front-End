@@ -8,7 +8,7 @@ import Order from "../components/Order";
         super();
         this.state = {
             mode:2,
-            isFormsFull:false,
+            isFormsFull:true,
             countries: ["Turkey"],
             aylar: [
                 "Ocak",
