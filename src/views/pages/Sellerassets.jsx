@@ -186,11 +186,11 @@ export class Sellerassets extends Component {
             </div> 
           </div>
 
-          <svg viewBox="0 0 1627 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1627" height="72" />
-<path d="M0.5 0C0.5 39.4 38.26 71.34 85.44 71.34H1540.34C1587.53 71.34 1625.49 39.4 1625.5 0" stroke="#7AF0D1" stroke-miterlimit="10"/>
-<path d="M0 0L1626 0.00585938C1626 0.00585938 1628 61.9023 1547 71.4047L77.5 71.5C0.99987 62.9977 0 0 0 0Z" fill="white" fill-opacity="0.1"/>
+          <svg  viewBox="0 0 1627 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 0C1 29.2711 38.76 53 85.94 53H1540.84C1588.03 53 1625.99 29.2711 1626 0" stroke="#7AF0D1" stroke-miterlimit="10"/>
+<path d="M0 0L1626 0.00434331C1626 0.00434331 1628 45.8857 1547 52.9293L77.4998 53C0.999868 46.6976 0 0 0 0Z" fill="white" fill-opacity="0.1"/>
 </svg>
+
 
    </div>
 

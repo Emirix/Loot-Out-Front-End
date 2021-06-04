@@ -442,6 +442,54 @@ export default class Index extends Component {
             </div>
             </Link>
 
+                      <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+                      <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+                      <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+                      <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+                      <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+                      <Link to="/product/2">
+            <div className="urun">
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
             <Link to="/product/2">
             <div className="urun">
               <img src={Recent1} alt="" />

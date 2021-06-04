@@ -477,9 +477,7 @@
     width: 265.2px !important;
     }
 
-    .total-earning{
-      margin-top: 1rem;
-    }
+
 
     .total-earning__title{
       font-size: 1rem !important;
@@ -850,7 +848,8 @@ padding-right: 0 !important;
 
 @media screen and (min-width:1024px) {
   .sneaker-news-title{
-    width:800px !important;
+    //width:800px !important;
+    width: 65% !important;
   }
 
   .most-searched-container .urunler .urun h2{
@@ -873,7 +872,8 @@ padding-right: 0 !important;
 
 
   .title-popular{
-    width: 80%;
+    //width: 80%;
+    width: 88%;
   }
 
   .popular-brands,.home-hero{

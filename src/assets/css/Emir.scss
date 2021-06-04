@@ -1752,7 +1752,11 @@ div.sidebar-top > div.left-side > img {
 }
 
 .urunler a {
-  margin-right: 1rem !important;
+  margin-right: 3rem !important;
+
+  &:last-child{
+    margin-right:0 !important;
+  }
 }
 
 @media screen and (max-width: 1023) {
@@ -1907,7 +1911,7 @@ div.sidebar-top > div.left-side > img {
     display: flex !important;
 
     svg {
-      width: 69%;
+      width: 86%;
     }
 
     .slider-arrow {
@@ -1989,7 +1993,7 @@ div.sidebar-top > div.left-side > img {
 
 @media screen and (min-width: 1024px) {
   .urunler a {
-    min-width: 24% !important;
+    min-width: 22% !important;
     .urun {
       h1 {
         font-size: 24px !important;
@@ -2595,7 +2599,7 @@ a {
   }
 
   .edit,
-  .remove {
+  .remove { 
     &:hover {
       color: white;
       cursor: pointer;
