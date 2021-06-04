@@ -35,17 +35,17 @@ class ContactUs extends Component {
 
 <div className="contact-us__atom">
         <svg viewBox="0 0 524 525" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M262.01 422.801C350.813 422.801 422.802 350.812 422.802 262.009C422.802 173.206 350.813 101.217 262.01 101.217C173.208 101.217 101.219 173.206 101.219 262.009C101.219 350.812 173.208 422.801 262.01 422.801Z" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M262.008 392.995C334.349 392.995 392.994 334.351 392.994 262.009C392.994 189.667 334.349 131.023 262.008 131.023C189.666 131.023 131.021 189.667 131.021 262.009C131.021 334.351 189.666 392.995 262.008 392.995Z" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M262.008 362.016C317.24 362.016 362.014 317.241 362.014 262.009C362.014 206.777 317.24 162.003 262.008 162.003C206.776 162.003 162.002 206.777 162.002 262.009C162.002 317.241 206.776 362.016 262.008 362.016Z" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M0 262.009H213.465" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M310.553 262.009H523.999" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M262.008 310.553V524.018" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M262.008 0V213.465" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M428.398 420.287L500.49 491.332" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M30.209 22.0973L102.3 93.1606" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M102.3 420.287L30.209 491.332" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
-            <path d="M500.49 22.0973L428.398 93.1606" stroke="#7AF0D1" stroke-opacity="0.25" stroke-width="2" stroke-miterlimit="10"/>
+            <path d="M262.01 422.801C350.813 422.801 422.802 350.812 422.802 262.009C422.802 173.206 350.813 101.217 262.01 101.217C173.208 101.217 101.219 173.206 101.219 262.009C101.219 350.812 173.208 422.801 262.01 422.801Z" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M262.008 392.995C334.349 392.995 392.994 334.351 392.994 262.009C392.994 189.667 334.349 131.023 262.008 131.023C189.666 131.023 131.021 189.667 131.021 262.009C131.021 334.351 189.666 392.995 262.008 392.995Z" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M262.008 362.016C317.24 362.016 362.014 317.241 362.014 262.009C362.014 206.777 317.24 162.003 262.008 162.003C206.776 162.003 162.002 206.777 162.002 262.009C162.002 317.241 206.776 362.016 262.008 362.016Z" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M0 262.009H213.465" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M310.553 262.009H523.999" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M262.008 310.553V524.018" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M262.008 0V213.465" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M428.398 420.287L500.49 491.332" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M30.209 22.0973L102.3 93.1606" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M102.3 420.287L30.209 491.332" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
+            <path d="M500.49 22.0973L428.398 93.1606" stroke="#7AF0D1" stroke-opacity="0.25" strokeWidth="2" strokeMiterlimit="10"/>
         </svg>
 
         </div>

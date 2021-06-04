@@ -54,11 +54,11 @@ function Order({ statusColor, status }) {
               <path
                 d="M10 10L102 102L10 194"
                 stroke="#002A3F"
-                stroke-width="26"
+                strokeWidth="26"
               />
             </svg> :
             <svg  viewBox="0 0 204 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M194 10L102 102L9.99999 10" stroke="#002A3F" stroke-width="26"/>
+            <path d="M194 10L102 102L9.99999 10" stroke="#002A3F" strokeWidth="26"/>
             </svg>
             
             }

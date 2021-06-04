@@ -138,9 +138,9 @@ class Home extends Component {
                 <path
                   d="M20.0161 0.999918L10.605 11.4612L1 1.17773"
                   stroke="#7AF0D1"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>

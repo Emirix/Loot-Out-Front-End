@@ -6,6 +6,7 @@ import Login from "../components/Auth/Login";
 import SignIn from "../components/Auth/SignIn";
 import Sidebar from "../../shared/Sidebar";
 import Search from "../../shared/Search";
+import CheckButton from "../../assets/svg/check-button.svg";
 
 import BigTriangle from "../../assets/img/home-triangle-bg.png";
 import LogoIkon from '../../assets/img/logo/LogoIkon.svg'
@@ -136,31 +137,10 @@ export default class Index extends Component {
           </div>
         </div>
 
-        
-        <div className="down-arrrow-wrapper">
-          <img src={DownArrow} className="d-none d-lg-block mx-auto" />
-          <div className="mobile-arrow d-flex d-md-none">
-            <svg
-              width="22"
-              height="13"
-              viewBox="0 0 22 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.0161 0.999918L10.605 11.4612L1 1.17773"
-                stroke="#7AF0D1"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="marquee-wrapper mt-5">
-	<div class="container31">
-		<div class="marquee-block" style={{width:`calc(120px * 15)`}}>
-			<div class="marquee-inner to-left">
+        <div className="marquee-wrapper mt-5">
+	<div className="container31">
+		<div className="marquee-block" style={{width:`calc(120px * 15)`}}>
+			<div className="marquee-inner to-left">
 				<span>
             <KayanData arrow="down" price="1.234" title="Weekly"/>
             <KayanData arrow="up"  price="3.434" title="Monthly"/>
@@ -196,10 +176,31 @@ export default class Index extends Component {
             <KayanData arrow="down"  price="1.234" title="Daily"/>
 				</span>
 			</div>
-		</div>
+		</div>            
 		</div>
 </div>
 
+        <div className="down-arrrow-wrapper">
+          <img src={DownArrow} className="d-none d-lg-block mx-auto" />
+          <div className="mobile-arrow d-flex d-md-none">
+            <svg
+              width="22"
+              height="13"
+              viewBox="0 0 22 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0161 0.999918L10.605 11.4612L1 1.17773"
+                stroke="#7AF0D1"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      
         <PopularBrands
           PopularBrandDesltopSlash={PopularBrandDesltopSlash}
           PopularBrandMobileSlash={PopularBrandMobileSlash}
@@ -219,38 +220,38 @@ export default class Index extends Component {
             <path
               d="M300.184 27L280.343 48.4655"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M290.715 27.0039L270.874 48.4694"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M281.25 27.0098L261.404 48.4753"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M271.78 27.0127L251.934 48.4782"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M262.311 27.0127L242.465 48.4829"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M252.841 27.0176L233 48.4878"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
           </svg>
 
@@ -267,156 +268,156 @@ export default class Index extends Component {
             <path
               d="M558.611 1.00586L534.925 26.4267"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M547.309 1.00586L523.623 26.4323"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M536.008 1.01172L512.327 26.4382"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M526.446 1L502.766 26.4265"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M516.486 1.06934L492.8 26.4902"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M505.184 1.07617L481.504 26.4971"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M493.882 1.08008L470.202 26.501"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M482.586 1.08594L458.9 26.5068"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M471.284 1.0918L447.598 26.5127"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M459.982 1.0918L436.296 26.5183"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M448.68 1.09668L425 26.5231"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
           </svg>
 
          
           <div className="lg-slider">
           <svg className="d-none d-lg-block" viewBox="0 0 1132 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1130.61 2.00781L1099.66 35.2294" stroke="url(#paint0_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1115.84 2.00781L1084.89 35.2366" stroke="url(#paint1_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1101.07 2.01465L1070.12 35.2435" stroke="url(#paint2_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1088.58 2L1057.63 35.2288" stroke="url(#paint3_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1075.56 2.09082L1044.61 35.3124" stroke="url(#paint4_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1060.79 2.09863L1029.84 35.3202" stroke="url(#paint5_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1046.02 2.10449L1015.07 35.326" stroke="url(#paint6_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1031.26 2.1123L1000.3 35.3339" stroke="url(#paint7_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1016.49 2.12012L985.533 35.3417" stroke="url(#paint8_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1001.72 2.12012L970.763 35.349" stroke="url(#paint9_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M986.947 2.12695L956 35.3558" stroke="url(#paint10_linear)" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M1130.61 2.00781L1099.66 35.2294" stroke="url(#paint0_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1115.84 2.00781L1084.89 35.2366" stroke="url(#paint1_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1101.07 2.01465L1070.12 35.2435" stroke="url(#paint2_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1088.58 2L1057.63 35.2288" stroke="url(#paint3_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1075.56 2.09082L1044.61 35.3124" stroke="url(#paint4_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1060.79 2.09863L1029.84 35.3202" stroke="url(#paint5_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1046.02 2.10449L1015.07 35.326" stroke="url(#paint6_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1031.26 2.1123L1000.3 35.3339" stroke="url(#paint7_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1016.49 2.12012L985.533 35.3417" stroke="url(#paint8_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1001.72 2.12012L970.763 35.349" stroke="url(#paint9_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M986.947 2.12695L956 35.3558" stroke="url(#paint10_linear)" strokeWidth="2" strokeMiterlimit="10"/>
 <path d="M36.744 27.504H29.844L54.96 1.56H66.46V31H54.96V10.944L58.41 12.37L40.24 31H26.44L8.224 12.416L11.72 10.99V31H0.22V1.56H11.72L36.744 27.504ZM100.274 31.92C93.5883 31.92 88.2063 31.3373 84.1276 30.172C80.0489 28.976 77.0743 27.228 75.2036 24.928C73.3636 22.5973 72.4436 19.7147 72.4436 16.28C72.4436 12.8453 73.3636 9.978 75.2036 7.678C77.0743 5.34733 80.0489 3.59933 84.1276 2.434C88.2063 1.238 93.5883 0.639999 100.274 0.639999C106.959 0.639999 112.341 1.238 116.42 2.434C120.498 3.59933 123.458 5.34733 125.298 7.678C127.168 9.978 128.104 12.8453 128.104 16.28C128.104 19.7147 127.168 22.5973 125.298 24.928C123.458 27.228 120.498 28.976 116.42 30.172C112.341 31.3373 106.959 31.92 100.274 31.92ZM100.274 23.18C103.432 23.18 106.162 22.996 108.462 22.628C110.762 22.2293 112.54 21.5393 113.798 20.558C115.055 19.546 115.684 18.12 115.684 16.28C115.684 14.44 115.055 13.0293 113.798 12.048C112.54 11.036 110.762 10.346 108.462 9.978C106.162 9.57933 103.432 9.38 100.274 9.38C97.1149 9.38 94.3396 9.57933 91.9476 9.978C89.5863 10.346 87.7309 11.036 86.3816 12.048C85.0629 13.0293 84.4036 14.44 84.4036 16.28C84.4036 18.12 85.0629 19.546 86.3816 20.558C87.7309 21.5393 89.5863 22.2293 91.9476 22.628C94.3396 22.996 97.1149 23.18 100.274 23.18ZM132.477 20.19H145.035C145.25 20.834 145.879 21.386 146.921 21.846C147.964 22.2753 149.359 22.6127 151.107 22.858C152.886 23.0727 154.941 23.18 157.271 23.18C159.571 23.18 161.381 23.1187 162.699 22.996C164.049 22.8427 164.999 22.5973 165.551 22.26C166.103 21.892 166.379 21.4013 166.379 20.788C166.379 20.2053 165.935 19.7607 165.045 19.454C164.156 19.1167 162.577 18.8867 160.307 18.764C158.038 18.6413 154.849 18.58 150.739 18.58C147.673 18.58 145.02 18.442 142.781 18.166C140.573 17.8593 138.749 17.3993 137.307 16.786C135.897 16.142 134.854 15.3447 134.179 14.394C133.505 13.4127 133.167 12.2473 133.167 10.898C133.167 8.56733 133.949 6.65067 135.513 5.148C137.108 3.61466 139.5 2.48 142.689 1.744C145.909 0.977332 149.927 0.593999 154.741 0.593999C161.795 0.593999 167.177 1.62133 170.887 3.676C174.629 5.7 176.499 8.62867 176.499 12.462H164.585C164.432 11.45 163.481 10.6833 161.733 10.162C159.985 9.61 157.501 9.334 154.281 9.334C151.092 9.334 148.715 9.518 147.151 9.886C145.618 10.254 144.851 10.8827 144.851 11.772C144.851 12.232 145.066 12.6 145.495 12.876C145.925 13.152 146.661 13.382 147.703 13.566C148.777 13.7193 150.279 13.8267 152.211 13.888C154.143 13.9493 156.597 13.98 159.571 13.98C162.853 13.98 165.643 14.1487 167.943 14.486C170.243 14.7927 172.099 15.268 173.509 15.912C174.951 16.556 175.993 17.384 176.637 18.396C177.281 19.3773 177.603 20.5427 177.603 21.892C177.603 24.2227 176.867 26.124 175.395 27.596C173.923 29.068 171.593 30.1567 168.403 30.862C165.214 31.5673 161.043 31.92 155.891 31.92C152.978 31.92 150.295 31.7513 147.841 31.414C145.419 31.0767 143.257 30.586 141.355 29.942C139.454 29.2673 137.844 28.4547 136.525 27.504C135.207 26.5227 134.195 25.434 133.489 24.238C132.815 23.0113 132.477 21.662 132.477 20.19ZM180.808 1.56H228.648V10.3H180.808V1.56ZM198.978 9.702H210.478V31H198.978V9.702ZM245.86 20.19H258.418C258.633 20.834 259.261 21.386 260.304 21.846C261.347 22.2753 262.742 22.6127 264.49 22.858C266.269 23.0727 268.323 23.18 270.654 23.18C272.954 23.18 274.763 23.1187 276.082 22.996C277.431 22.8427 278.382 22.5973 278.934 22.26C279.486 21.892 279.762 21.4013 279.762 20.788C279.762 20.2053 279.317 19.7607 278.428 19.454C277.539 19.1167 275.959 18.8867 273.69 18.764C271.421 18.6413 268.231 18.58 264.122 18.58C261.055 18.58 258.403 18.442 256.164 18.166C253.956 17.8593 252.131 17.3993 250.69 16.786C249.279 16.142 248.237 15.3447 247.562 14.394C246.887 13.4127 246.55 12.2473 246.55 10.898C246.55 8.56733 247.332 6.65067 248.896 5.148C250.491 3.61466 252.883 2.48 256.072 1.744C259.292 0.977332 263.309 0.593999 268.124 0.593999C275.177 0.593999 280.559 1.62133 284.27 3.676C288.011 5.7 289.882 8.62867 289.882 12.462H277.968C277.815 11.45 276.864 10.6833 275.116 10.162C273.368 9.61 270.884 9.334 267.664 9.334C264.475 9.334 262.098 9.518 260.534 9.886C259.001 10.254 258.234 10.8827 258.234 11.772C258.234 12.232 258.449 12.6 258.878 12.876C259.307 13.152 260.043 13.382 261.086 13.566C262.159 13.7193 263.662 13.8267 265.594 13.888C267.526 13.9493 269.979 13.98 272.954 13.98C276.235 13.98 279.026 14.1487 281.326 14.486C283.626 14.7927 285.481 15.268 286.892 15.912C288.333 16.556 289.376 17.384 290.02 18.396C290.664 19.3773 290.986 20.5427 290.986 21.892C290.986 24.2227 290.25 26.124 288.778 27.596C287.306 29.068 284.975 30.1567 281.786 30.862C278.597 31.5673 274.426 31.92 269.274 31.92C266.361 31.92 263.677 31.7513 261.224 31.414C258.801 31.0767 256.639 30.586 254.738 29.942C252.837 29.2673 251.227 28.4547 249.908 27.504C248.589 26.5227 247.577 25.434 246.872 24.238C246.197 23.0113 245.86 21.662 245.86 20.19ZM307.531 18.58V22.26H342.491V31H296.031V1.56H342.399V10.3H307.531V13.98H336.051V18.58H307.531ZM355.998 26.538V19.638H387.462V26.538H355.998ZM345.694 31L365.428 1.56H378.216L398.134 31H385.484L368.418 4.642H375.272L358.344 31H345.694ZM401.822 31V1.56H437.38C440.17 1.56 442.67 1.882 444.878 2.526C447.116 3.13933 448.88 4.182 450.168 5.654C451.486 7.126 452.146 9.13467 452.146 11.68C452.146 13.3667 451.839 14.762 451.226 15.866C450.612 16.97 449.769 17.8287 448.696 18.442C447.622 19.0553 446.396 19.5 445.016 19.776C443.636 20.052 442.194 20.2207 440.692 20.282L437.334 19.638C440.983 19.6687 443.789 19.822 445.752 20.098C447.745 20.374 449.125 20.88 449.892 21.616C450.689 22.3213 451.088 23.3487 451.088 24.698V31H439.588V26.078C439.588 25.158 439.404 24.468 439.036 24.008C438.698 23.5173 437.932 23.18 436.736 22.996C435.57 22.812 433.761 22.72 431.308 22.72H413.322V31H401.822ZM413.322 15.038H437.38C438.3 15.038 439.066 14.8847 439.68 14.578C440.324 14.2713 440.646 13.6887 440.646 12.83C440.646 12.0327 440.324 11.496 439.68 11.22C439.066 10.9133 438.3 10.76 437.38 10.76H413.322V15.038ZM513.023 18.718C512.87 21.6313 511.812 24.0693 509.849 26.032C507.886 27.9947 504.988 29.4667 501.155 30.448C497.352 31.4293 492.538 31.92 486.711 31.92C482.264 31.92 478.278 31.6747 474.751 31.184C471.224 30.724 468.219 29.9267 465.735 28.792C463.251 27.6267 461.35 26.0473 460.031 24.054C458.712 22.0607 458.053 19.546 458.053 16.51C458.053 13.474 458.712 10.944 460.031 8.92C461.35 6.86533 463.251 5.24 465.735 4.044C468.219 2.81733 471.224 1.94333 474.751 1.422C478.278 0.900666 482.264 0.639999 486.711 0.639999C492.538 0.639999 497.368 1.17667 501.201 2.25C505.034 3.29267 507.932 4.84133 509.895 6.896C511.858 8.95067 512.916 11.45 513.069 14.394H501.109C500.741 13.4127 500.066 12.554 499.085 11.818C498.104 11.0513 496.632 10.4533 494.669 10.024C492.706 9.59467 490.054 9.38 486.711 9.38C482.786 9.38 479.596 9.62533 477.143 10.116C474.69 10.576 472.896 11.3273 471.761 12.37C470.626 13.4127 470.059 14.7927 470.059 16.51C470.059 18.074 470.626 19.3467 471.761 20.328C472.896 21.3093 474.69 22.03 477.143 22.49C479.596 22.95 482.786 23.18 486.711 23.18C490.054 23.18 492.691 22.9807 494.623 22.582C496.586 22.1833 498.058 21.6467 499.039 20.972C500.02 20.2667 500.695 19.5153 501.063 18.718H513.023ZM528.912 11.726H561.296V20.466H528.912V11.726ZM560.008 1.56H571.508V31H560.008V1.56ZM519.068 1.56H530.568V31H519.068V1.56ZM589.46 18.58V22.26H624.42V31H577.96V1.56H624.328V10.3H589.46V13.98H617.98V18.58H589.46ZM663.504 1.56C667.644 1.56 671.063 1.95866 673.762 2.756C676.461 3.55333 678.577 4.642 680.11 6.022C681.643 7.402 682.717 8.98133 683.33 10.76C683.974 12.508 684.296 14.348 684.296 16.28C684.296 18.212 683.943 20.0673 683.238 21.846C682.533 23.594 681.367 25.158 679.742 26.538C678.147 27.918 676.016 29.0067 673.348 29.804C670.711 30.6013 667.429 31 663.504 31H630.384V1.56H663.504ZM641.884 21.8H663.044C664.761 21.8 666.218 21.6927 667.414 21.478C668.61 21.2327 669.561 20.88 670.266 20.42C671.002 19.96 671.523 19.3927 671.83 18.718C672.167 18.0127 672.336 17.2 672.336 16.28C672.336 15.36 672.167 14.5627 671.83 13.888C671.523 13.1827 671.002 12.6 670.266 12.14C669.561 11.68 668.61 11.3427 667.414 11.128C666.218 10.8827 664.761 10.76 663.044 10.76H641.884V21.8ZM705.195 1.56H716.695V31H705.195V1.56ZM721.982 1.56H769.822V10.3H721.982V1.56ZM740.152 9.702H751.652V31H740.152V9.702ZM785.904 18.58V22.26H820.864V31H774.404V1.56H820.772V10.3H785.904V13.98H814.424V18.58H785.904ZM863.351 27.504H856.451L881.567 1.56H893.067V31H881.567V10.944L885.017 12.37L866.847 31H853.047L834.831 12.416L838.327 10.99V31H826.827V1.56H838.327L863.351 27.504ZM897.901 20.19H910.459C910.674 20.834 911.302 21.386 912.345 21.846C913.388 22.2753 914.783 22.6127 916.531 22.858C918.31 23.0727 920.364 23.18 922.695 23.18C924.995 23.18 926.804 23.1187 928.123 22.996C929.472 22.8427 930.423 22.5973 930.975 22.26C931.527 21.892 931.803 21.4013 931.803 20.788C931.803 20.2053 931.358 19.7607 930.469 19.454C929.58 19.1167 928 18.8867 925.731 18.764C923.462 18.6413 920.272 18.58 916.163 18.58C913.096 18.58 910.444 18.442 908.205 18.166C905.997 17.8593 904.172 17.3993 902.731 16.786C901.32 16.142 900.278 15.3447 899.603 14.394C898.928 13.4127 898.591 12.2473 898.591 10.898C898.591 8.56733 899.373 6.65067 900.937 5.148C902.532 3.61466 904.924 2.48 908.113 1.744C911.333 0.977332 915.35 0.593999 920.165 0.593999C927.218 0.593999 932.6 1.62133 936.311 3.676C940.052 5.7 941.923 8.62867 941.923 12.462H930.009C929.856 11.45 928.905 10.6833 927.157 10.162C925.409 9.61 922.925 9.334 919.705 9.334C916.516 9.334 914.139 9.518 912.575 9.886C911.042 10.254 910.275 10.8827 910.275 11.772C910.275 12.232 910.49 12.6 910.919 12.876C911.348 13.152 912.084 13.382 913.127 13.566C914.2 13.7193 915.703 13.8267 917.635 13.888C919.567 13.9493 922.02 13.98 924.995 13.98C928.276 13.98 931.067 14.1487 933.367 14.486C935.667 14.7927 937.522 15.268 938.933 15.912C940.374 16.556 941.417 17.384 942.061 18.396C942.705 19.3773 943.027 20.5427 943.027 21.892C943.027 24.2227 942.291 26.124 940.819 27.596C939.347 29.068 937.016 30.1567 933.827 30.862C930.638 31.5673 926.467 31.92 921.315 31.92C918.402 31.92 915.718 31.7513 913.265 31.414C910.842 31.0767 908.68 30.586 906.779 29.942C904.878 29.2673 903.268 28.4547 901.949 27.504C900.63 26.5227 899.618 25.434 898.913 24.238C898.238 23.0113 897.901 21.662 897.901 20.19Z" fill="url(#paint11_linear)"/>
 <defs>
 <linearGradient id="paint0_linear" x1="1115.13" y1="2.00781" x2="1115.13" y2="35.2294" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="1100.36" y1="2.00781" x2="1100.36" y2="35.2366" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="1085.6" y1="2.01465" x2="1085.6" y2="35.2435" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint3_linear" x1="1073.1" y1="2" x2="1073.1" y2="35.2288" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint4_linear" x1="1060.08" y1="2.09082" x2="1060.08" y2="35.3124" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint5_linear" x1="1045.32" y1="2.09863" x2="1045.32" y2="35.3202" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint6_linear" x1="1030.55" y1="2.10449" x2="1030.55" y2="35.326" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint7_linear" x1="1015.78" y1="2.1123" x2="1015.78" y2="35.3339" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint8_linear" x1="1001.01" y1="2.12012" x2="1001.01" y2="35.3417" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint9_linear" x1="986.24" y1="2.12012" x2="986.24" y2="35.3489" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint10_linear" x1="971.474" y1="2.12695" x2="971.474" y2="35.3558" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="0.9999" stop-color="white"/>
-<stop offset="1" stop-color="white" stopOpacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="0.9999" stopColor="white"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint11_linear" x1="471" y1="-11" x2="471" y2="44" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 </defs>
 </svg>
@@ -436,54 +437,15 @@ export default class Index extends Component {
 
           <Link to="/product/2">
             <div className="urun">
-              <img src={Recent1} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2 className="urun-fiyat">145 €</h2>
-            </div>
-            </Link>
-
-                      <Link to="/product/2">
-            <div className="urun">
-              <img src={Recent1} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2 className="urun-fiyat">145 €</h2>
-            </div>
-            </Link>
-
-                      <Link to="/product/2">
-            <div className="urun">
-              <img src={Recent1} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2 className="urun-fiyat">145 €</h2>
-            </div>
-            </Link>
-
-                      <Link to="/product/2">
-            <div className="urun">
-              <img src={Recent1} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2 className="urun-fiyat">145 €</h2>
-            </div>
-            </Link>
-
-                      <Link to="/product/2">
-            <div className="urun">
-              <img src={Recent1} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2 className="urun-fiyat">145 €</h2>
-            </div>
-            </Link>
-
-                      <Link to="/product/2">
-            <div className="urun">
-              <img src={Recent1} alt="" />
-              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
-              <h2 className="urun-fiyat">145 €</h2>
-            </div>
-            </Link>
-
-                      <Link to="/product/2">
-            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -492,6 +454,47 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -500,6 +503,31 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -508,6 +536,15 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -516,11 +553,39 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
             </div>
             </Link>
+
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+
+      
 
 
     
@@ -542,56 +607,56 @@ export default class Index extends Component {
             <path
               d="M297 23.0088L276.948 45.2389"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M288.904 23L268.851 45.2301"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M280.47 23.0605L260.412 45.2858"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M270.899 23.0654L250.847 45.2907"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M261.329 23.0703L241.277 45.2956"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M251.763 23.0752L231.706 45.3005"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M242.193 23.0801L222.136 45.3053"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M232.623 23.0801L212.566 45.3102"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M223.052 23.084L203 45.3141"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
           </svg>
 
@@ -608,239 +673,239 @@ export default class Index extends Component {
             <path
               d="M463.611 1.00586L439.925 26.4267"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M452.309 1.00586L428.623 26.4323"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M441.008 1.01074L417.327 26.4372"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M431.446 1L407.766 26.4265"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M421.486 1.06934L397.8 26.4902"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M410.184 1.0752L386.504 26.4961"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M398.882 1.08008L375.202 26.501"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M387.586 1.08594L363.9 26.5068"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M376.284 1.0918L352.598 26.5127"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M364.982 1.0918L341.296 26.5183"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M353.68 1.09668L330 26.5231"
               stroke="#B6B6B6"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
           </svg>
 
 
             <div className="lg-slider">
             <svg className="d-none d-lg-block" viewBox="0 0 1021 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1019.64 1L989.162 33.7182" stroke="url(#paint0_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1005.09 1.00684L974.616 33.725" stroke="url(#paint1_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M990.548 1.00684L960.07 33.7322" stroke="url(#paint2_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M976.009 1.01465L945.523 33.7328" stroke="url(#paint3_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M961.462 1.02148L930.977 33.7398" stroke="url(#paint4_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M946.916 1.0293L916.438 33.7475" stroke="url(#paint5_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M932.37 1.03516L901.892 33.7535" stroke="url(#paint6_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M917.831 1.04297L887.346 33.7611" stroke="url(#paint7_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M903.285 1.05078L872.799 33.769" stroke="url(#paint8_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M888.739 1.05078L858.253 33.7761" stroke="url(#paint9_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M874.192 1.05762L843.714 33.783" stroke="url(#paint10_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M859.646 1.06445L829.168 33.7826" stroke="url(#paint11_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M845.107 1.07129L814.622 33.7895" stroke="url(#paint12_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M830.561 1.0791L800.076 33.7973" stroke="url(#paint13_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M816.015 1.08691L785.537 33.8053" stroke="url(#paint14_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M801.469 1.09277L770.991 33.8109" stroke="url(#paint15_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M786.922 1.09277L756.444 33.8179" stroke="url(#paint16_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M772.383 1.10059L741.898 33.8259" stroke="url(#paint17_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M757.837 1.1084L727.352 33.8266" stroke="url(#paint18_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M743.291 1.11523L712.813 33.8334" stroke="url(#paint19_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M728.745 1.12207L698.267 33.8402" stroke="url(#paint20_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M714.206 1.12891L683.721 33.8471" stroke="url(#paint21_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M699.66 1.13574L669.174 33.8541" stroke="url(#paint22_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M685.113 1.13574L654.628 33.8611" stroke="url(#paint23_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M670.567 1.14453L640.089 33.8697" stroke="url(#paint24_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M657.748 1.2334L627.263 33.9516" stroke="url(#paint25_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M643.202 1.24023L612.724 33.9584" stroke="url(#paint26_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M628.656 1.24707L598.178 33.9652" stroke="url(#paint27_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M614.117 1.25391L583.631 33.9721" stroke="url(#paint28_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M599.571 1.26172L569.085 33.9799" stroke="url(#paint29_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M585.024 1.26172L554.539 33.9871" stroke="url(#paint30_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M570.478 1.26855L540 33.9939" stroke="url(#paint31_linear)" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M1019.64 1L989.162 33.7182" stroke="url(#paint0_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1005.09 1.00684L974.616 33.725" stroke="url(#paint1_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M990.548 1.00684L960.07 33.7322" stroke="url(#paint2_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M976.009 1.01465L945.523 33.7328" stroke="url(#paint3_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M961.462 1.02148L930.977 33.7398" stroke="url(#paint4_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M946.916 1.0293L916.438 33.7475" stroke="url(#paint5_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M932.37 1.03516L901.892 33.7535" stroke="url(#paint6_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M917.831 1.04297L887.346 33.7611" stroke="url(#paint7_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M903.285 1.05078L872.799 33.769" stroke="url(#paint8_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M888.739 1.05078L858.253 33.7761" stroke="url(#paint9_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M874.192 1.05762L843.714 33.783" stroke="url(#paint10_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M859.646 1.06445L829.168 33.7826" stroke="url(#paint11_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M845.107 1.07129L814.622 33.7895" stroke="url(#paint12_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M830.561 1.0791L800.076 33.7973" stroke="url(#paint13_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M816.015 1.08691L785.537 33.8053" stroke="url(#paint14_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M801.469 1.09277L770.991 33.8109" stroke="url(#paint15_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M786.922 1.09277L756.444 33.8179" stroke="url(#paint16_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M772.383 1.10059L741.898 33.8259" stroke="url(#paint17_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M757.837 1.1084L727.352 33.8266" stroke="url(#paint18_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M743.291 1.11523L712.813 33.8334" stroke="url(#paint19_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M728.745 1.12207L698.267 33.8402" stroke="url(#paint20_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M714.206 1.12891L683.721 33.8471" stroke="url(#paint21_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M699.66 1.13574L669.174 33.8541" stroke="url(#paint22_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M685.113 1.13574L654.628 33.8611" stroke="url(#paint23_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M670.567 1.14453L640.089 33.8697" stroke="url(#paint24_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M657.748 1.2334L627.263 33.9516" stroke="url(#paint25_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M643.202 1.24023L612.724 33.9584" stroke="url(#paint26_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M628.656 1.24707L598.178 33.9652" stroke="url(#paint27_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M614.117 1.25391L583.631 33.9721" stroke="url(#paint28_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M599.571 1.26172L569.085 33.9799" stroke="url(#paint29_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M585.024 1.26172L554.539 33.9871" stroke="url(#paint30_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M570.478 1.26855L540 33.9939" stroke="url(#paint31_linear)" strokeWidth="2" strokeMiterlimit="10"/>
 <path d="M10.764 29.538V22.638H42.228V29.538H10.764ZM0.46 34L20.194 4.56H32.982L52.9 34H40.25L23.184 7.642H30.038L13.11 34H0.46ZM57.2772 4.56H68.7772V34H57.2772V4.56ZM75.9036 34V4.56H111.462C114.252 4.56 116.752 4.882 118.96 5.526C121.198 6.13933 122.962 7.182 124.25 8.654C125.568 10.126 126.228 12.1347 126.228 14.68C126.228 16.3667 125.921 17.762 125.308 18.866C124.694 19.97 123.851 20.8287 122.778 21.442C121.704 22.0553 120.478 22.5 119.098 22.776C117.718 23.052 116.276 23.2207 114.774 23.282L111.416 22.638C115.065 22.6687 117.871 22.822 119.834 23.098C121.827 23.374 123.207 23.88 123.974 24.616C124.771 25.3213 125.17 26.3487 125.17 27.698V34H113.67V29.078C113.67 28.158 113.486 27.468 113.118 27.008C112.78 26.5173 112.014 26.18 110.818 25.996C109.652 25.812 107.843 25.72 105.39 25.72H87.4036V34H75.9036ZM87.4036 18.038H111.462C112.382 18.038 113.148 17.8847 113.762 17.578C114.406 17.2713 114.728 16.6887 114.728 15.83C114.728 15.0327 114.406 14.496 113.762 14.22C113.148 13.9133 112.382 13.76 111.462 13.76H87.4036V18.038ZM175.079 18.866V4.56H186.579V20.246C186.579 21.994 186.181 23.7113 185.383 25.398C184.617 27.054 183.39 28.572 181.703 29.952C180.047 31.332 177.901 32.436 175.263 33.264C172.657 34.0613 169.529 34.46 165.879 34.46C163.334 34.46 160.819 34.23 158.335 33.77C155.882 33.2793 153.659 32.4973 151.665 31.424C149.672 30.3507 148.077 28.9247 146.881 27.146C145.685 25.3367 145.072 23.1133 145.041 20.476H156.081C156.511 22.3773 157.492 23.7267 159.025 24.524C160.589 25.3213 162.874 25.72 165.879 25.72C168.425 25.72 170.357 25.4287 171.675 24.846C172.994 24.2633 173.883 23.4507 174.343 22.408C174.834 21.3653 175.079 20.1847 175.079 18.866ZM220.385 34.92C213.7 34.92 208.318 34.3373 204.239 33.172C200.16 31.976 197.186 30.228 195.315 27.928C193.475 25.5973 192.555 22.7147 192.555 19.28C192.555 15.8453 193.475 12.978 195.315 10.678C197.186 8.34733 200.16 6.59933 204.239 5.434C208.318 4.238 213.7 3.64 220.385 3.64C227.07 3.64 232.452 4.238 236.531 5.434C240.61 6.59933 243.569 8.34733 245.409 10.678C247.28 12.978 248.215 15.8453 248.215 19.28C248.215 22.7147 247.28 25.5973 245.409 27.928C243.569 30.228 240.61 31.976 236.531 33.172C232.452 34.3373 227.07 34.92 220.385 34.92ZM220.385 26.18C223.544 26.18 226.273 25.996 228.573 25.628C230.873 25.2293 232.652 24.5393 233.909 23.558C235.166 22.546 235.795 21.12 235.795 19.28C235.795 17.44 235.166 16.0293 233.909 15.048C232.652 14.036 230.873 13.346 228.573 12.978C226.273 12.5793 223.544 12.38 220.385 12.38C217.226 12.38 214.451 12.5793 212.059 12.978C209.698 13.346 207.842 14.036 206.493 15.048C205.174 16.0293 204.515 17.44 204.515 19.28C204.515 21.12 205.174 22.546 206.493 23.558C207.842 24.5393 209.698 25.2293 212.059 25.628C214.451 25.996 217.226 26.18 220.385 26.18ZM254.199 34V4.56H289.757C292.547 4.56 295.047 4.882 297.255 5.526C299.493 6.13933 301.257 7.182 302.545 8.654C303.863 10.126 304.523 12.1347 304.523 14.68C304.523 16.3667 304.216 17.762 303.603 18.866C302.989 19.97 302.146 20.8287 301.073 21.442C299.999 22.0553 298.773 22.5 297.393 22.776C296.013 23.052 294.571 23.2207 293.069 23.282L289.711 22.638C293.36 22.6687 296.166 22.822 298.129 23.098C300.122 23.374 301.502 23.88 302.269 24.616C303.066 25.3213 303.465 26.3487 303.465 27.698V34H291.965V29.078C291.965 28.158 291.781 27.468 291.413 27.008C291.075 26.5173 290.309 26.18 289.113 25.996C287.947 25.812 286.138 25.72 283.685 25.72H265.699V34H254.199ZM265.699 18.038H289.757C290.677 18.038 291.443 17.8847 292.057 17.578C292.701 17.2713 293.023 16.6887 293.023 15.83C293.023 15.0327 292.701 14.496 292.057 14.22C291.443 13.9133 290.677 13.76 289.757 13.76H265.699V18.038ZM344.01 4.56C348.15 4.56 351.569 4.95866 354.268 5.756C356.967 6.55333 359.083 7.642 360.616 9.022C362.149 10.402 363.223 11.9813 363.836 13.76C364.48 15.508 364.802 17.348 364.802 19.28C364.802 21.212 364.449 23.0673 363.744 24.846C363.039 26.594 361.873 28.158 360.248 29.538C358.653 30.918 356.522 32.0067 353.854 32.804C351.217 33.6013 347.935 34 344.01 34H310.89V4.56H344.01ZM322.39 24.8H343.55C345.267 24.8 346.724 24.6927 347.92 24.478C349.116 24.2327 350.067 23.88 350.772 23.42C351.508 22.96 352.029 22.3927 352.336 21.718C352.673 21.0127 352.842 20.2 352.842 19.28C352.842 18.36 352.673 17.5627 352.336 16.888C352.029 16.1827 351.508 15.6 350.772 15.14C350.067 14.68 349.116 14.3427 347.92 14.128C346.724 13.8827 345.267 13.76 343.55 13.76H322.39V24.8ZM375.575 29.538V22.638H407.039V29.538H375.575ZM365.271 34L385.005 4.56H397.793L417.711 34H405.061L387.995 7.642H394.849L377.921 34H365.271ZM467.536 24.984L463.258 27.422V4.56H474.758V34H463.258L428.62 13.944L432.898 11.46V34H421.398V4.56H432.898L467.536 24.984ZM493.359 12.84V4.56H513.323V34H502.283V12.84H493.359Z" fill="url(#paint32_linear)"/>
 <defs>
 <linearGradient id="paint0_linear" x1="1004.4" y1="1" x2="1004.4" y2="33.7182" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="989.855" y1="1.00684" x2="989.855" y2="33.725" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="975.309" y1="1.00684" x2="975.309" y2="33.7322" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint3_linear" x1="960.766" y1="1.01465" x2="960.766" y2="33.7328" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint4_linear" x1="946.22" y1="1.02148" x2="946.22" y2="33.7398" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint5_linear" x1="931.677" y1="1.0293" x2="931.677" y2="33.7475" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint6_linear" x1="917.131" y1="1.03516" x2="917.131" y2="33.7535" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint7_linear" x1="902.588" y1="1.04297" x2="902.588" y2="33.7611" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint8_linear" x1="888.042" y1="1.05078" x2="888.042" y2="33.769" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint9_linear" x1="873.496" y1="1.05078" x2="873.496" y2="33.7761" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint10_linear" x1="858.953" y1="1.05762" x2="858.953" y2="33.783" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint11_linear" x1="844.407" y1="1.06445" x2="844.407" y2="33.7826" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint12_linear" x1="829.865" y1="1.07129" x2="829.865" y2="33.7895" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint13_linear" x1="815.318" y1="1.0791" x2="815.318" y2="33.7973" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint14_linear" x1="800.776" y1="1.08691" x2="800.776" y2="33.8053" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint15_linear" x1="786.23" y1="1.09277" x2="786.23" y2="33.8109" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint16_linear" x1="771.683" y1="1.09277" x2="771.683" y2="33.8179" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint17_linear" x1="757.141" y1="1.10059" x2="757.141" y2="33.8259" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint18_linear" x1="742.595" y1="1.1084" x2="742.595" y2="33.8266" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint19_linear" x1="728.052" y1="1.11523" x2="728.052" y2="33.8334" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint20_linear" x1="713.506" y1="1.12207" x2="713.506" y2="33.8402" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint21_linear" x1="698.963" y1="1.12891" x2="698.963" y2="33.8471" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint22_linear" x1="684.417" y1="1.13574" x2="684.417" y2="33.8541" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint23_linear" x1="669.871" y1="1.13574" x2="669.871" y2="33.8611" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint24_linear" x1="655.328" y1="1.14453" x2="655.328" y2="33.8697" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint25_linear" x1="642.505" y1="1.2334" x2="642.505" y2="33.9516" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint26_linear" x1="627.963" y1="1.24023" x2="627.963" y2="33.9584" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint27_linear" x1="613.417" y1="1.24707" x2="613.417" y2="33.9652" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint28_linear" x1="598.874" y1="1.25391" x2="598.874" y2="33.9721" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint29_linear" x1="584.328" y1="1.26172" x2="584.328" y2="33.9799" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint30_linear" x1="569.782" y1="1.26172" x2="569.782" y2="33.9871" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint31_linear" x1="555.239" y1="1.26855" x2="555.239" y2="33.9939" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint32_linear" x1="258.5" y1="-8" x2="258.5" y2="47" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 </defs>
 </svg>
@@ -857,8 +922,17 @@ export default class Index extends Component {
 
           <div className="urunler qwe2">
 
-            <Link to="/product/2">
+          <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -867,6 +941,47 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -875,6 +990,31 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
+              <img src={Recent1} alt="" />
+              <h1 className="urun-adi">Air Jordan 1 Mid</h1>
+              <h2 className="urun-fiyat">145 €</h2>
+            </div>
+            </Link>
+            <Link to="/product/2">
+            <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -883,6 +1023,15 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -891,6 +1040,15 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
@@ -899,11 +1057,21 @@ export default class Index extends Component {
 
             <Link to="/product/2">
             <div className="urun">
+            <div className="hover-wrapper">
+                              <Link to={"/product/" +2}>
+                                <img
+                                  src={CheckButton}
+                                  alt="check button"
+                                  draggable={false}
+                                />
+                              </Link>
+                            </div>
               <img src={Recent1} alt="" />
               <h1 className="urun-adi">Air Jordan 1 Mid</h1>
               <h2 className="urun-fiyat">145 €</h2>
             </div>
             </Link>
+
             
 
           </div>
@@ -937,8 +1105,8 @@ export default class Index extends Component {
 
 
         <svg  viewBox="0 0 1628 147" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.21289 146.68C1.21289 107.28 23.3105 74.0977 70.5005 74.0977H941.181L1021.5 1.09766H1536.5C1583.68 1.09766 1627 36.94 1627 76.34V146.68" stroke="white" stroke-miterlimit="10"/>
-<path d="M63.5 73.5H942L1022 1L1539.5 1.5C1603.5 5.5 1624 51 1627 71V146.676H1L2.49995 127.5L8.99995 108L18.5 94L29.5 86L46 77L63.5 73.5Z" fill="white" fill-opacity="0.1"/>
+<path d="M1.21289 146.68C1.21289 107.28 23.3105 74.0977 70.5005 74.0977H941.181L1021.5 1.09766H1536.5C1583.68 1.09766 1627 36.94 1627 76.34V146.68" stroke="white" strokeMiterlimit="10"/>
+<path d="M63.5 73.5H942L1022 1L1539.5 1.5C1603.5 5.5 1624 51 1627 71V146.676H1L2.49995 127.5L8.99995 108L18.5 94L29.5 86L46 77L63.5 73.5Z" fill="white" fillOpacity="0.1"/>
 </svg>
 
 
@@ -964,9 +1132,9 @@ export default class Index extends Component {
         </div>
 
         <svg viewBox="0 0 1628 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 0.597656C1 39.9977 39.26 71.9377 86.44 71.9377H1541.34C1588.53 71.9377 1626.78 39.9977 1626.79 0.597656" stroke="white" stroke-miterlimit="10"/>
-<path d="M0.500122 0.603516H1627C1627 0.603516 1629 62.5 1548 72.0023H79.0001C2.5 63.5 0.500122 0.603516 0.500122 0.603516Z" fill="white" fill-opacity="0.1"/>
-</svg>
+            <path d="M1 0.597656C1 39.9977 39.26 71.9377 86.44 71.9377H1541.34C1588.53 71.9377 1626.78 39.9977 1626.79 0.597656" stroke="white" strokeMiterlimit="10"/>
+            <path d="M0.500122 0.603516H1627C1627 0.603516 1629 62.5 1548 72.0023H79.0001C2.5 63.5 0.500122 0.603516 0.500122 0.603516Z" fill="white" fillOpacity="0.1"/>
+        </svg>
 
 
         </div>
@@ -977,17 +1145,17 @@ export default class Index extends Component {
 
         <svg className="d-md-block d-none d-lg-none " viewBox="0 0 534 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.98 14.42H8.624C8.75467 14.812 9.13733 15.148 9.772 15.428C10.4067 15.6893 11.256 15.8947 12.32 16.044C13.4027 16.1747 14.6533 16.24 16.072 16.24C17.472 16.24 18.5733 16.2027 19.376 16.128C20.1973 16.0347 20.776 15.8853 21.112 15.68C21.448 15.456 21.616 15.1573 21.616 14.784C21.616 14.4293 21.3453 14.1587 20.804 13.972C20.2627 13.7667 19.3013 13.6267 17.92 13.552C16.5387 13.4773 14.5973 13.44 12.096 13.44C10.2293 13.44 8.61467 13.356 7.252 13.188C5.908 13.0013 4.79733 12.7213 3.92 12.348C3.06133 11.956 2.42667 11.4707 2.016 10.892C1.60533 10.2947 1.4 9.58533 1.4 8.764C1.4 7.34533 1.876 6.17867 2.828 5.264C3.79867 4.33067 5.25467 3.64 7.196 3.192C9.156 2.72533 11.6013 2.492 14.532 2.492C18.8253 2.492 22.1013 3.11733 24.36 4.368C26.6373 5.6 27.776 7.38267 27.776 9.716H20.524C20.4307 9.1 19.852 8.63333 18.788 8.316C17.724 7.98 16.212 7.812 14.252 7.812C12.3107 7.812 10.864 7.924 9.912 8.148C8.97867 8.372 8.512 8.75467 8.512 9.296C8.512 9.576 8.64267 9.8 8.904 9.968C9.16533 10.136 9.61333 10.276 10.248 10.388C10.9013 10.4813 11.816 10.5467 12.992 10.584C14.168 10.6213 15.6613 10.64 17.472 10.64C19.4693 10.64 21.168 10.7427 22.568 10.948C23.968 11.1347 25.0973 11.424 25.956 11.816C26.8333 12.208 27.468 12.712 27.86 13.328C28.252 13.9253 28.448 14.6347 28.448 15.456C28.448 16.8747 28 18.032 27.104 18.928C26.208 19.824 24.7893 20.4867 22.848 20.916C20.9067 21.3453 18.368 21.56 15.232 21.56C13.4587 21.56 11.8253 21.4573 10.332 21.252C8.85733 21.0467 7.54133 20.748 6.384 20.356C5.22667 19.9453 4.24667 19.4507 3.444 18.872C2.64133 18.2747 2.02533 17.612 1.596 16.884C1.18533 16.1373 0.98 15.316 0.98 14.42ZM59.6026 15.512L56.9986 16.996V3.08H63.9986V21H56.9986L35.9146 8.792L38.5186 7.28V21H31.5186V3.08H38.5186L59.6026 15.512ZM74.9131 13.44V15.68H96.1931V21H67.9131V3.08H96.1371V8.4H74.9131V10.64H92.2731V13.44H74.9131ZM104.415 18.284V14.084H123.567V18.284H104.415ZM98.1433 21L110.155 3.08H117.939L130.063 21H122.363L111.975 4.956H116.147L105.843 21H98.1433ZM147.232 12.18V10.612L163.388 21H152.972L139.252 11.48L151.908 3.08H161.876L147.232 12.18ZM132.308 3.08H139.308V21H132.308V3.08ZM173.323 13.44V15.68H194.603V21H166.323V3.08H194.547V8.4H173.323V10.64H190.683V13.44H173.323ZM198.233 21V3.08H219.877C221.576 3.08 223.097 3.276 224.441 3.668C225.804 4.04133 226.877 4.676 227.661 5.572C228.464 6.468 228.865 7.69067 228.865 9.24C228.865 10.2667 228.679 11.116 228.305 11.788C227.932 12.46 227.419 12.9827 226.765 13.356C226.112 13.7293 225.365 14 224.525 14.168C223.685 14.336 222.808 14.4387 221.893 14.476L219.849 14.084C222.071 14.1027 223.779 14.196 224.973 14.364C226.187 14.532 227.027 14.84 227.493 15.288C227.979 15.7173 228.221 16.3427 228.221 17.164V21H221.221V18.004C221.221 17.444 221.109 17.024 220.885 16.744C220.68 16.4453 220.213 16.24 219.485 16.128C218.776 16.016 217.675 15.96 216.181 15.96H205.233V21H198.233ZM205.233 11.284H219.877C220.437 11.284 220.904 11.1907 221.277 11.004C221.669 10.8173 221.865 10.4627 221.865 9.94C221.865 9.45467 221.669 9.128 221.277 8.96C220.904 8.77333 220.437 8.68 219.877 8.68H205.233V11.284ZM269.493 15.512L266.889 16.996V3.08H273.889V21H266.889L245.805 8.792L248.409 7.28V21H241.409V3.08H248.409L269.493 15.512ZM284.804 13.44V15.68H306.084V21H277.804V3.08H306.028V8.4H284.804V10.64H302.164V13.44H284.804ZM318.338 21L308.314 3.08H316.21L324.666 19.74L322.006 19.796L329.93 3.08H338.386L346.31 19.796L343.65 19.74L352.106 3.08H359.89L349.978 21H340.514L332.786 5.908H335.53L327.802 21H318.338ZM361.425 14.42H369.069C369.2 14.812 369.583 15.148 370.217 15.428C370.852 15.6893 371.701 15.8947 372.765 16.044C373.848 16.1747 375.099 16.24 376.517 16.24C377.917 16.24 379.019 16.2027 379.821 16.128C380.643 16.0347 381.221 15.8853 381.557 15.68C381.893 15.456 382.061 15.1573 382.061 14.784C382.061 14.4293 381.791 14.1587 381.249 13.972C380.708 13.7667 379.747 13.6267 378.365 13.552C376.984 13.4773 375.043 13.44 372.541 13.44C370.675 13.44 369.06 13.356 367.697 13.188C366.353 13.0013 365.243 12.7213 364.365 12.348C363.507 11.956 362.872 11.4707 362.461 10.892C362.051 10.2947 361.845 9.58533 361.845 8.764C361.845 7.34533 362.321 6.17867 363.273 5.264C364.244 4.33067 365.7 3.64 367.641 3.192C369.601 2.72533 372.047 2.492 374.977 2.492C379.271 2.492 382.547 3.11733 384.805 4.368C387.083 5.6 388.221 7.38267 388.221 9.716H380.969C380.876 9.1 380.297 8.63333 379.233 8.316C378.169 7.98 376.657 7.812 374.697 7.812C372.756 7.812 371.309 7.924 370.357 8.148C369.424 8.372 368.957 8.75467 368.957 9.296C368.957 9.576 369.088 9.8 369.349 9.968C369.611 10.136 370.059 10.276 370.693 10.388C371.347 10.4813 372.261 10.5467 373.437 10.584C374.613 10.6213 376.107 10.64 377.917 10.64C379.915 10.64 381.613 10.7427 383.013 10.948C384.413 11.1347 385.543 11.424 386.401 11.816C387.279 12.208 387.913 12.712 388.305 13.328C388.697 13.9253 388.893 14.6347 388.893 15.456C388.893 16.8747 388.445 18.032 387.549 18.928C386.653 19.824 385.235 20.4867 383.293 20.916C381.352 21.3453 378.813 21.56 375.677 21.56C373.904 21.56 372.271 21.4573 370.777 21.252C369.303 21.0467 367.987 20.748 366.829 20.356C365.672 19.9453 364.692 19.4507 363.889 18.872C363.087 18.2747 362.471 17.612 362.041 16.884C361.631 16.1373 361.425 15.316 361.425 14.42Z" fill="#002A3F"/>
-<path d="M532.611 1.00586L508.925 26.4267" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M521.309 1.00586L497.623 26.4323" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M510.008 1.01074L486.327 26.4372" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M500.446 1L476.766 26.4265" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M490.486 1.06934L466.8 26.4902" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M479.184 1.0752L455.504 26.4961" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M467.882 1.08008L444.202 26.501" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M456.586 1.08594L432.9 26.5068" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M445.284 1.0918L421.598 26.5127" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M433.982 1.0918L410.296 26.5183" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M422.68 1.09668L399 26.5231" stroke="#B6B6B6" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M532.611 1.00586L508.925 26.4267" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M521.309 1.00586L497.623 26.4323" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M510.008 1.01074L486.327 26.4372" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M500.446 1L476.766 26.4265" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M490.486 1.06934L466.8 26.4902" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M479.184 1.0752L455.504 26.4961" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M467.882 1.08008L444.202 26.501" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M456.586 1.08594L432.9 26.5068" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M445.284 1.0918L421.598 26.5127" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M433.982 1.0918L410.296 26.5183" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M422.68 1.09668L399 26.5231" stroke="#B6B6B6" strokeWidth="2" strokeMiterlimit="10"/>
 </svg>
 
 
@@ -1004,68 +1172,68 @@ export default class Index extends Component {
             <path
               d="M247.611 24.0049L228.003 45.0498"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M238.255 24.0049L218.646 45.0544"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M228.899 24.0088L209.295 45.0583"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M220.983 24L201.379 45.0495"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M212.738 24.0576L193.129 45.1025"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M203.381 24.0625L183.777 45.1074"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M194.025 24.0664L174.421 45.1113"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M184.673 24.0713L165.065 45.1162"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M175.317 24.0762L155.708 45.1211"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M165.96 24.0762L146.352 45.1257"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
             <path
               d="M156.604 24.0801L137 45.1296"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
             />
           </svg>
 
@@ -1073,66 +1241,66 @@ export default class Index extends Component {
                     <div className="lg-slider">
                    
                     <svg className="d-lg-block d-none sneaker-news-title" viewBox="0 0 821 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M819.611 3.00781L789.543 35.2781" stroke="url(#paint0_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M805.264 3.00781L775.196 35.2851" stroke="url(#paint1_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M790.917 3.01465L760.856 35.292" stroke="url(#paint2_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M778.78 3L748.719 35.2773" stroke="url(#paint3_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M766.136 3.08887L736.068 35.3591" stroke="url(#paint4_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M751.789 3.0957L721.728 35.3659" stroke="url(#paint5_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M737.442 3.10156L707.381 35.3718" stroke="url(#paint6_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M723.102 3.10938L693.034 35.3796" stroke="url(#paint7_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M708.755 3.11719L678.687 35.3874" stroke="url(#paint8_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M694.408 3.11719L664.34 35.3945" stroke="url(#paint9_linear)" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M680.061 3.12305L650 35.4004" stroke="url(#paint10_linear)" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M819.611 3.00781L789.543 35.2781" stroke="url(#paint0_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M805.264 3.00781L775.196 35.2851" stroke="url(#paint1_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M790.917 3.01465L760.856 35.292" stroke="url(#paint2_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M778.78 3L748.719 35.2773" stroke="url(#paint3_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M766.136 3.08887L736.068 35.3591" stroke="url(#paint4_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M751.789 3.0957L721.728 35.3659" stroke="url(#paint5_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M737.442 3.10156L707.381 35.3718" stroke="url(#paint6_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M723.102 3.10938L693.034 35.3796" stroke="url(#paint7_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M708.755 3.11719L678.687 35.3874" stroke="url(#paint8_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M694.408 3.11719L664.34 35.3945" stroke="url(#paint9_linear)" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M680.061 3.12305L650 35.4004" stroke="url(#paint10_linear)" strokeWidth="2" strokeMiterlimit="10"/>
 <path d="M0.61 20.19H13.168C13.3827 20.834 14.0113 21.386 15.054 21.846C16.0967 22.2753 17.492 22.6127 19.24 22.858C21.0187 23.0727 23.0733 23.18 25.404 23.18C27.704 23.18 29.5133 23.1187 30.832 22.996C32.1813 22.8427 33.132 22.5973 33.684 22.26C34.236 21.892 34.512 21.4013 34.512 20.788C34.512 20.2053 34.0673 19.7607 33.178 19.454C32.2887 19.1167 30.7093 18.8867 28.44 18.764C26.1707 18.6413 22.9813 18.58 18.872 18.58C15.8053 18.58 13.1527 18.442 10.914 18.166C8.706 17.8593 6.88133 17.3993 5.44 16.786C4.02933 16.142 2.98667 15.3447 2.312 14.394C1.63733 13.4127 1.3 12.2473 1.3 10.898C1.3 8.56733 2.082 6.65067 3.646 5.148C5.24067 3.61466 7.63267 2.48 10.822 1.744C14.042 0.977332 18.0593 0.593999 22.874 0.593999C29.9273 0.593999 35.3093 1.62133 39.02 3.676C42.7613 5.7 44.632 8.62867 44.632 12.462H32.718C32.5647 11.45 31.614 10.6833 29.866 10.162C28.118 9.61 25.634 9.334 22.414 9.334C19.2247 9.334 16.848 9.518 15.284 9.886C13.7507 10.254 12.984 10.8827 12.984 11.772C12.984 12.232 13.1987 12.6 13.628 12.876C14.0573 13.152 14.7933 13.382 15.836 13.566C16.9093 13.7193 18.412 13.8267 20.344 13.888C22.276 13.9493 24.7293 13.98 27.704 13.98C30.9853 13.98 33.776 14.1487 36.076 14.486C38.376 14.7927 40.2313 15.268 41.642 15.912C43.0833 16.556 44.126 17.384 44.77 18.396C45.414 19.3773 45.736 20.5427 45.736 21.892C45.736 24.2227 45 26.124 43.528 27.596C42.056 29.068 39.7253 30.1567 36.536 30.862C33.3467 31.5673 29.176 31.92 24.024 31.92C21.1107 31.92 18.4273 31.7513 15.974 31.414C13.5513 31.0767 11.3893 30.586 9.488 29.942C7.58667 29.2673 5.97667 28.4547 4.658 27.504C3.33933 26.5227 2.32733 25.434 1.622 24.238C0.947333 23.0113 0.61 21.662 0.61 20.19ZM96.9186 21.984L92.6405 24.422V1.56H104.141V31H92.6405L58.0025 10.944L62.2805 8.46V31H50.7805V1.56H62.2805L96.9186 21.984ZM122.072 18.58V22.26H157.032V31H110.572V1.56H156.94V10.3H122.072V13.98H150.592V18.58H122.072ZM170.539 26.538V19.638H202.003V26.538H170.539ZM160.235 31L179.969 1.56H192.757L212.675 31H200.025L182.959 4.642H189.813L172.885 31H160.235ZM240.881 16.51V13.934L267.423 31H250.311L227.771 15.36L248.563 1.56H264.939L240.881 16.51ZM216.363 1.56H227.863V31H216.363V1.56ZM283.745 18.58V22.26H318.705V31H272.245V1.56H318.613V10.3H283.745V13.98H312.265V18.58H283.745ZM324.669 31V1.56H360.227C363.018 1.56 365.517 1.882 367.725 2.526C369.964 3.13933 371.727 4.182 373.015 5.654C374.334 7.126 374.993 9.13467 374.993 11.68C374.993 13.3667 374.687 14.762 374.073 15.866C373.46 16.97 372.617 17.8287 371.543 18.442C370.47 19.0553 369.243 19.5 367.863 19.776C366.483 20.052 365.042 20.2207 363.539 20.282L360.181 19.638C363.831 19.6687 366.637 19.822 368.599 20.098C370.593 20.374 371.973 20.88 372.739 21.616C373.537 22.3213 373.935 23.3487 373.935 24.698V31H362.435V26.078C362.435 25.158 362.251 24.468 361.883 24.008C361.546 23.5173 360.779 23.18 359.583 22.996C358.418 22.812 356.609 22.72 354.155 22.72H336.169V31H324.669ZM336.169 15.038H360.227C361.147 15.038 361.914 14.8847 362.527 14.578C363.171 14.2713 363.493 13.6887 363.493 12.83C363.493 12.0327 363.171 11.496 362.527 11.22C361.914 10.9133 361.147 10.76 360.227 10.76H336.169V15.038ZM441.739 21.984L437.461 24.422V1.56H448.961V31H437.461L402.823 10.944L407.101 8.46V31H395.601V1.56H407.101L441.739 21.984ZM466.892 18.58V22.26H501.852V31H455.392V1.56H501.76V10.3H466.892V13.98H495.412V18.58H466.892ZM521.984 31L505.516 1.56H518.488L532.38 28.93L528.01 29.022L541.028 1.56H554.92L567.938 29.022L563.568 28.93L577.46 1.56H590.248L573.964 31H558.416L545.72 6.206H550.228L537.532 31H521.984ZM592.77 20.19H605.328C605.543 20.834 606.171 21.386 607.214 21.846C608.257 22.2753 609.652 22.6127 611.4 22.858C613.179 23.0727 615.233 23.18 617.564 23.18C619.864 23.18 621.673 23.1187 622.992 22.996C624.341 22.8427 625.292 22.5973 625.844 22.26C626.396 21.892 626.672 21.4013 626.672 20.788C626.672 20.2053 626.227 19.7607 625.338 19.454C624.449 19.1167 622.869 18.8867 620.6 18.764C618.331 18.6413 615.141 18.58 611.032 18.58C607.965 18.58 605.313 18.442 603.074 18.166C600.866 17.8593 599.041 17.3993 597.6 16.786C596.189 16.142 595.147 15.3447 594.472 14.394C593.797 13.4127 593.46 12.2473 593.46 10.898C593.46 8.56733 594.242 6.65067 595.806 5.148C597.401 3.61466 599.793 2.48 602.982 1.744C606.202 0.977332 610.219 0.593999 615.034 0.593999C622.087 0.593999 627.469 1.62133 631.18 3.676C634.921 5.7 636.792 8.62867 636.792 12.462H624.878C624.725 11.45 623.774 10.6833 622.026 10.162C620.278 9.61 617.794 9.334 614.574 9.334C611.385 9.334 609.008 9.518 607.444 9.886C605.911 10.254 605.144 10.8827 605.144 11.772C605.144 12.232 605.359 12.6 605.788 12.876C606.217 13.152 606.953 13.382 607.996 13.566C609.069 13.7193 610.572 13.8267 612.504 13.888C614.436 13.9493 616.889 13.98 619.864 13.98C623.145 13.98 625.936 14.1487 628.236 14.486C630.536 14.7927 632.391 15.268 633.802 15.912C635.243 16.556 636.286 17.384 636.93 18.396C637.574 19.3773 637.896 20.5427 637.896 21.892C637.896 24.2227 637.16 26.124 635.688 27.596C634.216 29.068 631.885 30.1567 628.696 30.862C625.507 31.5673 621.336 31.92 616.184 31.92C613.271 31.92 610.587 31.7513 608.134 31.414C605.711 31.0767 603.549 30.586 601.648 29.942C599.747 29.2673 598.137 28.4547 596.818 27.504C595.499 26.5227 594.487 25.434 593.782 24.238C593.107 23.0113 592.77 21.662 592.77 20.19Z" fill="url(#paint11_linear)"/>
 <defs>
 <linearGradient id="paint0_linear" x1="804.577" y1="3.00781" x2="804.577" y2="35.2781" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="790.23" y1="3.00781" x2="790.23" y2="35.2851" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="775.887" y1="3.01465" x2="775.887" y2="35.292" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint3_linear" x1="763.749" y1="3" x2="763.749" y2="35.2773" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint4_linear" x1="751.102" y1="3.08887" x2="751.102" y2="35.3591" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint5_linear" x1="736.758" y1="3.0957" x2="736.758" y2="35.3659" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint6_linear" x1="722.412" y1="3.10156" x2="722.412" y2="35.3718" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint7_linear" x1="708.068" y1="3.10937" x2="708.068" y2="35.3796" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint8_linear" x1="693.721" y1="3.11719" x2="693.721" y2="35.3874" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint9_linear" x1="679.374" y1="3.11719" x2="679.374" y2="35.3945" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint10_linear" x1="665.03" y1="3.12305" x2="665.03" y2="35.4004" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint11_linear" x1="9.5" y1="2.49996" x2="640" y2="31" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 </defs>
 </svg>

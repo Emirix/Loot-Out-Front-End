@@ -60,17 +60,17 @@ export default class ProductPage extends Component {
         <div className="product-page-container__name">
           AIR JORDAN XXXV PARIS
           <svg  viewBox="0 0 210 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M208.881 1L172.867 39.6613" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M191.693 1.00879L155.679 39.67" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M174.505 1.00879L138.491 39.6785" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M157.325 1.01672L121.302 39.6865" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M140.137 1.02515L104.114 39.6864" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M122.948 1.03406L86.9336 39.6953" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M105.759 1.04199L69.7451 39.7032" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M88.5794 1.0509L52.5566 39.7122" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M71.3909 1.0592L35.3682 39.7205" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M54.2029 1.0592L18.1802 39.7289" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M37.0143 1.06763L1 39.7374" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M208.881 1L172.867 39.6613" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M191.693 1.00879L155.679 39.67" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M174.505 1.00879L138.491 39.6785" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M157.325 1.01672L121.302 39.6865" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M140.137 1.02515L104.114 39.6864" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M122.948 1.03406L86.9336 39.6953" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M105.759 1.04199L69.7451 39.7032" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M88.5794 1.0509L52.5566 39.7122" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M71.3909 1.0592L35.3682 39.7205" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M54.2029 1.0592L18.1802 39.7289" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M37.0143 1.06763L1 39.7374" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
 </svg>
 
         </div>
@@ -213,68 +213,68 @@ export default class ProductPage extends Component {
                 <path
                   d="M550 1L528.667 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M540.667 1L519.334 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M530 1L510 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M520.666 1L500.666 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M511.333 1L492.666 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M500.667 1L483.334 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M491.333 1L472.666 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M483.334 1L463.334 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M474 1L454 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M464.667 1L443.334 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M455.333 1L434 20.8466"
                   stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
               </svg>
             </div>
@@ -383,137 +383,137 @@ export default class ProductPage extends Component {
                 <path
                   d="M383.619 6L364.821 26.1791"
                   stroke="url(#paint0_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M374.647 6L355.85 26.1835"
                   stroke="url(#paint1_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M365.68 6.00439L346.878 26.1835"
                   stroke="url(#paint2_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M356.709 6.00854L337.907 26.1877"
                   stroke="url(#paint3_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M347.737 6.01343L328.939 26.1926"
                   stroke="url(#paint4_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M338.766 6.01782L319.969 26.1969"
                   stroke="url(#paint5_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M329.799 6.02222L310.997 26.2013"
                   stroke="url(#paint6_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M320.827 6.02661L302.025 26.2057"
                   stroke="url(#paint7_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M311.856 6.02661L293.054 26.2102"
                   stroke="url(#paint8_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M302.884 6.03101L284.087 26.2146"
                   stroke="url(#paint9_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M293.913 6.0354L275.115 26.2145"
                   stroke="url(#paint10_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M284.947 6.04004L266.145 26.2192"
                   stroke="url(#paint11_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M275.975 6.04443L257.173 26.2236"
                   stroke="url(#paint12_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M267.004 6.04883L248.206 26.228"
                   stroke="url(#paint13_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M258.032 6.05298L239.234 26.2321"
                   stroke="url(#paint14_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M249.06 6.05298L230.263 26.2365"
                   stroke="url(#paint15_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M240.093 6.05762L221.291 26.2412"
                   stroke="url(#paint16_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M231.122 6.06177L212.32 26.2409"
                   stroke="url(#paint17_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M222.15 6.06665L203.353 26.2458"
                   stroke="url(#paint18_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M213.178 6.0708L194.381 26.2499"
                   stroke="url(#paint19_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M204.212 6.07544L185.41 26.2546"
                   stroke="url(#paint20_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M195.24 6.07959L176.438 26.2587"
                   stroke="url(#paint21_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M186.269 6.07959L167.467 26.2631"
                   stroke="url(#paint22_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M177.298 6.08423L158.5 26.2678"
                   stroke="url(#paint23_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M626.811 348H36.1849C17.0319 348 1.5 334.978 1.5 318.915V65.7604C1.5 49.6976 17.0278 36.6762 36.1849 36.6762L376.5 36.6765L402.357 4.5H630.5C649.653 4.5 661.5 21.0211 661.5 37.0839V318.915C661.496 334.978 645.968 348 626.811 348Z"
                   stroke="url(#paint24_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M138.977 30H18.0232C11.6584 30 6.5 26.2377 6.5 21.5956V8.4044C6.5 3.7623 11.6584 0 18.0232 0H138.977C145.342 0 150.5 3.7623 150.5 8.4044V15V21.5956C150.5 26.2377 145.342 30 138.977 30Z"
                   stroke="url(#paint25_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M0.103843 70.9376C0.0465464 53.2241 14.3901 38.8341 32.1037 38.8341H359.796C370.262 38.8341 380.041 33.6948 386.207 25.2383C393.995 14.5584 401.339 5 402.04 5H628.011C631.317 5 634.603 5.51234 637.752 6.51879L641.474 7.70803C643.475 8.34781 645.348 9.33671 647.006 10.629C648.026 11.4243 648.956 12.3283 649.78 13.325L654.66 19.226C659.404 24.963 662 32.1746 662 39.6192V319C662 336.673 647.673 351 630 351H32.5C14.8269 351 0.5 336.673 0.5 319V193.411L0.103843 70.9376Z"
                   fill="#C4C4C4"
-                  fill-opacity="0.1"
+                  fillOpacity="0.1"
                 />
                 <path
                   d="M59.42 8.06H62.08V21H59.42V8.06ZM65.1844 11.06H67.7844V21H65.1844V11.06ZM72.4044 10.84C73.0177 10.84 73.5844 10.92 74.1044 11.08C74.6244 11.24 75.0777 11.4867 75.4644 11.82C75.851 12.1533 76.151 12.58 76.3644 13.1C76.5777 13.6067 76.6844 14.2133 76.6844 14.92V21H74.0844V15.38C74.0844 14.54 73.8777 13.9267 73.4644 13.54C73.0644 13.14 72.4044 12.94 71.4844 12.94C70.791 12.94 70.1644 13.0733 69.6044 13.34C69.0444 13.6067 68.591 13.9467 68.2444 14.36C67.8977 14.76 67.6977 15.18 67.6444 15.62L67.6244 14.6C67.691 14.1333 67.8444 13.68 68.0844 13.24C68.3244 12.8 68.6444 12.4 69.0444 12.04C69.4577 11.6667 69.9444 11.3733 70.5044 11.16C71.0644 10.9467 71.6977 10.84 72.4044 10.84ZM78.3516 11.24H86.3516V13.22H78.3516V11.24ZM84.4316 7.06H86.4916V9.16H85.0516C84.6649 9.14667 84.3316 9.18667 84.0516 9.28C83.7716 9.37333 83.5582 9.54667 83.4116 9.8C83.2649 10.04 83.1916 10.3867 83.1916 10.84V21H80.5916V10.52C80.5916 9.72 80.7382 9.06667 81.0316 8.56C81.3249 8.04 81.7582 7.66 82.3316 7.42C82.9049 7.18 83.6049 7.06 84.4316 7.06ZM93.7006 21.24C92.4473 21.24 91.3406 21.04 90.3806 20.64C89.434 20.24 88.694 19.66 88.1606 18.9C87.6273 18.1267 87.3606 17.18 87.3606 16.06C87.3606 14.94 87.6273 13.9933 88.1606 13.22C88.694 12.4333 89.434 11.84 90.3806 11.44C91.3406 11.04 92.4473 10.84 93.7006 10.84C94.954 10.84 96.0473 11.04 96.9806 11.44C97.9273 11.84 98.6673 12.4333 99.2006 13.22C99.734 13.9933 100.001 14.94 100.001 16.06C100.001 17.18 99.734 18.1267 99.2006 18.9C98.6673 19.66 97.9273 20.24 96.9806 20.64C96.0473 21.04 94.954 21.24 93.7006 21.24ZM93.7006 19.24C94.394 19.24 95.014 19.12 95.5606 18.88C96.1206 18.6267 96.5606 18.2667 96.8806 17.8C97.2006 17.32 97.3606 16.74 97.3606 16.06C97.3606 15.38 97.2006 14.8 96.8806 14.32C96.5606 13.8267 96.1273 13.4533 95.5806 13.2C95.034 12.9467 94.4073 12.82 93.7006 12.82C93.0073 12.82 92.3806 12.9467 91.8206 13.2C91.2606 13.4533 90.814 13.82 90.4806 14.3C90.1606 14.78 90.0006 15.3667 90.0006 16.06C90.0006 16.74 90.1606 17.32 90.4806 17.8C90.8006 18.2667 91.2406 18.6267 91.8006 18.88C92.3606 19.12 92.994 19.24 93.7006 19.24Z"
@@ -528,9 +528,9 @@ export default class ProductPage extends Component {
                     y2="26.1791"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear"
@@ -540,9 +540,9 @@ export default class ProductPage extends Component {
                     y2="26.1835"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint2_linear"
@@ -552,9 +552,9 @@ export default class ProductPage extends Component {
                     y2="26.1835"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint3_linear"
@@ -564,9 +564,9 @@ export default class ProductPage extends Component {
                     y2="26.1877"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint4_linear"
@@ -576,9 +576,9 @@ export default class ProductPage extends Component {
                     y2="26.1926"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint5_linear"
@@ -588,9 +588,9 @@ export default class ProductPage extends Component {
                     y2="26.1969"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint6_linear"
@@ -600,9 +600,9 @@ export default class ProductPage extends Component {
                     y2="26.2013"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint7_linear"
@@ -612,9 +612,9 @@ export default class ProductPage extends Component {
                     y2="26.2057"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint8_linear"
@@ -624,9 +624,9 @@ export default class ProductPage extends Component {
                     y2="26.2102"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint9_linear"
@@ -636,9 +636,9 @@ export default class ProductPage extends Component {
                     y2="26.2146"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint10_linear"
@@ -648,9 +648,9 @@ export default class ProductPage extends Component {
                     y2="26.2145"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint11_linear"
@@ -660,9 +660,9 @@ export default class ProductPage extends Component {
                     y2="26.2192"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint12_linear"
@@ -672,9 +672,9 @@ export default class ProductPage extends Component {
                     y2="26.2236"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint13_linear"
@@ -684,9 +684,9 @@ export default class ProductPage extends Component {
                     y2="26.228"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint14_linear"
@@ -696,9 +696,9 @@ export default class ProductPage extends Component {
                     y2="26.2321"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint15_linear"
@@ -708,9 +708,9 @@ export default class ProductPage extends Component {
                     y2="26.2365"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint16_linear"
@@ -720,9 +720,9 @@ export default class ProductPage extends Component {
                     y2="26.2412"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint17_linear"
@@ -732,9 +732,9 @@ export default class ProductPage extends Component {
                     y2="26.2409"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint18_linear"
@@ -744,9 +744,9 @@ export default class ProductPage extends Component {
                     y2="26.2458"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint19_linear"
@@ -756,9 +756,9 @@ export default class ProductPage extends Component {
                     y2="26.2499"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint20_linear"
@@ -768,9 +768,9 @@ export default class ProductPage extends Component {
                     y2="26.2546"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint21_linear"
@@ -780,9 +780,9 @@ export default class ProductPage extends Component {
                     y2="26.2587"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint22_linear"
@@ -792,9 +792,9 @@ export default class ProductPage extends Component {
                     y2="26.2631"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint23_linear"
@@ -804,9 +804,9 @@ export default class ProductPage extends Component {
                     y2="26.2678"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.555208" stop-color="#8AF2D6" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.555208" stopColor="#8AF2D6" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint24_linear"
@@ -816,8 +816,8 @@ export default class ProductPage extends Component {
                     y2="348"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint25_linear"
@@ -827,8 +827,8 @@ export default class ProductPage extends Component {
                     y2="30"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                   <linearGradient
                     id="paint26_linear"
@@ -838,9 +838,9 @@ export default class ProductPage extends Component {
                     y2="24"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="0.55" stop-color="#92F3D9" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="0.55" stopColor="#92F3D9" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -870,12 +870,12 @@ export default class ProductPage extends Component {
                 <path
                   d="M626.811 30.9996H36.1849C17.0319 30.9996 1.5 17.9782 1.5 1.91547V-251.24C1.5 -267.302 17.0278 -280.324 36.1849 -280.324L376.5 -280.324L402.357 -312.5H630.5C649.653 -312.5 661.5 -295.979 661.5 -279.916V1.91547C661.496 17.9782 645.968 30.9996 626.811 30.9996Z"
                   stroke="url(#paint0_linear)"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                 />
                 <path
                   d="M0.103843 -246.062C0.0465464 -263.776 14.3901 -278.166 32.1037 -278.166H359.796C370.262 -278.166 380.041 -283.305 386.207 -291.762C393.995 -302.442 401.339 -312 402.04 -312H628.011C631.317 -312 634.603 -311.488 637.752 -310.481L641.474 -309.292C643.475 -308.652 645.348 -307.663 647.006 -306.371C648.026 -305.576 648.956 -304.672 649.78 -303.675L654.66 -297.774C659.404 -292.037 662 -284.825 662 -277.381V2C662 19.6731 647.673 34 630 34H32.5C14.8269 34 0.5 19.6731 0.5 2V-123.589L0.103843 -246.062Z"
                   fill="#C4C4C4"
-                  fill-opacity="0.1"
+                  fillOpacity="0.1"
                 />
                 <defs>
                   <linearGradient
@@ -886,8 +886,8 @@ export default class ProductPage extends Component {
                     y2="30.9996"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7AF0D1" />
-                    <stop offset="1" stop-color="white" />
+                    <stop stopColor="#7AF0D1" />
+                    <stop offset="1" stopColor="white" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -899,41 +899,41 @@ export default class ProductPage extends Component {
         <div className="most-recent-item-container">
           <div className="most-recent-item-presentation">
           <svg className="d-md-block d-none rrrr" viewBox="0 0 1069 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1067.35 0.999512L1033.54 37.2924" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1051.21 1.00748L1017.41 37.3003" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1035.09 1.01546L1001.27 37.3083" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1018.95 1.02342L985.136 37.3163" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1002.82 1.02342L969 37.3242" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M986.681 1.0314L952.873 37.3322" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M970.545 1.03937L936.737 37.3322" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M954.418 1.04735L920.602 37.3402" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M938.282 1.05531L904.466 37.3482" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M922.147 1.06329L888.339 37.3561" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M906.011 1.07126L872.203 37.3641" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M889.875 1.07126L856.067 37.3721" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M873.749 1.07924L839.933 37.3801" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M857.613 1.0872L823.797 37.3801" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M841.477 1.09517L807.669 37.388" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M825.342 1.10295L791.534 37.3958" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M809.214 1.11093L775.398 37.4038" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M793.079 1.1189L759.263 37.4117" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M776.944 1.1189L743.128 37.4197" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M760.808 1.12686L727 37.4277" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M1067.35 0.999512L1033.54 37.2924" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1051.21 1.00748L1017.41 37.3003" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1035.09 1.01546L1001.27 37.3083" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1018.95 1.02342L985.136 37.3163" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M1002.82 1.02342L969 37.3242" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M986.681 1.0314L952.873 37.3322" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M970.545 1.03937L936.737 37.3322" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M954.418 1.04735L920.602 37.3402" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M938.282 1.05531L904.466 37.3482" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M922.147 1.06329L888.339 37.3561" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M906.011 1.07126L872.203 37.3641" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M889.875 1.07126L856.067 37.3721" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M873.749 1.07924L839.933 37.3801" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M857.613 1.0872L823.797 37.3801" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M841.477 1.09517L807.669 37.388" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M825.342 1.10295L791.534 37.3958" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M809.214 1.11093L775.398 37.4038" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M793.079 1.1189L759.263 37.4117" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M776.944 1.1189L743.128 37.4197" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M760.808 1.12686L727 37.4277" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
 <path d="M48.99 3.55951L30.36 25.5015V32.9995H18.86V25.5015L0.23 3.55951H13.8L28.934 22.6495H20.424L35.42 3.55951H48.99ZM76.59 33.9195C69.9047 33.9195 64.5227 33.3368 60.444 32.1715C56.3653 30.9755 53.3907 29.2275 51.52 26.9275C49.68 24.5968 48.76 21.7142 48.76 18.2795C48.76 14.8448 49.68 11.9775 51.52 9.67751C53.3907 7.34684 56.3653 5.59884 60.444 4.43351C64.5227 3.23751 69.9047 2.63951 76.59 2.63951C83.2753 2.63951 88.6573 3.23751 92.736 4.43351C96.8147 5.59884 99.774 7.34684 101.614 9.67751C103.485 11.9775 104.42 14.8448 104.42 18.2795C104.42 21.7142 103.485 24.5968 101.614 26.9275C99.774 29.2275 96.8147 30.9755 92.736 32.1715C88.6573 33.3368 83.2753 33.9195 76.59 33.9195ZM76.59 25.1795C79.7487 25.1795 82.478 24.9955 84.778 24.6275C87.078 24.2288 88.8567 23.5388 90.114 22.5575C91.3713 21.5455 92 20.1195 92 18.2795C92 16.4395 91.3713 15.0288 90.114 14.0475C88.8567 13.0355 87.078 12.3455 84.778 11.9775C82.478 11.5788 79.7487 11.3795 76.59 11.3795C73.4313 11.3795 70.656 11.5788 68.264 11.9775C65.9027 12.3455 64.0473 13.0355 62.698 14.0475C61.3793 15.0288 60.72 16.4395 60.72 18.2795C60.72 20.1195 61.3793 21.5455 62.698 22.5575C64.0473 23.5388 65.9027 24.2288 68.264 24.6275C70.656 24.9955 73.4313 25.1795 76.59 25.1795ZM151.758 16.2095V3.55951H163.258V18.2795C163.258 20.8862 162.767 23.1095 161.786 24.9495C160.835 26.7588 159.501 28.2615 157.784 29.4575C156.066 30.6228 154.088 31.5275 151.85 32.1715C149.611 32.8155 147.204 33.2602 144.628 33.5055C142.082 33.7815 139.491 33.9195 136.854 33.9195C134.063 33.9195 131.364 33.7815 128.758 33.5055C126.151 33.2602 123.728 32.8155 121.49 32.1715C119.282 31.5275 117.35 30.6228 115.694 29.4575C114.038 28.2615 112.734 26.7588 111.784 24.9495C110.864 23.1095 110.404 20.8862 110.404 18.2795V3.55951H121.904V16.2095C121.904 18.6628 122.502 20.5335 123.698 21.8215C124.894 23.1095 126.596 23.9988 128.804 24.4895C131.042 24.9495 133.726 25.1795 136.854 25.1795C139.89 25.1795 142.527 24.9495 144.766 24.4895C147.004 23.9988 148.722 23.1095 149.918 21.8215C151.144 20.5335 151.758 18.6628 151.758 16.2095ZM220.465 29.5035H213.565L238.681 3.55951H250.181V32.9995H238.681V12.9435L242.131 14.3695L223.961 32.9995H210.161L191.945 14.4155L195.441 12.9895V32.9995H183.941V3.55951H195.441L220.465 29.5035ZM257.314 3.55951H268.814V32.9995H257.314V3.55951ZM302.759 33.9195C298.772 33.9195 295.107 33.6742 291.765 33.1835C288.453 32.7235 285.57 31.9262 283.117 30.7915C280.694 29.6262 278.808 28.0468 277.459 26.0535C276.14 24.0602 275.481 21.5455 275.481 18.5095C275.481 15.4735 276.155 12.9435 277.505 10.9195C278.854 8.86484 280.786 7.23951 283.301 6.04351C285.846 4.81684 288.867 3.94284 292.363 3.42151C295.889 2.90018 299.815 2.63951 304.139 2.63951C309.812 2.63951 314.565 3.16084 318.399 4.20351C322.263 5.24618 325.207 6.73351 327.231 8.66551C329.255 10.5668 330.343 12.8362 330.497 15.4735H318.537C318.169 14.7988 317.494 14.1548 316.513 13.5415C315.531 12.8975 314.059 12.3762 312.097 11.9775C310.134 11.5788 307.481 11.3795 304.139 11.3795C300.213 11.3795 297.024 11.6248 294.571 12.1155C292.117 12.5755 290.323 13.3268 289.189 14.3695C288.054 15.4122 287.487 16.7922 287.487 18.5095C287.487 20.0122 288.069 21.2542 289.235 22.2355C290.4 23.2168 292.271 23.9528 294.847 24.4435C297.423 24.9342 300.827 25.1795 305.059 25.1795C308.033 25.1795 310.609 25.0568 312.787 24.8115C314.995 24.5355 316.988 24.1215 318.767 23.5695C320.576 23.0175 322.37 22.3275 324.149 21.4995L325.253 22.8335C323.351 26.4215 320.53 29.1662 316.789 31.0675C313.047 32.9688 308.371 33.9195 302.759 33.9195ZM322.125 32.9995C322.125 32.0795 322.247 31.0368 322.493 29.8715C322.738 28.7062 323.045 27.4948 323.413 26.2375C323.811 24.9495 324.195 23.7382 324.563 22.6035H306.623V17.7735H331.141V32.9995H322.125ZM347.418 13.7255H379.802V22.4655H347.418V13.7255ZM378.514 3.55951H390.014V32.9995H378.514V3.55951ZM337.574 3.55951H349.074V32.9995H337.574V3.55951ZM394.626 3.55951H442.466V12.2995H394.626V3.55951ZM412.796 11.7015H424.296V32.9995H412.796V11.7015ZM472.788 3.55951V24.2595H499.606V32.9995H461.288V3.55951H472.788ZM505.373 3.55951H516.873V32.9995H505.373V3.55951ZM548.517 18.5095V15.9335L575.059 32.9995H557.947L535.407 17.3595L556.199 3.55951H572.575L548.517 18.5095ZM523.999 3.55951H535.499V32.9995H523.999V3.55951ZM591.382 20.5795V24.2595H626.342V32.9995H579.882V3.55951H626.25V12.2995H591.382V15.9795H619.902V20.5795H591.382ZM647.236 3.55951H658.736V32.9995H647.236V3.55951ZM664.023 3.55951H711.863V12.2995H664.023V3.55951ZM682.193 11.7015H693.693V32.9995H682.193V11.7015Z" fill="white"/>
 </svg>
 
       <svg className="d-md-none xxxx" viewBox="0 0 258 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25.56 0.639999L15.84 12.088V16H9.84V12.088L0.12 0.639999H7.2L15.096 10.6H10.656L18.48 0.639999H25.56ZM39.96 16.48C36.472 16.48 33.664 16.176 31.536 15.568C29.408 14.944 27.856 14.032 26.88 12.832C25.92 11.616 25.44 10.112 25.44 8.32C25.44 6.528 25.92 5.032 26.88 3.832C27.856 2.616 29.408 1.704 31.536 1.096C33.664 0.471999 36.472 0.159999 39.96 0.159999C43.448 0.159999 46.256 0.471999 48.384 1.096C50.512 1.704 52.056 2.616 53.016 3.832C53.992 5.032 54.48 6.528 54.48 8.32C54.48 10.112 53.992 11.616 53.016 12.832C52.056 14.032 50.512 14.944 48.384 15.568C46.256 16.176 43.448 16.48 39.96 16.48ZM39.96 11.92C41.608 11.92 43.032 11.824 44.232 11.632C45.432 11.424 46.36 11.064 47.016 10.552C47.672 10.024 48 9.28 48 8.32C48 7.36 47.672 6.624 47.016 6.112C46.36 5.584 45.432 5.224 44.232 5.032C43.032 4.824 41.608 4.72 39.96 4.72C38.312 4.72 36.864 4.824 35.616 5.032C34.384 5.224 33.416 5.584 32.712 6.112C32.024 6.624 31.68 7.36 31.68 8.32C31.68 9.28 32.024 10.024 32.712 10.552C33.416 11.064 34.384 11.424 35.616 11.632C36.864 11.824 38.312 11.92 39.96 11.92ZM79.1779 7.24V0.639999H85.1779V8.32C85.1779 9.68 84.9219 10.84 84.4099 11.8C83.9139 12.744 83.2179 13.528 82.3219 14.152C81.4259 14.76 80.3939 15.232 79.2259 15.568C78.0579 15.904 76.8019 16.136 75.4579 16.264C74.1299 16.408 72.7779 16.48 71.4019 16.48C69.9459 16.48 68.5379 16.408 67.1779 16.264C65.8179 16.136 64.5539 15.904 63.3859 15.568C62.2339 15.232 61.2259 14.76 60.3619 14.152C59.4979 13.528 58.8179 12.744 58.3219 11.8C57.8419 10.84 57.6019 9.68 57.6019 8.32V0.639999H63.6019V7.24C63.6019 8.52 63.9139 9.496 64.5379 10.168C65.1619 10.84 66.0499 11.304 67.2019 11.56C68.3699 11.8 69.7699 11.92 71.4019 11.92C72.9859 11.92 74.3619 11.8 75.5299 11.56C76.6979 11.304 77.5939 10.84 78.2179 10.168C78.8579 9.496 79.1779 8.52 79.1779 7.24ZM115.025 14.176H111.425L124.529 0.639999H130.529V16H124.529V5.536L126.329 6.28L116.849 16H109.649L100.145 6.304L101.969 5.56V16H95.9691V0.639999H101.969L115.025 14.176ZM134.251 0.639999H140.251V16H134.251V0.639999ZM157.961 16.48C155.881 16.48 153.969 16.352 152.225 16.096C150.497 15.856 148.993 15.44 147.713 14.848C146.449 14.24 145.465 13.416 144.761 12.376C144.073 11.336 143.729 10.024 143.729 8.44C143.729 6.856 144.081 5.536 144.785 4.48C145.489 3.408 146.497 2.56 147.809 1.936C149.137 1.296 150.713 0.839999 152.537 0.568C154.377 0.296 156.425 0.159999 158.681 0.159999C161.641 0.159999 164.121 0.431999 166.121 0.975999C168.137 1.52 169.673 2.296 170.729 3.304C171.785 4.296 172.353 5.48 172.433 6.856H166.193C166.001 6.504 165.649 6.168 165.137 5.848C164.625 5.512 163.857 5.24 162.833 5.032C161.809 4.824 160.425 4.72 158.681 4.72C156.633 4.72 154.969 4.848 153.689 5.104C152.409 5.344 151.473 5.736 150.881 6.28C150.289 6.824 149.993 7.544 149.993 8.44C149.993 9.224 150.297 9.872 150.905 10.384C151.513 10.896 152.489 11.28 153.833 11.536C155.177 11.792 156.953 11.92 159.161 11.92C160.713 11.92 162.057 11.856 163.193 11.728C164.345 11.584 165.385 11.368 166.313 11.08C167.257 10.792 168.193 10.432 169.121 10L169.697 10.696C168.705 12.568 167.233 14 165.281 14.992C163.329 15.984 160.889 16.48 157.961 16.48ZM168.065 16C168.065 15.52 168.129 14.976 168.257 14.368C168.385 13.76 168.545 13.128 168.737 12.472C168.945 11.8 169.145 11.168 169.337 10.576H159.977V8.056H172.769V16H168.065ZM181.261 5.944H198.157V10.504H181.261V5.944ZM197.485 0.639999H203.485V16H197.485V0.639999ZM176.125 0.639999H182.125V16H176.125V0.639999ZM205.892 0.639999H230.852V5.2H205.892V0.639999ZM215.372 4.888H221.372V16H215.372V4.888ZM7.68 29.64V40.44H21.672V45H1.68V29.64H7.68ZM24.6806 29.64H30.6806V45H24.6806V29.64ZM47.1908 37.44V36.096L61.0388 45H52.1108L40.3508 36.84L51.1988 29.64H59.7428L47.1908 37.44ZM34.3988 29.64H40.3988V45H34.3988V29.64ZM69.555 38.52V40.44H87.795V45H63.555V29.64H87.747V34.2H69.555V36.12H84.435V38.52H69.555ZM98.6963 29.64H104.696V45H98.6963V29.64ZM107.454 29.64H132.414V34.2H107.454V29.64ZM116.934 33.888H122.934V45H116.934V33.888Z" fill="white"/>
-<path d="M257 25L236 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M247 25L227 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M237 25L217 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M227 25L206 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M218 25L196 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M208 25L186 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M197 25L176 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M187 25L167 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M177 25L157 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-<path d="M167 25L147 47" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M257 25L236 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M247 25L227 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M237 25L217 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M227 25L206 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M218 25L196 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M208 25L186 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M197 25L176 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M187 25L167 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M177 25L157 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
+<path d="M167 25L147 47" stroke="white" strokeWidth="1.5" strokeMiterlimit="10"/>
 </svg>
 
 <div className="slider-arrow">

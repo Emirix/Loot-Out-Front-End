@@ -62,7 +62,7 @@ function Sidebar({logged,openPopup}) {
                 </div>
      
                 <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.0466 2.08561L13 14.0427L2.04675 2" stroke="#7AF0D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.0466 2.08561L13 14.0427L2.04675 2" stroke="#7AF0D1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
                 <div className="profile-dropdown" style={isDropdown ? {display:"block"} : {display:"none"}}>
                     <ul>
@@ -81,7 +81,7 @@ function Sidebar({logged,openPopup}) {
         }
         
                 <div className="auth-buttons ms-auto">
-                    {logged ? <Link to="/seller-assets" className="sell-button ms-auto sell-btn-side">SELL</Link>: <>
+                    {logged ? <Link to="/seller-assets" onClick={()=>{document.querySelector(".Sidebar").classList.remove("active")}} className="sell-button ms-auto sell-btn-side">SELL</Link>: <>
                     <button className="sign-in-button" onClick={openPopup} >sign up</button>
                     <button className="login-option " onClick={openPopup}>sign in</button></>}
               

@@ -76,7 +76,7 @@ class SignIn extends React.Component {
 
                 <div className="checkbox-wrapper">
                     <input type="checkbox" id="sign-in-checkbox" />
-                    <label for="sign-in-checkbox">Loot-Out E Bülteninden Haberdar Olmak İstiyorum</label>
+                    <label htmlFor="sign-in-checkbox">Loot-Out E Bülteninden Haberdar Olmak İstiyorum</label>
                 </div>
 
 

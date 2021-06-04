@@ -67,7 +67,7 @@ function Magaza() {
                                 <input type="checkbox" id="filter-checkbox"/>
                                 <label htmlFor="filter-checkbox" id="tick-checkbox-label">
                                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.55981 5.85003L4.61981 8.91003L12.4398 1.09003" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1.55981 5.85003L4.61981 8.91003L12.4398 1.09003" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </label>
                                 <label htmlFor="filter-checkbox" id="filter-text-label">

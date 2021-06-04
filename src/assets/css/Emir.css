@@ -3414,6 +3414,12 @@ div.sidebar-top > div.left-side > img {
   box-sizing: border-box;
   padding: 10px;
 }
+.urunler .urun:hover .hover-wrapper {
+  display: flex;
+}
+.urunler .urun:hover .hover-wrapper a {
+  display: flex;
+}
 .urunler .urun h1,
 .urunler .urun h2 {
   color: white;
@@ -3479,6 +3485,7 @@ div.sidebar-top > div.left-side > img {
   .most-searched-container {
     background-color: #e5e5e5;
     padding: 2em 1rem;
+    margin-bottom: 7rem;
   }
   .most-searched-container .urun {
     background-color: white;
@@ -3573,7 +3580,7 @@ div.sidebar-top > div.left-side > img {
     display: flex !important;
   }
   .lg-slider svg {
-    width: 86%;
+    width: 73%;
   }
   .lg-slider .slider-arrow {
     margin-left: auto;
@@ -4499,7 +4506,7 @@ a {
   }
 
   .profile-dropdown {
-    background: rgba(196, 196, 196, 0.6);
+    background: #4d4e4e;
   }
 }
 .profile-dropdown {
@@ -4988,33 +4995,6 @@ div.filter-price-container > div > span.input-range__label.input-range__label--m
 }
 .store-urun:hover .hover-wrapper a {
   display: flex;
-}
-.store-urun .hover-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(173, 173, 173, 0.3);
-  display: none;
-}
-.store-urun .hover-wrapper a {
-  /*width:80%;
-  margin:0 auto;
-  background-image:url(../svg/check-button.svg);
-  background-repeat:no-repeat;
-  height:120px;
-  background-size: cover;  display:none;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store-urun .hover-wrapper a img {
-  width: 80%;
 }
 .store-urun__isim {
   font-size: 24px;
@@ -6251,6 +6231,40 @@ div.products-on-sale > svg:nth-child(7) {
   width: 20px;
   height: 20px;
   top: 45px;
+}
+
+.urunler .urun {
+  position: relative;
+}
+.urunler .urun .hover-wrapper {
+  background: rgba(8, 8, 8, 0.5);
+}
+
+.hover-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  justify-content: center;
+  display: none;
+  align-items: center;
+  background: rgba(173, 173, 173, 0.3);
+}
+.hover-wrapper a {
+  /*width:80%;
+  margin:0 auto;
+  background-image:url(../svg/check-button.svg);
+  background-repeat:no-repeat;
+  height:120px;
+  background-size: cover;  display:none;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover-wrapper a img {
+  width: 80%;
 }
 
 /*# sourceMappingURL=Emir.css.map */

@@ -52,16 +52,16 @@ export default class SLPopup extends Component {
                                 
                                 <label>Password Again</label>
                                 <input type="password" placeholder="Password again" />
-                                <label class="b-contain">
+                                <label className="b-contain">
 	                                <span>I read and accept <Link to="/terms">the terms.</Link></span>
 	                                <input type="checkbox"/>
-	                                <div class="b-input"></div>
+	                                <div className="b-input"></div>
                                 </label>
 
-                                <label class="b-contain">
+                                <label className="b-contain">
 	                                <span>I want get emails from Loot Out.</span>
 	                                <input type="checkbox"/>
-	                                <div class="b-input"></div>
+	                                <div className="b-input"></div>
                                 </label>
                                 <button className="bg-dark text-white">REGISTER TO LOOT OUT</button>
                             </form>
@@ -76,10 +76,10 @@ export default class SLPopup extends Component {
                                 <label>Password</label>
                                 <input type="password" placeholder="Password"/>
                                 <div className="d-flex align-items-center">
-                                <label class="b-contain">
+                                <label className="b-contain">
 	                                <span>Stay logged</span>
 	                                <input type="checkbox"/>
-	                                <div class="b-input"></div>
+	                                <div className="b-input"></div>
                                 </label>
 
                                 <div onClick={()=>{this.setState({isForgotPass:true})}} className="ms-auto forgot-pass-link">Forgot Password?</div>

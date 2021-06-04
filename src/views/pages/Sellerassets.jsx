@@ -78,32 +78,32 @@ export class Sellerassets extends Component {
             <path
               d="M264.49 23L235.444 45.2854"
               stroke="white"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M250.634 23.0049L221.581 45.2903"
               stroke="white"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M236.771 23.0107L207.718 45.2962"
               stroke="white"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M222.909 23.0107L193.856 45.3011"
               stroke="white"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
             <path
               d="M209.046 23.0156L180 45.3059"
               stroke="white"
-              stroke-width="2"
-              stroke-miterlimit="10"
+              strokeWidth="2"
+              strokeMiterlimit="10"
             />
           </svg>
 
@@ -163,8 +163,8 @@ export class Sellerassets extends Component {
           {/** TOP BAR MOBIL  className="topbarmobile" */}
           <svg className="topbarmobile" viewBox="0 0 1627 72" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="1627" height="72" />
-<path d="M0.5 0C0.5 39.4 38.26 71.34 85.44 71.34H1540.34C1587.53 71.34 1625.49 39.4 1625.5 0" stroke="#7AF0D1" stroke-miterlimit="10"/>
-<path d="M0 0L1626 0.00585938C1626 0.00585938 1628 61.9023 1547 71.4047L77.5 71.5C0.99987 62.9977 0 0 0 0Z" fill="white" fill-opacity="0.1"/>
+<path d="M0.5 0C0.5 39.4 38.26 71.34 85.44 71.34H1540.34C1587.53 71.34 1625.49 39.4 1625.5 0" stroke="#7AF0D1" strokeMiterlimit="10"/>
+<path d="M0 0L1626 0.00585938C1626 0.00585938 1628 61.9023 1547 71.4047L77.5 71.5C0.99987 62.9977 0 0 0 0Z" fill="white" fillOpacity="0.1"/>
 </svg>
 
           {/** TOP BAR */}
@@ -172,8 +172,8 @@ export class Sellerassets extends Component {
           <svg className="kam"
  viewBox="0 0 1627 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect  />
-<path d="M0.5 147C0.5 107.6 22.3105 74.0977 69.5005 74.0977H1062.5L1142.82 1.09766H1535.5C1582.68 1.09766 1626 36.94 1626 76.34L1625.5 147" stroke="#7AF0D1" stroke-miterlimit="10"/>
-<path d="M62.5 74.5L1061.5 74L1141.5 1.5H1538.5C1602.5 5.5 1623 51 1626 71L1625.5 147H0.5L2.5 128L5 117.5L9 108L18 94.5L28.5 86L35.5 81.5L45.5 77.5L62.5 74.5Z" fill="white" fill-opacity="0.1"/>
+<path d="M0.5 147C0.5 107.6 22.3105 74.0977 69.5005 74.0977H1062.5L1142.82 1.09766H1535.5C1582.68 1.09766 1626 36.94 1626 76.34L1625.5 147" stroke="#7AF0D1" strokeMiterlimit="10"/>
+<path d="M62.5 74.5L1061.5 74L1141.5 1.5H1538.5C1602.5 5.5 1623 51 1626 71L1625.5 147H0.5L2.5 128L5 117.5L9 108L18 94.5L28.5 86L35.5 81.5L45.5 77.5L62.5 74.5Z" fill="white" fillOpacity="0.1"/>
 </svg>
 
 
@@ -187,8 +187,8 @@ export class Sellerassets extends Component {
           </div>
 
           <svg  viewBox="0 0 1627 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 0C1 29.2711 38.76 53 85.94 53H1540.84C1588.03 53 1625.99 29.2711 1626 0" stroke="#7AF0D1" stroke-miterlimit="10"/>
-<path d="M0 0L1626 0.00434331C1626 0.00434331 1628 45.8857 1547 52.9293L77.4998 53C0.999868 46.6976 0 0 0 0Z" fill="white" fill-opacity="0.1"/>
+<path d="M1 0C1 29.2711 38.76 53 85.94 53H1540.84C1588.03 53 1625.99 29.2711 1626 0" stroke="#7AF0D1" strokeMiterlimit="10"/>
+<path d="M0 0L1626 0.00434331C1626 0.00434331 1628 45.8857 1547 52.9293L77.4998 53C0.999868 46.6976 0 0 0 0Z" fill="white" fillOpacity="0.1"/>
 </svg>
 
 
@@ -214,32 +214,32 @@ export class Sellerassets extends Component {
               <path
                 d="M272.49 23L243.444 45.2854"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M258.634 23.0049L229.581 45.2903"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M244.771 23.0107L215.718 45.2962"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M230.909 23.0107L201.856 45.3011"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M217.046 23.0156L188 45.3059"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
             </svg>
 
@@ -258,68 +258,68 @@ export class Sellerassets extends Component {
               <path
                 d="M642.754 1L607.282 28.2162"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M625.824 1.00586L590.352 28.2221"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M608.894 1.00586L573.422 28.2281"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M591.973 1.01172L556.492 28.2339"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M575.043 1.01855L539.562 28.2348"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M558.113 1.02441L522.641 28.2406"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M541.184 1.02979L505.711 28.246"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M524.262 1.03564L488.781 28.2519"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M507.332 1.04248L471.851 28.2587"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M490.402 1.04248L454.921 28.2647"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M473.472 1.04834L438 28.2705"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
             </svg>
 
@@ -333,68 +333,68 @@ export class Sellerassets extends Component {
               <path
                 d="M613.787 1L568.261 35.93"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M592.059 1.00781L546.533 35.9378"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M570.33 1.00781L524.804 35.9455"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M548.613 1.01465L503.076 35.9523"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M526.885 1.02344L481.348 35.9535"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M505.157 1.03125L459.63 35.9613"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M483.429 1.03809L437.903 35.9681"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M461.711 1.0459L416.174 35.9759"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M439.983 1.05469L394.446 35.9847"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M418.255 1.05469L372.717 35.9924"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M396.526 1.0625L351 36.0002"
                 stroke="white"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
               />
               <path
                 d="M10.892 28.41V20.36H33.846C34.766 20.36 35.5327 20.222 36.146 19.946C36.79 19.6393 37.112 19.0107 37.112 18.06C37.112 17.0787 36.79 16.45 36.146 16.174C35.5327 15.898 34.766 15.76 33.846 15.76H11.628V36H0.128V6.56H32.052C34.352 6.56 36.4987 6.72867 38.492 7.066C40.516 7.37267 42.2793 7.94 43.782 8.768C45.2847 9.596 46.4653 10.7613 47.324 12.264C48.1827 13.7667 48.612 15.6987 48.612 18.06C48.612 20.4213 48.1827 22.292 47.324 23.672C46.4653 25.052 45.2847 26.0793 43.782 26.754C42.2793 27.4287 40.516 27.8733 38.492 28.088C36.4987 28.3027 34.352 28.41 32.052 28.41H10.892ZM54.3509 36V6.56H89.9089C92.6995 6.56 95.1989 6.882 97.4069 7.526C99.6455 8.13933 101.409 9.182 102.697 10.654C104.016 12.126 104.675 14.1347 104.675 16.68C104.675 18.3667 104.368 19.762 103.755 20.866C103.142 21.97 102.298 22.8287 101.225 23.442C100.152 24.0553 98.9249 24.5 97.5449 24.776C96.1649 25.052 94.7235 25.2207 93.2209 25.282L89.8629 24.638C93.5122 24.6687 96.3182 24.822 98.2809 25.098C100.274 25.374 101.654 25.88 102.421 26.616C103.218 27.3213 103.617 28.3487 103.617 29.698V36H92.1169V31.078C92.1169 30.158 91.9329 29.468 91.5649 29.008C91.2275 28.5173 90.4609 28.18 89.2649 27.996C88.0995 27.812 86.2902 27.72 83.8369 27.72H65.8509V36H54.3509ZM65.8509 20.038H89.9089C90.8289 20.038 91.5955 19.8847 92.2089 19.578C92.8529 19.2713 93.1749 18.6887 93.1749 17.83C93.1749 17.0327 92.8529 16.496 92.2089 16.22C91.5955 15.9133 90.8289 15.76 89.9089 15.76H65.8509V20.038ZM138.412 36.92C131.727 36.92 126.345 36.3373 122.266 35.172C118.188 33.976 115.213 32.228 113.342 29.928C111.502 27.5973 110.582 24.7147 110.582 21.28C110.582 17.8453 111.502 14.978 113.342 12.678C115.213 10.3473 118.188 8.59933 122.266 7.434C126.345 6.238 131.727 5.64 138.412 5.64C145.098 5.64 150.48 6.238 154.558 7.434C158.637 8.59933 161.596 10.3473 163.436 12.678C165.307 14.978 166.242 17.8453 166.242 21.28C166.242 24.7147 165.307 27.5973 163.436 29.928C161.596 32.228 158.637 33.976 154.558 35.172C150.48 36.3373 145.098 36.92 138.412 36.92ZM138.412 28.18C141.571 28.18 144.3 27.996 146.6 27.628C148.9 27.2293 150.679 26.5393 151.936 25.558C153.194 24.546 153.822 23.12 153.822 21.28C153.822 19.44 153.194 18.0293 151.936 17.048C150.679 16.036 148.9 15.346 146.6 14.978C144.3 14.5793 141.571 14.38 138.412 14.38C135.254 14.38 132.478 14.5793 130.086 14.978C127.725 15.346 125.87 16.036 124.52 17.048C123.202 18.0293 122.542 19.44 122.542 21.28C122.542 23.12 123.202 24.546 124.52 25.558C125.87 26.5393 127.725 27.2293 130.086 27.628C132.478 27.996 135.254 28.18 138.412 28.18ZM218.594 6.56V15.3H183.726V19.21H212.246V27.03H183.726V36H172.226V6.56H218.594ZM224.801 6.56H236.301V36H224.801V6.56ZM254.927 6.56V27.26H281.745V36H243.427V6.56H254.927ZM298.322 23.58V27.26H333.282V36H286.822V6.56H333.19V15.3H298.322V18.98H326.842V23.58H298.322Z"
@@ -466,17 +466,17 @@ export class Sellerassets extends Component {
       {/** OFFERS */}
 
         <svg className="offers-title" viewBox="0 0 599 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M597.787 1L552.261 35.93" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M576.059 1.00781L530.533 35.9378" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M554.33 1.00781L508.804 35.9455" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M532.613 1.01465L487.076 35.9523" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M510.885 1.02344L465.348 35.9535" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M489.157 1.03125L443.63 35.9613" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M467.429 1.03809L421.903 35.9681" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M445.711 1.0459L400.174 35.9759" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M423.983 1.05469L378.446 35.9847" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M402.255 1.05469L356.717 35.9924" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M380.526 1.0625L335 36.0002" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M597.787 1L552.261 35.93" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M576.059 1.00781L530.533 35.9378" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M554.33 1.00781L508.804 35.9455" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M532.613 1.01465L487.076 35.9523" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M510.885 1.02344L465.348 35.9535" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M489.157 1.03125L443.63 35.9613" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M467.429 1.03809L421.903 35.9681" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M445.711 1.0459L400.174 35.9759" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M423.983 1.05469L378.446 35.9847" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M402.255 1.05469L356.717 35.9924" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
+<path d="M380.526 1.0625L335 36.0002" stroke="white" strokeWidth="2" strokeMiterlimit="10"/>
 <path d="M28.59 33.92C21.9047 33.92 16.5227 33.3373 12.444 32.172C8.36533 30.976 5.39067 29.228 3.52 26.928C1.68 24.5973 0.76 21.7147 0.76 18.28C0.76 14.8453 1.68 11.978 3.52 9.678C5.39067 7.34733 8.36533 5.59933 12.444 4.434C16.5227 3.238 21.9047 2.64 28.59 2.64C35.2753 2.64 40.6573 3.238 44.736 4.434C48.8147 5.59933 51.774 7.34733 53.614 9.678C55.4847 11.978 56.42 14.8453 56.42 18.28C56.42 21.7147 55.4847 24.5973 53.614 26.928C51.774 29.228 48.8147 30.976 44.736 32.172C40.6573 33.3373 35.2753 33.92 28.59 33.92ZM28.59 25.18C31.7487 25.18 34.478 24.996 36.778 24.628C39.078 24.2293 40.8567 23.5393 42.114 22.558C43.3713 21.546 44 20.12 44 18.28C44 16.44 43.3713 15.0293 42.114 14.048C40.8567 13.036 39.078 12.346 36.778 11.978C34.478 11.5793 31.7487 11.38 28.59 11.38C25.4313 11.38 22.656 11.5793 20.264 11.978C17.9027 12.346 16.0473 13.036 14.698 14.048C13.3793 15.0293 12.72 16.44 12.72 18.28C12.72 20.12 13.3793 21.546 14.698 22.558C16.0473 23.5393 17.9027 24.2293 20.264 24.628C22.656 24.996 25.4313 25.18 28.59 25.18ZM108.772 3.56V12.3H73.9036V16.21H102.424V24.03H73.9036V33H62.4036V3.56H108.772ZM160.656 3.56V12.3H125.788V16.21H154.308V24.03H125.788V33H114.288V3.56H160.656ZM177.673 20.58V24.26H212.633V33H166.173V3.56H212.541V12.3H177.673V15.98H206.193V20.58H177.673ZM218.597 33V3.56H254.155C256.946 3.56 259.445 3.882 261.653 4.526C263.892 5.13933 265.655 6.182 266.943 7.654C268.262 9.126 268.921 11.1347 268.921 13.68C268.921 15.3667 268.614 16.762 268.001 17.866C267.388 18.97 266.544 19.8287 265.471 20.442C264.398 21.0553 263.171 21.5 261.791 21.776C260.411 22.052 258.97 22.2207 257.467 22.282L254.109 21.638C257.758 21.6687 260.564 21.822 262.527 22.098C264.52 22.374 265.9 22.88 266.667 23.616C267.464 24.3213 267.863 25.3487 267.863 26.698V33H256.363V28.078C256.363 27.158 256.179 26.468 255.811 26.008C255.474 25.5173 254.707 25.18 253.511 24.996C252.346 24.812 250.536 24.72 248.083 24.72H230.097V33H218.597ZM230.097 17.038H254.155C255.075 17.038 255.842 16.8847 256.455 16.578C257.099 16.2713 257.421 15.6887 257.421 14.83C257.421 14.0327 257.099 13.496 256.455 13.22C255.842 12.9133 255.075 12.76 254.155 12.76H230.097V17.038ZM273.678 22.19H286.236C286.451 22.834 287.08 23.386 288.122 23.846C289.165 24.2753 290.56 24.6127 292.308 24.858C294.087 25.0727 296.142 25.18 298.472 25.18C300.772 25.18 302.582 25.1187 303.9 24.996C305.25 24.8427 306.2 24.5973 306.752 24.26C307.304 23.892 307.58 23.4013 307.58 22.788C307.58 22.2053 307.136 21.7607 306.246 21.454C305.357 21.1167 303.778 20.8867 301.508 20.764C299.239 20.6413 296.05 20.58 291.94 20.58C288.874 20.58 286.221 20.442 283.982 20.166C281.774 19.8593 279.95 19.3993 278.508 18.786C277.098 18.142 276.055 17.3447 275.38 16.394C274.706 15.4127 274.368 14.2473 274.368 12.898C274.368 10.5673 275.15 8.65067 276.714 7.148C278.309 5.61466 280.701 4.48 283.89 3.744C287.11 2.97733 291.128 2.594 295.942 2.594C302.996 2.594 308.378 3.62133 312.088 5.676C315.83 7.7 317.7 10.6287 317.7 14.462H305.786C305.633 13.45 304.682 12.6833 302.934 12.162C301.186 11.61 298.702 11.334 295.482 11.334C292.293 11.334 289.916 11.518 288.352 11.886C286.819 12.254 286.052 12.8827 286.052 13.772C286.052 14.232 286.267 14.6 286.696 14.876C287.126 15.152 287.862 15.382 288.904 15.566C289.978 15.7193 291.48 15.8267 293.412 15.888C295.344 15.9493 297.798 15.98 300.772 15.98C304.054 15.98 306.844 16.1487 309.144 16.486C311.444 16.7927 313.3 17.268 314.71 17.912C316.152 18.556 317.194 19.384 317.838 20.396C318.482 21.3773 318.804 22.5427 318.804 23.892C318.804 26.2227 318.068 28.124 316.596 29.596C315.124 31.068 312.794 32.1567 309.604 32.862C306.415 33.5673 302.244 33.92 297.092 33.92C294.179 33.92 291.496 33.7513 289.042 33.414C286.62 33.0767 284.458 32.586 282.556 31.942C280.655 31.2673 279.045 30.4547 277.726 29.504C276.408 28.5227 275.396 27.434 274.69 26.238C274.016 25.0113 273.678 23.662 273.678 22.19Z" fill="white"/>
 </svg>
           

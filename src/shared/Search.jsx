@@ -42,7 +42,7 @@ class Search extends React.Component {
             document.body.classList.remove("kes-lan")
 
         }}><svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M131.5 5L5 131.5M131.5 131.5L5 5" stroke="#FFEFEF" stroke-width="14"/>
+<path d="M131.5 5L5 131.5M131.5 131.5L5 5" stroke="#FFEFEF" strokeWidth="14"/>
 </svg>
 </div>
             <form>
