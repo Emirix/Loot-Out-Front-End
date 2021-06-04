@@ -2280,13 +2280,15 @@ a.mavi {
 .profile-con {
   position: relative;
   margin-left: 3rem;
+  user-select: none !important;
 }
 
 .profile-dropdown {
   position: absolute;
   width: 223px;
   height: 286px;
-  background: #c4c4c4;
+  background: #4d4e4e;
+  user-select: none !important;
   left: -100px;
   top: 80px;
 }
@@ -2311,6 +2313,7 @@ a.mavi {
 }
 .profile-dropdown ul li img {
   margin-right: 1rem;
+  user-select: none !important;
 }
 .profile-dropdown ul li .order-count {
   margin-left: auto;
@@ -2330,7 +2333,8 @@ a.mavi {
   margin-right: 1rem;
 }
 .profile-dropdown ul li a {
-  font-family: Poppins !important;
+  user-select: none !important;
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-size: 15px !important;
