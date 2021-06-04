@@ -3,7 +3,17 @@
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+.product-page-container__name svg {
+  display: none;
+  margin-left: 14px;
+}
+
 @media (min-width: 1281px) {
+  .product-page-container__name svg {
+    display: inline !important;
+    width: 15%;
+  }
+
   .padding-right-3rem {
     padding-right: 3rem;
   }
@@ -1514,6 +1524,8 @@
   text-align: center;
   width: 95%;
   margin: 0 auto;
+  position: relative;
+  top: -105px;
 }
 
 .marquee-wrapper .container31 {

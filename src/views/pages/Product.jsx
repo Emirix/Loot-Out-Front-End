@@ -128,11 +128,7 @@ class Product extends React.Component {
           </p>
           <div className="product-name">
             <h1>
-              {this.state.urun == null ? (
-                <>loading...</>
-              ) : (
-                this.state.urun[0].name
-              )}
+             AIR JORDAN XXXV PARIS
                <img src={seySlash} className="d-none d-lg-inline-block sey-slash"/>
             </h1>
            
